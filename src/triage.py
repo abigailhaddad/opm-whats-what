@@ -23,10 +23,22 @@ ROUTINE_FR_NOTICE = re.compile(
 )
 
 
+HEALTH_TRI_AGENCIES = {"treasury-department", "labor-department", "health-and-human-services-department",
+                       "internal-revenue-service", "employee-benefits-security-administration",
+                       "centers-for-medicare-medicaid-services"}
+
+
 def triage(item: dict) -> tuple[str, str]:
     """Return (decision, reason)."""
     src, kind, title = item["source"], item.get("kind") or "", item.get("title") or ""
     if src == "fr":
+        # Joint health-coverage rules (No Surprises Act, ACA) are led by the
+        # Treasury/Labor/HHS tri-agencies; OPM signs on because of FEHB. The API
+        # lists OPM first on every OPM document, so agency order can't identify
+        # the lead; key on the co-signers instead. Joint rules with MSPB or OMB
+        # are OPM-driven and still read.
+        if set(item.get("agencies") or []) & HEALTH_TRI_AGENCIES:
+            return "one_line", "joint health-coverage rule (Treasury/Labor/HHS)"
         if kind in ("Rule", "Proposed Rule"):
             return "read", kind
         # New collections (OMB number "3206-NEW") and new data-matching programs are
@@ -56,11 +68,13 @@ if __name__ == "__main__":
     docs = json.load(open(path))["results"]
     c = collections.Counter()
     for d in docs:
-        dec, why = triage({"source": "fr", "kind": d["type"], "title": d["title"]})
+        dec, why = triage({"source": "fr", "kind": d["type"], "title": d["title"],
+                           "agencies": [a.get("slug") for a in d.get("agencies") or []]})
         c[(dec, why)] += 1
     for k, v in sorted(c.items(), key=lambda kv: -kv[1]):
         print(v, k)
-    reads = [d for d in docs if triage({"source": "fr", "kind": d["type"], "title": d["title"]})[0] == "read" and d["type"] == "Notice"]
+    reads = [d for d in docs if triage({"source": "fr", "kind": d["type"], "title": d["title"],
+                                        "agencies": [a.get("slug") for a in d.get("agencies") or []]})[0] == "read" and d["type"] == "Notice"]
     print("\nNotices that would be READ:")
     for d in reads:
         print("  ", d["publication_date"], d["title"][:100])

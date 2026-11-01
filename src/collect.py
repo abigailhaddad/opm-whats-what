@@ -66,7 +66,7 @@ def parse_date(text: str) -> str | None:
 # --------------------------------------------------------------------------- #
 FR_FIELDS = ["document_number", "type", "title", "publication_date", "comments_close_on",
              "effective_on", "page_length", "html_url", "raw_text_url", "pdf_url",
-             "abstract", "cfr_references", "regulation_id_numbers", "significant", "docket_ids"]
+             "abstract", "cfr_references", "regulation_id_numbers", "significant", "docket_ids", "agencies"]
 
 
 def collect_fr(since: str) -> list[dict]:
@@ -87,6 +87,7 @@ def collect_fr(since: str) -> list[dict]:
                 "pdf_url": d.get("pdf_url"), "cfr_references": d.get("cfr_references"),
                 "rin": d.get("regulation_id_numbers"), "significant": d.get("significant"),
                 "docket_ids": d.get("docket_ids"),
+                "agencies": [x.get("slug") for x in d.get("agencies") or [] if x.get("slug")],
             })
         if not j.get("next_page_url"):
             break
