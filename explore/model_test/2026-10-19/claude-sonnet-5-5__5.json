@@ -1,0 +1,163 @@
+{
+ "findings": {
+  "plain_summary": "OPM and OMB are creating a new 5 CFR part 430 subpart E for SL/ST senior professionals, modeled on the SES appraisal rules. It lets OPM impose a standardized distribution of ratings (which OPM says will cap only Levels 4 and 5), requires quarterly progress reviews and PRB centralized review, and replaces mandatory Level 1 review with optional higher-level review, effective November 18, 2026.",
+  "items": [
+   {
+    "headline": "OPM can impose rating caps on senior professionals; stated intent is to limit only Levels 4 and 5",
+    "what_changes": "The rule removes the prohibition on pre-set rating distributions and authorizes OPM to set and refine a standardized distribution of some or all rating levels that agencies must apply. The limits themselves are not in the text; OPM says it intends them only for Levels 4 and 5, applied at an aggregate rather than supervisor-team level. Schedule C/G appointees may be excluded.",
+    "summary_status": "vague",
+    "speaker": "OPM",
+    "quote": "OPM may establish, and refine as needed, a standardized distribution of some or all rating levels for senior professionals which agencies must apply when rating senior professionals, except that senior professionals appointed under Schedules C or G in the excepted service may be excluded from such standardized distribution requirements, as determined by OPM.",
+    "page": 65920,
+    "section": "§ 430.505(d)"
+   },
+   {
+    "headline": "Limits on Level 4/5 ratings are OPM's stated intent, not a binding text commitment",
+    "what_changes": "OPM tells commenters the distribution will cap only the top two levels and impose no quotas on lower levels. Because the regulatory text says 'some or all rating levels', the narrower limit rests on OPM's preamble statement and future guidance.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM intends that the standardized distribution will apply only to the assignment of the highest performance rating levels (Levels 4 and 5) and will not impose limitations on any of the levels at or below Level 3 (\"Fully Successful\"), such as a \"quota\" requiring the issuance of a certain amount of Level 1 (\"Unacceptable\") ratings.",
+    "page": 65908,
+    "section": "Section 430.505 - Merit System Principles"
+   },
+   {
+    "headline": "Mandatory Level 1 review and informal grievance are replaced by optional higher-level review; ratings not appealable",
+    "what_changes": "Senior professionals lose the informal grievance process and the mandatory review of Level 1 ratings from subpart B. In their place they may request higher-level review of any initial summary rating before it goes to the PRB. The reviewer cannot change the rating, only recommend a different one. Ratings are non-appealable beyond what other law provides.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "The final rule simply eliminates the informal grievance process and the mandatory review of Level 1 ratings that previously applied to senior professionals under 5 CFR part 430, subpart B.",
+    "page": 65912,
+    "section": "Section 430.509 Rating Performance"
+   },
+   {
+    "headline": "Presidential waiver of the distribution is described only in OPM's appraisal system, not the rule text",
+    "what_changes": "OPM says its separate senior professional appraisal system allows the President to waive the standardized distribution for an agency by certifying outstanding performance. The regulatory text in § 430.505(d) contains no waiver provision.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM's new senior professional performance appraisal system \\19\\ provides that the President may waive the standardized distribution requirement by certifying that the performance of the agency's senior professionals was outstanding during the relevant time period.",
+    "page": 65908,
+    "section": "Section 430.505 - Consistency With 5 U.S.C. 4302"
+   },
+   {
+    "headline": "Quarterly progress reviews required, going beyond the SES regulation",
+    "what_changes": "Rating officials must hold progress reviews at least quarterly. OPM concedes the SES regulation itself requires only one per appraisal period and justifies the senior professional rule by pointing to its 2025 SES appraisal system memo.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "While it is true that the SES regulations require conducting progress reviews at least once during the appraisal period,\\31\\ on February 25, 2025, OPM issued a new Senior Executive Service performance appraisal system and performance plan,\\32\\ requiring that ``[a]t least quarterly, supervisors and executives must meet to discuss, and document, progress toward meeting the critical elements in the senior executive's performance plan.''",
+    "page": 65911,
+    "section": "Section 430.507 Monitoring Performance"
+   },
+   {
+    "headline": "Agencies with 10+ senior professionals must run ratings through the PRB; OPM can direct corrective action",
+    "what_changes": "Agencies with ten or more senior professionals must use their SES-style agency-level PRB (or an equivalent body if not subject to the SES) for centralized review of ratings, awards and pay adjustments. Agencies must submit their systems to OPM for approval, and OPM can order corrective action that the agency must follow.",
+    "summary_status": "vague",
+    "speaker": "OPM",
+    "quote": "If OPM finds that an agency system does not meet the requirements and intent of subchapter I of chapter 43 of title 5, United States Code, or of this subpart, OPM will identify the requirements that were not met and direct the agency to take corrective action, and the agency must comply.",
+    "page": 65921,
+    "section": "§ 430.514(c)"
+   },
+   {
+    "headline": "OPM rejected calls for a pilot or demonstration project and a longer comment period",
+    "what_changes": "Commenters asked OPM to test the reforms through a 5 U.S.C. 4703 demonstration project and to extend the 30-day comment period. OPM declined both, calling a pilot unnecessary and a source of 'unacceptable delays', and adopted all substantive provisions as proposed.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "However, OPM has determined that the use of a demonstration project under 5 U.S.C. 4703 is not necessary and would create unacceptable delays to the urgently needed reforms adopted in this final rule.",
+    "page": 65906,
+    "section": "Section 430.501 General"
+   },
+   {
+    "headline": "Cost estimate: about $814,000 one-time across 60+ agencies and ~1,420 senior professionals",
+    "what_changes": "OPM estimates one-time agency policy-update costs of about $744,000 (80 hours per agency at $154.76/hour) plus about $70,000 for senior professionals spending 15 extra minutes on first-year plans, totaling about $814,000. It deems the rule not significant under E.O. 12866 and not an E.O. 14192 action.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM anticipates that the overall implementation costs would be limited in duration and would total about $814,000. OPM did not receive any comments on its estimates of costs.",
+    "page": 65915,
+    "section": "Expected Impact - C. Costs"
+   },
+   {
+    "headline": "Rationale: about 90% of senior professionals rated Level 4 or 5; only 12 comments received",
+    "what_changes": "OPM justifies the change with FY2023-24 data showing roughly 90% at Levels 4 and 5 and under half a percent below Level 3. It received 12 comments in a 30-day period, several challenging authority, merit system principles, research support and teamwork effects, and OPM rejected each.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Governmentwide data showed that, in fiscal years 2023 and 2024, approximately 90 percent of senior professionals received ratings at Levels 4 and 5, while less than a half of one percent of senior professionals received ratings below Level 3 (``Fully Successful'').",
+    "page": 65904,
+    "section": "Background"
+   },
+   {
+    "headline": "Pay increases barred for senior professionals rated below Level 3 or with a critical element below Level 3",
+    "what_changes": "Conforming change to part 534 ties annual pay increases to the new five-level scale: no increase for a rating of record below Level 3, or for a later performance rating showing a critical element below Level 3. Agencies must give written reasons for a zero adjustment for those at Level 3 or above.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Who has a current rating of record below Level 3 (Fully Successful or equivalent), as described in Sec.  430.505(a)(6) of this chapter; or",
+    "page": 65922,
+    "section": "§ 534.507(f)"
+   },
+   {
+    "headline": "Ratings feed directly into reduction-in-force retention under the new Level 1-5 scale",
+    "what_changes": "OPM amends part 351 so that subpart E ratings of record, with the five summary levels, establish performance credit in a reduction in force. OPM also acknowledges the interaction with its separate final RIF rule that prioritizes ratings over tenure.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "For competing employees who received ratings of record while covered by part 430, subpart B or E, of this chapter, the summary levels assigned for those ratings of record must be used to establish the employee's performance credit in a reduction in force in accordance with paragraph (a) of this section",
+    "page": 65916,
+    "section": "§ 351.503(b)(2)"
+   }
+  ],
+  "could_not_determine": [
+   "How many senior professionals would actually be moved from Level 4 or 5 to a lower rating, or the specific percentage caps OPM will set; the rule leaves the caps to future OPM action.",
+   "Whether OPM will actually use the Schedule C/G exclusion, since the text says such appointees 'may be excluded ... as determined by OPM'.",
+   "How the Presidential waiver of the standardized distribution works in practice; it is described only through OPM's separate appraisal system memo, not in the regulatory text.",
+   "Estimated effects on pay, awards, or reduction-in-force retention standing for individual senior professionals.",
+   "Costs to agencies of PRB centralized review or quarterly progress reviews; the cost estimate covers only policy updates and extra time on performance plans.",
+   "Which agencies fall below the ten-senior-professional threshold, and how many agencies must create PRB-equivalent bodies."
+  ]
+ },
+ "model": "claude-sonnet-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input_tokens": 51375,
+  "output_tokens": 3411
+ },
+ "cost_usd": 0.1369,
+ "seconds": 24.7,
+ "verification": [
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  }
+ ],
+ "doc": {
+  "title": "Managing Senior Professional Performance",
+  "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21316/managing-senior-professional-performance",
+  "date": "2026-10-19",
+  "kind": "Rule"
+ }
+}

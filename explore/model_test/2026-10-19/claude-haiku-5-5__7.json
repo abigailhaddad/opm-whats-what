@@ -1,0 +1,129 @@
+{
+ "findings": {
+  "plain_summary": "OPM has finalized a rule that removes the governmentwide 52-week time-in-grade requirement for promotions to covered competitive-service GS-6 and above positions, effective January 14, 2027. The release says agencies may still set job-related prerequisites, including a period of service in grade, through consistently applied merit-promotion plans, and that the rule also changes regulations on student appointments, training, and other personnel matters.",
+  "items": [
+   {
+    "headline": "Removes the 52-week time-in-grade restriction for covered promotions",
+    "what_changes": "Eliminates the governmentwide requirement that employees spend 52 weeks at a lower grade before they can be considered for promotion to covered competitive-service GS positions at GS-6 and above.",
+    "summary_status": "in",
+    "speaker": "current_rule",
+    "quote": "The restriction generally required employees to spend 52 weeks at a lower grade before they could be considered for promotion, even if they met the qualifications for higher-level work.",
+    "page": 1,
+    "section": "News release (no CFR section specified)"
+   },
+   {
+    "headline": "Agencies may keep service-in-grade prerequisites through merit-promotion plans",
+    "what_changes": "Agencies may still require a period of service in grade as a job-related promotion prerequisite, set in their written merit-promotion plans, as long as the requirement is applied consistently. The summary refers only generally to agencies retaining authority to set job-related requirements and does not mention that a service-in-grade requirement may survive.",
+    "summary_status": "vague",
+    "speaker": "OPM",
+    "quote": "Agencies may continue to establish job-related promotion prerequisites, including a period of service in grade, through their written merit-promotion plans, provided those requirements are consistently applied.",
+    "page": 1,
+    "section": "News release (no CFR section specified)"
+   },
+   {
+    "headline": "Rule does not guarantee promotions or change qualification or selection procedures",
+    "what_changes": "The rule does not guarantee any promotion, waive qualification standards, or alter the competitive procedures agencies use to evaluate and select candidates.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "It does not guarantee a promotion, waive qualification standards, or change the competitive procedures agencies use to evaluate and select candidates.",
+    "page": 1,
+    "section": "News release (no CFR section specified)"
+   },
+   {
+    "headline": "Effective date set for January 14, 2027",
+    "what_changes": "The final rule takes effect January 14, 2027.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "The rule takes effect January 14, 2027.",
+    "page": 1,
+    "section": "News release (no CFR section specified)"
+   },
+   {
+    "headline": "Related changes to student appointments, training, and other personnel rules",
+    "what_changes": "The rule also makes related changes to regulations governing student appointments, training, and other personnel matters, none of which the summary mentions.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "It also makes related changes to regulations governing student appointments, training, and other personnel matters.",
+    "page": 1,
+    "section": "News release (no CFR section specified)"
+   },
+   {
+    "headline": "Scope limited to covered competitive-service GS positions at GS-6 and above",
+    "what_changes": "The removal applies to advancement to covered competitive-service General Schedule positions at GS-6 and above.",
+    "summary_status": "in",
+    "speaker": "OPM",
+    "quote": "The final rule removes the time-in-grade restriction from OPM regulations.",
+    "page": 1,
+    "section": "News release (no CFR section specified)"
+   },
+   {
+    "headline": "OPM frames the change as rewarding merit over tenure",
+    "what_changes": "OPM's director states the rule lets agencies reward demonstrated merit over tenure, and that employees must still meet job standards and follow merit procedures. The summary does not include this framing.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "This rule allows agencies to reward demonstrated merit over tenure.",
+    "page": 1,
+    "section": "News release (no CFR section specified)"
+   },
+   {
+    "headline": "OPM links the change to early-career recruitment",
+    "what_changes": "OPM says removing the governmentwide waiting period supports its effort to make federal service more competitive for early-career talent, and points to the Early Careers Initiative and U.S. Tech Force. The summary does not mention this purpose.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM said eliminating the governmentwide waiting period supports its effort to make federal service more competitive for early-career talent.",
+    "page": 1,
+    "section": "News release (no CFR section specified)"
+   }
+  ],
+  "could_not_determine": [
+   "How many employees or positions are affected by the rule",
+   "Estimated costs or benefits, and any regulatory impact analysis",
+   "Number of public comments received and how OPM responded to them",
+   "Specific CFR sections amended, and the exact text of the student appointment, training, and other personnel changes",
+   "Whether agencies must revise existing merit-promotion plans, and by when",
+   "Whether any positions or agencies are exempt from the change",
+   "Whether the rule applies to positions outside the competitive service or to grades below GS-6",
+   "How the Early Careers Initiative and U.S. Tech Force relate to the rule's operation"
+  ]
+ },
+ "model": "claude-haiku-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input_tokens": 2264,
+  "output_tokens": 3121
+ },
+ "cost_usd": 0.0018,
+ "seconds": 11.9,
+ "verification": [
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  }
+ ],
+ "doc": {
+  "title": "OPM Finalizes Rule Removing Governmentwide Time-in-Grade Barrier to Promotions",
+  "url": "https://www.opm.gov/news/news-releases/opm-finalizes-rule-removing-governmentwide-time-in-grade-barrier-to-promotions/",
+  "date": "2026-10-19",
+  "kind": "News release"
+ }
+}

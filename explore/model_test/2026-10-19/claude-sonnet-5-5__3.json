@@ -1,0 +1,162 @@
+{
+ "findings": {
+  "plain_summary": "OPM finalizes changes to 5 CFR parts 351, 630, and 715 that codify existing administrative-leave policy: a list of acceptable uses (including extended leave for deferred resignation, RIF notice periods, and misconduct settlements), three new binding prohibitions, a definition of 'sole and exclusive discretion,' and agency discretion to deny resignation withdrawals after an employee accepts deferred-resignation benefits. OPM rejected most comments, projects no costs or savings from the rule, and added a physical fitness use, the definition, and a clarification that agency limits cannot exceed Governmentwide limits.",
+  "items": [
+   {
+    "headline": "Deferred-resignation participants who accept leave benefits can be barred from withdrawing their resignation",
+    "what_changes": "Revised 5 CFR 715.202(b) makes the accept/decline decision on a withdrawal request the agency's 'sole and exclusive discretion' and adds acceptance of deferred-resignation benefits as a valid reason to deny withdrawal. OPM says it cannot require repayment or reclassification of leave after it is provided, and it rejected commenters' alternatives (operational-disruption standard only, recoupment, a time window, a balancing standard).",
+    "summary_status": "vague",
+    "speaker": "OPM",
+    "quote": "A valid reason includes, but is not limited to, administrative disruption, the hiring or commitment to hire a replacement, or the employee's acceptance of benefits provided under a deferred resignation agreement.",
+    "page": 65940,
+    "section": "5 CFR 715.202(b)"
+   },
+   {
+    "headline": "Extended paid leave for workforce restructuring and deferred resignation is now an enumerated acceptable use",
+    "what_changes": "New 630.1403(c)(9) lists extended administrative leave for employees who sign a written agreement to separate on a future date, including under deferred resignation programs, VSIP, or VERA, subject to Governmentwide and agency limits. OPM says current Governmentwide limit is 12 weeks per instance absent joint OPM/OMB approval, and a 6-month threshold was later approved for FY2026 DRP agreements; the limits are in guidance, not in the rule text.",
+    "summary_status": "in",
+    "speaker": "OPM",
+    "quote": "To provide extended periods of administrative leave (subject to Governmentwide limits established by OPM and agency limits) to employees who sign a written agreement to voluntarily separate on a specified future date as a transition-to-separation tool that supports workforce restructuring and realignment initiatives",
+    "page": 65940,
+    "section": "5 CFR 630.1403(c)(9)"
+   },
+   {
+    "headline": "Agencies may place RIF-notice employees on paid administrative leave; duty-status default softened",
+    "what_changes": "Revised 351.806 keeps duty status as the default but replaces 'when possible' with 'under ordinary circumstances' and adds paragraph (b) allowing administrative leave for all or part of the RIF notice period when the agency finds it appropriate. New 630.1403(c)(10) lists this as an acceptable use. OPM says RIF competition, retention registers, and appeal rights are unchanged.",
+    "summary_status": "in",
+    "speaker": "OPM",
+    "quote": "Nothing in this section precludes an agency from placing an employee on administrative leave for all or part of the notice period when the agency determines that such leave is appropriate and the use of administrative leave is consistent with part 630, subpart N, of this chapter.",
+    "page": 65939,
+    "section": "5 CFR 351.806(b)"
+   },
+   {
+    "headline": "New regulatory definition of 'sole and exclusive discretion' bars limiting it by any agreement",
+    "what_changes": "OPM adds 'sole and exclusive' before discretion in 630.1403(a)(2), (a)(4), (c) and 715.202(b), and defines the term so it may not be limited or conditioned by any agreement. OPM says this means acceptable-use determinations cannot be limited by negotiated agreement, and that the duty to bargain does not extend to Governmentwide regulations under 5 U.S.C. 7117(a)(1). Unions had argued this removes the matter from bargaining under FLRA precedent. OPM also says MSPB jurisdiction over involuntary resignation claims is not affected.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Sole and exclusive discretion means discretion that rests with an agency alone; that is exercised within the bounds of 5 U.S.C. 6329a and other applicable law, applicable Presidential directives, and the regulations in this subpart; and that may not be limited or conditioned by any agreement or established as a mandatory entitlement to administrative leave.",
+    "page": 65939,
+    "section": "5 CFR 630.1402 (definitions)"
+   },
+   {
+    "headline": "Administrative leave for poll workers and poll observers is now prohibited",
+    "what_changes": "New binding prohibition 630.1403(b)(5) bars administrative leave for poll worker or observer service, reversing prior OPM guidance that allowed up to 4 hours for nonpartisan poll service. OPM kept the prohibition over objections from at least four commenters and says employees can use annual leave, comp time, credit hours, or LWP instead.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM acknowledges that this provision changes OPM's prior policies that agencies could allow limited administrative leave for nonpartisan poll service.",
+    "page": 65933,
+    "section": "III.O; 5 CFR 630.1403(b)(5)"
+   },
+   {
+    "headline": "Administrative leave allowed in settlements with employees facing documented misconduct or poor-performance allegations",
+    "what_changes": "New 630.1403(c)(11) authorizes extended administrative leave to facilitate voluntary resignation under a settlement agreement, if allegations are documented (no final finding needed), the agency finds the settlement in the Government's best interests, and it has considered alternatives. It is subject to Governmentwide and agency limits. OPM rejected requests to remove it or move it to the investigative-leave framework, and changed 'or' to 'and' so agency limits cannot supersede Governmentwide limits.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM has revised the language in Sec.  630.1403(c)(11) to make clear that, while no final determination of poor performance or misconduct need be found, an agency may apply this provision only where the allegations of poor performance or misconduct are documented.",
+    "page": 65934,
+    "section": "III.Q; 5 CFR 630.1403(c)(11)"
+   },
+   {
+    "headline": "Investigative leave: administrative leave barred after the 10-workday limit",
+    "what_changes": "New 630.1403(b)(3) prohibits using administrative leave for investigations once the 10-workday calendar-year limit is reached for that investigation; agencies must then use section 6329b investigative leave. OPM says the rule does not alter the 10-workday limit, rejecting commenters who said extended leave circumvents it. Also new: (b)(4) bars leave for purposes sick leave could cover unless OPM or the President approves.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Once the 10-workday limit is reached, the agency must use investigative leave under 5 U.S.C. 6329b if it wishes to continue to conduct an investigation and continue to keep the employee in a paid non-duty status.",
+    "page": 65936,
+    "section": "IV; 5 CFR 630.1403(b)(3)"
+   },
+   {
+    "headline": "OPM projects no costs or savings, declining to count 2025 DRP spending",
+    "what_changes": "OPM treats the rule as codifying existing policy, so it projects no significant change in leave usage or incremental costs or savings and does not reach the $100 million threshold, even though OIRA designated it significant. It rejected comments citing $11 billion in 2025 DRP costs and $4.5 billion paid to non-working employees, and asserted that DRP leave costs were under 3% of basic payroll against a 6%+ workforce reduction. It declined a 60-day comment reopening.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Accordingly, OPM does not project that costs or savings will result from the regulations.",
+    "page": 65938,
+    "section": "V.D Costs; III.B, III.E"
+   },
+   {
+    "headline": "New physical-fitness leave example added in response to comments, with no hour limits",
+    "what_changes": "New 630.1403(c)(8) permits limited conditional administrative leave for approved physical fitness activities, with no minimum or maximum hours, at the agency's discretion; it excludes employees with job-related mandatory fitness standards that allow duty time. This was not in the proposed rule's text.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM is not establishing a minimum or maximum number of hours.",
+    "page": 65932,
+    "section": "III.I; 5 CFR 630.1403(c)(8)"
+   },
+   {
+    "headline": "OPM declined to add relocation leave example and to cap DRP leave at 10 days",
+    "what_changes": "OPM refused to add an example for an employee's own relocation to a new appointment, leaving it to agency policy, and refused to limit deferred-resignation leave to 10 days, saying agencies need flexibility to incentivize voluntary separations. It also declined to require agencies to first demonstrate mission requirements can be met.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM declines to limit administrative leave for deferred resignation participants to 10 days.",
+    "page": 65936,
+    "section": "III.S, III.J, III.D"
+   },
+   {
+    "headline": "Terminology change from 'grant' to 'provide' and coverage exclusion for certain appointees",
+    "what_changes": "Subpart N replaces 'grant' with 'provide' throughout, which OPM says covers leave with or without employee consent. Section 630.1401(b) excludes Presidential appointees and others outside title 5 leave laws.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "The word ``provide'' has a broader meaning that would encompass uses of administrative leave with or without the employee's consent.",
+    "page": 65936,
+    "section": "IV; 5 CFR 630.1401, subpart N"
+   }
+  ],
+  "could_not_determine": [
+   "How many employees are or will be placed on administrative leave under the deferred resignation, RIF-notice, or settlement provisions.",
+   "The actual dollar cost of administrative leave used under the 2025 deferred resignation programs; OPM cites only a '<3 percent of basic payroll' share and does not give a figure.",
+   "The text of the Governmentwide limits beyond the 12-week default and the later 6-month threshold, which are in OPM guidance, not the regulation.",
+   "How many RIF-affected or settlement employees are expected to receive leave, or how many resignation withdrawals have been or will be denied (OPM says only that the number is 'very small').",
+   "The specific approval conditions OPM and OMB use to authorize a higher leave threshold than 12 weeks."
+  ]
+ },
+ "model": "claude-sonnet-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input_tokens": 43307,
+  "output_tokens": 3637
+ },
+ "cost_usd": 0.123,
+ "seconds": 23.3,
+ "verification": [
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  }
+ ],
+ "doc": {
+  "title": "Administrative Leave for Workforce Realignment and Other Purposes",
+  "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21320/administrative-leave-for-workforce-realignment-and-other-purposes",
+  "date": "2026-10-19",
+  "kind": "Rule"
+ }
+}

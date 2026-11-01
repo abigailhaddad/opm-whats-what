@@ -1,0 +1,118 @@
+{
+ "findings": {
+  "plain_summary": "OPM's 60-day notice seeks comment on a new FEHB Protection Act Portal, an enrollee notification and eligibility verification system for family members under the FEHB Protection Act of 2025. The notice estimates about 2.7 million respondents at 30 minutes each, or 1.4 million hours, and says the portal will first serve enrollees whose family members' eligibility is unverified, with employing agencies, payroll offices, and carriers added in later phases.",
+  "items": [
+   {
+    "headline": "Portal purpose: audit of family-member eligibility under the FEHB Protection Act",
+    "what_changes": "The portal is described as the system through which OPM carries out a statutory requirement to conduct a comprehensive audit of family members covered under FEHB, with the stated goal of ensuring only eligible individuals are enrolled.",
+    "summary_status": "vague",
+    "speaker": "OPM",
+    "quote": "The FPA Portal is an enrollee notification and eligibility verification system that will support the OPM requirement under the Federal Employees Health Benefits (FEHB) Protection Act of 2025 (Sec. 90101, Pub. L. 119-21, 139 Stat. 362) to conduct a comprehensive audit regarding family members who are covered in the FEHB Program.",
+    "page": 66172,
+    "section": "Background"
+   },
+   {
+    "headline": "Enrollees with unverified family members get emails and mailed notices",
+    "what_changes": "Enrollees whose family member's eligibility has not been verified receive portal-generated emails and mailed notices directing them to sign in and provide documentation supporting eligibility.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Enrollees whose family member's eligibility has not been verified will receive FPA Portal generated emails and mailed notices.",
+    "page": 66172,
+    "section": "Background"
+   },
+   {
+    "headline": "Automated review decides sufficiency; unresolved cases go to a vendor and OPM",
+    "what_changes": "The portal uses automated document verification to decide whether a submission is sufficient to support an eligibility decision. Cases the automated process cannot resolve are referred to the contracted vendor and OPM, and results are returned to the portal.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "The FPA Portal will use automated document-verification capabilities to review the submitted information and documentation and determine whether the submission is sufficient to support an eligibility decision.",
+    "page": 66173,
+    "section": "Background"
+   },
+   {
+    "headline": "Burden estimate: about 2.7 million respondents and 1.4 million hours",
+    "what_changes": "OPM estimates about 2.7 million respondents, each spending 30 minutes, for a total of 1.4 million burden hours, with annual frequency.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Number of Respondents: ~2.7 million.",
+    "page": 66173,
+    "section": "Analysis"
+   },
+   {
+    "headline": "Rollout is phased; agencies, payroll offices, and carriers come later",
+    "what_changes": "The initial phase involves enrollees whose family member's eligibility has not been verified, OPM personnel, and a contracted vendor. Employing agencies, payroll offices, and participating carriers are to be added in subsequent phases.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Employing agencies, payroll offices, and participating health insurance carriers will be incorporated in subsequent phases.",
+    "page": 66172,
+    "section": "Background"
+   },
+   {
+    "headline": "Required documents depend on the family member's relationship",
+    "what_changes": "The documents enrollees must upload depend on the family member's relationship to the enrollee and include records used to establish a spouse's or child's eligibility. The full list is in the FEHB Handbook.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "The documents required depend on the family member's relationship to the enrollee and include records used to establish a spouse's or child's eligibility.",
+    "page": 66173,
+    "section": "Background"
+   },
+   {
+    "headline": "Comment deadline is December 18, 2026",
+    "what_changes": "Comments on the 60-day information collection request are accepted until December 18, 2026, under 5 CFR 1320.8(d)(1).",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Comments are encouraged and will be accepted until December 18, 2026.",
+    "page": 66172,
+    "section": "DATES"
+   }
+  ],
+  "could_not_determine": [
+   "How many enrollees have family members whose eligibility is unverified, and how that population relates to the ~2.7 million respondent estimate",
+   "The specific eligibility criteria and the full list of required documents for each family-member relationship (the notice points to the FEHB Handbook)",
+   "What happens to an enrollee's FEHB coverage or enrollment if documents are not submitted or verification fails, and the deadlines for response",
+   "The criteria the automated document-verification step uses to decide sufficiency, and how often cases are referred to the vendor or OPM",
+   "Privacy, data-security, and records protections for the uploaded documents, including whether a system of records notice applies",
+   "The identity of the contracted vendor, its contract value, and the government's cost to build and operate the portal",
+   "The basis for the 30-minute-per-respondent burden estimate and the 'Affected Public' category of 'eligible individuals or household members'",
+   "Timing and scope of the later phases involving employing agencies, payroll offices, and carriers",
+   "Whether OPM has received any comments so far, and whether the notice is tied to any specific deadline in the statute"
+  ]
+ },
+ "model": "claude-haiku-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input_tokens": 3197,
+  "output_tokens": 3509
+ },
+ "cost_usd": 0.0021,
+ "seconds": 13.8,
+ "verification": [
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  }
+ ],
+ "doc": {
+  "title": "Agency Information Collection Request: FEHB Protection Act Portal, OMB Control Number (3206-NEW)",
+  "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21380/agency-information-collection-request-fehb-protection-act-portal-omb-control-number-3206-new",
+  "date": "2026-10-19",
+  "kind": "Notice"
+ }
+}

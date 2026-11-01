@@ -1,0 +1,105 @@
+{
+ "findings": {
+  "plain_summary": "OPM is seeking comment on a new online portal that will require FEHB enrollees whose family members' eligibility has not been verified to upload documents proving that spouses and children qualify for coverage, as part of a comprehensive dependent-eligibility audit required by the FEHB Protection Act of 2025. OPM estimates about 2.7 million respondents a year at 30 minutes each, or 1.4 million burden hours, with automated document review and a contracted vendor handling cases the automation cannot resolve.",
+  "items": [
+   {
+    "headline": "About 2.7 million respondents and 1.4 million burden hours a year",
+    "what_changes": "OPM estimates ~2.7 million enrollees or household members will respond, at 30 minutes each, for 1.4 million total burden hours, with the collection listed as annual. The summary gives no scale, burden, or frequency.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Number of Respondents: ~2.7 million.",
+    "page": 66173,
+    "section": "Analysis"
+   },
+   {
+    "headline": "Portal supports a statutory comprehensive audit of FEHB family-member eligibility",
+    "what_changes": "The portal implements the FEHB Protection Act of 2025 (Sec. 90101, Pub. L. 119-21) requirement for a comprehensive audit of covered family members, aimed at keeping ineligible family members out of the FEHB Program. The summary names only the portal, not the audit or its enforcement purpose.",
+    "summary_status": "vague",
+    "speaker": "OPM",
+    "quote": "It will provide a secure and consistent process to ensure that only eligible individuals are enrolled in the FEHB Program. This will strengthen enrollment integrity and ensure ineligible family members are not participating in the FEHB Program.",
+    "page": 66172,
+    "section": "Background"
+   },
+   {
+    "headline": "Enrollees with unverified family members will get notices and must upload proof of eligibility",
+    "what_changes": "Enrollees whose family members' eligibility has not been verified will receive emails and mailed notices directing them to sign in and submit documents, such as records establishing a spouse's or child's eligibility, listed in the FEHB Handbook.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Enrollees whose family member's eligibility has not been verified will receive FPA Portal generated emails and mailed notices. These notices will direct enrollees to securely sign in to the FPA Portal enabling them to provide documentation to allow verification of the eligibility of their family members.",
+    "page": 66172,
+    "section": "Background"
+   },
+   {
+    "headline": "Automated document verification first, with a contracted vendor and OPM reviewing unresolved cases",
+    "what_changes": "Submissions will first be screened by automated document-verification tools that decide whether the documentation suffices for an eligibility decision. Cases the automation cannot resolve go to a contracted vendor and OPM.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "The FPA Portal will use automated document-verification capabilities to review the submitted information and documentation and determine whether the submission is sufficient to support an eligibility decision. If a case cannot be resolved through the automated review process, it will be referred to the contracted vendor and OPM.",
+    "page": 66173,
+    "section": "Background"
+   },
+   {
+    "headline": "Employing agencies, payroll offices, and carriers to be added in later phases",
+    "what_changes": "The initial phase involves enrollees, OPM staff, and the vendor. Employing agencies, payroll offices, and participating health insurance carriers will be brought in later, signaling a broader future scope.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Employing agencies, payroll offices, and participating health insurance carriers will be incorporated in subsequent phases.",
+    "page": 66172,
+    "section": "Background"
+   },
+   {
+    "headline": "Comment deadline December 18, 2026",
+    "what_changes": "The 60-day comment period runs through December 18, 2026, with comments submitted via regulations.gov and posted publicly without change.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Comments are encouraged and will be accepted until December 18, 2026.",
+    "page": 66172,
+    "section": "DATES"
+   }
+  ],
+  "could_not_determine": [
+   "What happens to family members whose eligibility is not verified or whose enrollees do not respond, such as removal from coverage, and on what timeline",
+   "Response deadlines enrollees will face after receiving a notice",
+   "Whether enrollees will have any appeal or reconsideration process after an adverse eligibility decision",
+   "The identity of the contracted vendor and the cost of the portal or vendor contract",
+   "Whether 'Annually' means enrollees will have to re-verify family members every year or only that the collection runs each year",
+   "When the portal will launch and when the later phases adding employing agencies, payroll offices, and carriers will begin",
+   "How the automated document-verification system makes or recommends sufficiency decisions, and what human review occurs before coverage is affected",
+   "Privacy safeguards, System of Records Notice, or data-retention terms for uploaded family documents"
+  ]
+ },
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input_tokens": 3197,
+  "output_tokens": 2055
+ },
+ "cost_usd": 0.0539,
+ "seconds": 19.8,
+ "verification": [
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  }
+ ],
+ "doc": {
+  "title": "Agency Information Collection Request: FEHB Protection Act Portal, OMB Control Number (3206-NEW)",
+  "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21380/agency-information-collection-request-fehb-protection-act-portal-omb-control-number-3206-new",
+  "date": "2026-10-19",
+  "kind": "Notice"
+ }
+}

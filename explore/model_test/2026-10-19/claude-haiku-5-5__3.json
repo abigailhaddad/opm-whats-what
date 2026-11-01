@@ -1,0 +1,153 @@
+{
+ "findings": {
+  "plain_summary": "The final rule codifies and expands OPM's administrative leave regulations in 5 CFR part 630 subpart N, adding examples of acceptable uses (including extended leave for deferred resignation, VERA/VSIP transitions, and settlement agreements), three new binding prohibitions, and a 'sole and exclusive discretion' standard. It also changes the RIF notice-period duty-status rule in 5 CFR 351.806 and makes receipt of deferred-resignation benefits a listed valid reason to deny a resignation withdrawal in 5 CFR 715.202(b), while the summary describes these changes only as 'more fully addresses' and 'clarifies.'",
+  "items": [
+   {
+    "headline": "Extended administrative leave for deferred resignation, VSIP, and VERA transitions is authorized with no fixed duration in the rule text",
+    "what_changes": "New 5 CFR 630.1403(c)(9) lets agencies provide extended periods of administrative leave to employees who sign a written agreement to separate on a specified future date, including under deferred resignation programs, VSIP, or VERA. The only limits in the rule text are Governmentwide limits set by OPM and agency limits, and the rule does not state a number. The summary says the rule addresses this use but does not say the duration is open-ended within those limits.",
+    "summary_status": "vague",
+    "speaker": "OPM",
+    "quote": "(9) To provide extended periods of administrative leave (subject to Governmentwide limits established by OPM and agency limits) to employees who sign a written agreement to voluntarily separate on a specified future date as a transition-to-separation tool that supports workforce restructuring and realignment initiatives",
+    "page": 65940,
+    "section": "5 CFR 630.1403(c)(9)"
+   },
+   {
+    "headline": "The 12-week cap on workforce realignment leave lives in OPM policy, not in the rule text; a 6-month threshold for FY 2026 DRP agreements appears only in the preamble",
+    "what_changes": "The preamble says the Governmentwide limit is 12 weeks per instance unless OPM and OMB jointly approve a higher threshold, and that the limit is stated in the Agency Policy Template. It also says a 6-month higher threshold was later approved for workforce-restructuring DRP agreements effective in FY 2026. Neither figure appears in the regulatory text, so OPM could change them through policy guidance.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "beginning in calendar year 2026, use of administrative leave by an employee in connection with a workforce realignment initiative is limited to 12 weeks in any individual instance unless a higher threshold has been jointly approved by OPM and the Office of Management and Budget.",
+    "page": 65926,
+    "section": "III.B Cost of Administrative Leave and DRP; III.S Miscellaneous Comments"
+   },
+   {
+    "headline": "Settlement-agreement administrative leave for employees with documented poor performance or misconduct is newly authorized",
+    "what_changes": "New 5 CFR 630.1403(c)(11) allows extended administrative leave to facilitate the voluntary resignation of employees with documented allegations of poor performance or misconduct under a settlement agreement. Conditions include a determination that the settlement is in the Government's best interests and consideration of all other reasonable alternatives. Commenters said the provision lacks time limits and recreates pre-Act practices. OPM says the leave is tied to a definite separation date and that the rule text now requires documented allegations, though no final finding is needed.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "(11) To provide extended periods of administrative leave (subject to Governmentwide limits established by OPM and agency limits) to facilitate the voluntary resignation of employees with documented allegations of poor performance or misconduct under a settlement agreement that the agency determines is in the Government's best interests after considering all other reasonable alternatives.",
+    "page": 65940,
+    "section": "5 CFR 630.1403(c)(11)"
+   },
+   {
+    "headline": "Deferred resignation withdrawal: receipt of DRP benefits becomes a listed valid reason to deny, and withdrawal decisions are made in the agency's sole and exclusive discretion",
+    "what_changes": "Revised 5 CFR 715.202(b) states that an agency may, in its sole and exclusive discretion, accept or decline a withdrawal request before the resignation is effective. It adds 'the employee's acceptance of benefits provided under a deferred resignation agreement' to the list of valid reasons to decline. The summary says the rule 'clarifies when' an agency may deny withdrawal and does not mention that this new reason is added or that the discretion language is new.",
+    "summary_status": "vague",
+    "speaker": "OPM",
+    "quote": "A valid reason includes, but is not limited to, administrative disruption, the hiring or commitment to hire a replacement, or the employee's acceptance of benefits provided under a deferred resignation agreement.",
+    "page": 65940,
+    "section": "5 CFR 715.202(b)"
+   },
+   {
+    "headline": "Agencies may place RIF-affected employees on annual leave without their consent during an emergency lack of work or funds",
+    "what_changes": "Revised 5 CFR 351.806(c) carries forward an emergency provision: when the agency lacks work or funds for all or part of the RIF notice period, it may place the employee on annual leave with or without consent, or on leave without pay or in nonpay status without consent (leave without pay requires consent). OPM says it did not propose a substantive change to this provision. A commenter objected that employees should be able to choose between annual leave and LWOP.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "When, in an emergency, the agency lacks work or funds for all or part of the notice period, it may place the employee on annual leave with or without the employee's consent, on leave without pay with the employee's consent, or in a nonpay status without the employee's consent.",
+    "page": 65939,
+    "section": "5 CFR 351.806(c)"
+   },
+   {
+    "headline": "Three new binding prohibitions: investigative leave after 10 workdays, sick-leave purposes, and poll workers",
+    "what_changes": "New 5 CFR 630.1403(b)(3)-(5) bars agencies from using administrative leave (3) for investigative purposes once an employee has reached the 10-workday calendar year limit in connection with a given investigation, (4) for any purpose for which sick leave could be used unless OPM or the President specifically approves it, and (5) to cover service by poll workers or poll observers. The summary does not mention these prohibitions.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM is also adding three new regulatory prohibitions in paragraphs (b)(3) through (b)(5), which are already addressed in OPM's Agency Policy Template.",
+    "page": 65936,
+    "section": "IV Section-By-Section Analysis; 5 CFR 630.1403(b)"
+   },
+   {
+    "headline": "Rule sets no cost or savings figures; OPM rejects commenters' 2025 DRP cost estimates and says the rule's incremental effect is minimal",
+    "what_changes": "OPM states it does not project costs or savings from the rule, because it codifies policies already in effect since July 2025, and it calculates the rule's administrative burden as de minimis. Commenters cited estimates of about $11 billion to $11.1 billion for the 2025 DRPs and about $4.5 billion in pay to employees not working under DRP agreements. OPM says those costs are part of the baseline and that a retrospective accounting is outside the rule's scope. OPM also says DRP separations were over 6 percent of the workforce and that long-term savings substantially exceed short-term costs.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Accordingly, OPM does not project that costs or savings will result from the regulations.",
+    "page": 65938,
+    "section": "V.D Costs"
+   },
+   {
+    "headline": "'Sole and exclusive discretion' is defined to bar negotiated limits on administrative leave and removes it from bargaining under the federal labor statute",
+    "what_changes": "New 5 CFR 630.1402 defines 'sole and exclusive discretion' as discretion that rests with an agency alone and that may not be limited or conditioned by any agreement or established as a mandatory entitlement. The preamble states that, because subpart N is Governmentwide regulation, the duty to bargain under 5 U.S.C. 7117(a)(1) does not extend to these matters. Unions objected that this is unlawful and removes the subject from bargaining.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Under 5 U.S.C. 7117(a)(1), the duty to bargain in good faith extends to matters that are the subject of a rule or regulation only if the rule or regulation is not a Governmentwide rule or regulation; the regulations in this subpart are Governmentwide regulations issued under 5 U.S.C. 6329a(c)(1).",
+    "page": 65931,
+    "section": "III.H 'Sole and Exclusive' Discretion; 5 CFR 630.1402"
+   },
+   {
+    "headline": "Duty status during RIF notice period changes from 'when possible' to 'under ordinary circumstances', and agencies may use administrative leave for all or part of the period",
+    "what_changes": "Revised 5 CFR 351.806(a) keeps duty status as the general rule during the RIF notice period but replaces 'when possible' with 'under ordinary circumstances.' Paragraph (b) permits, but does not require, administrative leave for all or part of the notice period when the agency determines it is appropriate. The summary says the rule 'clarifies when' leave may be provided but does not mention the change in the duty-status standard.",
+    "summary_status": "vague",
+    "speaker": "OPM",
+    "quote": "(a) General. Under ordinary circumstances, an employee will remain in a duty status during the notice period.",
+    "page": 65939,
+    "section": "5 CFR 351.806(a)-(b)"
+   },
+   {
+    "headline": "Poll-worker prohibition reverses prior OPM guidance that allowed limited leave for nonpartisan poll service",
+    "what_changes": "OPM acknowledges that the prohibition in 5 CFR 630.1403(b)(5) changes its prior policy, which allowed agencies to grant limited leave for nonpartisan poll service (commenters cite up to 4 hours). OPM says administrative leave is limited to giving employees a reasonable opportunity to vote, and that existing policy already barred poll-worker leave. Employees may use annual leave, credit hours, or leave without pay instead. The summary does not mention this change.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM acknowledges that this provision changes OPM's prior policies that agencies could allow limited administrative leave for nonpartisan poll service.",
+    "page": 65933,
+    "section": "III.O Prohibition on Administrative Leave for Poll Workers; 5 CFR 630.1403(b)(5)"
+   }
+  ],
+  "could_not_determine": [
+   "How many employees would be placed on extended administrative leave under the new (c)(9) or (c)(11) provisions, and how many agencies would use them.",
+   "The cost of administrative leave under the 2025 deferred resignation programs, or of any 2026 workforce realignment leave; OPM says it did not project costs or savings and calls the rule's effects de minimis.",
+   "The source, date, and approving officials of the 6-month higher threshold for FY 2026 DRP agreements, and whether it applies beyond those agreements.",
+   "Whether the 12-week Governmentwide limit or the 6-month threshold will be codified in regulation; the rule text states neither number and relies on OPM policy guidance.",
+   "Any specific time limit or reporting data for settlement-agreement administrative leave under (c)(11), beyond the Governmentwide limit and agency limits.",
+   "How many resignation withdrawal requests have been denied under the revised 715.202(b), or how many disputes are expected; OPM describes the number as 'very small' without a figure.",
+   "How many employees are affected by the 351.806(a) duty-status change or the 351.806(c) emergency annual leave authority.",
+   "The specific prior OPM poll-worker guidance (including the 4-hour allowance commenters cite) and how many agencies relied on it."
+  ]
+ },
+ "model": "claude-haiku-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input_tokens": 43307,
+  "output_tokens": 14543
+ },
+ "cost_usd": 0.0116,
+ "seconds": 57.1,
+ "verification": [
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  }
+ ],
+ "doc": {
+  "title": "Administrative Leave for Workforce Realignment and Other Purposes",
+  "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21320/administrative-leave-for-workforce-realignment-and-other-purposes",
+  "date": "2026-10-19",
+  "kind": "Rule"
+ }
+}

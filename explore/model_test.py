@@ -25,7 +25,7 @@ sys.path.insert(0, str(ROOT / "src"))
 import anthropic  # noqa: E402
 
 from fetch_text import document_text, own_summary  # noqa: E402
-from read import PRICES, build_request, count_input_tokens, load_env, read_document  # noqa: E402
+from read import PRICES, build_request, count_input_tokens, make_client, read_document  # noqa: E402
 from triage import triage  # noqa: E402
 from verify import check  # noqa: E402
 
@@ -55,8 +55,7 @@ def main() -> int:
     ap.add_argument("--models", nargs="*", default=MODELS)
     args = ap.parse_args()
 
-    load_env()
-    client = anthropic.Anthropic()
+    client = make_client()
     out_dir = ROOT / "explore" / "model_test" / args.start
     out_dir.mkdir(parents=True, exist_ok=True)
 

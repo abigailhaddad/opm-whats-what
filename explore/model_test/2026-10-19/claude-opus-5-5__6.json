@@ -1,0 +1,105 @@
+{
+ "findings": {
+  "plain_summary": "This OPM memo tells agencies that a final rule issued October 19, 2026 revises the administrative leave regulations (5 CFR part 630, subpart N) and related reduction-in-force and resignation rules, effective November 18, 2026. The rule lists acceptable and prohibited uses of administrative leave, places leave decisions in agencies' \"sole and exclusive discretion\" that no agreement can limit, and allows agencies to deny resignation withdrawals when the employee has received deferred-resignation benefits.",
+  "items": [
+   {
+    "headline": "Administrative leave decisions cannot be limited by any agreement or made a mandatory entitlement",
+    "what_changes": "The rule defines agency 'sole and exclusive discretion' over granting or denying administrative leave. That discretion is bounded only by law, regulations, and Presidential directives, and it may not be limited or conditioned by any agreement, which would include negotiated agreements. Administrative leave also cannot be established as a mandatory entitlement.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Clariﬁes that decisions to provide or not provide administrative leave are subject to agencyʼs “sole and exclusive discretion” and deﬁnes that term to make clear that discretion—while bounded by applicable law, regulations, and Presidential directives—may not be limited or conditioned by any agreement or established as a mandatory entitlement to administrative leave.",
+    "page": 1,
+    "section": "Summary of Key Regulatory Changes (5 CFR part 630, subpart N)"
+   },
+   {
+    "headline": "Agencies may refuse to let employees withdraw resignations; deferred-resignation benefits are a valid reason to deny",
+    "what_changes": "Under the revised resignation rule (5 CFR 715.202), agencies have sole and exclusive discretion to accept or deny a request to withdraw a resignation before it takes effect. The rule specifically names receipt of deferred resignation benefits, such as paid administrative leave, as a valid reason to deny withdrawal.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Makes clear that an agency has sole and exclusive discretion in deciding whether to accept or deny an employeeʼs request to withdraw a resignation before the resignation has become eﬀective and speciﬁcally addresses that  an employeeʼs receipt of beneﬁts provided under a deferred resignation agreement, such as paid administrative leave, is a valid reason to deny an employeeʼs request to withdraw a resignation.",
+    "page": 2,
+    "section": "Summary of Key Regulatory Changes (5 CFR 715.202)"
+   },
+   {
+    "headline": "New prohibited uses: sick-leave purposes, situations covered by investigative leave, and poll worker/observer service",
+    "what_changes": "Administrative leave may no longer be used for any purpose sick leave could cover (with very limited exceptions), when investigative leave under 5 U.S.C. 6329b applies, or for service as a poll worker or poll observer.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Adds additional prohibited uses, including bars on using administrative leave for a purpose for which sick leave could be used (with very limited exceptions), when investigative leave under 5 U.S.C. 6329b is applicable, or for service as a poll worker or poll observer.",
+    "page": 1,
+    "section": "Summary of Key Regulatory Changes (5 CFR part 630, subpart N)"
+   },
+   {
+    "headline": "Acceptable uses explicitly include deferred resignation programs and limited physical fitness activities",
+    "what_changes": "The list of acceptable uses names deferred resignation programs as a workforce realignment use of administrative leave. It also permits leave for agency-approved physical fitness activities on a limited and conditional basis. The summary is cut off before naming either.",
+    "summary_status": "vague",
+    "speaker": "OPM",
+    "quote": "Provides a list of examples of acceptable uses of administrative leave, including uses to support workforce realignment initiatives such as deferred resignation programs and uses for agency-approved physical ﬁtness activities on a limited and conditional basis.",
+    "page": 1,
+    "section": "Summary of Key Regulatory Changes (5 CFR part 630, subpart N)"
+   },
+   {
+    "headline": "Change to administrative leave during reduction-in-force notice periods, with no detail given",
+    "what_changes": "The rule revises 5 CFR 351.806 on when agencies may provide administrative leave during a RIF notice period. The memo does not describe the substance of the change.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Clariﬁes when an agency may provide administrative leave during a reduction-in-force notice period.",
+    "page": 1,
+    "section": "Summary of Key Regulatory Changes (5 CFR 351.806)"
+   },
+   {
+    "headline": "OPM will revise the administrative leave fact sheet and agency policy template",
+    "what_changes": "OPM will update its website fact sheet and the Template for Agency Administrative Leave Policies (CPM 2025-12) to reflect the new rule. No date is given, and agency policies built on the existing template will need conforming.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM will inform agencies when the updated fact sheet and agency policies template are issued.",
+    "page": 2,
+    "section": "Guidance Updates"
+   }
+  ],
+  "could_not_determine": [
+   "How many employees or agencies are affected, or how many are currently on administrative leave under deferred resignation programs.",
+   "Which agencies or employees fall outside 'almost all Executive branch agencies.'",
+   "What the 'very limited exceptions' to the sick-leave bar are.",
+   "What limits and conditions apply to administrative leave for physical fitness activities.",
+   "What specifically changed about administrative leave during a reduction-in-force notice period under 5 CFR 351.806.",
+   "Whether existing collective bargaining agreement provisions on administrative leave become unenforceable, and how the rule treats agreements already in effect.",
+   "The comment count, commenter positions, cost analysis, or anything OPM declined to change. The memo does not discuss the rulemaking record.",
+   "When the updated fact sheet and agency policy template will be issued."
+  ]
+ },
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input_tokens": 2838,
+  "output_tokens": 3036
+ },
+ "cost_usd": 0.0721,
+ "seconds": 26.8,
+ "verification": [
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  }
+ ],
+ "doc": {
+  "title": "Revised Administrative Leave Regulations",
+  "url": "https://www.opm.gov/chcoc/latest-memos/revised-administrative-leave-regulations.pdf",
+  "date": "2026-10-22",
+  "kind": "CHCO memo"
+ }
+}

@@ -1,0 +1,107 @@
+{
+ "findings": {
+  "plain_summary": "OPM's final rule revises 5 CFR part 630, subpart N on administrative leave, with related changes to the reduction-in-force and resignation regulations, effective November 18, 2026. The memo's skimmable summary covers only the first bullet, so the new prohibited uses, the sole-discretion definition, the resignation-withdrawal rule, and the RIF-notice clarification appear only in the fuller bullet list.",
+  "items": [
+   {
+    "headline": "New bars on administrative leave for sick-leave-type purposes, investigative leave, and poll work",
+    "what_changes": "The rule adds prohibited uses of administrative leave: a purpose for which sick leave could be used (with very limited exceptions), periods when investigative leave under 5 U.S.C. 6329b applies, and service as a poll worker or poll observer.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Adds additional prohibited uses, including bars on using administrative leave for a purpose for which sick leave could be used (with very limited exceptions), when investigative leave under 5 U.S.C. 6329b is applicable, or for service as a poll worker or poll observer.",
+    "page": 1,
+    "section": "Summary of Key Regulatory Changes"
+   },
+   {
+    "headline": "Agency discretion over administrative leave defined as 'sole and exclusive'",
+    "what_changes": "Decisions to provide or not provide administrative leave are placed under the agency's sole and exclusive discretion. The rule defines that discretion as not limitable or conditionable by any agreement and not establishable as a mandatory entitlement, though it remains bounded by law, regulation, and Presidential directives.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "while bounded by applicable law, regulations, and Presidential directives—may not be limited or conditioned by any agreement or established as a mandatory entitlement to administrative leave.",
+    "page": 1,
+    "section": "Summary of Key Regulatory Changes"
+   },
+   {
+    "headline": "Receipt of deferred resignation benefits can be grounds to deny withdrawal of a resignation",
+    "what_changes": "Agencies have sole and exclusive discretion to accept or deny an employee's request to withdraw a resignation before it takes effect. The rule specifically states that receiving benefits under a deferred resignation agreement, such as paid administrative leave, is a valid reason to deny withdrawal.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "specifically addresses that an employeeʼs receipt of beneﬁts provided under a deferred resignation agreement, such as paid administrative leave, is a valid reason to deny an employeeʼs request to withdraw a resignation.",
+    "page": 2,
+    "section": "Summary of Key Regulatory Changes"
+   },
+   {
+    "headline": "Clarification of administrative leave during RIF notice periods",
+    "what_changes": "The rule clarifies when an agency may provide administrative leave during a reduction-in-force notice period. It also makes related changes to 5 CFR 351.806. The memo does not state the specific conditions.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Clariﬁes when an agency may provide administrative leave during a reduction-in-force notice period.",
+    "page": 1,
+    "section": "Summary of Key Regulatory Changes"
+   },
+   {
+    "headline": "Physical fitness activities added as an acceptable use, on a limited and conditional basis",
+    "what_changes": "The rule lists agency-approved physical fitness activities among acceptable uses of administrative leave, but only on a limited and conditional basis. The skimmable summary mentions only workforce realignment uses, not this one.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "uses for agency-approved physical ﬁtness activities on a limited and conditional basis.",
+    "page": 1,
+    "section": "Summary of Key Regulatory Changes"
+   },
+   {
+    "headline": "OPM to update fact sheet and CHCO template for administrative leave policies",
+    "what_changes": "OPM will update its public administrative leave fact sheet and the Template for Agency Administrative Leave Policies, issued under CPM 2025-12, to reflect the new regulations. OPM will notify agencies when the updates are issued.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM will inform agencies when the updated fact sheet and agency policies template are issued.",
+    "page": 2,
+    "section": "Guidance Updates"
+   }
+  ],
+  "could_not_determine": [
+   "How many employees or agencies are affected by the revised administrative leave, RIF, and resignation rules",
+   "The regulatory text of the final rule itself, which this memo does not reproduce",
+   "The Federal Register citation and docket for the October 19, 2026 final rule",
+   "What counts as a 'limited and conditional basis' for agency-approved physical fitness activities",
+   "What the 'very limited exceptions' to the sick-leave-substitute prohibition are",
+   "The specific conditions under which administrative leave may be provided during a RIF notice period",
+   "Whether OPM received public comments on the rule, how many, and how it responded",
+   "Cost or burden estimates for agencies",
+   "The content and timing of the updated OPM fact sheet and agency policy template beyond the statement that OPM will issue them"
+  ]
+ },
+ "model": "claude-haiku-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input_tokens": 2838,
+  "output_tokens": 4725
+ },
+ "cost_usd": 0.0026,
+ "seconds": 19.2,
+ "verification": [
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "not_found",
+   "detail": "closest passage similarity 0.87"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  }
+ ],
+ "doc": {
+  "title": "Revised Administrative Leave Regulations",
+  "url": "https://www.opm.gov/chcoc/latest-memos/revised-administrative-leave-regulations.pdf",
+  "date": "2026-10-22",
+  "kind": "CHCO memo"
+ }
+}

@@ -1,0 +1,41 @@
+8 documents to read:
+  2026-10-19 Notice            685 words  Agency Information Collection Request: FEHB Protection Act Portal, OMB
+  2026-10-19 Notice            474 words  Agency Information Collection Request: 3206-NEW, Annuitant Verificatio
+  2026-10-19 Notice            641 words  Agency Information Collection Request: Tribal Federal Employees Health
+  2026-10-19 Rule            17640 words  Administrative Leave for Workforce Realignment and Other Purposes
+  2026-10-19 Rule            17956 words  Elimination of Time-in-Grade
+  2026-10-19 Rule            20709 words  Managing Senior Professional Performance
+  2026-10-22 CHCO memo         453 words  Revised Administrative Leave Regulations
+  2026-10-19 News release      275 words  OPM Finalizes Rule Removing Governmentwide Time-in-Grade Barrier to Pr
+claude-opus-5-5: 154,020 input tokens counted; estimated cost $2.54
+claude-sonnet-5-5: 154,020 input tokens counted; estimated cost $1.27
+claude-haiku-5-5: 154,020 input tokens counted; estimated cost $0.06
+  done claude-opus-5-5    doc1 4 findings, 4 verified, $0.031, 11.0s
+  done claude-opus-5-5    doc2 5 findings, 5 verified, $0.042, 13.5s
+  done claude-opus-5-5    doc7 6 findings, 6 verified, $0.045, 16.6s
+  done claude-opus-5-5    doc0 6 findings, 2 verified, $0.054, 19.8s
+  done claude-sonnet-5-5  doc0 5 findings, 2 verified, $0.020, 9.6s
+  done claude-sonnet-5-5  doc1 4 findings, 4 verified, $0.017, 8.0s
+  done claude-sonnet-5-5  doc2 4 findings, 4 verified, $0.017, 7.4s
+  done claude-opus-5-5    doc6 6 findings, 6 verified, $0.072, 26.8s
+  done claude-sonnet-5-5  doc6 6 findings, 6 verified, $0.024, 11.1s
+  done claude-sonnet-5-5  doc7 5 findings, 5 verified, $0.016, 11.1s
+  done claude-sonnet-5-5  doc4 11 findings, 10 verified, $0.123, 21.7s
+  done claude-sonnet-5-5  doc3 11 findings, 11 verified, $0.123, 23.3s
+  done claude-sonnet-5-5  doc5 11 findings, 10 verified, $0.137, 24.7s
+  done claude-opus-5-5    doc3 10 findings, 10 verified, $0.283, 47.5s
+  done claude-haiku-5-5   doc1 5 findings, 5 verified, $0.001, 10.6s
+  done claude-haiku-5-5   doc0 7 findings, 3 verified, $0.002, 13.8s
+  done claude-opus-5-5    doc4 10 findings, 10 verified, $0.299, 50.7s
+  done claude-opus-5-5    doc5 10 findings, 10 verified, $0.326, 51.0s
+  done claude-haiku-5-5   doc2 6 findings, 6 verified, $0.002, 15.8s
+  done claude-haiku-5-5   doc7 8 findings, 8 verified, $0.002, 11.9s
+  done claude-haiku-5-5   doc6 6 findings, 5 verified, $0.003, 19.2s
+  done claude-haiku-5-5   doc4 10 findings, 10 verified, $0.011, 47.8s
+  done claude-haiku-5-5   doc3 10 findings, 10 verified, $0.012, 57.1s
+  done claude-haiku-5-5   doc5 10 findings, 7 verified, $0.013, 67.4s
+
+model                findings  verified  wrong page  not found   cost     max s
+claude-opus-5-5            57        53           4          0   $1.152     51.0   (8/8 docs)
+claude-sonnet-5-5          57        52           5          0   $0.477     24.7   (8/8 docs)
+claude-haiku-5-5           62        54           7          1   $0.046     67.4   (8/8 docs)

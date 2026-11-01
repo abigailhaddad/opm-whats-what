@@ -27,12 +27,22 @@ PRICES = {
 
 
 def load_env() -> None:
-    """Use ANTHROPIC_API_KEY from .env if present (local runs); CI sets it directly."""
+    """Load ANTHROPIC_API_KEY / ANTHROPIC_WORKSPACE_ID from .env if present (local
+    runs); CI sets them as environment variables."""
     env = ROOT / ".env"
-    if env.exists() and not os.environ.get("ANTHROPIC_API_KEY"):
+    if env.exists():
         for line in env.read_text().splitlines():
-            if line.startswith("ANTHROPIC_API_KEY="):
-                os.environ["ANTHROPIC_API_KEY"] = line.split("=", 1)[1].strip().strip('"').strip("'")
+            for name in ("ANTHROPIC_API_KEY", "ANTHROPIC_WORKSPACE_ID"):
+                if line.startswith(name + "=") and not os.environ.get(name):
+                    os.environ[name] = line.split("=", 1)[1].strip().strip('"').strip("'")
+
+
+def make_client() -> anthropic.Anthropic:
+    """Client for this project. The key in use isn't scoped to a workspace, so
+    requests must name one via the anthropic-workspace-id header."""
+    load_env()
+    ws = os.environ.get("ANTHROPIC_WORKSPACE_ID")
+    return anthropic.Anthropic(default_headers={"anthropic-workspace-id": ws} if ws else None)
 
 
 class Finding(BaseModel):

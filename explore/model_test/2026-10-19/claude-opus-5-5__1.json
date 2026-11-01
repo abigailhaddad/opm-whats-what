@@ -1,0 +1,79 @@
+{
+ "findings": {
+  "plain_summary": "OPM Retirement Services is seeking comment on a new form, RI 20-129, to verify the identity of a federal annuitant who has asked to change their contact information through channels where OPM cannot adequately confirm who is making the request. OPM estimates 750 respondents a year at 15 minutes each (188 burden hours), and comments are due December 18, 2026.",
+  "items": [
+   {
+    "headline": "New form gates access to an annuitant's account after a contact-information change request",
+    "what_changes": "OPM created Form RI 20-129 to verify the identity of an annuitant who asks to change contact information. The verification result decides whether the person gets access to the annuitant's account. The summary says only that a new ICR is open for comment and does not mention this gating function.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM has created Form RI 20-129 to verify the identity of an annuitant who has requested changes to contact information. The verification will determine whether the individual is provided access to the annuitant's account.",
+    "page": 66172,
+    "section": "SUPPLEMENTARY INFORMATION"
+   },
+   {
+    "headline": "Trigger: requests through channels that don't let OPM verify identity, such as failed phone identification questions",
+    "what_changes": "The form is used when a contact-information change arrives by a means that does not let OPM confirm the requester's identity. The one example given is a caller who cannot correctly answer identification questions.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM receives requests to change contact information by various means of communication that do not provide sufficient opportunity to OPM to verify the identity of the individual initiating the request, such as when a caller is unable to provide a correct response to identification questions.",
+    "page": 66172,
+    "section": "SUPPLEMENTARY INFORMATION"
+   },
+   {
+    "headline": "Burden estimate: 750 respondents, 15 minutes each, 188 total hours",
+    "what_changes": "The affected public is individuals or households, responding on occasion. OPM estimates 750 respondents at 15 minutes each, for 188 total burden hours.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Number of Respondents: 750.",
+    "page": 66172,
+    "section": "Analysis"
+   },
+   {
+    "headline": "Comment deadline December 18, 2026",
+    "what_changes": "This is a 60-day comment period, with comments accepted through regulations.gov until December 18, 2026.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Comments are encouraged and will be accepted until December 18, 2026.",
+    "page": 66172,
+    "section": "DATES"
+   }
+  ],
+  "could_not_determine": [
+   "How a request is routed to the form beyond the single example of a caller failing identification questions, and what other communication channels count as insufficient.",
+   "What identifying information or documentation the form asks for, since the form's contents are not described.",
+   "What happens to the annuitant's account or the requested change while verification is pending, or if the form is not returned.",
+   "How long an annuitant has to complete and return the form.",
+   "Whether the form can be submitted electronically or only on paper.",
+   "Whether the 750-respondent figure is an annual estimate, and how it was derived."
+  ]
+ },
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input_tokens": 2685,
+  "output_tokens": 1022
+ },
+ "cost_usd": 0.0312,
+ "seconds": 11.0,
+ "verification": [
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  }
+ ],
+ "doc": {
+  "title": "Agency Information Collection Request: 3206-NEW, Annuitant Verification Form, RI 20-129",
+  "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21378/agency-information-collection-request-3206-new-annuitant-verification-form-ri-20-129",
+  "date": "2026-10-19",
+  "kind": "Notice"
+ }
+}

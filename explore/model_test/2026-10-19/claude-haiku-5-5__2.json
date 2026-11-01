@@ -1,0 +1,106 @@
+{
+ "findings": {
+  "plain_summary": "OPM is soliciting public comment through December 18, 2026, on a one-time Paperwork Reduction Act collection (OMB 3206-NEW) from tribal employers applying to join the FEHB Program. The collection would gather employer identity, representatives, key tribal personnel, billing unit and bank account information, and an employer profile, and OPM estimates 75 respondents at 2.25 hours each (168.75 total hours), none of which the summary mentions.",
+  "items": [
+   {
+    "headline": "Application collects bank account, billing, and key personnel data from tribal employers",
+    "what_changes": "The one-time application would gather tribal employer identifiers and representatives, key tribal personnel, billing unit and bank account information, and an employer profile. The summary refers only generically to an information collection request and does not list these categories.",
+    "summary_status": "vague",
+    "speaker": "OPM",
+    "quote": "This collection consists of information identifying the tribal employer and its representatives for FEHB purposes, key tribal personnel, billing unit and bank account information, and a tribal employer profile.",
+    "page": 66171,
+    "section": "Background"
+   },
+   {
+    "headline": "Burden estimate of 75 respondents at 2.25 hours each",
+    "what_changes": "OPM estimates 75 respondents will each spend 135 minutes on the one-time collection, for a total of 168.75 burden hours. The summary does not mention respondent counts or burden.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Estimated Time per Respondent: 135 minutes or 2.25 hours.",
+    "page": 66171,
+    "section": "Analysis"
+   },
+   {
+    "headline": "Tribal employer eligibility defined by reference to specific statutes",
+    "what_changes": "OPM's definition of tribal employer in 5 CFR 890.1402 covers tribes and tribal organizations running at least one ISDEAA or Tribally Controlled Schools Act program, and urban Indian organizations running at least one title V program. The summary does not describe who is eligible to apply.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM defines ``tribal employer'' in 5 CFR 890.1402 to include an Indian tribe or tribal organization carrying out at least one program under the Indian Self-Determination and Education Assistance Act or the Tribally Controlled Schools Act; or an urban Indian organization carrying out at least one program under title V of the Indian Health Care Improvement Act.",
+    "page": 66171,
+    "section": "Background"
+   },
+   {
+    "headline": "Enrollment eligibility follows employer election and employee status",
+    "what_changes": "Once a tribal employer elects to participate under 5 CFR 890.1404, eligible common law employees become eligible to enroll under 5 CFR 890.1405, depending on employment type such as full-time or seasonal. The summary does not describe this sequence.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Once a tribal employer elects to participate in the FEHB Program in compliance with 5 CFR 890.1404, a tribal employee who is considered a common law employee and meets FEHB requirements for the type of employment (e.g., full-time, seasonal) will become eligible to enroll in FEHB pursuant to 5 CFR 890.1405.",
+    "page": 66171,
+    "section": "Background"
+   },
+   {
+    "headline": "Comment period closes December 18, 2026",
+    "what_changes": "Comments are accepted until December 18, 2026, under a 60-day notice process. The summary does not state a deadline.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Comments are encouraged and will be accepted until December 18, 2026.",
+    "page": 66171,
+    "section": "DATES"
+   },
+   {
+    "headline": "Collected information is not published",
+    "what_changes": "OPM states that the information gathered through this application will not be published. The summary is silent on whether the data will be made public.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "The information is not published.",
+    "page": 66171,
+    "section": "Background"
+   }
+  ],
+  "could_not_determine": [
+   "How many tribal employers are currently eligible or expected to apply beyond the 75 respondent estimate",
+   "How many tribal employees would become newly eligible for FEHB enrollment once employers participate",
+   "The specific data fields, form questions, or format of the application itself",
+   "The methodology or assumptions behind the 135-minute per-respondent burden estimate",
+   "Whether respondents face any costs beyond the time burden, and the dollar value of that burden",
+   "How bank account and other sensitive information will be protected, stored, or used beyond what this notice states",
+   "The text of 5 CFR 890 subpart N, which this notice cites but does not reproduce",
+   "The timeline for OMB approval and any follow-on 30-day notice after the comment period closes",
+   "The number and content of comments received on any prior collection or pilot"
+  ]
+ },
+ "model": "claude-haiku-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input_tokens": 3222,
+  "output_tokens": 3732
+ },
+ "cost_usd": 0.0022,
+ "seconds": 15.8,
+ "verification": [
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  }
+ ],
+ "doc": {
+  "title": "Agency Information Collection Request: Tribal Federal Employees Health Benefits (FEHB) Program Tribal Employer Application (3206-NEW)",
+  "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21375/agency-information-collection-request-tribal-federal-employees-health-benefits-fehb-program-tribal",
+  "date": "2026-10-19",
+  "kind": "Notice"
+ }
+}

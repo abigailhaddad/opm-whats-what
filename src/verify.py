@@ -37,7 +37,10 @@ class PagedText:
         for p in pieces:
             self.starts.append(off)
             off += len(p) + 1
-        self.pages = pages
+        # Text before the first [[Page N]] marker is on page N-1 (FR raw text puts
+        # the marker where a new page begins; the document starts on the page before).
+        first = next((p for p in pages if p is not None), None)
+        self.pages = [p if p is not None else (first - 1 if first else None) for p in pages]
         self.full = " ".join(pieces)
 
     def page_of(self, pos: int):

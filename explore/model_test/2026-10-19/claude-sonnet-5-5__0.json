@@ -1,0 +1,91 @@
+{
+ "findings": {
+  "plain_summary": "OPM proposes a new information collection for a FEHB Protection Act Portal, an online system that will notify FEHB enrollees and verify whether their spouses and children are eligible for coverage, as part of the audit required by Sec. 90101 of Pub. L. 119-21. About 2.7 million respondents would each spend about 30 minutes (1.4 million total hours), with comments due December 18, 2026.",
+  "items": [
+   {
+    "headline": "Audit of family-member eligibility for all FEHB enrollees with unverified family members",
+    "what_changes": "The portal implements the statutory requirement for OPM to conduct a comprehensive audit of covered family members. Enrollees whose family members' eligibility is not yet verified will be notified and must submit documentation. The stated aim is ensuring ineligible family members are not participating in FEHB.",
+    "summary_status": "vague",
+    "speaker": "OPM",
+    "quote": "It will provide a secure and consistent process to ensure that only eligible individuals are enrolled in the FEHB Program. This will strengthen enrollment integrity and ensure ineligible family members are not participating in the FEHB Program.",
+    "page": 66172,
+    "section": "Background"
+   },
+   {
+    "headline": "Scale of burden: ~2.7 million respondents, 1.4 million hours",
+    "what_changes": "OPM estimates about 2.7 million respondents at 30 minutes each, annually, for 1.4 million total burden hours. The summary gives no figures.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Number of Respondents: ~2.7 million. Estimated Time per Respondent: 30 minutes. Total Burden Hours: 1.4 million hours.",
+    "page": 66173,
+    "section": "Analysis"
+   },
+   {
+    "headline": "Enrollees must upload supporting documents; automated review with vendor/OPM escalation",
+    "what_changes": "Enrollees receive emailed and mailed notices, sign in, fill out online forms and upload documents proving a spouse's or child's eligibility. Automated document verification decides whether submissions suffice, and unresolved cases go to a contracted vendor and OPM.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "The FPA Portal will use automated document-verification capabilities to review the submitted information and documentation and determine whether the submission is sufficient to support an eligibility decision. If a case cannot be resolved through the automated review process, it will be referred to the contracted vendor and OPM.",
+    "page": 66173,
+    "section": "Background"
+   },
+   {
+    "headline": "Later phases will bring in agencies, payroll offices, and carriers",
+    "what_changes": "The initial phase involves only enrollees, OPM personnel, and a contractor; employing agencies, payroll offices, and FEHB carriers will be added later, potentially expanding the collection's scope.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Employing agencies, payroll offices, and participating health insurance carriers will be incorporated in subsequent phases.",
+    "page": 66172,
+    "section": "Background"
+   },
+   {
+    "headline": "Comment deadline December 18, 2026",
+    "what_changes": "Public and agencies may comment through regulations.gov until December 18, 2026, under a 60-day notice.",
+    "summary_status": "vague",
+    "speaker": "OPM",
+    "quote": "Comments are encouraged and will be accepted until December 18, 2026.",
+    "page": 66172,
+    "section": "DATES"
+   }
+  ],
+  "could_not_determine": [
+   "What happens to family members or enrollees whose eligibility cannot be verified or who do not respond (coverage termination, deadlines, appeal rights)",
+   "Dollar cost of the collection to respondents or to the government, and the vendor's identity or contract value",
+   "Timeline for the audit and for the 'subsequent phases' involving employing agencies, payroll offices, and carriers",
+   "Whether 'Annually' means each enrollee must re-verify every year or the portal is simply used once per year",
+   "How the automated document verification works, its accuracy standards, or privacy safeguards beyond 'secure' sign-in",
+   "Why the burden estimate of 30 minutes per respondent was chosen, and how 2.7 million was derived"
+  ]
+ },
+ "model": "claude-sonnet-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input_tokens": 3197,
+  "output_tokens": 1359
+ },
+ "cost_usd": 0.02,
+ "seconds": 9.6,
+ "verification": [
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  }
+ ],
+ "doc": {
+  "title": "Agency Information Collection Request: FEHB Protection Act Portal, OMB Control Number (3206-NEW)",
+  "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21380/agency-information-collection-request-fehb-protection-act-portal-omb-control-number-3206-new",
+  "date": "2026-10-19",
+  "kind": "Notice"
+ }
+}

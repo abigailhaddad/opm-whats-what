@@ -1,0 +1,154 @@
+{
+ "findings": {
+  "plain_summary": "OPM is finalizing the elimination of the 52-week Time-in-Grade restriction in 5 CFR part 300, subpart F, while stating that agencies' merit promotion requirements under part 335 and qualification standards remain in force. The preamble and regulatory text also remove related training-agreement approvals, exception processes, and creditable-service rules, and the document leaves several details unresolved, including an inconsistent effective date and a pending review of the governmentwide one-year service period.",
+  "items": [
+   {
+    "headline": "Rule removes all of subpart F (300.601-300.606), not only the 52-week rule; training-agreement approvals and two-promotion limit also end",
+    "what_changes": "On and after the effective date, OPM approval of training agreements is no longer required, and the limit of two promotions per 52-week period based on training agreements no longer applies. The rule also removes the TIG exception-approval processes and creditable-service computations; the summary mentions only the 52-week requirement.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Accordingly, on and after the effective date of this rule: no OPM approval of a training agreement is required; no OPM approval previously granted needs to be renewed, converted, or rescinded, and none will lapse by operation of this rule; and the limitation of two promotions in a 52-week period on the basis of one or more training agreements no longer applies.",
+    "page": 65897,
+    "section": "III.G. Career Ladder Positions, Agency-Retained Time Requirements, and Training Agreements"
+   },
+   {
+    "headline": "Effective date stated in DATES conflicts with the 90-day date in Part IV",
+    "what_changes": "DATES sets an effective date of January 19, 2027. Part IV says the rule is effective 90 days after publication, which would be about January 17, 2027. The summary gives no effective date.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "This rule is effective January 19, 2027.",
+    "page": 65887,
+    "section": "DATES"
+   },
+   {
+    "headline": "Agencies relying on 300.606 for their own service requirements must document them in merit promotion plans before the effective date",
+    "what_changes": "Removal of 300.606, which had allowed agencies to expand TIG-type restrictions, means agency service requirements must now be justified as job-related and written into merit promotion plans under 335.103(b)(1). The summary does not mention this documentation step.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Agencies that presently rely on Sec.  300.606 to support agency-specific service requirements should confirm that those requirements are documented in their merit promotion plans under Sec.  335.103(b)(1) before the effective date of this rule.",
+    "page": 65897,
+    "section": "III.G. Career Ladder Positions, Agency-Retained Time Requirements, and Training Agreements"
+   },
+   {
+    "headline": "Rule creates eligibility for consideration only, not an entitlement to promotion",
+    "what_changes": "The rule does not create a promotion entitlement, does not require agencies to act on promotion requests on demand, and leaves agency discretion over classification, funding, and higher-level work unchanged. The summary describes removal of the requirement but not what replaces it.",
+    "summary_status": "vague",
+    "speaker": "OPM",
+    "quote": "First, eliminating TIG creates eligibility for consideration; it does not create an entitlement to promotion, does not require agencies to accept or act on promotion requests on demand, and does not alter agency discretion regarding classification, funding, or the existence of higher-level work.",
+    "page": 65887,
+    "section": "I. Executive Summary"
+   },
+   {
+    "headline": "Comment counts differ between the Executive Summary and the Digest",
+    "what_changes": "The Executive Summary reports 41 supporting, 22 conditional, and 11 opposed comments. The Digest reports 41 supporting, 23 conditional or not opposed, and 12 opposed, out of 75 total.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "During the 60-day comment period, OPM received 75 comments. Of those, 41 comments supported eliminating TIG, 22 comments proposed conditions, safeguards, or targeted alternatives rather than opposing elimination outright, and 11 comments opposed elimination.",
+    "page": 65887,
+    "section": "I. Executive Summary"
+   },
+   {
+    "headline": "OPM acknowledges this rule reverses its 2009 withdrawal position and says it has explained why",
+    "what_changes": "OPM states that the rule adopts a position contrary to its 2009 position and gives reasons. It describes the 2009 withdrawal as a sequencing judgment rather than a contrary factual finding, and says its 2008 substantive position matches this rule.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM further acknowledges expressly that this rule adopts a position contrary to the one OPM took in 2009 and sets out its reasons for doing so.",
+    "page": 65892,
+    "section": "III.A. General Comments on the Decision To Eliminate TIG"
+   },
+   {
+    "headline": "OPM says it is separately reviewing the one-year service period in governmentwide qualification standards",
+    "what_changes": "OPM states that governmentwide qualification standards have historically included a comparable one-year service period, and that it is reviewing that requirement. It says the rule does not depend on that requirement continuing. The summary does not mention this review.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM is separately reviewing that requirement, and OPM's determination in this rule does not depend on its continuation.",
+    "page": 65891,
+    "section": "III.A. General Comments on the Decision To Eliminate TIG"
+   },
+   {
+    "headline": "OPM declines governmentwide promotion-review, certification, data-reporting, and retrospective-review mandates",
+    "what_changes": "OPM rejects requiring governmentwide data collection, public reporting, or a fixed retrospective review in the regulatory text. It says such requirements belong in 5 CFR part 335 and would need a separate rulemaking. Monitoring is left to ordinary oversight and implementation guidance.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM does not agree, however, that a mandatory governmentwide data collection, aggregate public reporting, or fixed retrospective-review requirement should be included in the regulatory text implementing this rule.",
+    "page": 65896,
+    "section": "III.D. Comments Requesting Monitoring, Data Collection, and Public Reporting"
+   },
+   {
+    "headline": "Estimated first-year implementation cost is $3,126,000 governmentwide; recurring savings are not monetized",
+    "what_changes": "OPM estimates an average of 250 hours per agency in the first year to revise merit promotion plans, at $39,075 per agency and about $3,126,000 governmentwide. It does not monetize the reduction in recurring TIG-related administrative work and does not quantify workload or litigation changes.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "This results in an estimated first-year implementation cost of approximately $39,075 per agency and approximately $3,126,000 governmentwide.",
+    "page": 65902,
+    "section": "V.D. Costs"
+   },
+   {
+    "headline": "Veterans' VEOA competition: OPM declines to retain TIG for status employees competing with preference-eligible veterans",
+    "what_changes": "OPM considered and rejected keeping TIG only for status employees competing under VEOA. It states that status employees and VEOA-eligible veterans face the same qualification standards and procedures, so removing the internal restriction does not disadvantage external candidates.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM does not agree that removing an internal eligibility restriction on status employees creates unfairness to preference-eligible veterans competing under VEOA, because both status employees and VEOA-eligible veterans remain subject to the same qualification standards and the same merit promotion or competitive examining procedures for the vacancy in question.",
+    "page": 65896,
+    "section": "III.E. Comments Regarding Veterans' Preference and the VEOA"
+   }
+  ],
+  "could_not_determine": [
+   "How many employees or promotions this rule will affect, and how many would now be eligible earlier",
+   "How many agencies currently rely on 300.606 for agency-specific service requirements",
+   "Whether promotion-request volume, grievances, EEO or PPP complaints, or litigation will change; OPM says it has no data",
+   "A monetized estimate of recurring administrative savings from removing TIG determinations",
+   "Whether the 250-hour, $39,075-per-agency cost estimate is accurate for large multi-component departments",
+   "The content of the implementation guidance OPM says it will issue",
+   "Which effective date controls: DATES says January 19, 2027, while Part IV says 90 days after publication (which would be January 17, 2027)",
+   "The outcome and timing of OPM's separate review of the one-year service period in governmentwide qualification standards",
+   "Reconciliation of the comment counts in the Executive Summary (11 opposed, 22 conditional) with the Digest (12 opposed, 23 conditional)"
+  ]
+ },
+ "model": "claude-haiku-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input_tokens": 45132,
+  "output_tokens": 12007
+ },
+ "cost_usd": 0.0105,
+ "seconds": 47.8,
+ "verification": [
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  }
+ ],
+ "doc": {
+  "title": "Elimination of Time-in-Grade",
+  "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21319/elimination-of-time-in-grade",
+  "date": "2026-10-19",
+  "kind": "Rule"
+ }
+}

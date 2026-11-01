@@ -1,0 +1,163 @@
+{
+ "findings": {
+  "plain_summary": "OPM is removing the 52-week time-in-grade restriction for General Schedule competitive service promotions (5 CFR part 300, subpart F) and making conforming edits to parts 315, 316, 352 and 410, effective January 19, 2027. OPM rejected comment requests for governmentwide documentation, review-board, reporting, waiver or phased-implementation requirements, and says any such promotion-process rules belong in a part 335 rulemaking.",
+  "items": [
+   {
+    "headline": "Agencies keep authority to impose their own time-in-grade-style requirements",
+    "what_changes": "Agencies may continue to set job-related minimum service periods, including for career ladders, through their merit promotion plans. They must be job-related, set in advance, in writing, and consistently applied. TIG-like waiting periods can therefore persist agency by agency, which the summary does not say.",
+    "summary_status": "vague",
+    "speaker": "OPM",
+    "quote": "OPM confirms that agencies may continue to apply TIG-like or other job-related time-based progression criteria within their own merit promotion plans and career-ladder structures during and after this transition, provided such criteria are job-related, established in advance, available in writing to candidates under 5 CFR 335.103(b)(1), and consistently applied.",
+    "page": 65902,
+    "section": "IV. Implementation Considerations"
+   },
+   {
+    "headline": "Removal of §300.606 changes the legal basis for agency-specific service requirements",
+    "what_changes": "The express authority for agencies to expand TIG restrictions or adopt similar promotion-rate controls is removed with subpart F. OPM says agency authority now rests on 5 CFR 335.103(b)(1). Agencies relying on §300.606 are told to document those requirements in merit promotion plans before the effective date.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Agencies that presently rely on Sec.  300.606 to support agency-specific service requirements should confirm that those requirements are documented in their merit promotion plans under Sec.  335.103(b)(1) before the effective date of this rule.",
+    "page": 65897,
+    "section": "III.G. Career Ladder Positions, Agency-Retained Time Requirements, and Training Agreements"
+   },
+   {
+    "headline": "OPM approval of training agreements for consecutive promotions ends; existing approvals stay valid",
+    "what_changes": "The requirement for OPM approval of training agreements providing consecutive accelerated promotions, and the two-promotions-in-52-weeks cap, are removed. No existing approval needs renewal or conversion, and none lapses. Existing agency agreements remain valid, and agencies may continue, modify or discontinue them.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Accordingly, on and after the effective date of this rule: no OPM approval of a training agreement is required; no OPM approval previously granted needs to be renewed, converted, or rescinded, and none will lapse by operation of this rule; and the limitation of two promotions in a 52-week period on the basis of one or more training agreements no longer applies.",
+    "page": 65897,
+    "section": "III.G. Training Agreements; 5 CFR 410.307"
+   },
+   {
+    "headline": "OPM declined governmentwide safeguards, reporting, and review requirements",
+    "what_changes": "Commenters asked for written accelerated-promotion standards, certifications, review boards, audits, and public reporting. OPM rejected all of them in this rule. It says such requirements would belong in a separate part 335 rulemaking, and it commits only to non-binding implementation guidance.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "A governmentwide change to the promotion process of the kind these comments describe would properly be made through a rulemaking amending part 335, on notice directed to that part, rather than through this rule removing a separate, calendar-based eligibility restriction in part 300.",
+    "page": 65887,
+    "section": "I. Executive Summary"
+   },
+   {
+    "headline": "90-day effective date; no phase-in or conditional delay",
+    "what_changes": "The rule takes effect January 19, 2027, 90 days after publication. OPM rejected the requests for a 24-month phase-in, pilot testing, and an effective date conditioned on OSC/MSPB capacity. Until an agency revises its plan, the existing plan applies minus the TIG restriction.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Until an agency revises its merit promotion plan, the existing plan continues to govern, less the TIG eligibility restriction removed by this rule.",
+    "page": 65897,
+    "section": "III.F. Collective Bargaining Obligations"
+   },
+   {
+    "headline": "Comment tally: 75 comments; OPM adopted rule substantially as proposed",
+    "what_changes": "OPM counted 75 comments: 41 supporting, 22 proposing conditions or alternatives, and 11 opposing, as stated in the executive summary. The Part II digest counts 41 supporting, 12 opposing and 23 conditional, so the counts are inconsistent. OPM made only technical corrections and no substantive changes.",
+    "summary_status": "vague",
+    "speaker": "OPM",
+    "quote": "During the 60-day comment period, OPM received 75 comments. Of those, 41 comments supported eliminating TIG, 22 comments proposed conditions, safeguards, or targeted alternatives rather than opposing elimination outright, and 11 comments opposed elimination.",
+    "page": 65887,
+    "section": "I. Executive Summary"
+   },
+   {
+    "headline": "Cost estimate: ~$3.1 million first-year governmentwide; savings not quantified",
+    "what_changes": "OPM estimates 250 hours per agency at $156.30/hour, or $39,075 per agency and about $3,126,000 governmentwide in the first year. It does not monetize the reduced recurring administrative work. It also does not quantify changes in promotion volume, workload, grievances, litigation, or payroll.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "This results in an estimated first-year implementation cost of approximately $39,075 per agency and approximately $3,126,000 governmentwide.",
+    "page": 65902,
+    "section": "V.D. Costs"
+   },
+   {
+    "headline": "OPM reverses its 2009 withdrawal and acknowledges the change in position",
+    "what_changes": "OPM's 2008 TIG elimination was withdrawn in 2009 pending a broader review of pay, performance, and staffing that was never completed. OPM acknowledges it is taking a different position than in 2009, characterizes the withdrawal as a sequencing judgment, and says no reliance interests are disrupted. It also says its separate review of service-period requirements in the qualification standards does not affect this rule.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM further acknowledges expressly that this rule adopts a position contrary to the one OPM took in 2009 and sets out its reasons for doing so.",
+    "page": 65892,
+    "section": "III.A. Comments requesting that OPM withdraw the rule"
+   },
+   {
+    "headline": "Rule is tied to the separate performance-rating forced-distribution rule",
+    "what_changes": "OPM links this rule to its finalized appraisal rule, which authorizes a standardized distribution of rating levels that may inform promotion decisions. OPM expects the distribution to make ratings of record more meaningful for promotion readiness. Neither rule makes a particular rating a prerequisite to promotion.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM expects that imposing a standardized distribution of the highest performance ratings will ensure that agency performance appraisal systems will more reliably distinguish and identify high performers and help eliminate widespread ratings inflation across the Federal Government.",
+    "page": 65898,
+    "section": "III.H. Interaction With Within-Grade Increases, Quality Step Increases, and Other Pay-Setting Authorities"
+   },
+   {
+    "headline": "Conforming amendments to student-hiring conversion and training regulations",
+    "what_changes": "The regulatory text removes TIG cross-references in 5 CFR 315.714, 316.909, 316.910, 352.311 and 410.307. This includes removing paragraph (b)(4) of §315.714 and paragraph (d) of §316.910, and revising the 410.307 training provisions so training programs can supply experience at an accelerated rate.",
+    "summary_status": "vague",
+    "speaker": "OPM",
+    "quote": "Amend Sec.  316.910 by revising paragraphs (b) and (c) and removing paragraph (d).",
+    "page": 65903,
+    "section": "Part 316, Subpart I; Part 315; Part 410 amendatory text"
+   },
+   {
+    "headline": "Collective bargaining obligations may arise when agencies revise promotion procedures",
+    "what_changes": "OPM says agencies changing internal promotion procedures may have chapter 71 bargaining obligations on procedures and appropriate arrangements. OPM declines to set a fixed governmentwide transition period beyond the 90-day effective date.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM acknowledges that agencies changing their internal promotion procedures in response to this rule may have bargaining obligations under 5 U.S.C. chapter 71 with respect to procedures and appropriate arrangements for bargaining unit employees affected by the change, to the extent those obligations apply under otherwise applicable law.",
+    "page": 65896,
+    "section": "III.F. Collective Bargaining Obligations"
+   }
+  ],
+  "could_not_determine": [
+   "How many employees or promotion actions were previously covered by or blocked by TIG.",
+   "Whether OPM's implementation guidance will be issued before the January 19, 2027 effective date; no date is given.",
+   "The expected change in promotion volume, payroll costs, HR workload, grievances or litigation; OPM says it has no data to quantify these.",
+   "The identity of the standardized rating distribution OPM may set under the separate appraisal rule or how it will be applied to promotions.",
+   "Which agencies currently rely on 5 CFR 300.606 for agency-specific service requirements."
+  ]
+ },
+ "model": "claude-sonnet-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input_tokens": 45132,
+  "output_tokens": 3313
+ },
+ "cost_usd": 0.1234,
+ "seconds": 21.7,
+ "verification": [
+  {
+   "status": "wrong_page",
+   "detail": "cited 65902, found on 65900"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  }
+ ],
+ "doc": {
+  "title": "Elimination of Time-in-Grade",
+  "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21319/elimination-of-time-in-grade",
+  "date": "2026-10-19",
+  "kind": "Rule"
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "findings": {
+  "plain_summary": "This CPM tells agencies that OPM issued a final rule on October 19, 2026 revising administrative leave regulations (5 CFR part 630, subpart N) plus related RIF and resignation provisions, effective November 18, 2026. The rule lists permitted and prohibited uses of leave, makes agency leave decisions \"sole and exclusive\" discretion that cannot be limited by agreement, and lets agencies deny withdrawal of a resignation when the employee is receiving deferred resignation benefits.",
+  "items": [
+   {
+    "headline": "Agencies may deny requests to withdraw resignations, including for deferred resignation benefits",
+    "what_changes": "Agencies get sole and exclusive discretion to accept or deny a request to withdraw a resignation before it takes effect. Receiving deferred resignation benefits, such as paid administrative leave, is expressly a valid reason to deny withdrawal. This changes 5 CFR 715.202. The summary names the provision only as a list item, not as a limit on employees' ability to withdraw.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Makes clear that an agency has sole and exclusive discretion in deciding whether to accept or deny an employeeʼs request to withdraw a resignation before the resignation has become eﬀective",
+    "page": 2,
+    "section": "Summary of Key Regulatory Changes (5 CFR 715.202)"
+   },
+   {
+    "headline": "Administrative leave is a non-entitlement and cannot be limited by agreement",
+    "what_changes": "Decisions to grant or deny administrative leave are in the agency's \"sole and exclusive discretion.\" The term is defined so that discretion, though bounded by law, regulation and Presidential directives, cannot be limited or conditioned by any agreement or made a mandatory entitlement. This would appear to override leave commitments in agreements, which the summary does not say.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "discretion—while bounded by applicable law, regulations, and Presidential directives—may not be limited or conditioned by any agreement or established as a mandatory entitlement to administrative leave.",
+    "page": 1,
+    "section": "Summary of Key Regulatory Changes (5 CFR part 630, subpart N)"
+   },
+   {
+    "headline": "New bars on administrative leave: sick-leave purposes, investigative leave, poll work",
+    "what_changes": "Administrative leave may not be used for a purpose for which sick leave could be used (with very limited exceptions), when investigative leave under 5 U.S.C. 6329b applies, or for service as a poll worker or poll observer. The summary mentions only acceptable uses.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Adds additional prohibited uses, including bars on using administrative leave for a purpose for which sick leave could be used (with very limited exceptions), when investigative leave under 5 U.S.C. 6329b is applicable, or for service as a poll worker or poll observer.",
+    "page": 1,
+    "section": "Summary of Key Regulatory Changes (5 CFR part 630, subpart N)"
+   },
+   {
+    "headline": "Administrative leave expressly permitted to support workforce realignment, including deferred resignation",
+    "what_changes": "The rule's list of acceptable uses includes support for workforce realignment initiatives such as deferred resignation programs. It also allows agency-approved physical fitness activities on a limited, conditional basis.",
+    "summary_status": "in",
+    "speaker": "OPM",
+    "quote": "Provides a list of examples of acceptable uses of administrative leave, including uses to support workforce realignment initiatives such as deferred resignation programs and uses for agency-approved physical ﬁtness activities on a limited and conditional basis.",
+    "page": 1,
+    "section": "Summary of Key Regulatory Changes (5 CFR part 630, subpart N)"
+   },
+   {
+    "headline": "RIF notice-period leave 'clarified' without stating the substance",
+    "what_changes": "The rule changes 5 CFR 351.806 to clarify when an agency may provide administrative leave during a RIF notice period. The memo does not say what the new conditions are.",
+    "summary_status": "vague",
+    "speaker": "OPM",
+    "quote": "Clariﬁes when an agency may provide administrative leave during a reduction-in-force notice period.",
+    "page": 1,
+    "section": "Summary of Key Regulatory Changes (5 CFR 351.806)"
+   },
+   {
+    "headline": "Memo characterizes the rule as largely consistent with existing OPM policy; effective date and guidance to follow",
+    "what_changes": "OPM says the regulations are generally consistent with its established leave policies. It will update its fact sheet and the agency leave policy template (CPM 2025-12) but gives no date. The rules take effect November 18, 2026.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "The revised regulations are generally consistent with established administrative leave policies issued by OPM.",
+    "page": 2,
+    "section": "Guidance Updates"
+   }
+  ],
+  "could_not_determine": [
+   "How many employees or agencies are affected, or the cost or budget effect of the rule.",
+   "The full regulatory text, including the exact list of acceptable uses and the definition of \"sole and exclusive discretion\".",
+   "The specific \"very limited exceptions\" to the bar on using administrative leave where sick leave could be used.",
+   "The conditions and limits on agency-approved physical fitness activity leave.",
+   "What the rule says about when administrative leave may be given during a RIF notice period.",
+   "Whether OPM received public comments on the rule, and how it responded to them."
+  ]
+ },
+ "model": "claude-sonnet-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input_tokens": 2838,
+  "output_tokens": 1820
+ },
+ "cost_usd": 0.0239,
+ "seconds": 11.1,
+ "verification": [
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  }
+ ],
+ "doc": {
+  "title": "Revised Administrative Leave Regulations",
+  "url": "https://www.opm.gov/chcoc/latest-memos/revised-administrative-leave-regulations.pdf",
+  "date": "2026-10-22",
+  "kind": "CHCO memo"
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "findings": {
+  "plain_summary": "OPM is seeking 60 days of public comment, through December 18, 2026, on a new one-time application that tribal employers must complete to participate in the FEHB Program. OPM estimates 75 respondents at 2.25 hours each, for 168.75 total burden hours.",
+  "items": [
+   {
+    "headline": "Burden estimate: 75 respondents, 168.75 hours total",
+    "what_changes": "OPM estimates 75 tribal employers will each spend 135 minutes (2.25 hours) on a one-time application, for 168.75 total burden hours. The summary gives no figures.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Number of Respondents: 75.\n    Estimated Time per Respondent: 135 minutes or 2.25 hours.\n    Total Burden Hours: 168.75.",
+    "page": 66171,
+    "section": "Analysis"
+   },
+   {
+    "headline": "Specific data tribal employers must submit",
+    "what_changes": "The application collects identifying information on the tribal employer and its representatives, key tribal personnel, billing unit and bank account details, and an employer profile. OPM says the data is not published. The summary does not describe the content collected.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "This collection consists of information identifying the tribal employer and its representatives for FEHB purposes, key tribal personnel, billing unit and bank account information, and a tribal employer profile.",
+    "page": 66171,
+    "section": "Background"
+   },
+   {
+    "headline": "Comment deadline December 18, 2026, via regulations.gov",
+    "what_changes": "Comments are accepted through December 18, 2026 on regulations.gov. Submissions are posted publicly without change, including any personal identifiers or contact information.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Comments are encouraged and will be accepted until December 18, \n2026.",
+    "page": 66171,
+    "section": "DATES"
+   },
+   {
+    "headline": "Who qualifies as a tribal employer and how eligibility flows to employees",
+    "what_changes": "The collection applies to Indian tribes, tribal organizations, and urban Indian organizations that run qualifying programs. Once an employer elects to participate, its common-law employees who meet FEHB requirements for their type of employment become eligible to enroll.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Once a tribal employer elects to \nparticipate in the FEHB Program in compliance with 5 CFR 890.1404, a \ntribal employee who is considered a common law employee and meets FEHB \nrequirements for the type of employment (e.g., full-time, seasonal) \nwill become eligible to enroll in FEHB pursuant to 5 CFR 890.1405.",
+    "page": 66171,
+    "section": "Background"
+   }
+  ],
+  "could_not_determine": [
+   "The application form itself is not included, so the exact questions and fields are unknown.",
+   "The notice gives no cost estimate for respondents or the government beyond burden hours.",
+   "The notice does not say how OPM arrived at the 75-respondent or 135-minute estimates.",
+   "The notice does not say how many tribal employees would become eligible for FEHB coverage.",
+   "The notice does not say when OPM expects to begin using the form or to submit the request to OMB."
+  ]
+ },
+ "model": "claude-sonnet-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input_tokens": 3222,
+  "output_tokens": 1060
+ },
+ "cost_usd": 0.017,
+ "seconds": 7.4,
+ "verification": [
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  }
+ ],
+ "doc": {
+  "title": "Agency Information Collection Request: Tribal Federal Employees Health Benefits (FEHB) Program Tribal Employer Application (3206-NEW)",
+  "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21375/agency-information-collection-request-tribal-federal-employees-health-benefits-fehb-program-tribal",
+  "date": "2026-10-19",
+  "kind": "Notice"
+ }
+}

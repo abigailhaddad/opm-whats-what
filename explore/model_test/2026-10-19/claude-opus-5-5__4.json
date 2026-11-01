@@ -1,0 +1,152 @@
+{
+ "findings": {
+  "plain_summary": "OPM is finalizing, effective January 19, 2027, the removal of the governmentwide 52-week time-in-grade rule (5 CFR part 300, subpart F) for promotions to competitive-service GS-6 and above, along with related cross-references in student-hiring, reemployment, and training rules. Agencies may still impose their own job-related minimum service periods through merit promotion plans, and OPM rejected commenters' requests for governmentwide safeguards, review boards, monitoring, or reporting in this rule.",
+  "items": [
+   {
+    "headline": "Agencies can keep their own time-in-grade-style waiting periods, but must re-document them in merit promotion plans before the effective date",
+    "what_changes": "5 CFR 300.606, which let agencies expand on TIG or adopt similar promotion-rate controls, is removed along with the rest of subpart F. OPM says agencies keep that authority under 5 CFR 335.103(b)(1). Any such requirement must now be job-related, set in advance, available in writing to candidates, and applied consistently. Agencies relying on 300.606 should document these requirements in their merit promotion plans before the rule takes effect.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Agencies that presently rely on Sec.  300.606 to support agency-specific service requirements should confirm that those requirements are documented in their merit promotion plans under Sec.  335.103(b)(1) before the effective date of this rule.",
+    "page": 65897,
+    "section": "III.G; 5 CFR 300.606 (removed)"
+   },
+   {
+    "headline": "The one-year service period in the qualification standards is also under OPM review",
+    "what_changes": "The summary says employees remain subject to qualification standards. The preamble discloses that those standards have historically contained their own one-year service period, which TIG largely duplicated. OPM is separately reviewing that requirement and states this rule does not depend on keeping it.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "The governmentwide qualification standards have historically included a comparable one-year service period before an employee could be considered for promotion, so TIG largely duplicated a requirement imposed elsewhere. OPM is separately reviewing that requirement, and OPM's determination in this rule does not depend on its continuation.",
+    "page": 65891,
+    "section": "III.A"
+   },
+   {
+    "headline": "Training-agreement limits removed: no OPM approval and no cap of two promotions per 52 weeks",
+    "what_changes": "The rule removes 5 CFR 300.603(b)(6) and the cross-reference at 410.307(a)(3). Training agreements providing for consecutive accelerated promotions no longer need OPM approval. The limit of two promotions in a 52-week period under training agreements ends. Existing approvals do not lapse and need no renewal.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Accordingly, on and after the effective date of this rule: no OPM approval of a training agreement is required; no OPM approval previously granted needs to be renewed, converted, or rescinded, and none will lapse by operation of this rule; and the limitation of two promotions in a 52-week period on the basis of one or more training agreements no longer applies.",
+    "page": 65897,
+    "section": "III.G; 5 CFR 300.603(b)(6), 410.307"
+   },
+   {
+    "headline": "OPM declined all governmentwide safeguards, monitoring, and reporting for accelerated promotions",
+    "what_changes": "Commenters asked for written certifications, higher-level or panel review, review boards, templates, and annual public reporting of accelerated promotions. They also sought demographic and disparate-impact monitoring, baseline data, a three-year retrospective review, and new appeal rights for employees passed over for an early-promoted peer. OPM adopted none of these. It says such requirements belong in a future part 335 rulemaking and that existing complaint and grievance rights suffice.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM does not agree, however, that a mandatory governmentwide data collection, aggregate public reporting, or fixed retrospective-review requirement should be included in the regulatory text implementing this rule.",
+    "page": 65896,
+    "section": "III.D"
+   },
+   {
+    "headline": "Effective January 19, 2027 (90 days), with no transition period written into the regulation",
+    "what_changes": "OPM set a 90-day effective date. It rejected a regulatory transition window, a 24-month phase-in, and an effective date conditioned on Office of Special Counsel and Merit Systems Protection Board adjudicatory capacity. Until an agency revises its merit promotion plan, the existing plan applies without the TIG restriction. OPM says agencies may have collective bargaining obligations when revising promotion procedures.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Until an agency revises its merit promotion plan, the existing plan continues to govern, less the TIG eligibility restriction removed by this rule.",
+    "page": 65897,
+    "section": "III.F; DATES"
+   },
+   {
+    "headline": "Regulatory text also changes promotion and conversion rules for post-secondary student appointees",
+    "what_changes": "Amendments to 5 CFR 315.714, 316.909, and 316.910 remove paragraphs 315.714(b)(4) and 316.910(d) and rewrite the student promotion provisions. A student on a term appointment may be promoted if qualified and the public notice stated promotion potential and a career ladder. Conversion requires 640 hours of continuous employment and meeting OPM qualification standards. The preamble describes these only as conforming amendments.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "(a) Students on term appointments. An agency may promote a student who was appointed for an initial period expected to last more than 1 year but less than 4 years provided the student meets the qualification requirements for the higher graded position, and the public notification for the position filled by the student stated the potential for promotion and specified a career ladder.",
+    "page": 65903,
+    "section": "5 CFR 316.909, 316.910, 315.714"
+   },
+   {
+    "headline": "OPM links promotion readiness to its new forced-distribution performance rating rule",
+    "what_changes": "OPM ties this rule to its July 2026 appraisal rule, which permits a standardized distribution limiting the highest rating levels. OPM says the two rules are complementary because ratings will better distinguish candidates for promotion. It also states that no rating of record is a prerequisite to, or entitlement to, promotion.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Third, OPM expects that imposing a standardized distribution of the highest performance ratings will ensure that agency performance appraisal systems will more reliably distinguish and identify high performers and help eliminate widespread ratings inflation across the Federal Government.",
+    "page": 65898,
+    "section": "III.H"
+   },
+   {
+    "headline": "Concern about veterans competing under VEOA rejected; TIG not retained for VEOA vacancies",
+    "what_changes": "A commenter warned that internal status employees could now be promoted quickly ahead of external preference-eligible veterans competing under VEOA. OPM rejected this concern and the alternative of keeping TIG for VEOA-based competition. It promised only to address the issue in implementation guidance.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM does not agree that removing an internal eligibility restriction on status employees creates unfairness to preference-eligible veterans competing under VEOA, because both status employees and VEOA-eligible veterans remain subject to the same qualification standards and the same merit promotion or competitive examining procedures for the vacancy in question.",
+    "page": 65896,
+    "section": "III.E"
+   },
+   {
+    "headline": "Costs estimated only for updating plans: about $3.1 million total, with no estimate of payroll or workload effects",
+    "what_changes": "OPM estimates 250 hours per agency in the first year. It acknowledges large multi-component departments may exceed this average. OPM did not quantify long-term payroll costs from faster promotions, promotion-request volume, HR workload, or grievance and litigation risk. It also does not monetize the claimed savings from ending TIG determinations.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "This results in an estimated first-year implementation cost of approximately $39,075 per agency and approximately $3,126,000 governmentwide.",
+    "page": 65902,
+    "section": "V.D Costs"
+   },
+   {
+    "headline": "The preamble's comment counts are internally inconsistent",
+    "what_changes": "Of 75 comments, the Executive Summary reports 41 supporting, 22 conditional, and 11 opposed, which sums to 74. The Digest reports 41 supporting, 12 opposed, and 23 conditional, which sums to 76. The Part II footnotes also list more comment numbers than their stated group totals (Group C says 9 and lists 11; Group D says 7 and lists 8). The number of opposing comments is therefore unclear.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Of those, 41 comments supported eliminating TIG, 22 comments proposed conditions, safeguards, or targeted alternatives rather than opposing elimination outright, and 11 comments opposed elimination.",
+    "page": 65887,
+    "section": "I. Executive Summary"
+   }
+  ],
+  "could_not_determine": [
+   "How many employees or promotion actions the rule will affect; the document gives no count of covered GS employees or promotions previously deferred by TIG.",
+   "What the removed student-appointment provisions (5 CFR 315.714(b)(4), 316.910(d), and the prior text of 316.909(a) and (c)) said; only the revised text is printed.",
+   "When OPM will issue the promised implementation guidance, and whether it will come before the January 19, 2027 effective date.",
+   "The timing or likely outcome of OPM's separate review of the one-year service period in the qualification standards.",
+   "Any estimate of long-term payroll costs, promotion-request volume, HR workload, or complaint and litigation changes; OPM says it has not quantified these.",
+   "The number of agencies behind the governmentwide cost figure (about 80 is implied by $3,126,000 / $39,075, but this is not stated).",
+   "Which comment tally is correct, given the inconsistent counts in the preamble."
+  ]
+ },
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input_tokens": 45132,
+  "output_tokens": 5946
+ },
+ "cost_usd": 0.2994,
+ "seconds": 50.7,
+ "verification": [
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  }
+ ],
+ "doc": {
+  "title": "Elimination of Time-in-Grade",
+  "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21319/elimination-of-time-in-grade",
+  "date": "2026-10-19",
+  "kind": "Rule"
+ }
+}

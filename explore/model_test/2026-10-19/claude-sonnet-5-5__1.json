@@ -1,0 +1,80 @@
+{
+ "findings": {
+  "plain_summary": "OPM Retirement Services is proposing a new form, RI 20-129, to verify the identity of annuitants who ask to change their contact information, and is taking comments until December 18, 2026. OPM estimates 750 respondents at 15 minutes each, for 188 total burden hours.",
+  "items": [
+   {
+    "headline": "New form gates access to an annuitant's account on identity verification",
+    "what_changes": "OPM created Form RI 20-129 to verify identity when an annuitant requests contact-information changes through channels that don't allow adequate identity checks. The result of verification decides whether the requester gets access to the annuitant's account. The summary says only that a new form exists, without stating its purpose or consequence.",
+    "summary_status": "vague",
+    "speaker": "OPM",
+    "quote": "OPM has created Form RI 20-129 to verify the identity of an annuitant who has requested changes to contact information. The verification will determine whether the individual is provided access to the annuitant's account.",
+    "page": 66172,
+    "section": "SUPPLEMENTARY INFORMATION"
+   },
+   {
+    "headline": "Stated reason: current request channels can't verify identity",
+    "what_changes": "OPM says contact-change requests arrive by various means that don't let it verify identity, for example a caller who can't answer identification questions correctly. The form is meant to fill that gap.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "OPM receives requests to change contact information by various means of communication that do not provide sufficient opportunity to OPM to verify the identity of the individual initiating the request, such as when a caller is unable to provide a correct response to identification questions.",
+    "page": 66172,
+    "section": "SUPPLEMENTARY INFORMATION"
+   },
+   {
+    "headline": "Burden estimate: 750 respondents, 15 minutes each, 188 hours",
+    "what_changes": "OPM estimates the collection will reach 750 individuals or households on an occasional basis, taking 15 minutes each, for about 188 total burden hours. The summary gives no figures.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Number of Respondents: 750.\n    Estimated Time per Respondent: 15 minutes.\n    Total Burden Hours: 188.",
+    "page": 66172,
+    "section": "Analysis"
+   },
+   {
+    "headline": "Comment deadline is December 18, 2026, via regulations.gov",
+    "what_changes": "This is a 60-day notice under the Paperwork Reduction Act. Comments are accepted through December 18, 2026, on the Federal Rulemaking Portal, and will be publicly posted without change, including any personal identifiers or contact information.",
+    "summary_status": "absent",
+    "speaker": "OPM",
+    "quote": "Comments are encouraged and will be accepted until December 18, 2026.",
+    "page": 66172,
+    "section": "DATES"
+   }
+  ],
+  "could_not_determine": [
+   "What information the RI 20-129 form actually asks annuitants to provide (e.g., documents, personal identifiers)",
+   "What happens to an annuitant who fails verification beyond not being given account access, and whether any appeal or alternative exists",
+   "How OPM arrived at 750 respondents and what share of contact-change requests that represents",
+   "Any cost estimate in dollars to respondents or to OPM",
+   "Whether the form can be submitted electronically or only on paper, and how it is delivered to the annuitant",
+   "Whether the form will be required for all contact-information change requests or only those where identity cannot be confirmed by other means",
+   "The effective date or timeline for implementing the form"
+  ]
+ },
+ "model": "claude-sonnet-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input_tokens": 2685,
+  "output_tokens": 1134
+ },
+ "cost_usd": 0.0167,
+ "seconds": 8.0,
+ "verification": [
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  },
+  {
+   "status": "ok"
+  }
+ ],
+ "doc": {
+  "title": "Agency Information Collection Request: 3206-NEW, Annuitant Verification Form, RI 20-129",
+  "url": "https://www.federalregister.gov/documents/2026/10/19/2026-21378/agency-information-collection-request-3206-new-annuitant-verification-form-ri-20-129",
+  "date": "2026-10-19",
+  "kind": "Notice"
+ }
+}
