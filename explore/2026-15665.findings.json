@@ -1,0 +1,111 @@
+{
+  "plain_summary": "OPM's final rule rewrites federal layoff (RIF) rules so that employees are ranked mainly by points from their last three performance ratings plus a veterans' bonus (+5 or +3), with tenure and seniority used only to break ties. It also takes probationary, trial-period, short-term temporary, and Schedule C/G employees out of RIF competition, replaces bump-and-retreat with a single assignment right, narrows transfer-of-function protections to moves between agencies, and applies to RIF notices issued on or after September 2, 2026.",
+  "items": [
+    {
+      "headline": "Retention score is now rating points plus veterans' points; tenure subgroup and seniority only break ties",
+      "what_changes": "Within each register, employees are ranked by the sum of their three most recent ratings of record in the 4 years before RIF notices (Level 5 = 7, Level 4 = 5, Level 3 = 3, Level 2 and Level 1 = 0), plus veterans' points. Tenure subgroup breaks a tie first and the actual service computation date breaks it second, which replaces the old system of adding 12 to 20 years of service credit. 'Minimally Satisfactory' (Level 2) now counts the same as 'Unacceptable'.",
+      "why_buried": "The summary says performance is prioritized but gives no point values, and doesn't say that length of service now matters only when scores are exactly tied or that Level 2 earns zero.",
+      "quote": "Under these regulations, agencies will assign direct point values to ratings (Level 5 = 7 points, Level 4 = 5 points, Level 3 = 3 points, and Level 1 or 2 = 0 points) and then sum the values for the employee's three most recent ratings.",
+      "page": 49187,
+      "section": "II.E. OPM Has Adequately Justified the Need for the Changes; 5 CFR 351.501, 351.503"
+    },
+    {
+      "headline": "Veterans' preference becomes +5 / +3 points and no longer guarantees a veteran is retained ahead of a non-veteran",
+      "what_changes": "Preference eligibles with a 30%+ compensable service-connected disability get +5 points, and other preference eligibles get +3, on a normal maximum of 21. OPM says outright that a non-veteran with stronger ratings can outrank a preference eligible, for example a non-veteran rated 5/5/5 with 4 years of service (21 points) ahead of a veteran rated 4/4/5 with 40 years (20 points). It also points out that under the new rule a former Group II disabled veteran can now outrank a former Group I non-veteran.",
+      "why_buried": "The summary doesn't mention veterans' preference. The legal position that the statute requires only a 'meaningful' preference, not placement at the top of the register, appears only in the response to comments.",
+      "quote": "The statute does not require that disabled veterans and other preference eligibles must always appear first on the retention register, only that they be retained ``in preference to'' other competing employees.",
+      "page": 49182,
+      "section": "II.B. The Rule Preserves Veterans' Preference as a Substantial Factor in RIF Retention; 5 CFR 351.504"
+    },
+    {
+      "headline": "Probationers, trial-period employees, temps of 1 year or less, and Schedule C/G employees can be cut or kept outside the RIF ranking",
+      "what_changes": "These employees are not 'competing employees'. An agency may keep them while releasing competing employees, or separate, furlough, demote, or reassign them with no retention register, no order of release, and no assignment rights. The final rule adds a modified written notice requirement when the action isn't simply the end of a temporary appointment. OPM declined a commenter's request for a presumption that probationers be retained. The rule also adds new CTAP and ICTAP exceptions that let agencies retain or finalize probationary employees ahead of priority-placement candidates.",
+      "why_buried": "The summary says only that the rule is 'modifying the types of employees who are excluded'. The two-way consequence (excluded employees can be kept while tenured staff are released, or released with no ranking) appears only in the regulatory text of 351.202(d)(3).",
+      "quote": "An agency may retain such an employee while releasing a competing employee, and may furlough, separate, demote, or reassign such an employee for a reason described in Sec.  351.201(a)(2) without determining the employee's retention standing under subparts D and E of this part, applying the order-of-release provisions in subpart F of this part, or providing assignment rights under subpart G of this part, provided the action is otherwise consistent with the terms of the employee's appointment and applicable law.",
+      "page": 49218,
+      "section": "5 CFR 351.202(d)(3) (regulatory text)"
+    },
+    {
+      "headline": "Abolishing a whole competitive area within 180 days skips ranking and assignment rights, and competitive areas can be drawn as any unit on the org chart",
+      "what_changes": "A competitive area may be any organizational unit or combination of units on the agency's official org chart, or a geographic location such as a national park or county. If every position in the area, including those of excluded employees, is abolished within 180 days, the agency doesn't rank anyone and must not apply assignment rights, and the notice says only that the employee was not ranked. OPM approval is required only for areas created or materially modified within 90 days before RIF notices (a safeguard added in the final rule). OPM declined requests to review every abolishment and to tie competitive areas to the FEVS organizational hierarchy.",
+      "why_buried": "The summary doesn't mention competitive areas at all. Together, flexible area definitions and the no-ranking abolishment path are what decide whether retention order applies, and the guardrails against misuse are spread across the comment responses.",
+      "quote": "When using this provision, an agency is not required to rank competing employees in the abolished competitive area, and must not apply assignment rights pursuant to subpart G of this part, because no positions in the competitive area will remain.",
+      "page": 49223,
+      "section": "5 CFR 351.605(d); 351.402(b)-(c)"
+    },
+    {
+      "headline": "New OPM pre-approval and disclosure requirement for recently created competitive areas",
+      "what_changes": "Added in response to comments: an agency that establishes or materially modifies a competitive area within 90 days before specific RIF notices must send OPM a description and a written statement of its 'bona fide organizational basis' for approval in advance. Descriptions of all competitive areas and the explanations sent to OPM must be made 'readily available for review', subject to national security, FOIA, and the Privacy Act. The rule doesn't define 'materially modifies'.",
+      "why_buried": "This change from the proposed rule appears only in the list of changes and in the competitive-area comment responses. The summary doesn't mention it.",
+      "quote": "If an agency establishes or materially modifies a competitive area within 90 days before issuing specific reduction in force notices for that competitive area, the agency shall submit a description of the competitive area, along with a written statement explaining the bona fide organizational basis for the competitive area, to OPM for approval in advance of the reduction in force.",
+      "page": 49220,
+      "section": "5 CFR 351.402(c) (regulatory text)"
+    },
+    {
+      "headline": "Effective Sept. 2, 2026, keyed to notice date; retention standing is frozen at notice and isn't recomputed if the RIF is delayed",
+      "what_changes": "RIFs with notices issued before September 2, 2026 run under the old rules; notices issued on or after that date use the new rules. Retention standing is now fixed on the date the employee receives the specific RIF notice, not the separation date. An amended notice that only pushes back the effective date (for example, because of litigation) does not trigger a recalculation.",
+      "why_buried": "The abstract gives no dates. The freeze-at-notice rule and the litigation-delay clause in 351.805(b) appear in the section-by-section analysis and the regulatory text.",
+      "quote": "An amended notice issued under this paragraph solely to state a later effective date is not a new specific reduction in force notice for purposes of Sec.  351.507 and does not require the agency to redetermine or recalculate retention standing under subpart E of this part.",
+      "page": 49226,
+      "section": "5 CFR 351.805(b), 351.507; IV. Implementation Considerations"
+    },
+    {
+      "headline": "Bump-and-retreat is replaced by one assignment right, now open to Level 2 employees but subject to a skills assessment",
+      "what_changes": "A released competitive-service employee can be assigned to a position held by a lower-standing employee in the same tenure group, up to 3 grades lower (5 for 30%+ disabled veterans). OPM deleted the old bar that kept employees rated Level 2 from displacing higher-rated employees. Qualification for the assigned position now requires a job-analysis-based assessment that isn't principally a self-assessment, unless within the past 5 years the employee held the same or a substantially similar position and was rated Level 3 or higher.",
+      "why_buried": "The summary doesn't mention assignment rights. The removal of 351.701(d) and the new assessment requirement show up only in the section-by-section analysis and the regulatory text.",
+      "quote": "OPM believes that this restriction on employees with a current annual performance rating of record of Level 2 from obtaining assignment to positions held by employees with a higher performance rating is no longer necessary.",
+      "page": 49204,
+      "section": "III.F. Part 351, Subpart G: Assignment Rights; 5 CFR 351.701, 351.702(a)(4)"
+    },
+    {
+      "headline": "Transfer-of-function protections now apply only between agencies, so reorganizations within an agency no longer carry a right to follow the work",
+      "what_changes": "'Transfer of function' now covers only moves from one agency to another. A commenter asked for advance notice and a chance to follow one's function when work moves between competitive areas inside an agency; OPM refused. A competing employee counts as identified with a transferring function if they perform it at least half the time.",
+      "why_buried": "The summary lists 'transfers of function' only as a topic and doesn't say that intra-agency moves are removed from coverage.",
+      "quote": "OPM believes that this current regulatory requirement unduly inhibits agencies from carrying out internal restructurings and generates litigation without a corresponding benefit to the government.",
+      "page": 49195,
+      "section": "III.B. Part 351, Subpart C: Changes in Transfer of Function Procedures; 5 CFR 351.203, 351.303"
+    },
+    {
+      "headline": "Agencies with pass/fail rating systems may add award-based points at their 'sole and exclusive discretion'",
+      "what_changes": "Where the highest rating is Level 3 (pass/fail), or where employees were rated under different patterns, an agency may add points or raise ('transmute') ratings based on awards such as Secretary's awards, special act awards, quality step increases, or time-off awards. It has to document the criteria in advance and apply them consistently. In OPM's own example, an employee rated 3/3/3 with awards scores 26, above the 'ordinary maximum' of 21, while a colleague with the same ratings and no awards scores 9. These enhanced values affect RIF standing only and don't change the rating of record.",
+      "why_buried": "This sits in 351.503(d)-(e) and a worked example. A commenter warned that retention outcomes could depend on an agency's award budget; OPM disagreed. The summary doesn't mention it.",
+      "quote": "An agency may determine, in its sole and exclusive discretion, whether to give more weight to the performance-related action(s) described in paragraph (d)(1) of this section for purposes of differentiating performance on a retention register.",
+      "page": 49221,
+      "section": "5 CFR 351.503(d)-(e) (regulatory text); III.D"
+    },
+    {
+      "headline": "OPM dropped its proposal to let agencies run long unpaid furloughs outside retention order",
+      "what_changes": "The proposed rule would have removed the requirement that furloughs of more than 30 days (and recalls from them) follow retention standing. After commenters warned that long furloughs could be used to get around RIF procedures, OPM did not finalize the change. Separately, the rule does finalize excluding shutdown furloughs from a lapse in appropriations from the RIF furlough definition.",
+      "why_buried": "Proposals that were withdrawn never appear in a final rule's summary.",
+      "quote": "OPM agrees that its proposed changes to Sec.  351.604 warrant further consideration and has chosen not to finalize them.",
+      "page": 49202,
+      "section": "III.E.1. RIF Furloughs (5 CFR 351.604)"
+    },
+    {
+      "headline": "OPM says union contract clauses setting retention order are 'likely unlawful' and protected only until the contract expires",
+      "what_changes": "In answering reliance-interest comments, OPM takes the position that a CBA provision prescribing RIF retention order likely interferes with management's right to lay off and retain employees. Existing lawful CBA provisions that conflict with the rule are protected only for the current term of the agreement; after that the government-wide regulation becomes enforceable 'by operation of law'. OPM grants that procedures and appropriate arrangements may still be bargainable.",
+      "why_buried": "This is a labor-relations legal position inside the 'Reliance Interests' part of the regulatory impact discussion, far from the summary.",
+      "quote": "OPM notes, however, that a provision that prescribes the order of retention in a Federal agency RIF is likely unlawful.",
+      "page": 49210,
+      "section": "V.D. Reliance Interests"
+    },
+    {
+      "headline": "The rule has no estimate of how many employees it affects; the cost estimate is $3.45M government-wide, and RIF appeals are handled in a separate rule",
+      "what_changes": "The only quantified cost is first-year implementation: 300 hours and about $43,128 per agency across 80 agencies. OPM declined to estimate effects on retirement funds or how many employees will be separated, saying that depends on future agency decisions. The rule is 'significant' but not economically significant and 'not considered an Executive Order 14192 regulatory action'. OPM received 721 unique comments (one commenter's submission was counted once despite being filed as 100 entries) and acknowledged that its proposed-rule example tables wrongly ranked tenure subgroup above performance credit. A separate pending rule would move RIF appeals from MSPB to OPM.",
+      "why_buried": "The figures sit in the cost analysis and comment digest. The fact that appeal rights are being changed elsewhere appears only in the APA response.",
+      "quote": "Using the assumptions stated in the proposed rule, OPM estimated first-year implementation costs of approximately $43,128 per agency for 80 agencies and approximately $3,450,240 Government-wide.",
+      "page": 49209,
+      "section": "V.C. Costs; II (Digest of Public Comments); II.I"
+    }
+  ],
+  "could_not_determine": [
+    "How many employees will be affected or separated under the new rules; OPM gives no estimate and says it depends on future agency decisions (p. 49209-49210).",
+    "The basis for the '80 agencies' figure in the cost estimate; the final rule refers back to assumptions in the proposed rule, which is not in this document.",
+    "How many of the 721 comments supported or opposed the rule; OPM says only 'some' supported and 'many other commenters objected' (p. 49179).",
+    "The current-rules retention register in Example 1 (p. 49200) is an omitted image ('[GRAPHIC] [TIFF OMITTED] TR03AU26.051'), so its contents can't be checked from the text.",
+    "Whether a wording difference matters: the regulatory definition of 'Reduction in force' in 351.203 says 'by furlough, separation, or demotion' (p. 49219), while the preamble and 351.201(a)(2) say 'furlough for more than 30 days'. The separate 'Furlough' definition already requires more than 30 days, so the difference may be harmless.",
+    "What 'materially modifies' a competitive area means, and how OPM will review or publish competitive-area submissions; the rule doesn't define the term or set a review standard.",
+    "How RIF appeals will be heard; this rule doesn't address subpart I, and the separate rule moving RIF appeals from MSPB to OPM is described only as pending/proposed here.",
+    "OPM's new contact email address in 353.110 is obfuscated ('[email protected]') in the source text."
+  ]
+}

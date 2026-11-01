@@ -1,0 +1,110 @@
+{
+  "plain_summary": "OPM proposes to rewrite its excepted-service hiring rules (5 CFR part 302), replacing employment lists and Orders A/B/C with agency-written procedures under which priority candidates, such as RIF'd preference eligibles and injured workers, must be considered first and veterans' preference is applied through numerical rating, category rating or alternative procedures. The rule also writes Schedules E (ALJs), Policy/Career and G into the CFR (removing standard hiring, removal-procedure, RIF-placement or severance protections for some of those positions) and lets Pathways interns and recent graduates convert into Schedule Policy/Career.",
+  "items": [
+    {
+      "headline": "Schedule G political appointees would be hired and removed outside the normal civil-service procedures and would not get severance pay",
+      "what_changes": "Schedule G (noncareer, policy-advocating positions created by E.O. 14317) is added to the list of positions exempt from part 302 examination, rating, ranking, referral and selection procedures (Sec. 302.101(c)(9)), and to the part 432 exclusion from performance-based demotion/removal procedures (Sec. 432.102(f)(11)). Schedule G appointments are also made 'nonqualifying appointments' for severance pay (Sec. 550.703), and treated as 'political appointments' for suitability and criminal-history-timing rules (parts 731, 920).",
+      "why_buried": "The summary calls these 'related conforming amendments.' The removal-procedure, hiring-procedure and severance consequences for Schedule G are spread across parts 302, 432 and 550 and are never collected in one place.",
+      "quote": "The amendment would clarify that the performance-based reduction in grade and removal procedures in part 432 do not apply to employees occupying positions in Schedule G.",
+      "page": 59083,
+      "section": "II.F. Part 432--Performance Based Reduction in Grade and Removal Actions (Sec. 432.102(f)(11))"
+    },
+    {
+      "headline": "Schedule Policy/Career could be applied to positions in personnel systems outside title 5",
+      "what_changes": "New Sec. 213.3601(f) says a position in a statutory personnel system outside title 5 may be designated Schedule Policy/Career if it is confidential, policy-determining, policy-making or policy-advocating, to the extent the governing statute and any E.O. permit. For such positions otherwise covered by 5 U.S.C. chapters 23, 43 or 75, the designation affects that coverage to the extent provided by 5 U.S.C. 2302(a)(2)(B)(i), 4301(2)(G), 4303(e)(3) and 7511(b)(2).",
+      "why_buried": "The summary describes the rule as conforming regulations to existing schedules. This paragraph extends Policy/Career designation beyond title 5 positions, and the effect on chapter 23, 43 and 75 coverage appears only as a string of statutory cross-references.",
+      "quote": "The proposed paragraph would provide that, to the extent permitted by the statute governing the position and any applicable E.O., such a position may be designated as Schedule Policy/Career if the position is of a confidential, policy-determining, policy-making, or policy-advocating character.",
+      "page": 59078,
+      "section": "II.A. Part 213--Excepted Service (proposed Sec. 213.3601(f))"
+    },
+    {
+      "headline": "OPM would stop publishing monthly notices of new or revoked agency-specific Schedule A, B, C, Policy/Career and G authorities",
+      "what_changes": "Sec. 213.103 would drop the monthly Federal Register notice of agency-specific excepted-service authorities. Only an annual consolidated notice (current as of June 30) would remain, plus optional extra notices at OPM's discretion. That would include agency-specific Schedule Policy/Career and Schedule G authorities.",
+      "why_buried": "The summary does not mention publication at all. The change affects how quickly the public can see which positions have been placed in Policy/Career, C or G.",
+      "quote": "OPM proposes to revise Sec.  213.103 to eliminate the requirement that OPM publish a monthly Federal Register notice identifying each establishment or revocation of an agency-specific Schedule A, B, C, Policy/Career, or G authority.",
+      "page": 59077,
+      "section": "II.A. Part 213--Excepted Service (Sec. 213.103)"
+    },
+    {
+      "headline": "Excepted-service employees laid off in a RIF must apply vacancy by vacancy, and their priority rights are limited to the local commuting area and expire after 2 years",
+      "what_changes": "Agency-maintained priority reemployment lists would be abolished. Preference-eligible employees furloughed or separated by RIF must apply for priority consideration for specific vacancies under each agency's written procedures. Under the regulatory text, their priority covers only the same agency, the local commuting area, the same or lower grade, no greater promotion potential and no broader work schedule (Sec. 302.303(d)(1)), and it expires 2 years after separation unless a longer period applies (Sec. 302.303(e)(1)). The 2-year limit and commuting-area scope carry over from current Sec. 302.303, per eCFR as of 2026-11-01.",
+      "why_buried": "The summary says the rule is 'preserving' priority placement rights. The preamble describes the shift to case-by-case applications but does not mention the 2-year expiration or the scope limits, which appear only in the regulatory text.",
+      "quote": "Priority consideration under paragraph (c)(1) of this section expires 2 years after the effective date of the furlough or separation, unless a longer period is required by statute, regulation, final order, or other binding legal authority, or the agency establishes a longer period in written policy.",
+      "page": 59091,
+      "section": "Sec. 302.303(e)(1) Duration of priority consideration"
+    },
+    {
+      "headline": "Agencies could skip priority candidates for seven listed reasons, including 'undue interruption' and any exception OPM authorizes in writing",
+      "what_changes": "Sec. 302.304(d) lists the exceptions that let an agency appoint someone other than a qualified priority candidate. They include an agency-documented finding that the duties 'cannot be taken over without undue interruption' by any available priority candidate, a candidate's failure to answer a written availability inquiry, and a catch-all for 'any other exception authorized in writing by OPM.' Affected priority candidates must be told the reason (Sec. 302.304(e)).",
+      "why_buried": "The preamble says agencies may depart only when an exception 'authorized by statute, regulation, or other applicable law applies.' It does not list the exceptions or mention the open-ended OPM written-authorization exception, which appears only in the regulatory text.",
+      "quote": "(7) Any other exception authorized in writing by OPM or otherwise required by law.",
+      "page": 59092,
+      "section": "Sec. 302.304(d) Exceptions"
+    },
+    {
+      "headline": "Part 302 exemptions are broadened: same-agency reemployment loses its commuting-area limit, and OPM can exempt non-Schedule-A positions",
+      "what_changes": "The current reemployment exemption (Sec. 302.101(c)(9)) covers reemployment 'in the same agency and commuting area' and only when no one is on the priority reemployment list. The proposed version (c)(12) drops both the commuting-area limit and the priority-list condition. Separately, the case-by-case exemption in current (c)(6), which is limited to Schedule A positions, becomes (c)(8) and covers any position OPM excepts under Civil Service Rule VI (5 CFR 6.1). New exemptions are added for law clerk trainees, remote/isolated-location positions, Schedule G and Schedule E ALJs.",
+      "why_buried": "The preamble says only that it would 'remove the redundant requirement limiting the exemption' in the reemployment provision. It does not mention that the commuting-area limit is also dropped. That difference shows up only when you compare the new regulatory text with the current CFR (checked against eCFR on 2026-11-01).",
+      "quote": "(12) Positions filled by reemployment of an individual in the same agency, at the same or lower grade or pay level, and under the same appointing authority as the position last held.",
+      "page": 59089,
+      "section": "Sec. 302.101(c)(8) and (c)(12); preamble II.B"
+    },
+    {
+      "headline": "ALJs hired after July 10, 2018 lose the OPM ALJ priority referral list and mandatory RIF assignment rights",
+      "what_changes": "Schedule E ALJs would compete in RIFs as excepted-service employees, with no mandatory bump/retreat assignment rights. An agency may release them from the competitive level without offering another position unless it chooses to adopt Sec. 351.705 assignment rights. OPM's mandatory ALJ priority referral list is removed for Schedule E ALJs, and because ALJs cannot be rated, retention standing uses the rules for employees without ratings of record. Legacy competitive-service ALJs keep competitive-service treatment.",
+      "why_buried": "The summary refers only to 'ALJ appointments.' The RIF and reemployment changes are in Sec. 930.210, which the summary does not mention.",
+      "quote": "OPM also proposes to remove the current mandatory ALJ-specific OPM priority referral list as a regulatory entitlement for Schedule E ALJs.",
+      "page": 59084,
+      "section": "II.I. Part 930--Administrative Law Judge Program (Sec. 930.210)"
+    },
+    {
+      "headline": "OPM would no longer have to run any competitive exam for ALJs and could set ALJ requirements itself; ALJs serve no trial period",
+      "what_changes": "Sec. 930.201(d) says OPM may prescribe qualification, assessment and documentation requirements for ALJ appointments and is not required to administer a competitive examination for Schedule E ALJs. Sec. 930.203 (cost of competitive examination) is removed. New Schedule E ALJs are not subject to a trial period, and agencies follow veterans' preference only 'as far as administratively feasible' (Sec. 213.3501).",
+      "why_buried": "The summary says only that ALJ regulations are updated. Ending any examination requirement and setting the veterans'-preference standard for ALJs appear in the part 213 and part 930 regulatory text.",
+      "quote": "OPM is not required to administer a competitive examination or to prescribe a competitive examination methodology for appointments to administrative law judge positions made under Schedule E.",
+      "page": 59097,
+      "section": "Sec. 930.201(d); Sec. 213.3501"
+    },
+    {
+      "headline": "Part 302 would no longer require a public job announcement for excepted-service vacancies",
+      "what_changes": "Revised Sec. 302.106 says part 302 does not itself require a public vacancy announcement unless statute, regulation, the appointing authority or agency policy requires one. When an agency does announce, it must include instructions for claiming veterans' preference and priority consideration, plus a reasonable-accommodation statement.",
+      "why_buried": "The summary says part 302 procedures are 'modernize[d]' while preserving veterans' preference. Whether excepted-service jobs must be publicly posted is not mentioned there.",
+      "quote": "(a) This section does not require an agency to issue a public vacancy announcement unless public notice is required by statute, regulation, the applicable appointing authority, or agency policy.",
+      "page": 59090,
+      "section": "Sec. 302.106 Vacancy announcements"
+    },
+    {
+      "headline": "OPM signals it may eliminate several governmentwide Schedule A and B hiring authorities in the final rule",
+      "what_changes": "OPM asks whether to remove, reserve, consolidate, narrow or make agency-specific six governmentwide Schedule A authorities: expert/consultants (l), local physicians/surgeons/dentists (n), college faculty limited to 130 days a year (o), work-release inmates (x), National Research Council postdocs at GS-11+ (aa), and up to 24 DOJ program positions (ff). It also asks about the closed Schedule B veterans authority (Sec. 213.3202(n)), under which no new appointments have been allowed since November 30, 1999. OPM says the final rule may act on any of them.",
+      "why_buried": "None of this is in the proposed regulatory text or the summary. It appears only in the Requests for Comment section, yet OPM says the final rule could act on it.",
+      "quote": "OPM may, in a final rule, remove, reserve, consolidate, or narrow any of the identified authorities based on comments received, and interested parties should comment now if they rely on any of these authorities and would be affected by such action.",
+      "page": 59084,
+      "section": "III.A. Requests for Comment--Governmentwide Schedule A and Schedule B Authorities"
+    },
+    {
+      "headline": "Interns and Recent Graduates could be converted straight into Schedule Policy/Career with no trial period; OPM would run a governmentwide Pathways leadership program",
+      "what_changes": "Pathways participants (U.S. citizens) could be noncompetitively converted to permanent Schedule Policy/Career positions, subject to OPM review. They serve no trial period, their Pathways service does not count toward the 2 years needed for competitive status, and career-transition placement programs (part 330 subparts B, F, G) do not apply to the conversions. New Sec. 362.110 lets OPM run a governmentwide Pathways Leadership Development Program under the Recent Graduates authority. For that program, conversion is certified by OPM and the agency's Executive Resources Board instead of a first-level supervisor's recommendation. Agencies must report conversions to Policy/Career and separations.",
+      "why_buried": "The summary says only that the rule would 'authorize and clarify Pathways conversions to Schedule Policy/Career.' The no-trial-period rule, the status consequences, the CTAP/ICTAP carve-out and the new OPM-run program are in the part 362 regulatory text.",
+      "quote": "(2) A Pathways Participant converted to a Schedule Policy/Career position under paragraph (a)(2) of this section is not required to serve a trial period under part 11 of this chapter and obtains competitive status after 2 years of continuing service in the Schedule Policy/Career position.",
+      "page": 59095,
+      "section": "Sec. 362.107(f)(2); Sec. 362.110; Sec. 362.305(a)(2)"
+    },
+    {
+      "headline": "Total estimated cost is about $1.24 million in year one, and there is no estimate of how many employees or positions are affected",
+      "what_changes": "OPM estimates about 80 agencies will each spend 100 hours (at $154.76/hour, which is twice the 2025 GS-14 step 5 DC hourly rate of $77.38) updating policies, for about $15,476 per agency and $1,238,080 governmentwide in the first year. It projects no substantial ongoing cost and calls the rule 'significant' under E.O. 12866 but not economically significant or major. The analysis gives no count of excepted-service employees, priority candidates, Schedule G/Policy/Career positions or ALJs affected.",
+      "why_buried": "The numbers appear only in the regulatory impact section. The arithmetic checks (100 x $154.76 = $15,476; x 80 = $1,238,080).",
+      "quote": "This work would result in estimated costs in that first year of implementation of about $15,476 per agency, and about $1,238,080 in total governmentwide.",
+      "page": 59085,
+      "section": "IV.D. Costs"
+    }
+  ],
+  "could_not_determine": [
+    "Effective date and transition: no effective date is proposed, and OPM asks for comment on whether the rule should apply only to vacancies announced on or after the effective date and how to treat pending recruitment actions, existing lists, certificates and agency plans (p. 59085).",
+    "How many positions or employees are affected (excepted-service hires, priority candidates, Schedule G or Policy/Career positions, Schedule E ALJs). The document gives no counts.",
+    "Which non-title-5 statutory personnel systems might have positions designated Schedule Policy/Career under proposed Sec. 213.3601(f). The document names none.",
+    "Comparison with current CFR text was checked only for Sec. 302.101(c) and Sec. 302.303 (eCFR, accessed 2026-11-01). Whether revisions to Sec. 213.3102(i)(1) and (u), Sec. 302.104, Sec. 302.105 (e.g., whether OPM approval was previously required for alternative procedures) and Sec. 302.304(d) exceptions are substantively new was not verified against current text.",
+    "Whether the 'undue interruption' and declination/nonresponse exceptions in Sec. 302.304(d)(4)-(5) already exist in current part 302 or are new; the preamble does not say.",
+    "Content of the companion interim rule on shared certificates and OPM-led pooled hiring (91 FR 58347), which this rule cross-references, was not reviewed.",
+    "What 'OPM instructions' for pass-over requests (Sec. 302.401(e)) and 'OPM policy or guidance' for Pathways-to-Policy/Career conversions will say; these are left to future guidance."
+  ]
+}
