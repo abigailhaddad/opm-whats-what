@@ -13,6 +13,10 @@ on:
       cap:
         description: "Max estimated cost in USD for this run"
         default: "3"
+      check_only:
+        description: "Only check that the API key works (no collecting, reading, issue or cost)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -50,12 +54,15 @@ jobs:
           EOF
 
       - name: Collect
+        if: ${{ !inputs.check_only }}
         run: python src/collect.py
 
       - name: Read, verify, write digest
+        if: ${{ !inputs.check_only }}
         run: python src/weekly.py --cap "${{ github.event.inputs.cap || '3' }}"
 
       - name: Commit digest and state
+        if: ${{ !inputs.check_only }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -63,6 +70,7 @@ jobs:
           git diff --cached --quiet || { git commit -m "Weekly digest $(date -u +%F)"; git push; }
 
       - name: Open the digest as an issue (emails you)
+        if: ${{ !inputs.check_only }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
