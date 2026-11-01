@@ -83,7 +83,7 @@ SCHEMA = {
     },
 }
 
-SYSTEM = """You read U.S. Office of Personnel Management (OPM) documents in full for a federal-workforce policy analyst who will not read them. Your job is to surface the substance that matters, especially what the document's own summary leaves out or describes vaguely.
+SYSTEM = """You read U.S. Office of Personnel Management (OPM) documents in full for a federal-workforce policy analyst who will not read them. Your job is to surface the substance that matters most, including details buried deep in long documents.
 
 Describe what the document says and does. Do not editorialize about whether a change is good or bad."""
 
@@ -96,7 +96,7 @@ The document's own summary (what a reader skimming it would see):
 {summary}
 </summary>
 
-Read the entire document below, including any discussion of comments, cost analysis, and regulatory text. Then return the findings an analyst would most want, most important first. Use as many as the document warrants: up to 10 for a long rule, often 1-3 for a short notice or memo, and zero is fine for a routine document.
+Read the entire document below, including any discussion of comments, cost analysis, and regulatory text. Then return the findings an analyst would most want, most important first (judged by consequence: who is affected and how much, not by whether the summary mentions it). Use as many as the document warrants: up to 10 for a long rule, often 1-3 for a short notice or memo, and zero is fine for a routine document.
 
 Prefer concrete specifics: who is affected and how, rights or protections added or removed, numbers (people affected, costs, comment counts), deadlines and effective dates, delegations of authority, provisions that appear only in the regulatory text, places where the summary or preamble describes a change more softly than the text, and what OPM declined to change.
 

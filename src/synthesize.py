@@ -42,13 +42,14 @@ SCHEMA = {
     },
 }
 
-INSTRUCTIONS = """Below is everything OPM published this week that was read in full, with each document's plain summary and its verified findings (ID, whether the document's own summary covers it, headline, detail). Cross-checks compare a press release or memo with the rule it describes.
+INSTRUCTIONS = """Below is everything OPM published this week that was read in full, with each document's plain summary and its verified findings (ID, headline, detail). Cross-checks compare a press release or memo with the rule it describes.
 
 Organize this into stories for a busy federal-workforce policy analyst:
 - A story is one policy change or topic. Put a rule together with its press release, its CHCO memo, and closely related notices. Every document belongs to exactly one story, or to routine_doc_ids if it is routine paperwork with nothing an analyst needs.
 - headline: at most 12 words, plain English, saying what is happening (not a document title).
 - takeaway: 1-2 sentences on what actually changes and for whom. Use only facts contained in the findings you select for this story; do not add anything else.
-- key_findings: up to 3 finding IDs, most important first. Prefer findings the documents' own summaries leave out or contradict ("absent", "opposite"), and include a cross-check conflict if there is one (its ID starts with X).
+- key_findings: up to 3 finding IDs, most important to the analyst first, judged by consequence: who is affected and how much. Whether a document's own summary mentions a finding is not a reason to pick or skip it. Include a cross-check conflict if there is one (its ID starts with X).
+- Size each story to its importance: a major rule gets up to 3 key findings; a minor item gets 1. Paperwork notices for forms or applications that don't change anyone's rights, benefits or obligations belong in routine_doc_ids, not in a story. Burden-hour estimates are rarely key findings.
 - Order stories by importance to the analyst, most important first.
 
 {payload}"""
@@ -70,7 +71,7 @@ def build_payload(reads: list[dict], results: dict, crosses: list) -> tuple[str,
                 continue  # only verified findings can be selected
             fid = f"{did}.F{fi}"
             fmap[fid] = (it, f, v)
-            lines.append(f"- {fid} [{f['summary_status']}] {f['headline']}: {f['what_changes']}")
+            lines.append(f"- {fid} {f['headline']}: {f['what_changes']}")
     for xi, (c, rule, x) in enumerate(crosses):
         f = x["findings"]
         if not f["describes_this_rule"]:

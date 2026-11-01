@@ -203,7 +203,9 @@ def _finding_md(f: dict, v: dict, with_quote: bool) -> str:
     f = {**f, "what_changes": _flat(f["what_changes"]), "headline": _flat(f["headline"])}
     warn = "" if v["status"] == "ok" else f" ⚠️ quote {v['status'].replace('_', ' ')}"
     who = "" if f["speaker"] == "OPM" else f" (quoted passage: {f['speaker'].replace('_', ' ')})"
-    s = f"- **{f['headline']}** — _{STATUS_LABEL[f['summary_status']]}_{who}. {f['what_changes']}"
+    # the summary-coverage label only appears in the collapsed full list, not in key findings
+    label = f" _({STATUS_LABEL[f['summary_status']]})_" if with_quote else ""
+    s = f"- **{f['headline']}**{label}{who}. {f['what_changes']}"
     if with_quote:
         s += f"  \n  > “{f['quote']}” (p. {f['page']}){warn}"
     else:
@@ -252,8 +254,7 @@ def render_stories(today, syn, results, crosses, one_lines, failures, cost, stor
                 continue
             total += len(r["findings"]["items"])
             body += [f"**{it['title']}** — {r['findings']['plain_summary']}", ""]
-            for f, v in sorted(zip(r["findings"]["items"], r["verification"]),
-                               key=lambda fv: STATUS_RANK[fv[0]["summary_status"]]):
+            for f, v in zip(r["findings"]["items"], r["verification"]):   # model's importance order
                 body.append(_finding_md(f, v, with_quote=True))
             if r["findings"]["could_not_determine"]:
                 body.append("- _The document doesn't say:_ " + "; ".join(r["findings"]["could_not_determine"]))

@@ -932,21 +932,8 @@
  "synthesis": {
   "stories": [
    {
-    "headline": "Administrative leave rules tighten, expand paid leave for workforce exits",
-    "takeaway": "Agency administrative-leave decisions become 'sole and exclusive' and cannot be limited by any agreement, including union contracts, and extended paid leave is allowed for deferred-resignation participants, RIF-noticed employees, and employees resigning under settlements over unproven allegations. Accepting deferred-resignation benefits becomes a valid reason to deny a resignation withdrawal, and poll-worker leave is newly banned.",
-    "doc_ids": [
-     "D2",
-     "D6"
-    ],
-    "key_findings": [
-     "D2.F0",
-     "D2.F4",
-     "D2.F1"
-    ]
-   },
-   {
-    "headline": "Senior professionals face OPM-imposed rating caps and lose rating appeals",
-    "takeaway": "For about 1,420 SL/ST employees, OPM may cap 'some or all' rating levels. The promise to cap only Levels 4-5 appears only in the preamble, and the sole exception is a Presidential waiver found outside the regulation. Rating appeals, grievances, and mandatory review of Level 1 ratings are eliminated, and the new ratings feed directly into RIF performance credit.",
+    "headline": "OPM finalizes rating caps and ends appeals for senior professionals",
+    "takeaway": "For about 1,420 SL/ST senior professionals, OPM gains open-ended authority to cap 'some or all' rating levels, and ratings are no longer appealable or grievable. Ratings under the new subpart E must be used for performance credit in reductions in force.",
     "doc_ids": [
      "D0"
     ],
@@ -957,27 +944,40 @@
     ]
    },
    {
+    "headline": "Administrative leave rules widen paid leave for departures, curb bargaining",
+    "takeaway": "Agency discretion over administrative leave can no longer be limited by any agreement, including union contracts, and agencies may deny resignation withdrawals because the employee accepted deferred-resignation benefits. Extended leave is authorized for deferred-resignation participants with no numeric cap in the regulation; the 12-week limit exists only in guidance and has already been raised to 6 months for FY 2026.",
+    "doc_ids": [
+     "D2",
+     "D6"
+    ],
+    "key_findings": [
+     "D2.F0",
+     "D2.F2",
+     "D2.F1"
+    ]
+   },
+   {
     "headline": "OPM ends governmentwide 52-week time-in-grade rule for GS promotions",
-    "takeaway": "The governmentwide time-in-grade rule stops applying January 19, 2027, though OPM's press release says January 14. Agencies may set their own job-related minimum service periods in their merit promotion plans. OPM rejected replacement safeguards, monitoring, or reporting.",
+    "takeaway": "The governmentwide time-in-grade requirement is removed effective January 19, 2027; the press release gives January 14. Agencies may set their own job-related minimum service periods in their merit promotion plans, and OPM declined to add replacement safeguards or reporting.",
     "doc_ids": [
      "D1",
      "D7"
     ],
     "key_findings": [
      "X0.C0",
-     "D1.F5",
-     "D1.F3"
+     "D1.F1",
+     "D1.F5"
     ]
    },
    {
     "headline": "FEHB enrollees must upload proof their family members are eligible",
-    "takeaway": "A new portal for the FEHB Protection Act audit will require enrollees with unverified spouses and children to upload relationship documents. OPM estimates about 2.7 million respondents and lists the collection as annual. Automated tools judge the documents, unresolved cases go to a contracted vendor and OPM, and no appeal process is described.",
+    "takeaway": "A new portal for the FEHB Protection Act audit would require about 2.7 million enrollees to upload documents proving their spouses' and children's eligibility, with collection listed as annual. Automated tools judge the documents, unresolved cases go to a contracted vendor and OPM, and no appeal process is described.",
     "doc_ids": [
      "D5"
     ],
     "key_findings": [
-     "D5.F2",
      "D5.F1",
+     "D5.F2",
      "D5.F0"
     ]
    }
@@ -987,7 +987,7 @@
    "D4"
   ],
   "problems": [],
-  "cost_usd": 0.055,
+  "cost_usd": 0.0531,
   "doc_urls": {
    "D0": "https://www.federalregister.gov/documents/2026/10/19/2026-21316/managing-senior-professional-performance",
    "D1": "https://www.federalregister.gov/documents/2026/10/19/2026-21319/elimination-of-time-in-grade",
