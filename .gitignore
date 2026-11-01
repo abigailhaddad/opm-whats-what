@@ -4,3 +4,4 @@ data/raw/
 explore/*.txt
 explore/ecfr_*
 data/*.html
+.env
