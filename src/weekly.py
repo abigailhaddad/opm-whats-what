@@ -32,6 +32,7 @@ from anthropic.types.message_create_params import MessageCreateParamsNonStreamin
 from anthropic.types.messages.batch_create_params import Request  # noqa: E402
 
 from fetch_text import document_text, own_summary  # noqa: E402
+from synthesize import synthesize  # noqa: E402
 from read import (PRICES, CrossCheck, build_crosscheck_request, build_request,  # noqa: E402
                   count_input_tokens, make_client, parse_message)
 from triage import triage  # noqa: E402
@@ -191,6 +192,111 @@ def render(today: str, reads: list[dict], one_lines: list[dict], results: dict, 
     return "\n".join(L) + "\n"
 
 
+def _flat(s: str) -> str:
+    """Model text sometimes contains its own markdown list; keep each finding to one bullet."""
+    s = re.sub(r"\s*\n\s*[-*]\s+", "; ", s)
+    return re.sub(r"\s+", " ", s).replace(":;", ":").strip()
+
+
+def _finding_md(f: dict, v: dict, with_quote: bool) -> str:
+    f = {**f, "what_changes": _flat(f["what_changes"]), "headline": _flat(f["headline"])}
+    warn = "" if v["status"] == "ok" else f" ⚠️ quote {v['status'].replace('_', ' ')}"
+    who = "" if f["speaker"] == "OPM" else f" (quoted passage: {f['speaker'].replace('_', ' ')})"
+    s = f"- **{f['headline']}** — _{STATUS_LABEL[f['summary_status']]}_{who}. {f['what_changes']}"
+    if with_quote:
+        s += f"  \n  > “{f['quote']}” (p. {f['page']}){warn}"
+    else:
+        s += f" (p. {f['page']}{', quote checked' if v['status'] == 'ok' else warn})"
+    return s
+
+
+def render_stories(today, syn, results, crosses, one_lines, failures, cost, store, capped) -> str:
+    docs, fmap = syn["docs"], syn["fmap"]
+    n_docs = len(docs)
+    L = [f"# OPM what's what — {today}", ""]
+    L.append(f"{n_docs} documents read in full, grouped into {len(syn['stories'])} stories. "
+             f"Each story shows the key points; open “All findings” for everything else, with quotes. "
+             f"Every quote has been checked against the document.")
+    if capped:
+        L += ["", f"**Not read this week:** {capped}"]
+    soon = sorted([v for v in store.values() if v["source"] == "fr" and v.get("comments_close")
+                   and today <= v["comments_close"] <= (date.fromisoformat(today) + timedelta(days=45)).isoformat()],
+                  key=lambda v: v["comments_close"])
+    if soon:
+        L += ["", "**Comment periods closing soon:** " + "; ".join(
+            f"[{v['title']}]({v['url']}) ({v['comments_close']})" for v in soon)]
+    cross_by_doc = {}
+    for c, rule, x in crosses:
+        cross_by_doc.setdefault(c["url"], []).append((c, rule, x))
+    for n, story in enumerate(syn["stories"], 1):
+        its = [docs[d] for d in story["doc_ids"]]
+        L += ["", f"## {n}. {story['headline']}", ""]
+        if story["takeaway"]:
+            L += [story["takeaway"], ""]
+        L.append("*" + " · ".join(f"[{it['title']}]({it['url']}) ({it.get('kind')}, {it.get('date')})" for it in its) + "*")
+        L.append("")
+        for fid in story["key_findings"]:
+            it, f, v = fmap[fid]
+            if fid.startswith("X"):
+                d = f["conflict"]
+                L.append(f"- **{f['headline']}.** {it.get('kind')}: “{d['companion_quote']}” (p. {d['companion_page']}) · "
+                         f"Rule: “{d['rule_quote']}” (p. {d['rule_page']})")
+            else:
+                L.append(_finding_md(f, v, with_quote=False))
+        # Everything else for this story, collapsed
+        body, total = [], 0
+        for it in its:
+            r = results.get(it["url"])
+            if not r:
+                continue
+            total += len(r["findings"]["items"])
+            body += [f"**{it['title']}** — {r['findings']['plain_summary']}", ""]
+            for f, v in sorted(zip(r["findings"]["items"], r["verification"]),
+                               key=lambda fv: STATUS_RANK[fv[0]["summary_status"]]):
+                body.append(_finding_md(f, v, with_quote=True))
+            if r["findings"]["could_not_determine"]:
+                body.append("- _The document doesn't say:_ " + "; ".join(r["findings"]["could_not_determine"]))
+            for c, rule, x in cross_by_doc.get(it["url"], []):
+                if x["findings"]["describes_this_rule"] and x["findings"]["left_out"]:
+                    k = c.get("kind") or "companion"
+                    k = k if k.startswith("CHCO") else k.lower()
+                    body.append(f"- _What the rule does that the {k} doesn't mention:_")
+                    body += [f"  - {s.rstrip('.')}" for s in x["findings"]["left_out"]]
+            body.append("")
+        if body:
+            L += ["", f"<details><summary>All findings ({total}) and quotes</summary>", ""] + body + ["</details>"]
+    routine = [docs[d] for d in syn["routine"]]
+    if routine or one_lines:
+        L += ["", "## Routine", ""]
+        L += [f"- [{it['title']}]({it['url']}) — {it.get('kind')}, {it.get('date')}: "
+              f"{results[it['url']]['findings']['plain_summary']}" for it in routine]
+        L += [f"- [{it['title']}]({it['url']}) — {it.get('kind') or it['source']}, "
+              f"{it.get('date') or 'first seen ' + it['first_seen'][:10]} ({triage(it)[1]}; not read)" for it in one_lines]
+    L += ["", "---", f"Model: {MODEL} (batch, effort {EFFORT}); grouping by the same model. Cost this run: ${cost:.2f}."]
+    probs = failures + syn.get("problems", [])
+    if probs:
+        L += ["", "**Problems this run:**"] + [f"- {x}" for x in probs]
+    return "\n".join(L) + "\n"
+
+
+def synthesis(raw: dict, reads: list[dict], crosses: list) -> dict:
+    """Run the grouping call once per week and cache it in raw["synthesis"]; later
+    re-renders reuse it. Read items with no result are not part of any story."""
+    from synthesize import build_payload
+    read_items = [it for it in reads if it["url"] in raw["results"]]
+    _, docs, fmap = build_payload(read_items, raw["results"], crosses)
+    if "synthesis" not in raw:
+        if not read_items:
+            raw["synthesis"] = {"stories": [], "routine": [], "problems": [], "cost_usd": 0.0}
+        else:
+            s = synthesize(make_client(), read_items, raw["results"], crosses)
+            raw["synthesis"] = {k: s[k] for k in ("stories", "routine", "problems", "cost_usd")}
+        raw["synthesis"]["doc_urls"] = {d: it["url"] for d, it in docs.items()}
+    elif raw["synthesis"].get("doc_urls") != {d: it["url"] for d, it in docs.items()}:
+        raise SystemExit("saved grouping refers to documents in a different order; delete raw['synthesis'] and rerun")
+    return {**raw["synthesis"], "docs": docs, "fmap": fmap}
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--start")
@@ -227,7 +333,10 @@ def main() -> int:
         raw = json.loads(Path(args.from_json).read_text())
         by_url = {**{it["url"]: it for it in reads}, **{v["url"]: v for v in store.values()}}
         crosses = [(by_url[c], by_url[r], x) for c, r, x in raw["crosses"]]
-        md = render(today, reads, one_lines, raw["results"], crosses, raw["failures"], raw["cost_usd"], store, None)
+        syn = synthesis(raw, reads, crosses)
+        Path(args.from_json).write_text(json.dumps(raw, indent=1, ensure_ascii=False))
+        md = render_stories(today, syn, raw["results"], crosses, one_lines, raw["failures"],
+                            raw["cost_usd"] + raw["synthesis"]["cost_usd"], store, None)
         Path(args.from_json).with_suffix(".md").write_text(md, encoding="utf-8")
         print("re-rendered", args.from_json)
         return 0
@@ -279,12 +388,14 @@ def main() -> int:
                 r["verification"] = [(a["status"], b["status"]) for a, b in zip(vc, vr)]
                 crosses.append((c, rule, r))
 
-    md = render(today, reads, one_lines, results, crosses, failures, cost, store, capped)
+    raw = {"results": results, "crosses": [(c["url"], r["url"], x) for c, r, x in crosses],
+           "failures": failures, "cost_usd": round(cost, 4)}
+    syn = synthesis(raw, reads, crosses)
+    md = render_stories(today, syn, results, crosses, one_lines, failures,
+                        cost + raw["synthesis"]["cost_usd"], store, capped)
     DIGESTS.mkdir(exist_ok=True)
     out = DIGESTS / (f"{today}.md" if not args.start else f"test-{args.start}.md")
     out.write_text(md, encoding="utf-8")
-    raw = {"results": results, "crosses": [(c["url"], r["url"], x) for c, r, x in crosses],
-           "failures": failures, "cost_usd": round(cost, 4)}
     out.with_suffix(".json").write_text(json.dumps(raw, indent=1, ensure_ascii=False))
     if not args.start:  # tests never mark items digested
         now = datetime.now(timezone.utc).isoformat(timespec="seconds")

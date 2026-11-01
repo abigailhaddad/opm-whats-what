@@ -928,5 +928,75 @@
   ]
  ],
  "failures": [],
- "cost_usd": 0.7779
+ "cost_usd": 0.7779,
+ "synthesis": {
+  "stories": [
+   {
+    "headline": "Administrative leave rules tighten, expand paid leave for workforce exits",
+    "takeaway": "Agency administrative-leave decisions become 'sole and exclusive' and cannot be limited by any agreement, including union contracts, and extended paid leave is allowed for deferred-resignation participants, RIF-noticed employees, and employees resigning under settlements over unproven allegations. Accepting deferred-resignation benefits becomes a valid reason to deny a resignation withdrawal, and poll-worker leave is newly banned.",
+    "doc_ids": [
+     "D2",
+     "D6"
+    ],
+    "key_findings": [
+     "D2.F0",
+     "D2.F4",
+     "D2.F1"
+    ]
+   },
+   {
+    "headline": "Senior professionals face OPM-imposed rating caps and lose rating appeals",
+    "takeaway": "For about 1,420 SL/ST employees, OPM may cap 'some or all' rating levels. The promise to cap only Levels 4-5 appears only in the preamble, and the sole exception is a Presidential waiver found outside the regulation. Rating appeals, grievances, and mandatory review of Level 1 ratings are eliminated, and the new ratings feed directly into RIF performance credit.",
+    "doc_ids": [
+     "D0"
+    ],
+    "key_findings": [
+     "D0.F0",
+     "D0.F1",
+     "D0.F6"
+    ]
+   },
+   {
+    "headline": "OPM ends governmentwide 52-week time-in-grade rule for GS promotions",
+    "takeaway": "The governmentwide time-in-grade rule stops applying January 19, 2027, though OPM's press release says January 14. Agencies may set their own job-related minimum service periods in their merit promotion plans. OPM rejected replacement safeguards, monitoring, or reporting.",
+    "doc_ids": [
+     "D1",
+     "D7"
+    ],
+    "key_findings": [
+     "X0.C0",
+     "D1.F5",
+     "D1.F3"
+    ]
+   },
+   {
+    "headline": "FEHB enrollees must upload proof their family members are eligible",
+    "takeaway": "A new portal for the FEHB Protection Act audit will require enrollees with unverified spouses and children to upload relationship documents. OPM estimates about 2.7 million respondents and lists the collection as annual. Automated tools judge the documents, unresolved cases go to a contracted vendor and OPM, and no appeal process is described.",
+    "doc_ids": [
+     "D5"
+    ],
+    "key_findings": [
+     "D5.F2",
+     "D5.F1",
+     "D5.F0"
+    ]
+   }
+  ],
+  "routine": [
+   "D3",
+   "D4"
+  ],
+  "problems": [],
+  "cost_usd": 0.055,
+  "doc_urls": {
+   "D0": "https://www.federalregister.gov/documents/2026/10/19/2026-21316/managing-senior-professional-performance",
+   "D1": "https://www.federalregister.gov/documents/2026/10/19/2026-21319/elimination-of-time-in-grade",
+   "D2": "https://www.federalregister.gov/documents/2026/10/19/2026-21320/administrative-leave-for-workforce-realignment-and-other-purposes",
+   "D3": "https://www.federalregister.gov/documents/2026/10/19/2026-21375/agency-information-collection-request-tribal-federal-employees-health-benefits-fehb-program-tribal",
+   "D4": "https://www.federalregister.gov/documents/2026/10/19/2026-21378/agency-information-collection-request-3206-new-annuitant-verification-form-ri-20-129",
+   "D5": "https://www.federalregister.gov/documents/2026/10/19/2026-21380/agency-information-collection-request-fehb-protection-act-portal-omb-control-number-3206-new",
+   "D6": "https://www.opm.gov/chcoc/latest-memos/revised-administrative-leave-regulations.pdf",
+   "D7": "https://www.opm.gov/news/news-releases/opm-finalizes-rule-removing-governmentwide-time-in-grade-barrier-to-promotions/"
+  }
+ }
 }
