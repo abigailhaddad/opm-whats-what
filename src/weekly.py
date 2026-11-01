@@ -195,7 +195,8 @@ def render(today: str, reads: list[dict], one_lines: list[dict], results: dict, 
 def _flat(s: str) -> str:
     """Model text sometimes contains its own markdown list; keep each finding to one bullet."""
     s = re.sub(r"\s*\n\s*[-*]\s+", "; ", s)
-    return re.sub(r"\s+", " ", s).replace(":;", ":").strip()
+    s = re.sub(r"[;,]\s*;", ";", re.sub(r"\s+", " ", s))
+    return s.replace(":;", ":").strip()
 
 
 def _finding_md(f: dict, v: dict, with_quote: bool) -> str:
