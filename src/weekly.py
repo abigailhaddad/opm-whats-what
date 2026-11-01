@@ -220,9 +220,9 @@ def render_stories(today, syn, results, crosses, one_lines, failures, cost, stor
         # first line is a marker the workflow checks to skip opening an issue
         return f"NOTHING NEW\n\n# OPM what's what — {today}\n\nNothing new from OPM this week.\n"
     L = [f"# OPM what's what — {today}", ""]
-    L.append(f"{n_docs} documents read in full, grouped into {len(syn['stories'])} stories. "
-             f"Each story shows the key points; open “All findings” for everything else, with quotes. "
-             f"Quotes are checked against the documents; ⚠️ marks any that didn't match.")
+    L.append(f"{n_docs} new document{'s' if n_docs != 1 else ''} this week.")
+    if any(v["status"] != "ok" for r in results.values() for v in r["verification"]):
+        L.append("⚠️ means a quote didn't match the document.")
     if capped:
         L += ["", f"**Not read this week:** {capped}"]
     soon = sorted([v for v in store.values() if v["source"] == "fr" and v.get("comments_close")
