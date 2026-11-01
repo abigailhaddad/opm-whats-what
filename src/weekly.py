@@ -216,6 +216,9 @@ def _finding_md(f: dict, v: dict, with_quote: bool) -> str:
 def render_stories(today, syn, results, crosses, one_lines, failures, cost, store, capped) -> str:
     docs, fmap = syn["docs"], syn["fmap"]
     n_docs = len(docs)
+    if not docs and not one_lines and not failures and not capped:
+        # first line is a marker the workflow checks to skip opening an issue
+        return f"NOTHING NEW\n\n# OPM what's what — {today}\n\nNothing new from OPM this week.\n"
     L = [f"# OPM what's what — {today}", ""]
     L.append(f"{n_docs} documents read in full, grouped into {len(syn['stories'])} stories. "
              f"Each story shows the key points; open “All findings” for everything else, with quotes. "

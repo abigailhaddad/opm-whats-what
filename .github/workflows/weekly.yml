@@ -33,14 +33,29 @@ jobs:
     env:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       ANTHROPIC_WORKSPACE_ID: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}
+      # Baseline was taken 2026-11-01; the first scheduled digest is the full week
+      # ending Monday 2026-11-09. Scheduled runs before then do nothing.
+      FIRST_SCHEDULED_RUN: "2026-11-09"
     steps:
+      - name: Skip scheduled runs before the first digest week
+        id: gate
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] && [[ "$(date -u +%F)" < "$FIRST_SCHEDULED_RUN" ]]; then
+            echo "Before $FIRST_SCHEDULED_RUN; skipping."; echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/checkout@v4
+        if: ${{ steps.gate.outputs.skip != 'true' }}
       - uses: actions/setup-python@v5
+        if: ${{ steps.gate.outputs.skip != 'true' }}
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
+        if: ${{ steps.gate.outputs.skip != 'true' }}
 
       - name: Check the API key works (free call; never prints the key)
+        if: ${{ steps.gate.outputs.skip != 'true' }}
         run: |
           python - <<'EOF'
           import sys; sys.path.insert(0, "src")
@@ -54,15 +69,15 @@ jobs:
           EOF
 
       - name: Collect
-        if: ${{ !inputs.check_only }}
+        if: ${{ steps.gate.outputs.skip != 'true' && !inputs.check_only }}
         run: python src/collect.py
 
       - name: Read, verify, write digest
-        if: ${{ !inputs.check_only }}
+        if: ${{ steps.gate.outputs.skip != 'true' && !inputs.check_only }}
         run: python src/weekly.py --cap "${{ github.event.inputs.cap || '3' }}"
 
       - name: Commit digest and state
-        if: ${{ !inputs.check_only }}
+        if: ${{ steps.gate.outputs.skip != 'true' && !inputs.check_only }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -70,12 +85,13 @@ jobs:
           git diff --cached --quiet || { git commit -m "Weekly digest $(date -u +%F)"; git push; }
 
       - name: Open the digest as an issue (emails you)
-        if: ${{ !inputs.check_only }}
+        if: ${{ steps.gate.outputs.skip != 'true' && !inputs.check_only }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           f="digests/$(date -u +%F).md"
           [ -f "$f" ] || { echo "no digest written"; exit 1; }
+          if grep -q '^NOTHING NEW' "$f"; then echo "Nothing new this week; no issue opened."; exit 0; fi
           url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/blob/main/$f"
           # issue bodies max out at 65,536 characters; long weeks link to the full file
           python - "$f" "$url" > body.md <<'EOF'
