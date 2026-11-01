@@ -209,7 +209,7 @@ def _finding_md(f: dict, v: dict, with_quote: bool) -> str:
     if with_quote:
         s += f"  \n  > “{f['quote']}” (p. {f['page']}){warn}"
     else:
-        s += f" (p. {f['page']}{', quote checked' if v['status'] == 'ok' else warn})"
+        s += f" (p. {f['page']}{warn})"   # key findings are always verified; warn is empty
     return s
 
 
@@ -222,7 +222,7 @@ def render_stories(today, syn, results, crosses, one_lines, failures, cost, stor
     L = [f"# OPM what's what — {today}", ""]
     L.append(f"{n_docs} documents read in full, grouped into {len(syn['stories'])} stories. "
              f"Each story shows the key points; open “All findings” for everything else, with quotes. "
-             f"Every quote has been checked against the document.")
+             f"Quotes are checked against the documents; ⚠️ marks any that didn't match.")
     if capped:
         L += ["", f"**Not read this week:** {capped}"]
     soon = sorted([v for v in store.values() if v["source"] == "fr" and v.get("comments_close")
