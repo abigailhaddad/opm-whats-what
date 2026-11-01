@@ -1,0 +1,932 @@
+{
+ "results": {
+  "https://www.opm.gov/chcoc/latest-memos/revised-administrative-leave-regulations.pdf": {
+   "findings": {
+    "plain_summary": "This OPM memo announces an October 19, 2026 final rule revising administrative leave regulations (5 CFR part 630, subpart N) and related reduction-in-force and resignation rules (5 CFR 351.806 and 715.202), effective November 18, 2026. The rule lists permitted and newly prohibited uses of administrative leave, says agency discretion over that leave cannot be limited by any agreement, and lets agencies deny resignation withdrawals when the employee received deferred-resignation benefits.",
+    "items": [
+     {
+      "headline": "Agency discretion over administrative leave cannot be limited by any agreement or made an entitlement",
+      "what_changes": "The rule defines 'sole and exclusive discretion' so that no agreement can limit or condition an agency's decision to grant or deny administrative leave. It also bars making administrative leave a mandatory entitlement. The memo does not say so, but this language would appear to reach negotiated agreements such as union contracts. It applies within the bounds of law, regulations, and Presidential directives.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Clariﬁes that decisions to provide or not provide administrative leave are subject to agencyʼs “sole and exclusive discretion” and deﬁnes that term to make clear that discretion—while bounded by applicable law, regulations, and Presidential directives—may not be limited or conditioned by any agreement or established as a mandatory entitlement to administrative leave.",
+      "page": 1,
+      "section": "Summary of Key Regulatory Changes (5 CFR part 630, subpart N)"
+     },
+     {
+      "headline": "Agencies may refuse resignation withdrawals; deferred-resignation benefits are a valid reason",
+      "what_changes": "The amended resignation rule (5 CFR 715.202) gives agencies sole and exclusive discretion to accept or deny an employee's request to withdraw a resignation before it takes effect. It states that receiving deferred-resignation benefits, such as paid administrative leave, is a valid basis for denial.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "speciﬁcally addresses that  an employeeʼs receipt of beneﬁts provided under a deferred resignation agreement, such as paid administrative leave, is a valid reason to deny an employeeʼs request to withdraw a resignation.",
+      "page": 2,
+      "section": "Summary of Key Regulatory Changes (5 CFR 715.202)"
+     },
+     {
+      "headline": "New prohibited uses: sick-leave purposes, investigative-leave situations, and poll worker/observer service",
+      "what_changes": "Administrative leave may no longer be used in three new situations. These are any purpose for which sick leave could be used (with very limited exceptions), cases where investigative leave under 5 U.S.C. 6329b applies, and service as a poll worker or poll observer.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Adds additional prohibited uses, including bars on using administrative leave for a purpose for which sick leave could be used (with very limited exceptions), when investigative leave under 5 U.S.C. 6329b is applicable, or for service as a poll worker or poll observer.",
+      "page": 1,
+      "section": "Summary of Key Regulatory Changes (5 CFR part 630, subpart N)"
+     },
+     {
+      "headline": "Approved uses include deferred resignation programs and limited physical fitness leave",
+      "what_changes": "The skimmable summary mentions 'workforce realignment initiatives' but cuts off before the specifics. The rule names deferred resignation programs as an acceptable use of administrative leave. It also allows agency-approved physical fitness activities on a limited and conditional basis.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "including uses to support workforce realignment initiatives such as deferred resignation programs and uses for agency-approved physical ﬁtness activities on a limited and conditional basis.",
+      "page": 1,
+      "section": "Summary of Key Regulatory Changes (5 CFR part 630, subpart N)"
+     },
+     {
+      "headline": "Administrative leave during reduction-in-force notice periods addressed",
+      "what_changes": "The rule amends 5 CFR 351.806 to specify when agencies may provide administrative leave during a RIF notice period. The memo does not describe what those conditions are.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Clariﬁes when an agency may provide administrative leave during a reduction-in-force notice period.",
+      "page": 1,
+      "section": "Summary of Key Regulatory Changes (5 CFR 351.806)"
+     },
+     {
+      "headline": "OPM will revise its administrative leave fact sheet and agency policy template; no date given",
+      "what_changes": "OPM will update its website fact sheet and the Template for Agency Administrative Leave Policies (CPM 2025-12) to reflect the new rule. No timeline is given; OPM will notify agencies when they are issued.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "OPM will inform agencies when the updated fact sheet and agency policies template are issued.",
+      "page": 2,
+      "section": "Guidance Updates"
+     }
+    ],
+    "could_not_determine": [
+     "How many employees or agencies are affected, and which Executive branch agencies fall outside 'almost all'",
+     "Whether and how the 'may not be limited or conditioned by any agreement' language affects existing collective bargaining agreements",
+     "What the 'very limited exceptions' to the sick-leave-purpose bar are",
+     "The specific conditions and limits on administrative leave for physical fitness activities",
+     "What the rule actually allows or restricts on administrative leave during a RIF notice period",
+     "The Federal Register citation, public comment counts, OPM's responses to comments, or any cost analysis for the final rule",
+     "When OPM will issue the updated fact sheet and agency policy template"
+    ]
+   },
+   "model": "claude-opus-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 2838,
+    "output_tokens": 2765
+   },
+   "cost_usd": 0.0333,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  },
+  "https://www.opm.gov/news/news-releases/opm-finalizes-rule-removing-governmentwide-time-in-grade-barrier-to-promotions/": {
+   "findings": {
+    "plain_summary": "OPM has finalized a rule removing the governmentwide requirement that employees spend 52 weeks at a lower grade before promotion to covered competitive-service GS-6 and above positions, effective January 14, 2027. Agencies may still require time in grade through their own merit-promotion plans, and the rule also changes regulations on student appointments, training, and other personnel matters.",
+    "items": [
+     {
+      "headline": "Rule takes effect January 14, 2027",
+      "what_changes": "The removal of the time-in-grade restriction applies starting January 14, 2027, nearly three months after the announcement. The summary does not give this date.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "The rule takes effect January 14, 2027.",
+      "page": 1,
+      "section": "News release body"
+     },
+     {
+      "headline": "Agencies can still require a period of service in grade",
+      "what_changes": "The governmentwide 52-week rule is removed, but agencies may impose their own time-in-grade prerequisites through written merit-promotion plans, as long as they apply them consistently. The summary refers only to \"job-related requirements\" and does not say a waiting period itself can be kept at the agency level.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "Agencies may continue to establish job-related promotion prerequisites, including a period of service in grade, through their written merit-promotion plans, provided those requirements are consistently applied.",
+      "page": 1,
+      "section": "News release body"
+     },
+     {
+      "headline": "Rule also changes student appointment, training, and other personnel regulations",
+      "what_changes": "Beyond time-in-grade, the final rule makes related changes to other regulations, including those on student appointments and training. The release does not describe these changes.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "It also makes related changes to regulations governing student appointments, training, and other personnel matters.",
+      "page": 1,
+      "section": "News release body"
+     },
+     {
+      "headline": "No guaranteed promotions; qualification standards and competitive procedures unchanged",
+      "what_changes": "Removing the waiting period does not entitle anyone to a promotion, waive qualification standards, or change how agencies evaluate and select candidates. The summary says qualified employees \"can be considered\" but does not state these limits.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "It does not guarantee a promotion, waive qualification standards, or change the competitive procedures agencies use to evaluate and select candidates.",
+      "page": 1,
+      "section": "News release body"
+     }
+    ],
+    "could_not_determine": [
+     "How many employees or positions are affected.",
+     "What specific changes the rule makes to student appointment, training, and other personnel regulations.",
+     "Which CFR sections are amended or removed, and the Federal Register citation.",
+     "Whether the final rule changed anything from the proposed rule, and how many public comments were received.",
+     "Whether any cost or impact analysis was done.",
+     "How positions below GS-6 are treated under the rule.",
+     "Whether the rule affects excepted-service or non-GS positions."
+    ]
+   },
+   "model": "claude-opus-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 2264,
+    "output_tokens": 1412
+   },
+   "cost_usd": 0.0186,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  },
+  "https://www.federalregister.gov/documents/2026/10/19/2026-21380/agency-information-collection-request-fehb-protection-act-portal-omb-control-number-3206-new": {
+   "findings": {
+    "plain_summary": "OPM is seeking comment, through December 18, 2026, on a new online portal that will require FEHB enrollees to upload documents proving their covered spouses and children are eligible, as part of the family-member audit required by the FEHB Protection Act of 2025. OPM estimates about 2.7 million respondents at 30 minutes each, or 1.4 million burden hours, with submissions screened by automated document verification and unresolved cases sent to a contracted vendor and OPM.",
+    "items": [
+     {
+      "headline": "Portal will make enrollees prove their family members are eligible for FEHB coverage",
+      "what_changes": "The summary names only the portal. The document says it is an eligibility verification system for the FEHB Protection Act of 2025 audit of covered family members. Its stated aim is to keep ineligible family members out of the FEHB Program.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "It will provide a secure and consistent process to ensure that only eligible individuals are enrolled in the FEHB Program. This will strengthen enrollment integrity and ensure ineligible family members are not participating in the FEHB Program.",
+      "page": 66172,
+      "section": "Background"
+     },
+     {
+      "headline": "About 2.7 million respondents, 1.4 million burden hours, collected annually",
+      "what_changes": "OPM estimates about 2.7 million respondents at 30 minutes each, for a total of 1.4 million burden hours. Frequency is listed as annual, which suggests recurring verification rather than a one-time audit.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Number of Respondents: ~2.7 million.",
+      "page": 66173,
+      "section": "Analysis"
+     },
+     {
+      "headline": "Automated review decides sufficiency; unresolved cases go to a contracted vendor and OPM",
+      "what_changes": "Automated document-verification tools will judge whether submitted documents support an eligibility decision. Cases the automation cannot resolve are referred to a private contracted vendor and OPM. No appeal process is described.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "If a case cannot be resolved through the automated review process, it will be referred to the contracted vendor and OPM. The results of that review will be returned to the FPA Portal for continued processing.",
+      "page": 66173,
+      "section": "Background"
+     },
+     {
+      "headline": "Enrollees must upload relationship documents for spouses and children",
+      "what_changes": "Enrollees whose family members are unverified will get emails and mailed notices directing them to sign in. They must then upload records establishing each spouse's or child's eligibility, using the list in the FEHB Handbook.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "The documents required depend on the family member's relationship to the enrollee and include records used to establish a spouse's or child's eligibility.",
+      "page": 66173,
+      "section": "Background"
+     },
+     {
+      "headline": "First phase covers enrollees, OPM and a vendor; agencies, payroll offices and carriers come later",
+      "what_changes": "The initial phase involves only enrollees with unverified family members, OPM personnel and a contracted vendor. Employing agencies, payroll offices and participating health carriers will be added in later phases, with no dates given.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Employing agencies, payroll offices, and participating health insurance carriers will be incorporated in subsequent phases.",
+      "page": 66172,
+      "section": "Background"
+     },
+     {
+      "headline": "Comment deadline December 18, 2026; comments posted publicly with identifiers",
+      "what_changes": "This is a 60-day comment period ending December 18, 2026. Submissions will be posted on regulations.gov as received, including personal identifiers.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Comments are encouraged and will be accepted until December 18, 2026.",
+      "page": 66172,
+      "section": "DATES"
+     }
+    ],
+    "could_not_determine": [
+     "What happens to enrollees who do not respond or whose documents are found insufficient (e.g., removal of family members from coverage, retroactive termination, recovery of premiums or claims paid).",
+     "Response deadlines enrollees will face after receiving notices, and the number or timing of reminders.",
+     "Whether enrollees have any appeal or reconsideration right after an automated or vendor determination.",
+     "Identity of the contracted vendor, contract cost, and total cost of the collection to the government or respondents.",
+     "Privacy safeguards, the applicable System of Records Notice, and how uploaded documents will be retained or shared.",
+     "When notices will begin going out and when the later phases adding employing agencies, payroll offices and carriers will start.",
+     "Why frequency is listed as 'Annually' when the statute calls for an audit, and whether enrollees will be re-verified each year.",
+     "How the ~2.7 million respondent figure was derived and whether it counts enrollees or individual family members."
+    ]
+   },
+   "model": "claude-opus-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 3197,
+    "output_tokens": 2559
+   },
+   "cost_usd": 0.032,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  },
+  "https://www.federalregister.gov/documents/2026/10/19/2026-21378/agency-information-collection-request-3206-new-annuitant-verification-form-ri-20-129": {
+   "findings": {
+    "plain_summary": "OPM Retirement Services is seeking public comment, through December 18, 2026, on a new form (RI 20-129) that annuitants would complete to verify their identity after requesting changes to their contact information when OPM could not otherwise confirm who made the request. OPM estimates 750 respondents a year at 15 minutes each, for 188 total burden hours, and says the verification will determine whether the person gets access to the annuitant's account.",
+    "items": [
+     {
+      "headline": "New form verifies annuitant identity after unverifiable contact-info change requests",
+      "what_changes": "OPM is creating Form RI 20-129 for annuitants whose requests to change contact information came through channels that did not let OPM confirm their identity. One example is a caller who fails the identification questions.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "OPM has created Form RI 20-129 to verify the identity of an annuitant who has requested changes to contact information.",
+      "page": 66172,
+      "section": "SUPPLEMENTARY INFORMATION"
+     },
+     {
+      "headline": "Verification outcome controls whether the requester gets account access",
+      "what_changes": "The result of the verification decides whether the person who made the request is given access to the annuitant's account. In effect, the form gates account access, not just the contact-information update.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "The verification will determine whether the individual is provided access to the annuitant's account.",
+      "page": 66172,
+      "section": "SUPPLEMENTARY INFORMATION"
+     },
+     {
+      "headline": "Trigger: callers who can't answer identification questions",
+      "what_changes": "The form is aimed at contact-information change requests that arrive by phone or other means and that OPM cannot verify, such as when a caller gives wrong answers to identification questions.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "OPM receives requests to change contact information by various means of communication that do not provide sufficient opportunity to OPM to verify the identity of the individual initiating the request, such as when a caller is unable to provide a correct response to identification questions.",
+      "page": 66172,
+      "section": "SUPPLEMENTARY INFORMATION"
+     },
+     {
+      "headline": "Burden estimate: 750 respondents, 15 minutes each, 188 hours",
+      "what_changes": "OPM estimates 750 individuals or households will respond on occasion. It puts each response at 15 minutes, for 188 total burden hours.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Number of Respondents: 750.",
+      "page": 66172,
+      "section": "Analysis"
+     },
+     {
+      "headline": "Comment deadline December 18, 2026",
+      "what_changes": "This is a 60-day comment period. Comments go through regulations.gov and are posted publicly without change, including any personal identifiers.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Comments are encouraged and will be accepted until December 18, 2026.",
+      "page": 66172,
+      "section": "DATES"
+     }
+    ],
+    "could_not_determine": [
+     "How OPM will handle a request if the form is not returned or the identity cannot be verified (e.g., whether the contact change is rejected or the account is locked), and any time limit for responding.",
+     "What identity evidence or documents the form asks for; the form's contents are not described.",
+     "Whether the form can be submitted electronically or only on paper.",
+     "Whether the form also applies to survivor annuitants or representative payees, or only to annuitants.",
+     "The basis for the 750-respondent estimate and whether it reflects current volumes of failed identity verifications.",
+     "Any cost estimate to respondents beyond burden hours."
+    ]
+   },
+   "model": "claude-opus-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 2685,
+    "output_tokens": 1166
+   },
+   "cost_usd": 0.017,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  },
+  "https://www.federalregister.gov/documents/2026/10/19/2026-21375/agency-information-collection-request-tribal-federal-employees-health-benefits-fehb-program-tribal": {
+   "findings": {
+    "plain_summary": "OPM is proposing a new one-time application form that tribal employers must complete to join the FEHB Program. The form collects employer identity, representatives, key personnel, billing unit and bank account details, and an employer profile, and comments are due December 18, 2026.",
+    "items": [
+     {
+      "headline": "New application collects bank account, billing unit, and key personnel data from tribal employers",
+      "what_changes": "Tribal employers applying to FEHB would submit employer and representative identification, key tribal personnel, billing unit and bank account information, and a tribal employer profile. OPM says the information is used to validate applications and facilitate enrollment, and it is not published.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "This collection consists of information identifying the tribal employer and its representatives for FEHB purposes, key tribal personnel, billing unit and bank account information, and a tribal employer profile. Collection of this information is necessary to ensure the validity of a program application and to facilitate enrollment in the FEHB Program.",
+      "page": 66171,
+      "section": "Background"
+     },
+     {
+      "headline": "Burden estimate: 75 tribal employers, 2.25 hours each, 168.75 total hours, filed once",
+      "what_changes": "OPM estimates 75 respondents, each spending 135 minutes on a one-time application, for 168.75 total burden hours.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Number of Respondents: 75.",
+      "page": 66171,
+      "section": "Analysis"
+     },
+     {
+      "headline": "Which tribal employers are covered, and when their employees become eligible",
+      "what_changes": "The form applies to Indian tribes and tribal organizations carrying out programs under ISDEAA or the Tribally Controlled Schools Act, and to urban Indian organizations carrying out programs under IHCIA title V. Once the employer elects to participate, its common law employees who meet FEHB employment-type requirements become eligible to enroll.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Once a tribal employer elects to participate in the FEHB Program in compliance with 5 CFR 890.1404, a tribal employee who is considered a common law employee and meets FEHB requirements for the type of employment (e.g., full-time, seasonal) will become eligible to enroll in FEHB pursuant to 5 CFR 890.1405.",
+      "page": 66171,
+      "section": "Background"
+     },
+     {
+      "headline": "Comment deadline is December 18, 2026",
+      "what_changes": "OPM will accept comments through regulations.gov until December 18, 2026, under a 60-day notice period.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Comments are encouraged and will be accepted until December 18, 2026.",
+      "page": 66171,
+      "section": "DATES"
+     }
+    ],
+    "could_not_determine": [
+     "Whether this form replaces an existing application process or is newly required for tribal employers already participating in FEHB",
+     "How the estimate of 75 respondents was derived, or how many tribal employers currently participate in FEHB",
+     "The number of tribal employees who would gain FEHB eligibility through these applications",
+     "Dollar cost burden to respondents or to OPM",
+     "Whether electronic submission of the application will be available",
+     "The specific data fields within the tribal employer profile and the key tribal personnel section"
+    ]
+   },
+   "model": "claude-opus-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 3222,
+    "output_tokens": 1071
+   },
+   "cost_usd": 0.0172,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  },
+  "https://www.federalregister.gov/documents/2026/10/19/2026-21319/elimination-of-time-in-grade": {
+   "findings": {
+    "plain_summary": "OPM is finalizing, effective January 19, 2027, the removal of the governmentwide 52-week time-in-grade rule (5 CFR part 300, subpart F) for GS competitive-service promotions, along with conforming changes to student-appointment, international-organization reemployment, and training rules. OPM declined commenters' requests for replacement safeguards such as review boards, documentation mandates, or public reporting, though agencies may still set their own job-related minimum service periods in their merit promotion plans.",
+    "items": [
+     {
+      "headline": "Rule takes effect January 19, 2027, 90 days after publication",
+      "what_changes": "TIG eligibility stops applying on January 19, 2027. OPM rejected longer or phased timelines, a transition period written into the regulatory text, and an effective date conditioned on OSC/MSPB capacity. Until an agency revises its merit promotion plan, the existing plan governs minus the TIG restriction.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "DATES: This rule is effective January 19, 2027.",
+      "page": 65887,
+      "section": "DATES"
+     },
+     {
+      "headline": "Agencies may impose their own minimum time-in-grade requirements",
+      "what_changes": "Agencies may keep or create their own minimum service periods, career-ladder intervals, or TIG-like criteria. These must be job-related, published in the merit promotion plan, available in writing to candidates, and applied consistently. The result is that time requirements can vary by agency rather than being uniform.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "Agencies may continue to establish and apply internal career-ladder progression intervals, including a specified minimum period in the lower grade, provided that any such requirement is job-related and consistently applied.",
+      "page": 65897,
+      "section": "III.G Career Ladder Positions, Agency-Retained Time Requirements, and Training Agreements"
+     },
+     {
+      "headline": "Removing §300.606 means agencies must re-document their own service requirements before the effective date",
+      "what_changes": "The regulatory text deleted §300.606, which let agencies expand on the TIG restrictions. OPM says the authority now rests on §335.103(b)(1). Agencies relying on §300.606 should put their requirements into their merit promotion plans before January 19, 2027.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Agencies that presently rely on Sec.  300.606 to support agency-specific service requirements should confirm that those requirements are documented in their merit promotion plans under Sec.  335.103(b)(1) before the effective date of this rule.",
+      "page": 65897,
+      "section": "III.G Career Ladder Positions, Agency-Retained Time Requirements, and Training Agreements"
+     },
+     {
+      "headline": "OPM is also reviewing the one-year service period in the qualification standards",
+      "what_changes": "The summary says employees remain subject to qualification standards. However, OPM states those standards have historically contained a similar one-year service period, which it is separately reviewing and may remove. OPM says this rule does not depend on that requirement continuing.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "OPM is separately reviewing that requirement, and OPM's determination in this rule does not depend on its continuation.",
+      "page": 65891,
+      "section": "III.A General Comments on the Decision To Eliminate TIG"
+     },
+     {
+      "headline": "OPM approval of training agreements and the two-promotions-per-52-weeks cap are eliminated",
+      "what_changes": "Training agreements no longer need OPM approval. The limit of two promotions in any 52-week period under training agreements no longer applies. Existing approvals do not lapse, and existing agreements become ordinary agency documents. Agency-head and OPM exception approvals under former §300.603(b)(7)-(8) are also removed.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Accordingly, on and after the effective date of this rule: no OPM approval of a training agreement is required; no OPM approval previously granted needs to be renewed, converted, or rescinded, and none will lapse by operation of this rule; and the limitation of two promotions in a 52-week period on the basis of one or more training agreements no longer applies.",
+      "page": 65897,
+      "section": "III.G Career Ladder Positions, Agency-Retained Time Requirements, and Training Agreements"
+     },
+     {
+      "headline": "OPM declined to add replacement safeguards, monitoring, or reporting",
+      "what_changes": "OPM rejected governmentwide requirements proposed by commenters, including:\n- written certifications;\n- higher-level or review-board approval of early promotions;\n- standardized documentation;\n- public aggregate or demographic reporting;\n- a three-year retrospective review;\n- new appeal rights for employees passed over for an early-promoted peer.\nOPM says any such requirements belong in a future part 335 rulemaking; monitoring is left to guidance and ordinary oversight.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "OPM will address monitoring practices in the implementation guidance described in Part IV and may review implementation data in the course of its ordinary oversight of agency personnel management programs but declines to codify a specific data collection, reporting, or three-year review mandate in this rule.",
+      "page": 65896,
+      "section": "III.D Comments Requesting Monitoring, Data Collection, and Public Reporting"
+     },
+     {
+      "headline": "OPM ties promotion readiness to its new forced-distribution performance rating rule",
+      "what_changes": "OPM links this rule to its July 2026 appraisal rule, which lets OPM set a standardized distribution limiting the highest rating levels. OPM says the resulting ratings will help supervisors identify employees ready for promotion. OPM also states that no rating is necessary or sufficient for promotion.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Third, OPM expects that imposing a standardized distribution of the highest performance ratings will ensure that agency performance appraisal systems will more reliably distinguish and identify high performers and help eliminate widespread ratings inflation across the Federal Government.",
+      "page": 65898,
+      "section": "III.H Interaction With Within-Grade Increases, Quality Step Increases, and Other Pay-Setting Authorities"
+     },
+     {
+      "headline": "Conforming changes remove TIG from student-appointment promotions and conversions and from international-organization reemployment",
+      "what_changes": "The regulatory text changes promotion and conversion rules for post-secondary student appointees (§§315.714, 316.909, 316.910). These now require only qualifications, 640 hours of service, and notice of career-ladder potential. The text also revises §352.311(d) on credited service after employment with an international organization. It removes §410.307(a)(3), the training-agreement cross-reference.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "An agency may promote a student who was appointed for an initial period expected to last more than 1 year but less than 4 years provided the student meets the qualification requirements for the higher graded position, and the public notification for the position filled by the student stated the potential for promotion and specified a career ladder.",
+      "page": 65903,
+      "section": "5 CFR 316.909 Promotion"
+     },
+     {
+      "headline": "Cost estimate covers only one-time plan revisions",
+      "what_changes": "OPM estimates 250 hours per agency at $156.30 per hour in the first year, about $3.1 million governmentwide. It does not quantify payroll effects from faster promotions, HR workload, grievance or litigation changes, or recurring administrative savings. OPM conceded that large multi-component departments may exceed the estimate but did not revise it.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "This results in an estimated first-year implementation cost of approximately $39,075 per agency and approximately $3,126,000 governmentwide.",
+      "page": 65902,
+      "section": "V.D Costs"
+     },
+     {
+      "headline": "OPM rejected keeping TIG for vacancies open to VEOA veterans",
+      "what_changes": "A commenter warned that removing TIG could let agencies rapidly promote favored internal status employees over external VEOA veterans. OPM made no change and rejected keeping TIG for VEOA-based competition, promising only guidance.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "OPM does not agree that removing an internal eligibility restriction on status employees creates unfairness to preference-eligible veterans competing under VEOA, because both status employees and VEOA-eligible veterans remain subject to the same qualification standards and the same merit promotion or competitive examining procedures for the vacancy in question.",
+      "page": 65896,
+      "section": "III.E Comments Regarding Veterans' Preference and the VEOA"
+     }
+    ],
+    "could_not_determine": [
+     "How many employees or promotion actions are affected by the rule; the document cites only a 1.5-million-employee workforce figure raised by a commenter.",
+     "The expected effect on Federal payroll; OPM says it does not expect a predictable or quantifiable increase and offers no estimate.",
+     "Comment tallies are internally inconsistent: the Executive Summary gives 41 support / 22 conditional / 11 oppose, which sums to 74, while Part II gives 41 / 23 / 12, which sums to 76, even though both cite 75 total. Category D lists eight comment numbers but is labeled as 7 comments.",
+     "When OPM will issue the promised implementation guidance, or whether it will come before the effective date.",
+     "The timing and likely outcome of OPM's separate review of the one-year service period in the GS qualification standards.",
+     "How many agencies the $3,126,000 governmentwide cost assumes; the arithmetic implies about 80, but the document does not state it.",
+     "Any changes in promotion request volume, HR workload, grievances, or litigation; OPM says it lacks data to estimate these."
+    ]
+   },
+   "model": "claude-opus-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 45132,
+    "output_tokens": 5291
+   },
+   "cost_usd": 0.1432,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  },
+  "https://www.federalregister.gov/documents/2026/10/19/2026-21316/managing-senior-professional-performance": {
+   "findings": {
+    "plain_summary": "OPM and OMB create a new 5 CFR part 430 subpart E for the roughly 1,420 SL/ST senior professionals, effective November 18, 2026. It authorizes OPM-imposed rating distributions, ends appeals and grievances of ratings, requires quarterly progress reviews and PRB centralized review, and ties the new ratings into RIF performance credit and pay rules.",
+    "items": [
+     {
+      "headline": "Regulatory text lets OPM cap 'some or all' rating levels; the promise to limit only Levels 4-5 appears only in the preamble",
+      "what_changes": "The rule removes the ban on forced distribution and gives OPM open-ended authority to set a mandatory distribution of any or all rating levels. OPM's stated plan to cap only Levels 4 and 5, and to leave Level 3 and below uncapped, is a statement of intent and is not written into the rule. The same applies to OPM's plan to apply limits at an aggregate level rather than within a supervisor's team.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "(d) OPM may establish, and refine as needed, a standardized distribution of some or all rating levels for senior professionals which agencies must apply when rating senior professionals, except that senior professionals appointed under Schedules C or G in the excepted service may be excluded from such standardized distribution requirements, as determined by OPM.",
+      "page": 65920,
+      "section": "§ 430.505(d)"
+     },
+     {
+      "headline": "Grievance process, appeals, and mandatory review of Level 1 ratings eliminated",
+      "what_changes": "Senior professional appraisals and ratings are no longer appealable beyond what other law provides. The informal grievance process and the mandatory review of Unacceptable (Level 1) ratings are removed and replaced by optional higher-level review and PRB review. OPM rejected commenter due-process and arbitrariness objections.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "The final rule simply eliminates the informal grievance process and the mandatory review of Level 1 ratings that previously applied to senior professionals under 5 CFR part 430, subpart B.",
+      "page": 65912,
+      "section": "§ 430.509(e) (preamble)"
+     },
+     {
+      "headline": "Higher-level reviewer cannot change a rating, only recommend a different one",
+      "what_changes": "Any senior professional may request higher-level review of an initial summary rating at any level. The reviewer has no authority to change the rating and can only recommend to the PRB. The approving official assigns the final rating after considering PRB recommendations.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "An official providing HLR may not change the initial summary rating but may recommend a different rating to the PRB.",
+      "page": 65921,
+      "section": "§ 430.509(f)(2)(i)"
+     },
+     {
+      "headline": "Only exception to rating caps is a Presidential waiver found outside the regulation",
+      "what_changes": "OPM cites a Presidential waiver as the safety valve for genuinely outstanding agencies. That waiver comes from OPM's separate appraisal system plan, not from the regulatory text. No waiver process or criteria appear in subpart E.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "provides that the President may waive the standardized distribution requirement by certifying that the performance of the agency's senior professionals was outstanding during the relevant time period.",
+      "page": 65908,
+      "section": "§ 430.505 (preamble, Consistency With 5 U.S.C. 4302)"
+     },
+     {
+      "headline": "Political (Schedule C and G) appointees may be exempted from rating caps; SES rule amended in parallel",
+      "what_changes": "The preamble says OPM 'is excluding' Schedule C and G appointees from the distribution, but the regulatory text says only that they 'may be excluded, as determined by OPM.' A conforming amendment also rewrites SES § 430.305(d) so that noncareer SES members may be excluded from the SES distribution.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Consistent with the standardized distribution approach adopted for the SES, which excluded noncareer appointees from the standardized distribution requirements, OPM is excluding Schedule C and Schedule G excepted service appointees from these requirements.",
+      "page": 65909,
+      "section": "§ 430.505 (preamble, Merit System Principles); § 430.305(d)"
+     },
+     {
+      "headline": "Agency PRBs take over centralized review of SL/ST ratings, awards, and pay",
+      "what_changes": "Agencies with 10 or more senior professionals must use their SES Performance Review Board (or an equivalent body) to make written recommendations on ratings, awards, and pay adjustments. The PRB must have a majority of career members when reviewing career appointees. OPM confirms that PRBs are being reconstituted under a Presidential memo with members 'committed to full enforcement.' Agencies with fewer than 10 senior professionals need no centralized review.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "This final rule requires that agencies subject to the SES must use their established agency-level PRB to conduct the centralized review, including providing written recommendations to the approving official on senior professional ratings of record, performance awards, and pay adjustments.",
+      "page": 65912,
+      "section": "§ 430.511"
+     },
+     {
+      "headline": "New ratings feed directly into RIF performance credit under the new RIF rule",
+      "what_changes": "Ratings of record under subpart E must be used for performance credit in reductions in force. This applies under the separately finalized RIF rule, which prioritizes ratings over tenure. OPM declined to treat the interaction between the two rules as a reason to reconsider.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "(2) For competing employees who received ratings of record while covered by part 430, subpart B or E, of this chapter, the summary levels assigned for those ratings of record must be used to establish the employee's performance credit in a reduction in force",
+      "page": 65916,
+      "section": "§ 351.503(b)(2)"
+     },
+     {
+      "headline": "Pay rules tied to new levels; no pay increase is guaranteed",
+      "what_changes": "Annual pay increases are barred for anyone with a rating of record below Level 3, or with a later critical-element rating below Level 3. Agencies must explain a zero adjustment in writing for Level 3+ employees, but for senior professionals at the pay cap only if they are rated Level 5 and Executive Schedule rates also rise. The rule expressly says nothing requires a raise.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "(3) Paragraphs (h)(1) and (2) of this section may not be construed to require a pay increase for any senior professional employee.",
+      "page": 65922,
+      "section": "§ 534.507(f), (h)"
+     },
+     {
+      "headline": "About 1,420 SL/ST employees at 60+ agencies; costs estimated at $814,000",
+      "what_changes": "OPM estimates about $744,000 in one-time agency policy-update costs and about $70,000 in extra employee time, roughly $814,000 total. No comments were received on the cost estimates. OPM cites FY2023-2024 data showing about 90% of senior professionals rated Level 4 or 5. OPM received 12 comments and adopted all substantive sections as proposed.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "There are approximately 1,420 employees with an SL or ST pay plan in the executive branch.",
+      "page": 65915,
+      "section": "Expected Impact — C. Costs"
+     },
+     {
+      "headline": "OPM declined a pilot or demonstration project and a longer comment period",
+      "what_changes": "OPM rejected requests to test forced distribution first through a 5 U.S.C. 4703 demonstration project. It also rejected requests to extend the 30-day comment period by 60-180 days. OPM notes senior professionals have been under a new OPM appraisal system since October 1, 2025.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "However, OPM has determined that the use of a demonstration project under 5 U.S.C. 4703 is not necessary and would create unacceptable delays to the urgently needed reforms adopted in this final rule.",
+      "page": 65906,
+      "section": "§ 430.501 (preamble)"
+     }
+    ],
+    "could_not_determine": [
+     "The actual distribution caps or percentages OPM will set for Levels 4 and 5, and when.",
+     "What 'appropriate aggregate level' means for applying rating limits (agency-wide, component, or other).",
+     "The criteria and process for a Presidential waiver, which appears only in an OPM system plan and not in the regulatory text.",
+     "How many SL/ST employees are Schedule C or Schedule G appointees, and whether OPM will actually exclude them.",
+     "FY2025 senior professional rating data under the system OPM issued in April 2025 and in use since October 1, 2025.",
+     "The expected effect on award amounts or pay adjustments for individual senior professionals.",
+     "How many agencies have fewer than 10 senior professionals and so have no centralized PRB review."
+    ]
+   },
+   "model": "claude-opus-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 51375,
+    "output_tokens": 6906
+   },
+   "cost_usd": 0.1718,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  },
+  "https://www.federalregister.gov/documents/2026/10/19/2026-21320/administrative-leave-for-workforce-realignment-and-other-purposes": {
+   "findings": {
+    "plain_summary": "This final rule, effective November 18, 2026, makes OPM's existing administrative-leave guidance binding regulation. It names extended paid leave for deferred-resignation participants, RIF-noticed employees, and employees resigning under settlement agreements as acceptable uses; declares agency leave decisions 'sole and exclusive' and not subject to any agreement; adds three new prohibitions (including on poll-worker leave); and lets agencies deny resignation withdrawals because the employee accepted deferred-resignation benefits.",
+    "items": [
+     {
+      "headline": "'Sole and exclusive discretion' puts administrative leave outside negotiated agreements and bargaining",
+      "what_changes": "A new definition in §630.1402 says agency discretion over administrative leave 'may not be limited or conditioned by any agreement.' OPM states the duty to bargain does not reach these Governmentwide regulations, so union contracts cannot create leave entitlements. OPM rejected union arguments, made under FLRA precedent, that this unlawfully removes leave from collective bargaining.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Under 5 U.S.C. 7117(a)(1), the duty to bargain in good faith extends to matters that are the subject of a rule or regulation only if the rule or regulation is not a Governmentwide rule or regulation; the regulations in this subpart are Governmentwide regulations issued under 5 U.S.C. 6329a(c)(1).",
+      "page": 65931,
+      "section": "III.H 'Sole and Exclusive' Discretion; §630.1402"
+     },
+     {
+      "headline": "Deferred-resignation leave capped at 12 weeks only by guidance, already raised to 6 months for FY 2026",
+      "what_changes": "New §630.1403(c)(9) authorizes 'extended periods' of leave for employees who sign agreements to separate on a future date. The regulatory text sets no numeric limit. The 12-week Governmentwide limit exists only in OPM guidance, and OPM/OMB already approved 6 months for FY 2026 DRP agreements. In the final rule, 'or' became 'and' so agency limits cannot exceed the Governmentwide limit.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "A higher threshold of 6 months was later approved for workforce-restructuring-related DRP agreements that took effect in FY 2026.",
+      "page": 65935,
+      "section": "III.S Miscellaneous Comments; §630.1403(c)(9)"
+     },
+     {
+      "headline": "Accepting deferred-resignation benefits becomes a valid reason to deny a resignation withdrawal",
+      "what_changes": "Revised §715.202(b) gives agencies 'sole and exclusive discretion' over withdrawal requests. It adds acceptance of DRP benefits, such as paid leave, as a valid reason to deny withdrawal. OPM says the leave cannot be repaid or reclassified. OPM declined to add a withdrawal time window, a substantial-hardship standard, or a recoupment alternative. MSPB appeal rights for coerced resignations are preserved.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "A valid reason includes, but is not limited to, administrative disruption, the hiring or commitment to hire a replacement, or the employee's acceptance of benefits provided under a deferred resignation agreement.",
+      "page": 65940,
+      "section": "§715.202(b)"
+     },
+     {
+      "headline": "RIF-noticed employees may be put on paid leave for the whole notice period; duty-status standard softened",
+      "what_changes": "Revised §351.806 changes 'when possible' to 'under ordinary circumstances' for keeping employees in duty status during the RIF notice period. It adds paragraph (b) allowing administrative leave for all or part of that period. New §630.1403(c)(10) allows the same when the agency finds it 'in the Government's best interests.' OPM gives examples such as security or records risks, or work having ceased.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "(b) Administrative leave. Nothing in this section precludes an agency from placing an employee on administrative leave for all or part of the notice period when the agency determines that such leave is appropriate and the use of administrative leave is consistent with part 630, subpart N, of this chapter.",
+      "page": 65939,
+      "section": "§351.806"
+     },
+     {
+      "headline": "Extended paid leave allowed in settlements with employees facing unproven performance or misconduct allegations",
+      "what_changes": "New §630.1403(c)(11) permits extended administrative leave to facilitate voluntary resignation under a settlement agreement. The allegations need only be documented, with no final finding required. The agency must first consider other reasonable alternatives. OPM declined commenter requests to remove the provision or move it into the investigative-leave framework, which has statutory safeguards.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "OPM has revised the language in Sec.  630.1403(c)(11) to make clear that, while no final determination of poor performance or misconduct need be found, an agency may apply this provision only where the allegations of poor performance or misconduct are documented.",
+      "page": 65934,
+      "section": "III.Q Settlement Agreement; §630.1403(c)(11)"
+     },
+     {
+      "headline": "New binding ban on administrative leave for poll workers and poll observers reverses prior OPM policy",
+      "what_changes": "§630.1403(b)(5) prohibits administrative leave for poll work, whether partisan or nonpartisan, paid or unpaid. Prior OPM guidance had allowed up to 4 hours for nonpartisan poll service. Leave remains available only for voting. Employees must use annual leave, comp time, credit hours, or LWOP instead.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "OPM acknowledges that this provision changes OPM's prior policies that agencies could allow limited administrative leave for nonpartisan poll service.",
+      "page": 65933,
+      "section": "III.O Prohibition on Administrative Leave for Poll Workers; §630.1403(b)(5)"
+     },
+     {
+      "headline": "OPM projects no costs from the rule while citing large workforce reductions from the 2025 DRP",
+      "what_changes": "OPM treats 2025 DRP spending as baseline and projects no costs or savings from the rule itself. Commenters cited roughly $11 billion in DRP costs and $4.5 billion paid to non-working employees. OPM separately states DRP cut the workforce more than 6 percent and DRP leave cost under 3 percent of basic payroll. OIRA designated the rule significant but not major.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "OPM calculates that DRP separations in 2025 represented a workforce reduction of over 6 percent, which contributed to the overall reduction of the Federal workforce of over 12 percent from December 2024 to March 2026. Those workforce reductions create significant long-term savings even after accounting for the one-time costs of DRP administrative leave, which represent less than 3 percent of total basic payroll for Federal employees.",
+      "page": 65926,
+      "section": "III.B Cost of Administrative Leave and DRP"
+     },
+     {
+      "headline": "OPM declined to limit DRP leave to 10 days, citing the need to induce more separations",
+      "what_changes": "An agency commenter proposed limiting DRP leave to 10 days unless the employee is retirement eligible. OPM rejected this, saying longer leave periods help incentivize voluntary separations. OPM also declined to extend the 30-day comment period, to withdraw the rule, or to require agencies to demonstrate that mission needs can still be met.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Agencies need the flexibility to provide longer periods of administrative leave (within the bounds of Governmentwide limits) if they determine a longer period is necessary to incentivize more employees to agree to voluntarily separate and to achieve workforce reduction goals.",
+      "page": 65936,
+      "section": "III.S Miscellaneous Comments"
+     },
+     {
+      "headline": "Physical fitness added as an acceptable use, with no hour limits",
+      "what_changes": "In response to mostly favorable comments, the final rule adds §630.1403(c)(8). It allows limited, conditional leave for approved physical fitness activities, with no minimum or maximum hours. It excludes employees whose jobs carry mandatory fitness standards. The other examples were renumbered as (c)(9) through (c)(11).",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "OPM is not establishing a minimum or maximum number of hours.",
+      "page": 65932,
+      "section": "III.I Physical Fitness Activities; §630.1403(c)(8)"
+     },
+     {
+      "headline": "New ban on administrative leave for any purpose covered by sick leave",
+      "what_changes": "§630.1403(b)(4) bars administrative leave for any purpose for which sick leave could be used, unless OPM or the President approves it in Governmentwide policy. OPM says such approval should come only in exceptional circumstances. This is one of three new binding prohibitions, alongside the investigative-leave and poll-worker bans.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "(4) For a purpose for which sick leave could be used (Sec.  630.401(a))--unless such use in a particular scenario is specifically approved by Governmentwide policy issued by OPM or the President;",
+      "page": 65940,
+      "section": "§630.1403(b)(4)"
+     }
+    ],
+    "could_not_determine": [
+     "How many employees are expected to be placed on administrative leave under the new workforce-realignment, RIF-notice, or settlement examples, and at what cost; OPM projected no costs or savings from the rule itself.",
+     "The criteria and process for joint OPM/OMB approval of leave thresholds above 12 weeks, and whether the 6-month DRP threshold applies beyond FY 2026. Neither limit appears in the regulatory text.",
+     "How many existing collective bargaining agreements (such as the CBP physical fitness program) contain administrative-leave provisions that the 'sole and exclusive discretion' definition may make unenforceable.",
+     "How many resignation-withdrawal requests have been or will be denied under the new deferred-resignation-benefits reason; OPM says only that the number 'would be very small.'",
+     "OPM's own figure for total 2025 DRP administrative-leave spending in dollars; it gives only a percentage of payroll."
+    ]
+   },
+   "model": "claude-opus-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 43307,
+    "output_tokens": 5956
+   },
+   "cost_usd": 0.1462,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  }
+ },
+ "crosses": [
+  [
+   "https://www.opm.gov/news/news-releases/opm-finalizes-rule-removing-governmentwide-time-in-grade-barrier-to-promotions/",
+   "https://www.federalregister.gov/documents/2026/10/19/2026-21319/elimination-of-time-in-grade",
+   {
+    "findings": {
+     "describes_this_rule": true,
+     "discrepancies": [
+      {
+       "topic": "Effective date",
+       "companion_says": "The rule takes effect January 14, 2027.",
+       "companion_quote": "The rule takes effect January 14, 2027.",
+       "companion_page": 1,
+       "rule_says": "The rule is effective January 19, 2027.",
+       "rule_quote": "DATES: This rule is effective January 19, 2027.",
+       "rule_page": 65887
+      }
+     ],
+     "left_out": [
+      "The governmentwide qualification standards still contain a comparable one-year service period before promotion; OPM is reviewing it separately, so the practical effect of removing TIG depends on that review.",
+      "Agencies that rely on the removed 5 CFR 300.606 for their own service-in-grade requirements should document those requirements in their merit promotion plans under 5 CFR 335.103(b)(1) before the effective date.",
+      "It removes the OPM-approval requirement for training agreements with consecutive accelerated promotions and ends the two-promotions-per-52-weeks limit; existing agreements stay valid and need not be converted.",
+      "OPM declined to adopt governmentwide documentation, certification, review-board, data-collection or public-reporting requirements for early promotions, saying any such rules belong in a future part 335 rulemaking.",
+      "Agencies may have collective bargaining obligations under 5 U.S.C. chapter 71 when revising promotion procedures; OPM set no transition period beyond the effective date and will issue implementation guidance (training agreements, career ladders, model criteria).",
+      "OPM estimates first-year implementation at about 250 hours and $39,075 per agency (about $3.1 million governmentwide), and it does not quantify any long-term payroll or workload effects."
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "stop_reason": "end_turn",
+    "usage": {
+     "input_tokens": 45156,
+     "output_tokens": 1024
+    },
+    "cost_usd": 0.1006,
+    "verification": [
+     [
+      "ok",
+      "ok"
+     ]
+    ]
+   }
+  ],
+  [
+   "https://www.opm.gov/chcoc/latest-memos/revised-administrative-leave-regulations.pdf",
+   "https://www.federalregister.gov/documents/2026/10/19/2026-21320/administrative-leave-for-workforce-realignment-and-other-purposes",
+   {
+    "findings": {
+     "describes_this_rule": true,
+     "discrepancies": [],
+     "left_out": [
+      "Adds §630.1403(c)(11), which allows extended administrative leave to facilitate the voluntary resignation, under a settlement agreement, of employees with documented (not finally determined) allegations of poor performance or misconduct.",
+      "States in the preamble that workforce-realignment leave under (c)(9) and (c)(11) is subject to a Governmentwide cap of 12 weeks per instance, beginning in calendar year 2026, unless OPM and OMB jointly approve more. A 6-month threshold was approved for FY 2026 DRP agreements. Agency limits may be stricter but cannot exceed the Governmentwide limit.",
+      "Revises §351.806(a) so that employees stay in duty status during a RIF notice period 'under ordinary circumstances' rather than 'when possible.' New §630.1403(c)(10) allows administrative leave between receipt of a RIF notice and separation when the agency finds it is in the Government's best interests.",
+      "Replaces 'grant' with 'provide' throughout subpart N, expressly so the term covers administrative leave imposed with or without the employee's consent.",
+      "Removes from subpart N coverage Presidential appointees and other employees excluded from title 5 leave laws under 5 U.S.C. 6301(2)(x)-(xiii).",
+      "Codifies other acceptable uses, including up to 5 days for an employee relocating with a military or federal civilian spouse and early dismissal (generally no more than 2 hours) before holidays. Adds an exception to the reward prohibition for organization-wide morale-boosting goodwill leave."
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "stop_reason": "end_turn",
+    "usage": {
+     "input_tokens": 43919,
+     "output_tokens": 1019
+    },
+    "cost_usd": 0.098,
+    "verification": []
+   }
+  ]
+ ],
+ "failures": [],
+ "cost_usd": 0.7779
+}

@@ -117,7 +117,7 @@ Also give a 2-sentence plain_summary, and list in could_not_determine anything a
 def build_request(item: dict, text: str, summary: str, model: str, effort: str) -> dict:
     return dict(
         model=model,
-        max_tokens=64000,
+        max_tokens=32000,
         system=SYSTEM,
         output_config={"effort": effort, "format": {"type": "json_schema", "schema": SCHEMA}},
         messages=[{"role": "user", "content": INSTRUCTIONS.format(
@@ -132,19 +132,86 @@ def count_input_tokens(client: anthropic.Anthropic, req: dict) -> int:
     return r.input_tokens
 
 
-def read_document(client: anthropic.Anthropic, req: dict) -> dict:
-    """Run one read. Returns parsed findings plus usage and cost. Raises on refusal,
-    truncation or invalid JSON: nothing is silently dropped."""
-    with client.messages.stream(**req) as stream:
-        msg = stream.get_final_message()
+def parse_message(msg, model: str, schema=None, batch: bool = False) -> dict:
+    """Validate a finished response. Raises on refusal, truncation or invalid JSON:
+    nothing is silently dropped. Batch results are billed at half price."""
     if msg.stop_reason == "refusal":
         raise RuntimeError(f"refusal: {getattr(msg, 'stop_details', None)}")
     if msg.stop_reason == "max_tokens":
         raise RuntimeError("hit max_tokens; output truncated")
     text = "".join(b.text for b in msg.content if b.type == "text")
-    findings = Findings.model_validate(json.loads(text))
-    pin, pout = PRICES[req["model"]]
+    parsed = (schema or Findings).model_validate(json.loads(text))
+    pin, pout = PRICES[model]
     u = msg.usage
-    cost = (u.input_tokens * pin + u.output_tokens * pout) / 1e6
-    return {"findings": findings.model_dump(), "model": req["model"], "stop_reason": msg.stop_reason,
+    cost = (u.input_tokens * pin + u.output_tokens * pout) / 1e6 * (0.5 if batch else 1.0)
+    return {"findings": parsed.model_dump(), "model": model, "stop_reason": msg.stop_reason,
             "usage": {"input_tokens": u.input_tokens, "output_tokens": u.output_tokens}, "cost_usd": round(cost, 4)}
+
+
+def read_document(client: anthropic.Anthropic, req: dict) -> dict:
+    """Run one read synchronously (used by the model comparison)."""
+    with client.messages.stream(**req) as stream:
+        msg = stream.get_final_message()
+    return parse_message(msg, req["model"])
+
+
+# --------------------------------------------------------------------------- #
+# Cross-check: a press release or CHCO memo against the rule it describes.
+# --------------------------------------------------------------------------- #
+class Discrepancy(BaseModel):
+    topic: str
+    companion_says: str
+    companion_quote: str
+    companion_page: int
+    rule_says: str
+    rule_quote: str
+    rule_page: int
+
+
+class CrossCheck(BaseModel):
+    describes_this_rule: bool
+    discrepancies: list[Discrepancy]
+    left_out: list[str]
+
+
+CROSS_SCHEMA = {
+    "type": "object", "additionalProperties": False,
+    "required": ["describes_this_rule", "discrepancies", "left_out"],
+    "properties": {
+        "describes_this_rule": {"type": "boolean"},
+        "left_out": {"type": "array", "items": {"type": "string"}},
+        "discrepancies": {"type": "array", "items": {
+            "type": "object", "additionalProperties": False,
+            "required": ["topic", "companion_says", "companion_quote", "companion_page",
+                         "rule_says", "rule_quote", "rule_page"],
+            "properties": {k: {"type": "integer" if k.endswith("_page") else "string"}
+                           for k in ["topic", "companion_says", "companion_quote", "companion_page",
+                                     "rule_says", "rule_quote", "rule_page"]}}},
+    },
+}
+
+CROSS_INSTRUCTIONS = """Below are two OPM documents: a {ckind} ("companion") and a Federal Register rule it may describe.
+
+First decide whether the companion is actually about this rule (describes_this_rule). If not, return no discrepancies.
+
+If it is, list every factual discrepancy between them: dates (effective dates, deadlines), numbers, who is covered, what is required or allowed. For each, give an EXACT verbatim quote from each document (1-2 sentences, copied character for character, not crossing a [[Page N]] marker) and the page from the last [[Page N]] marker before it. Only list real conflicts, not differences in emphasis.
+
+Then list in left_out (one line each, at most 6) the most consequential things the rule does that the companion does not mention.
+
+<companion title="{ctitle}">
+{ctext}
+</companion>
+
+<rule title="{rtitle}">
+{rtext}
+</rule>"""
+
+
+def build_crosscheck_request(companion: dict, ctext: str, rule: dict, rtext: str, model: str, effort: str) -> dict:
+    return dict(
+        model=model, max_tokens=32000, system=SYSTEM,
+        output_config={"effort": effort, "format": {"type": "json_schema", "schema": CROSS_SCHEMA}},
+        messages=[{"role": "user", "content": CROSS_INSTRUCTIONS.format(
+            ckind=companion.get("kind") or companion["source"], ctitle=companion["title"], ctext=ctext,
+            rtitle=rule["title"], rtext=rtext)}],
+    )
