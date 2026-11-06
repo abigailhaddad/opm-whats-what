@@ -18,6 +18,7 @@ def norm(s: str) -> str:
     s = re.sub(r"[‐-―−]", "-", s)
     s = re.sub(r"-\s*\n\s*", "-", s)
     s = re.sub(r"\s+", " ", s)
+    s = re.sub(r"-\s+", "-", s)   # "3.8- percent" (model copied a line-break gap) == "3.8-percent"
     return s.strip()
 
 

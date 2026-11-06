@@ -76,6 +76,14 @@ jobs:
         if: ${{ steps.gate.outputs.skip != 'true' && !inputs.check_only }}
         run: python src/weekly.py --cap "${{ github.event.inputs.cap || '3' }}"
 
+      - name: Independent audit (second extraction of every quote; writes digests/proof/)
+        id: audit
+        continue-on-error: true   # the digest is still committed and sent; the run is marked failed below
+        if: ${{ steps.gate.outputs.skip != 'true' && !inputs.check_only }}
+        run: |
+          d="digests/$(date -u +%F)"
+          [ -f "$d.json" ] && python src/audit.py "$d.json" --append-to "$d.md" || { [ ! -f "$d.json" ]; }
+
       - name: Commit digest and state
         if: ${{ steps.gate.outputs.skip != 'true' && !inputs.check_only }}
         run: |
@@ -101,3 +109,7 @@ jobs:
           print(text if len(text) <= limit else text[:limit] + f"\n\n…truncated. Full digest: {url}")
           EOF
           gh issue create --title "OPM what's what — $(date -u +%F)" --body-file body.md --assignee abigailhaddad
+
+      - name: Fail the run if the audit could not confirm every quote
+        if: ${{ steps.audit.outcome == 'failure' }}
+        run: echo "Audit did not confirm every quote; see digests/proof/. The digest and issue were still published." && exit 1

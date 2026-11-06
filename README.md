@@ -17,7 +17,8 @@ A weekly "what's what" for everything OPM publishes, going forward from 2026-11-
 2. `src/triage.py` decides what gets read in full (rules, proposed rules, new information collections and matching programs, CHCO memos, news and blog posts, new report documents) and what gets one line (routine Federal Register paperwork notices, joint Treasury/Labor/HHS health-coverage rules, new web pages). Backtest on the 119 Federal Register documents from the 12 months to 2026-11-01: 70 read, 49 one line.
 3. `src/weekly.py` fetches the full text of each document to be read and sends them to Claude Opus 5.5 in one Message Batch (half price). The run stops short of submitting if the estimated cost exceeds the cap (default $3); the digest then lists everything as unread. Each finding is tagged by whether the document's own summary covers it (says the opposite > absent > vague > in the summary) and by who is speaking (OPM, a commenter, the current rule). Each news release or CHCO memo is paired with the Federal Register rule it likely describes, and the model checks the two for discrepancies.
 4. Every finding's quote is checked against the document text and the cited page (`src/verify.py`); a quote that fails is marked ⚠️ in the digest. The speaker tag is the model's own and is not independently checked.
-5. The digest is written to `digests/<date>.md`, and the GitHub Actions workflow (`.github/workflows/weekly.yml`, Mondays 11:00 UTC) commits it and opens an issue so it arrives by email. A week with nothing new opens no issue.
+5. `src/audit.py` re-checks the digest independently: it re-fetches every source, extracts the text a different way (pdfminer instead of pypdf, the Federal Register PDF instead of its raw-text endpoint, the whole HTML page instead of `<main>`), and confirms each quote on its cited page, matching on letters and digits only. It looks up every number in a finding's headline and summary in the source and lists any it can't find (some are derived, e.g. a compounded percentage). It writes `digests/proof/<date>.md` (our quote beside the source's text, with links) and appends a one-line result to the digest. If any quote isn't confirmed, the workflow run is marked failed, but the digest and issue still go out.
+6. The digest is written to `digests/<date>.md`, and the GitHub Actions workflow (`.github/workflows/weekly.yml`, Mondays 11:00 UTC) commits it and opens an issue so it arrives by email. A week with nothing new opens no issue.
 
 Not built: diffing amended rule sections against the current CFR on eCFR. The feasibility test found it promising (see `explore/README.md`).
 
@@ -30,4 +31,5 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python src/collect.py
 .venv/bin/python src/triage.py      # backtest on data/fr_opm_12mo.json
 ANTHROPIC_API_KEY=... .venv/bin/python src/weekly.py --dry-run   # count tokens and cost; submits nothing
+.venv/bin/python src/audit.py digests/<date>.json   # independent quote/number audit of a digest
 ```
