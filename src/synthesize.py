@@ -11,10 +11,9 @@ One synchronous Opus call (small: summaries and headlines, not full texts).
 """
 from __future__ import annotations
 
-import json
 from pydantic import BaseModel
 
-from read import PRICES, SYSTEM, parse_message
+from read import SYSTEM, parse_message
 
 
 class Story(BaseModel):

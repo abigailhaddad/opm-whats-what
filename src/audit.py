@@ -23,6 +23,7 @@ from __future__ import annotations
 import argparse
 import io
 import json
+import os
 import re
 import sys
 import time
@@ -182,7 +183,9 @@ def main() -> int:
     print(line, f"\nproof: {out.relative_to(ROOT)}", stats)
     if a.append_to:
         with open(Path(a.append_to).resolve(), "a", encoding="utf-8") as fh:
-            fh.write(f"\n{line} Proof: [{out.name}](proof/{out.name})\n")
+            repo = os.environ.get("GITHUB_REPOSITORY")   # absolute link so it works in the issue and email
+            link = f"https://github.com/{repo}/blob/main/digests/proof/{out.name}" if repo else f"proof/{out.name}"
+            fh.write(f"\n{line} Proof: [{out.name}]({link})\n")
     return 1 if (stats["wrong_page"] or stats["not_found"] or stats["errors"]) else 0
 
 

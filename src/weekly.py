@@ -261,7 +261,7 @@ def render_stories(today, syn, results, crosses, one_lines, failures, cost, stor
                 body.append(_finding_md(f, v, with_quote=True))
             if r["findings"]["could_not_determine"]:
                 body.append("- _The document doesn't say:_ " + "; ".join(r["findings"]["could_not_determine"]))
-            for c, rule, x in cross_by_doc.get(it["url"], []):
+            for c, _rule, x in cross_by_doc.get(it["url"], []):
                 if x["findings"]["describes_this_rule"] and x["findings"]["left_out"]:
                     k = c.get("kind") or "companion"
                     k = k if k.startswith("CHCO") else k.lower()
@@ -325,7 +325,7 @@ def main() -> int:
         except Exception as e:  # listed in the digest, never silently dropped
             failures.append(f"Couldn't fetch [{it['title']}]({it['url']}): {e}")
     pairs = [(c, r) for c, r in pair_companions(reads, store) if c["url"] in texts]
-    for c, r in pairs:
+    for _c, r in pairs:
         if r["url"] not in texts:
             try:
                 texts[r["url"]] = document_text(r)

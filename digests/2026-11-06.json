@@ -285,8 +285,7 @@
      "status": "ok"
     },
     {
-     "status": "not_found",
-     "detail": "closest passage similarity 0.95"
+     "status": "ok"
     },
     {
      "status": "ok"
