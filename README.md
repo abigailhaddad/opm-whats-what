@@ -1,8 +1,6 @@
 # opm-whats-what
 
-A weekly digest of what OPM publishes, going forward from 2026-11-01. It surfaces what long rules and memos bury, especially what a document's own summary leaves out.
-
-**Unofficial; not affiliated with OPM. The summaries and findings are written by an AI model (Claude Opus 5.5). Every quote is machine-checked against the source document and page, but the model's judgments (what a document "leaves out", who is speaking) are not. Read the source before relying on anything here.**
+This is my attempt to keep up with the documents OPM puts out that I otherwise wouldn't hear about. Every Monday I pull from the Federal Register, CHCO Council memos, OPM's news page, and its reports and publications, and have Claude Opus 5.5 write summaries and findings. A script then checks that each quote is in the original text, on the page cited. It doesn't check that the findings are right, so read the source. Unofficial; not affiliated with OPM.
 
 ## Sources
 
@@ -15,16 +13,15 @@ A weekly digest of what OPM publishes, going forward from 2026-11-01. It surface
 
 ## How it works
 
-Runs every Monday at 11:00 UTC (`.github/workflows/weekly.yml`).
+A GitHub Action runs it Monday mornings (11:00 UTC).
 
-1. **Collect** (`src/collect.py`): record every listed item in `data/items.json`. The 2026-11-01 run is the baseline and is never reported; "new" means first seen since.
-2. **Triage** (`src/triage.py`): rules, proposed rules, CHCO memos, news and new report documents are read in full; routine Federal Register paperwork notices get one line.
-3. **Read** (`src/weekly.py`): one Claude Opus 5.5 batch, capped at $3 per run. Each finding is tagged by whether the document's own summary covers it, and each news release or memo is paired with the rule it describes and cross-checked.
-4. **Verify** (`src/verify.py`): each quote is checked against the document text and the cited page; failures are marked ⚠️.
-5. **Audit** (`src/audit.py`): re-fetches every source, extracts text a different way, re-confirms each quote and page, and looks up every number in a finding in the source. Writes `digests/proof/<date>.md` and appends a one-line result to the digest. If any quote isn't confirmed, the run is marked failed (the digest still goes out).
-6. **Publish**: the digest is written to `digests/<date>.md` and posted as a GitHub issue. A week with nothing new posts nothing.
+1. `collect.py` lists what's on those sources and stores it in `data/items.json`. Everything that existed on 2026-11-01 is the baseline and never gets reported.
+2. `triage.py` sorts the new items. Rules, proposed rules, memos, news and report documents get read in full. Routine Federal Register paperwork notices get a line.
+3. `weekly.py` sends the full texts to Claude Opus 5.5 in one batch, capped at $3 a run. Each finding is tagged by whether the document's own summary covers it. News releases and memos are paired with the rule they describe and checked against it.
+4. `verify.py` checks each quote against the text and page. Then `audit.py` re-fetches the sources, extracts the text a second way, and rechecks every quote, page and number, with results in `digests/proof/`. If a quote can't be confirmed the run is marked failed, but the digest still goes out.
+5. The digest goes in `digests/` and gets posted as a GitHub issue. Nothing new, no issue.
 
-Not built: diffing amended rules against the current CFR on eCFR. `explore/` has the earlier feasibility tests.
+Not built: comparing amended rules against the current CFR. `explore/` has early tests.
 
 ## Running
 
