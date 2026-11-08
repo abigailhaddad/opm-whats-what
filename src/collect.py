@@ -42,14 +42,23 @@ DATE_RE = re.compile(r"(January|February|March|April|May|June|July|August|Septem
 
 
 def get(url: str, **kw) -> requests.Response:
+    last = None
     for attempt in range(4):
-        r = requests.get(url, headers=UA, timeout=90, **kw)
+        try:
+            r = requests.get(url, headers=UA, timeout=90, **kw)
+        except requests.RequestException as e:   # timeouts and connection resets are retried too
+            last = e
+            time.sleep(5 * (attempt + 1))
+            continue
+        last = None
         if r.status_code in (429, 500, 502, 503, 504):
             time.sleep(5 * (attempt + 1))
             continue
         r.raise_for_status()
         time.sleep(0.7)  # polite
         return r
+    if last is not None:
+        raise last
     r.raise_for_status()
     return r
 
@@ -206,8 +215,14 @@ def main() -> int:
 
     store = json.loads(STORE.read_text()) if STORE.exists() else {}
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    errors = []
     for name in args.only or COLLECTORS:
-        items = collect_fr(args.since) if name == "fr" else COLLECTORS[name]()
+        try:
+            items = collect_fr(args.since) if name == "fr" else COLLECTORS[name]()
+        except Exception as e:   # one bad source must not lose the others; weekly.py reports it in the digest
+            print(f"{name}: FAILED ({type(e).__name__}: {e}); continuing with the other sources", file=sys.stderr)
+            errors.append({"source": name, "error": f"{type(e).__name__}: {e}"[:300]})
+            continue
         first_run = not any(v["source"] == name for v in store.values())
         new = 0
         for it in items:
@@ -222,7 +237,9 @@ def main() -> int:
     STORE.parent.mkdir(exist_ok=True)
     STORE.write_text(json.dumps(store, indent=1, ensure_ascii=False, sort_keys=True))
     print(f"store: {len(store)} items -> {STORE.relative_to(ROOT)}")
-    return 0
+    (ROOT / "data").mkdir(exist_ok=True)
+    (ROOT / "data" / "collect_errors.json").write_text(json.dumps(errors, indent=1))
+    return 1 if errors and len(errors) == len(args.only or COLLECTORS) else 0   # every source failing is a failed run
 
 
 if __name__ == "__main__":

@@ -54,14 +54,22 @@ def check(raw_text: str, items: list[dict]) -> list[dict]:
     doc = PagedText(raw_text)
     out = []
     for it in items:
-        q = norm(it["quote"])
+        q = norm(it.get("quote") or "")
+        if not q:
+            out.append({"status": "not_found", "detail": "empty quote"})
+            continue
         pos = doc.full.find(q)
         if pos >= 0:
-            a, b = doc.page_of(pos), doc.page_of(pos + len(q) - 1)
-            if it.get("page") in (a, b):
-                out.append({"status": "ok"})
+            first = None
+            while pos >= 0:   # the same passage can appear on two pages: right if ANY occurrence is on the cited page
+                a, b = doc.page_of(pos), doc.page_of(pos + len(q) - 1)
+                first = first or a
+                if it.get("page") in (a, b):
+                    out.append({"status": "ok"})
+                    break
+                pos = doc.full.find(q, pos + 1)
             else:
-                out.append({"status": "wrong_page", "detail": f"cited {it.get('page')}, found on {a}"})
+                out.append({"status": "wrong_page", "detail": f"cited {it.get('page')}, found on {first}"})
             continue
         best, step = 0.0, max(20, len(q) // 4)
         for s in range(0, max(1, len(doc.full) - len(q)), step):

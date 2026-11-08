@@ -67,7 +67,7 @@ def pick_items(store: dict, start: str | None, end: str | None) -> list[dict]:
 
 def pair_companions(reads: list[dict], store: dict) -> list[tuple[dict, dict]]:
     """Pair each news release / CHCO memo with the FR rule it most likely describes:
-    a Rule or Proposed Rule published in the 21 days before it, sharing >= 2
+    a Rule or Proposed Rule published in the 21 days before it (or up to 3 days after), sharing >= 2
     significant title words, or whose title appears in the companion's title."""
     rules = [v for v in store.values() if v["source"] == "fr" and v.get("kind") in ("Rule", "Proposed Rule")]
     rules += [r for r in reads if r["source"] == "fr" and r.get("kind") in ("Rule", "Proposed Rule") and r not in rules]
@@ -78,12 +78,16 @@ def pair_companions(reads: list[dict], store: dict) -> list[tuple[dict, dict]]:
         cd = date.fromisoformat(c["date"])
         best, best_score = None, 1
         for r in rules:
-            if not r.get("date") or not (cd - timedelta(days=21) <= date.fromisoformat(r["date"]) <= cd):
+            # OPM often issues the release a day or two before the rule's Federal Register date
+            if not r.get("date") or not (cd - timedelta(days=21) <= date.fromisoformat(r["date"]) <= cd + timedelta(days=3)):
                 continue
             shared = words(c["title"]) & words(r["title"])
             # one shared word is enough if it's distinctive ("time-in-grade"); a wrong
             # pairing only costs one request, since the model checks describes_this_rule
             score = len(shared) + sum(1 for w in shared if "-" in w or len(w) >= 9)
+            rule_title = re.sub(r"[^a-z0-9]+", " ", r["title"].lower()).strip()
+            if len(rule_title) >= 20 and rule_title in re.sub(r"[^a-z0-9]+", " ", c["title"].lower()):
+                score = max(score, 99)   # the rule's whole title appears in the companion's title
             if score > best_score:
                 best, best_score = r, score
         if best:
@@ -314,11 +318,27 @@ def main() -> int:
 
     store = json.loads(STORE.read_text())
     items = pick_items(store, args.start, args.end)
+    DIGESTS.mkdir(exist_ok=True)
+    out = DIGESTS / (f"{today}.md" if not args.start else f"test-{args.start}.md")
+    collect_errors = []
+    errors_file = ROOT / "data" / "collect_errors.json"
+    if errors_file.exists() and not args.start:
+        collect_errors = json.loads(errors_file.read_text())
+    if not items and not args.start and not args.from_json:
+        if out.exists():   # a rerun the same day must not replace that day's real digest
+            print(f"{out.name} already exists and nothing is new; leaving it")
+            return 0
+        if collect_errors:   # not a quiet week: a source is down, and that must reach the reader
+            lines = [f"- {e['source']}: {e['error']}" for e in collect_errors]
+            out.write_text(f"# OPM what's what — {today}\n\nNothing new was found, but these sources could not be "
+                           "collected this run, so the week may not be complete:\n\n" + "\n".join(lines) + "\n", encoding="utf-8")
+            print("sources failed; wrote a short digest saying so")
+            return 0
     reads = [it for it in items if triage(it)[0] == "read"]
     one_lines = [it for it in items if triage(it)[0] == "one_line"]
     print(f"{len(items)} new items: {len(reads)} to read, {len(one_lines)} one line")
 
-    failures, texts = [], {}
+    failures, texts = [f"Could not collect {e['source']} this run: {e['error']}" for e in collect_errors], {}
     for it in reads:
         try:
             texts[it["url"]] = document_text(it)
@@ -381,31 +401,47 @@ def main() -> int:
             except Exception as e:
                 failures.append(f"Model output for {title!r} unusable: {e}")
                 continue
-            cost += r["cost_usd"]
-            if kind == "read":
-                r["verification"] = check(texts[obj["url"]], r["findings"]["items"])
-                results[obj["url"]] = r
-            else:
-                c, rule = obj
-                ds = r["findings"]["discrepancies"]
-                vc = check(texts[c["url"]], [{"quote": d["companion_quote"], "page": d["companion_page"]} for d in ds])
-                vr = check(texts[rule["url"]], [{"quote": d["rule_quote"], "page": d["rule_page"]} for d in ds])
-                r["verification"] = [(a["status"], b["status"]) for a, b in zip(vc, vr)]
-                crosses.append((c, rule, r))
+            cost += r["cost_usd"]   # the batch is paid for whatever happens next
+            try:
+                if kind == "read":
+                    r["verification"] = check(texts[obj["url"]], r["findings"]["items"])
+                    results[obj["url"]] = r
+                else:
+                    c, rule = obj
+                    ds = r["findings"]["discrepancies"]
+                    vc = check(texts[c["url"]], [{"quote": d["companion_quote"], "page": d["companion_page"]} for d in ds])
+                    vr = check(texts[rule["url"]], [{"quote": d["rule_quote"], "page": d["rule_page"]} for d in ds])
+                    r["verification"] = [(a["status"], b["status"]) for a, b in zip(vc, vr)]
+                    crosses.append((c, rule, r))
+            except Exception as e:
+                failures.append(f"Quote check failed for {title!r}: {type(e).__name__}: {e}")
 
+    unread = [it for it in reads if it["url"] not in results]
+    for it in unread:
+        why = "cost cap exceeded" if capped else "no result"
+        if capped or not any(it["url"] in f for f in failures):
+            failures.append(f"Not read ({why}): [{it['title']}]({it['url']})")
+    if unread:
+        failures.append(f"{len(unread)} item(s) were not read and stay new; the next run will try them again.")
     raw = {"results": results, "crosses": [(c["url"], r["url"], x) for c, r, x in crosses],
            "failures": failures, "cost_usd": round(cost, 4)}
-    syn = synthesis(raw, reads, crosses)
-    md = render_stories(today, syn, results, crosses, one_lines, failures,
-                        cost + raw["synthesis"]["cost_usd"], store, capped)
-    DIGESTS.mkdir(exist_ok=True)
-    out = DIGESTS / (f"{today}.md" if not args.start else f"test-{args.start}.md")
+    out.with_suffix(".json").write_text(json.dumps(raw, indent=1, ensure_ascii=False))   # paid results are on disk before grouping
+    try:
+        syn = synthesis(raw, reads, crosses)
+        md = render_stories(today, syn, results, crosses, one_lines, failures,
+                            cost + raw["synthesis"]["cost_usd"], store, capped)
+    except Exception as e:   # the reading is paid for: still publish it, as the plain list
+        failures.append(f"The grouping step failed ({type(e).__name__}: {e}); this is the plain list instead.")
+        raw["failures"] = failures
+        md = render(today, reads, one_lines, results, crosses, failures, cost, store, capped)
     out.write_text(md, encoding="utf-8")
     out.with_suffix(".json").write_text(json.dumps(raw, indent=1, ensure_ascii=False))
+    unread_urls = {it["url"] for it in unread}
     if not args.start:  # tests never mark items digested
         now = datetime.now(timezone.utc).isoformat(timespec="seconds")
         for it in items:
-            store[it["url"]]["digested_at"] = now
+            if it["url"] not in unread_urls:   # an item that was never read must not disappear from the next run
+                store[it["url"]]["digested_at"] = now
         STORE.write_text(json.dumps(store, indent=1, ensure_ascii=False, sort_keys=True))
     print(f"wrote {out.relative_to(ROOT)}; cost ${cost:.2f}; problems: {len(failures)}")
     return 0

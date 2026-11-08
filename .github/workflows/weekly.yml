@@ -90,7 +90,7 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/items.json digests/
-          git diff --cached --quiet || { git commit -m "Weekly digest $(date -u +%F)"; git push; }
+          git diff --cached --quiet || { git commit -m "Weekly digest $(date -u +%F)"; git pull --rebase -q origin main; git push; }
 
       - name: Open the digest as an issue (emails you)
         if: ${{ steps.gate.outputs.skip != 'true' && !inputs.check_only }}
@@ -100,13 +100,24 @@ jobs:
           f="digests/$(date -u +%F).md"
           [ -f "$f" ] || { echo "no digest written"; exit 1; }
           if grep -q '^NOTHING NEW' "$f"; then echo "Nothing new this week; no issue opened."; exit 0; fi
+          # a rerun the same day leaves the real digest in place; don't post it a second time
+          existing=$(gh issue list --state all --search "in:title $(date -u +%F)" --json title --jq '[.[] | select(.title | startswith("OPM what"))] | length')
+          if [ "$existing" -gt 0 ]; then echo "An issue for $(date -u +%F) already exists."; exit 0; fi
           url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/blob/main/$f"
           # issue bodies max out at 65,536 characters; long weeks link to the full file
           python - "$f" "$url" > body.md <<'EOF'
           import sys
           text, url = open(sys.argv[1], encoding="utf-8").read(), sys.argv[2]
           limit = 60000
-          print(text if len(text) <= limit else text[:limit] + f"\n\n…truncated. Full digest: {url}")
+          if len(text) <= limit:
+              print(text)
+          else:
+              head = text[:limit]
+              cut = head.rfind("\n## ")
+              head = head[:cut] if cut > 0 else head          # cut between sections, not mid-sentence
+              close = "</details>\n" * max(0, head.count("<details") - head.count("</details>"))
+              audit = [l for l in text.splitlines() if l.startswith("Independent audit")]   # the audit line must survive
+              print(head + "\n" + close + f"\n…truncated. Full digest: {url}\n\n" + "\n".join(audit))
           EOF
           gh issue create --title "OPM what's what — $(date -u +%F)" --body-file body.md --assignee abigailhaddad
 

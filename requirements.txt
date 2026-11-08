@@ -1,6 +1,6 @@
-requests
-beautifulsoup4
-pypdf
-anthropic
-pydantic
-pdfminer.six
+requests==2.34.2
+beautifulsoup4==4.15.0
+pypdf==7.0.0
+anthropic==2.6.0
+pydantic==2.14.3
+pdfminer.six==20260107
