@@ -113,3 +113,17 @@ jobs:
       - name: Fail the run if the audit could not confirm every quote
         if: ${{ steps.audit.outcome == 'failure' }}
         run: echo "Audit did not confirm every quote; see digests/proof/. The digest and issue were still published." && exit 1
+
+      # GitHub disables scheduled workflows in a public repo after 60 days with no commits.
+      # If the newest commit is 45+ days old, add an empty one on main so the schedule survives.
+      - name: Keepalive commit
+        if: ${{ always() && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') }}
+        run: |
+          age=$(( ( $(date +%s) - $(git log -1 --format=%ct) ) / 86400 ))
+          echo "newest commit is $age days old"
+          if [ "$age" -ge 45 ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit --allow-empty -m "Keepalive: no commits in $age days"
+            git push
+          fi
