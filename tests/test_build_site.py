@@ -40,7 +40,7 @@ def test_pages_feed_and_exclusions(tmp_path, capsys):
 
     assert [i["day"] for i in items] == ["2026-11-02", "2026-10-26"]
     assert sorted(p.name for p in out.iterdir()) == [
-        ".nojekyll", "2026-10-26.html", "2026-11-02.html", "feed.xml", "index.html"]
+        "2026-10-26.html", "2026-11-02.html", "feed.xml", "index.html"]
     printed = capsys.readouterr().out
     for skipped in ("2026-11-09.md: NOTHING NEW", "test-2026-10-19.md", "proof/2026-11-02.md"):
         assert skipped in printed

@@ -1,11 +1,14 @@
 name: Website and RSS feed
 
 # Publishes every digest in digests/ as a web page, plus an index and feed.xml (RSS 2.0),
-# to GitHub Pages. Runs after each weekly run (whatever its outcome: it publishes what is
-# on main), on pushes that change digests/ or the builder, and by hand.
-# A push made by the weekly job's GITHUB_TOKEN does not trigger `push`, hence workflow_run.
+# to the Cloudflare Pages project named by the CLOUDFLARE_PROJECT variable (default
+# opm-whats-what), served at https://opm-whats-what.abigailhaddad.com/
+# Runs after each weekly run (whatever its outcome: it publishes what is on main), on
+# pushes that change digests/ or the builder, and by hand. A push made by the weekly job's
+# GITHUB_TOKEN does not trigger `push`, hence workflow_run.
 #
-# One-time setup: Settings > Pages > Source: "GitHub Actions".
+# Secrets: CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID (the same ones ota-watch uses).
+# Variable (optional): CLOUDFLARE_PROJECT.
 
 on:
   workflow_run:
@@ -18,15 +21,13 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: site
   cancel-in-progress: false
 
 jobs:
-  build:
+  site:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -46,20 +47,14 @@ jobs:
           python src/build_site.py --out _site \
             --title "OPM what's what" \
             --description "A weekly digest of new documents from OPM (Federal Register, CHCO Council memos, news, reports and publications), summarized by Claude Opus 5.5. A script checks that each quote is in the original on the page cited; it does not check that the findings are right, so read the source. Unofficial; not affiliated with OPM." \
-            --site-url "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" \
+            --site-url "https://opm-whats-what.abigailhaddad.com/" \
             --repo-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"
           python -c "import xml.etree.ElementTree as ET; ET.parse('_site/feed.xml')"
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
         with:
-          path: _site
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: "4.42.0"
+          command: pages deploy _site --project-name=${{ vars.CLOUDFLARE_PROJECT || 'opm-whats-what' }} --branch=main

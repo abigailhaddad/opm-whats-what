@@ -7,7 +7,7 @@ what differs (title, URLs) comes in as arguments from .github/workflows/site.yml
 
 Run locally:
     python src/build_site.py --out _site --title "..." --description "..." \
-        --site-url https://abigailhaddad.github.io/REPO/ --repo-url https://github.com/abigailhaddad/REPO
+        --site-url https://REPO.abigailhaddad.com/ --repo-url https://github.com/abigailhaddad/REPO
 
 Which files become pages:
   * only digests/<YYYY-MM-DD>.md. Anything else (test-*.md, proof/, data/,
@@ -202,7 +202,6 @@ def build(a: argparse.Namespace) -> list[dict]:
         (out / f"{d['day']}.html").write_text(digest_page(d, prev, nxt, a), encoding="utf-8")
     (out / "index.html").write_text(index_page(items, a), encoding="utf-8")
     (out / "feed.xml").write_text(feed_xml(items, a), encoding="utf-8")
-    (out / ".nojekyll").write_text("", encoding="utf-8")
     print(f"Published {len(items)} digest(s) to {out}/; feed has {min(len(items), a.feed_items)}.")
     for s in skipped:
         print(f"  skipped {s}")
@@ -215,7 +214,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     p.add_argument("--out", default=str(ROOT / "_site"))
     p.add_argument("--title", required=True)
     p.add_argument("--description", required=True)
-    p.add_argument("--site-url", required=True, help="public URL of the site, e.g. https://abigailhaddad.github.io/REPO/")
+    p.add_argument("--site-url", required=True, help="public URL of the site, e.g. https://REPO.abigailhaddad.com/")
     p.add_argument("--repo-url", required=True, help="e.g. https://github.com/abigailhaddad/REPO")
     p.add_argument("--feed-items", type=int, default=20)
     return p.parse_args(argv)

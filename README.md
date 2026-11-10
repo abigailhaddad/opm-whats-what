@@ -2,7 +2,7 @@
 
 This is my attempt to keep up with the documents OPM puts out that I otherwise wouldn't hear about. Every Monday I pull from the Federal Register, CHCO Council memos, OPM's news page, and its reports and publications, and have Claude Opus 5.5 write summaries and findings. A script then checks that each quote is in the original text, on the page cited. It doesn't check that the findings are right, so read the source. Unofficial; not affiliated with OPM.
 
-Each digest is also published at https://abigailhaddad.github.io/opm-whats-what/, with an RSS feed at https://abigailhaddad.github.io/opm-whats-what/feed.xml (built by `src/build_site.py`, deployed by `.github/workflows/site.yml`).
+Each digest is also published at https://opm-whats-what.abigailhaddad.com/, with an RSS feed at https://opm-whats-what.abigailhaddad.com/feed.xml (built by `src/build_site.py`, deployed to Cloudflare Pages by `.github/workflows/site.yml`).
 
 ## Sources
 
