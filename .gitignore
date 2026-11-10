@@ -5,3 +5,4 @@ explore/*.txt
 explore/ecfr_*
 data/*.html
 .env
+_site/
