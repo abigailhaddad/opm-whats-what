@@ -1,0 +1,60 @@
+name: Website and RSS feed
+
+# Publishes every digest in digests/ as a web page, plus an index and feed.xml (RSS 2.0),
+# to the Cloudflare Pages project named by the CLOUDFLARE_PROJECT variable (default
+# opm-whats-what), served at https://opm-whats-what.abigailhaddad.com/
+# Runs after each weekly run (whatever its outcome: it publishes what is on main), on
+# pushes that change digests/ or the builder, and by hand. A push made by the weekly job's
+# GITHUB_TOKEN does not trigger `push`, hence workflow_run.
+#
+# Secrets: CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID (the same ones ota-watch uses).
+# Variable (optional): CLOUDFLARE_PROJECT.
+
+on:
+  workflow_run:
+    workflows: ["Weekly OPM what's what"]
+    types: [completed]
+  push:
+    branches: [main]
+    paths: ["digests/*.md", "src/build_site.py", ".github/workflows/site.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site
+  cancel-in-progress: false
+
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0   # page dates come from when each digest was first committed
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install markdown-it-py==4.3.0 nh3==0.3.7
+
+      - name: Build the site
+        run: |
+          python src/build_site.py --out _site \
+            --title "OPM what's what" \
+            --description "A weekly digest of new documents from OPM (Federal Register, CHCO Council memos, news, reports and publications), summarized by Claude Opus 5.5. A script checks that each quote is in the original on the page cited; it does not check that the findings are right, so read the source. Unofficial; not affiliated with OPM." \
+            --site-url "https://opm-whats-what.abigailhaddad.com/" \
+            --repo-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"
+          python -c "import xml.etree.ElementTree as ET; ET.parse('_site/feed.xml')"
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: "4.42.0"
+          command: pages deploy _site --project-name=${{ vars.CLOUDFLARE_PROJECT || 'opm-whats-what' }} --branch=main
