@@ -118,3 +118,106 @@ def test_get_retries_timeouts_and_connection_errors(monkeypatch):
     monkeypatch.setattr(collect.requests, "get", lambda url, **kw: (_ for _ in ()).throw(requests.Timeout("down")))
     with pytest.raises(requests.Timeout):
         collect.get("https://x/")
+
+
+# --------------------------------------------------------------------------- #
+# Archived / old documents are recorded but not treated as new
+# --------------------------------------------------------------------------- #
+from triage import not_new_reason  # noqa: E402
+
+ARCHIVE = "https://www.opm.gov/about-us/reports-publications/agency-archive/"
+CURRENT = "https://www.opm.gov/about-us/reports-publications/agency-reports/"
+SEEN = "2026-11-16T20:46:00+00:00"
+
+
+def report(name, title, pages):
+    return {"source": "reports", "kind": "document", "url": f"https://www.opm.gov/telework/{name}.pdf",
+            "title": title, "found_on": pages[0], "found_on_pages": pages, "first_seen": SEEN}
+
+
+def test_not_new_rule_on_the_telework_reports_seen_2026_11_16():
+    # 2004-2025 reports newly linked from agency-archive: not new
+    assert not_new_reason(report("2004-report-to-congress", "Status of Telework in the Federal Government, 2004", [ARCHIVE]))
+    assert not_new_reason(report("s-2025", "Status of Telework in the Federal Government, 2025", [ARCHIVE]))
+    # the FY2025 report (dated November 2026) linked from agency-reports: new, gets read
+    assert not_new_reason(report("s-2026-pdf-file", "Status of Telework in the Federal Government, 2026", [CURRENT])) is None
+    # linked from an archive page AND a current page: may be new
+    assert not_new_reason(report("x", "Some report", [ARCHIVE, CURRENT])) is None
+    # records from before found_on_pages existed fall back to found_on
+    old_style = report("2005-report-to-congress", "Status of Telework, 2005", [ARCHIVE])
+    del old_style["found_on_pages"]
+    assert not_new_reason(old_style)
+
+
+def test_not_new_rule_by_year_and_by_date():
+    r = report("x", "Annual report 2024", [CURRENT])
+    assert not_new_reason(r) == "names no year after 2024"                   # two years before 2026
+    assert not_new_reason({**r, "title": "Annual report 2025"}) is None      # one year before: may be new
+    assert not_new_reason({**r, "title": "Annual report", "url": "https://www.opm.gov/a/b.pdf"}) is None   # no year
+    assert not_new_reason({**r, "title": "Data 2019-2025"}) is None           # newest year named counts
+    m = {**memo("Z"), "first_seen": SEEN}
+    assert not_new_reason({**m, "date": "2026-11-10"}) is None
+    assert not_new_reason({**m, "date": "2025-11-16"}) is None               # exactly 365 days: kept
+    assert "more than a year" in not_new_reason({**m, "date": "2025-11-15"})
+    assert not_new_reason({**m, "date": "2026-11-10", "title": "2004 memo"}) is None   # a date beats a year in the title
+
+
+def test_archived_reports_are_not_sent_to_the_model_and_are_listed_once(monkeypatch, tmp_path):
+    archived = report("2004-report-to-congress", "Status of Telework in the Federal Government, 2004", [ARCHIVE])
+    sent = []
+    setup(monkeypatch, tmp_path, [memo("A"), archived])
+    monkeypatch.setattr(weekly, "count_input_tokens", lambda c, q: sent.append(q) or 50_000_000)
+    weekly.main()
+    assert len(sent) == 1 and "Memo A" in sent[0]["messages"][0]["content"]          # only the memo was costed
+    assert sent[0]["model"] == "claude-sonnet-5-5"                                   # reads run on Sonnet
+    store = json.loads((tmp_path / "items.json").read_text())
+    assert store[archived["url"]]["not_new"] == "linked only from an archive page"
+    assert store[archived["url"]]["digested_at"]                                     # listed once, never again
+    text = (tmp_path / "digests" / f"{TODAY}.md").read_text()
+    assert "Not treated as new (1)" in text and "2004" in text
+    assert "Not read (cost cap exceeded): [Status of Telework" not in text
+    assert "0 new documents" in text or "new document" in text
+
+
+def test_digest_date_from_the_environment_names_the_file(monkeypatch, tmp_path):
+    setup(monkeypatch, tmp_path, [ROUTINE])
+    monkeypatch.setenv("DIGEST_DATE", "2026-11-16")
+    weekly.main()
+    assert (tmp_path / "digests" / "2026-11-16.md").exists()
+    monkeypatch.setenv("DIGEST_DATE", "11/16/2026")
+    with pytest.raises(ValueError):
+        weekly.main()
+
+
+def test_grouping_runs_on_opus(monkeypatch, tmp_path):
+    seen = {}
+
+    def fake_synthesize(client, reads, results, crosses, model, effort):
+        seen["model"], seen["effort"] = model, effort
+        return {"stories": [], "routine": [], "problems": [], "cost_usd": 0.0}
+    monkeypatch.setattr(weekly, "synthesize", fake_synthesize)
+    monkeypatch.setattr(weekly, "make_client", lambda: object())
+    raw = {"results": {"https://x/a": {"findings": {"plain_summary": "s", "items": [], "could_not_determine": []},
+                                       "verification": []}}}
+    weekly.synthesis(raw, [memo("a") | {"url": "https://x/a"}], [])
+    assert seen == {"model": "claude-opus-5-5", "effort": "medium"}
+
+
+def test_collect_reports_records_every_page_that_links_a_document(monkeypatch):
+    root = collect.REPORTS_ROOT
+    pages = {
+        root: f'<main><h1>R</h1><a href="{CURRENT}">cur</a><a href="{ARCHIVE}">arc</a></main>',
+        CURRENT: '<main><h1>Cur</h1><a href="/telework/new.pdf">New</a><a href="/telework/both.pdf">Both</a></main>',
+        ARCHIVE: '<main><h1>Arc</h1><a href="/telework/old.pdf">Old</a><a href="/telework/both.pdf">Both</a></main>',
+    }
+
+    class R:
+        def __init__(self, t):
+            self.text = t
+    monkeypatch.setattr(collect, "get", lambda url, **kw: R(pages[url]))
+    docs = {d["url"].rsplit("/", 1)[-1]: d for d in collect.collect_reports() if d["kind"] == "document"}
+    assert docs["old.pdf"]["found_on_pages"] == [ARCHIVE]
+    assert docs["both.pdf"]["found_on_pages"] == [CURRENT, ARCHIVE]
+    assert not_new_reason({**docs["old.pdf"], "first_seen": SEEN})
+    assert not_new_reason({**docs["both.pdf"], "first_seen": SEEN}) is None
+    assert not_new_reason({**docs["new.pdf"], "first_seen": SEEN}) is None

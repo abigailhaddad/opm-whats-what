@@ -169,7 +169,9 @@ DOC_EXT = re.compile(r"\.(pdf|xlsx?|csv|docx?|zip)(\?|$)", re.I)
 
 def collect_reports(max_pages: int = 400) -> list[dict]:
     """Crawl every page under /about-us/reports-publications/ and record each
-    sub-page and each document linked from one. Undated: novelty = first_seen."""
+    sub-page and each document linked from one, with every page that links it
+    (found_on_pages). Undated: novelty = first_seen, except for documents
+    triage.not_new_reason marks as archived or old."""
     queue, visited, out = [REPORTS_ROOT], set(), {}
     while queue and len(visited) < max_pages:
         url = queue.pop(0)
@@ -191,9 +193,12 @@ def collect_reports(max_pages: int = 400) -> list[dict]:
             href = urljoin(url, a["href"]).split("#")[0]
             p = urlparse(href)
             if DOC_EXT.search(p.path) and p.netloc.endswith("opm.gov"):
-                out.setdefault(href, {"source": "reports", "url": href, "kind": "document",
-                                      "title": a.get_text(" ", strip=True) or p.path.rsplit("/", 1)[-1],
-                                      "found_on": url})
+                doc = out.setdefault(href, {"source": "reports", "url": href, "kind": "document",
+                                            "title": a.get_text(" ", strip=True) or p.path.rsplit("/", 1)[-1],
+                                            "found_on": url, "found_on_pages": []})
+                # every page that links it: a document linked only from archive pages is not new (triage.not_new_reason)
+                if url not in doc["found_on_pages"]:
+                    doc["found_on_pages"].append(url)
             elif (p.netloc == "www.opm.gov" and p.path.startswith("/about-us/reports-publications/")
                   and href not in visited):
                 queue.append(href if href.endswith("/") else href + "/")
