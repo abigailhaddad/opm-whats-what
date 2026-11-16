@@ -13,6 +13,8 @@ whether it gets read and written up.
 from __future__ import annotations
 
 import re
+from datetime import date, timedelta
+from urllib.parse import urlparse
 
 ROUTINE_FR_NOTICE = re.compile(
     r"information collection|submission for (review|renewal|re-?instatement|reinstatement)"
@@ -26,6 +28,40 @@ ROUTINE_FR_NOTICE = re.compile(
 HEALTH_TRI_AGENCIES = {"treasury-department", "labor-department", "health-and-human-services-department",
                        "internal-revenue-service", "employee-benefits-security-administration",
                        "centers-for-medicare-medicaid-services"}
+
+
+YEAR = re.compile(r"(?<!\d)(19[9]\d|20\d\d)(?!\d)")
+
+
+def not_new_reason(item: dict) -> str | None:
+    """Why an item we first saw recently is still not a new publication, or None if it may be new.
+
+    The rule (also in the README):
+      1. A reports document linked only from archive pages (a page whose path contains
+         "archive", e.g. /about-us/reports-publications/agency-archive/). OPM adding old
+         files to its archive is not OPM publishing something.
+      2. A dated item (FR, CHCO, news) whose own date is more than 365 days before we
+         first saw it.
+      3. An undated item (reports) whose title and file name name no year later than
+         two calendar years before the year we first saw it (first seen in 2026: the
+         newest year named is 2024 or earlier). An item that names no year is kept.
+    These items are recorded in data/items.json and listed at the bottom of the digest,
+    but they are not sent to the model and not counted as new.
+    """
+    first = (item.get("first_seen") or "")[:10]
+    if not first:
+        return None
+    pages = item.get("found_on_pages") or ([item["found_on"]] if item.get("found_on") else [])
+    if item["source"] == "reports" and pages and all("archive" in urlparse(p).path.lower() for p in pages):
+        return "linked only from an archive page"
+    if item.get("date"):
+        if date.fromisoformat(item["date"]) < date.fromisoformat(first) - timedelta(days=365):
+            return f"dated {item['date']}, more than a year before it was first seen"
+        return None
+    years = [int(y) for y in YEAR.findall(f"{item.get('title') or ''} {urlparse(item['url']).path.rsplit('/', 1)[-1]}")]
+    if years and max(years) <= int(first[:4]) - 2:
+        return f"names no year after {max(years)}"
+    return None
 
 
 def triage(item: dict) -> tuple[str, str]:

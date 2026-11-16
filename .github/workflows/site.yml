@@ -46,7 +46,7 @@ jobs:
         run: |
           python src/build_site.py --out _site \
             --title "OPM what's what" \
-            --description "A weekly digest of new documents from OPM (Federal Register, CHCO Council memos, news, reports and publications), summarized by Claude Opus 5.5. A script checks that each quote is in the original on the page cited; it does not check that the findings are right, so read the source. Unofficial; not affiliated with OPM." \
+            --description "A weekly digest of new documents from OPM (Federal Register, CHCO Council memos, news, reports and publications), summarized by Claude (Sonnet 5.5 and Opus 5.5). A script checks that each quote is in the original on the page cited; it does not check that the findings are right, so read the source. Unofficial; not affiliated with OPM." \
             --site-url "https://opm-whats-what.abigailhaddad.com/" \
             --repo-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"
           python -c "import xml.etree.ElementTree as ET; ET.parse('_site/feed.xml')"

@@ -1,16 +1,21 @@
-"""The weekly run: new items -> triage -> one Opus batch -> verify -> digest.
+"""The weekly run: new items -> triage -> one batch of reads -> verify -> grouping -> digest.
 
 Steps
   1. New items = in data/items.json, not baseline, not yet digested.
      (--start/--end instead selects by publication date, for tests/backfill.)
+     Items that triage.not_new_reason says are old (linked only from an archive page,
+     or dated / naming a year well before we first saw them) are set aside: recorded,
+     listed at the bottom of the digest, never sent to the model.
   2. Triage: read in full vs one line.
   3. Fetch full text; pair each news release / CHCO memo with the Federal
      Register rule it describes (recent rule with the most title words in common).
   4. Count input tokens (free) and refuse to submit if the estimated batch cost
      exceeds --cap. The digest still goes out, listing everything as unread.
-  5. One Message Batch (50% price): a read per document + a cross-check per pair.
+  5. One Message Batch (50% price): a read per document + a cross-check per pair,
+     on READ_MODEL. The grouping into stories is one small call on SYNTH_MODEL.
   6. Verify every quote against its document and page.
-  7. Write digests/<date>.md; mark items digested.
+  7. Write digests/<date>.md; mark items digested. <date> is today (UTC on the
+     runner) or $DIGEST_DATE, which the workflow sets once per run.
 
 The GitHub issue (email) is created by the workflow from the digest file.
 Usage: python src/weekly.py [--start 2026-10-19 --end 2026-10-25] [--cap 3] [--dry-run]
@@ -19,6 +24,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 import time
@@ -35,12 +41,17 @@ from fetch_text import document_text, own_summary  # noqa: E402
 from synthesize import synthesize  # noqa: E402
 from read import (PRICES, CrossCheck, build_crosscheck_request, build_request,  # noqa: E402
                   count_input_tokens, make_client, parse_message)
-from triage import triage  # noqa: E402
+from triage import not_new_reason, triage  # noqa: E402
 from verify import check  # noqa: E402
 
 STORE = ROOT / "data" / "items.json"
 DIGESTS = ROOT / "digests"
-MODEL, EFFORT = "claude-opus-5-5", "high"
+# Per-document reads and cross-checks are the bulk of the tokens (full document texts), so they
+# run on Sonnet 5.5 (half Opus 5.5's price). Every quote they return is still checked against the
+# document by verify.py and audit.py. The grouping call only sees summaries and finding headlines,
+# is small, and writes the digest's headlines and takeaways, so it stays on Opus 5.5.
+READ_MODEL, READ_EFFORT = "claude-sonnet-5-5", "high"
+SYNTH_MODEL, SYNTH_EFFORT = "claude-opus-5-5", "medium"
 EST_OUTPUT_PER_REQUEST = 12000
 STATUS_RANK = {"opposite": 0, "absent": 1, "vague": 2, "in": 3}
 STATUS_LABEL = {"opposite": "summary says the opposite", "absent": "not in the summary",
@@ -190,10 +201,31 @@ def render(today: str, reads: list[dict], one_lines: list[dict], results: dict, 
         L += [f"- [{it['title']}]({it['url']}) — {it.get('kind') or it['source']}, "
               f"{it.get('date') or 'first seen ' + it['first_seen'][:10]} ({triage(it)[1]})" for it in one_lines]
         L.append("")
-    L += ["---", f"Model: {MODEL} (batch, effort {EFFORT}). Cost this run: ${cost:.2f}."]
+    L += ["---", f"{MODELS_LINE} Cost this run: ${cost:.2f}."]
     if failures:
         L += ["", "**Problems this run:**"] + [f"- {x}" for x in failures]
     return "\n".join(L) + "\n"
+
+
+MODELS_LINE = (f"Reading: {READ_MODEL} (batch, effort {READ_EFFORT}); "
+               f"grouping into stories: {SYNTH_MODEL} (effort {SYNTH_EFFORT}).")
+
+
+def render_not_new(old: list[tuple[dict, str]]) -> str:
+    """Collapsed list of items set aside as old, so a wrong call is visible to the reader."""
+    if not old:
+        return ""
+    L = ["", f"<details><summary>Not treated as new ({len(old)}): first seen this week, but archived or old</summary>", ""]
+    L += [f"- [{it['title'] or it['url']}]({it['url']}) — {why}" for it, why in
+          sorted(old, key=lambda o: (o[0].get("title") or "", o[0]["url"]))]
+    L += ["", "Recorded in data/items.json; not read. Rule: triage.not_new_reason.", "</details>"]
+    return "\n".join(L) + "\n"
+
+
+def mark_not_new(store: dict, old: list[tuple[dict, str]], now: str) -> None:
+    for it, why in old:
+        store[it["url"]]["not_new"] = why
+        store[it["url"]]["digested_at"] = now   # listed once, then never again
 
 
 def _flat(s: str) -> str:
@@ -281,7 +313,7 @@ def render_stories(today, syn, results, crosses, one_lines, failures, cost, stor
               f"{results[it['url']]['findings']['plain_summary']}" for it in routine]
         L += [f"- [{it['title']}]({it['url']}) — {it.get('kind') or it['source']}, "
               f"{it.get('date') or 'first seen ' + it['first_seen'][:10]} ({triage(it)[1]}; not read)" for it in one_lines]
-    L += ["", "---", f"Model: {MODEL} (batch, effort {EFFORT}); grouping by the same model. Cost this run: ${cost:.2f}."]
+    L += ["", "---", f"{MODELS_LINE} Cost this run: ${cost:.2f}."]
     probs = failures + syn.get("problems", [])
     if probs:
         L += ["", "**Problems this run:**"] + [f"- {x}" for x in probs]
@@ -298,7 +330,7 @@ def synthesis(raw: dict, reads: list[dict], crosses: list) -> dict:
         if not read_items:
             raw["synthesis"] = {"stories": [], "routine": [], "problems": [], "cost_usd": 0.0}
         else:
-            s = synthesize(make_client(), read_items, raw["results"], crosses)
+            s = synthesize(make_client(), read_items, raw["results"], crosses, model=SYNTH_MODEL, effort=SYNTH_EFFORT)
             raw["synthesis"] = {k: s[k] for k in ("stories", "routine", "problems", "cost_usd")}
         raw["synthesis"]["doc_urls"] = {d: it["url"] for d, it in docs.items()}
     elif raw["synthesis"].get("doc_urls") != {d: it["url"] for d, it in docs.items()}:
@@ -314,10 +346,17 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true", help="count tokens and stop before the batch")
     ap.add_argument("--from-json", help="re-render a digest from a saved <digest>.json (no model calls)")
     args = ap.parse_args()
-    today = date.today().isoformat()
+    today = os.environ.get("DIGEST_DATE") or date.today().isoformat()
+    date.fromisoformat(today)   # a malformed DIGEST_DATE fails here, before anything is written
 
     store = json.loads(STORE.read_text())
     items = pick_items(store, args.start, args.end)
+    old = [] if args.start else [(it, why) for it in items if (why := not_new_reason(it))]
+    items = [it for it in items if it["url"] not in {o["url"] for o, _ in old}]
+    if old:
+        print(f"{len(old)} item(s) first seen recently but archived or old; recorded, not read:")
+        for it, why in old:
+            print(f"  {it['title'][:70]} ({why})")
     DIGESTS.mkdir(exist_ok=True)
     out = DIGESTS / (f"{today}.md" if not args.start else f"test-{args.start}.md")
     collect_errors = []
@@ -326,12 +365,16 @@ def main() -> int:
         collect_errors = json.loads(errors_file.read_text())
     if not items and not args.start and not args.from_json:
         if out.exists():   # a rerun the same day must not replace that day's real digest
+            # (old items stay unmarked, so next week's digest lists them)
             print(f"{out.name} already exists and nothing is new; leaving it")
             return 0
         if collect_errors:   # not a quiet week: a source is down, and that must reach the reader
             lines = [f"- {e['source']}: {e['error']}" for e in collect_errors]
             out.write_text(f"# OPM what's what — {today}\n\nNothing new was found, but these sources could not be "
-                           "collected this run, so the week may not be complete:\n\n" + "\n".join(lines) + "\n", encoding="utf-8")
+                           "collected this run, so the week may not be complete:\n\n" + "\n".join(lines) + "\n" + render_not_new(old), encoding="utf-8")
+            if old and not args.dry_run:
+                mark_not_new(store, old, datetime.now(timezone.utc).isoformat(timespec="seconds"))
+                STORE.write_text(json.dumps(store, indent=1, ensure_ascii=False, sort_keys=True))
             print("sources failed; wrote a short digest saying so")
             return 0
     reads = [it for it in items if triage(it)[0] == "read"]
@@ -369,12 +412,12 @@ def main() -> int:
     client = make_client()
     reqs = {}
     for i, it in enumerate([it for it in reads if it["url"] in texts]):
-        reqs[f"read-{i}"] = ("read", it, build_request(it, texts[it["url"]], own_summary(it, texts[it["url"]]), MODEL, EFFORT))
+        reqs[f"read-{i}"] = ("read", it, build_request(it, texts[it["url"]], own_summary(it, texts[it["url"]]), READ_MODEL, READ_EFFORT))
     for j, (c, r) in enumerate(pairs):
-        reqs[f"cross-{j}"] = ("cross", (c, r), build_crosscheck_request(c, texts[c["url"]], r, texts[r["url"]], MODEL, EFFORT))
+        reqs[f"cross-{j}"] = ("cross", (c, r), build_crosscheck_request(c, texts[c["url"]], r, texts[r["url"]], READ_MODEL, READ_EFFORT))
 
     n_in = sum(count_input_tokens(client, q) for _, _, q in reqs.values())
-    pin, pout = PRICES[MODEL]
+    pin, pout = PRICES[READ_MODEL]
     est = (n_in * pin + len(reqs) * EST_OUTPUT_PER_REQUEST * pout) / 1e6 * 0.5
     print(f"{len(reqs)} requests, {n_in:,} input tokens; estimated batch cost ${est:.2f} (cap ${args.cap:.2f})")
     capped = None
@@ -397,7 +440,7 @@ def main() -> int:
                 failures.append(f"Model request for {title!r} {res.result.type}")
                 continue
             try:
-                r = parse_message(res.result.message, MODEL, schema=None if kind == "read" else CrossCheck, batch=True)
+                r = parse_message(res.result.message, READ_MODEL, schema=None if kind == "read" else CrossCheck, batch=True)
             except Exception as e:
                 failures.append(f"Model output for {title!r} unusable: {e}")
                 continue
@@ -434,7 +477,7 @@ def main() -> int:
         failures.append(f"The grouping step failed ({type(e).__name__}: {e}); this is the plain list instead.")
         raw["failures"] = failures
         md = render(today, reads, one_lines, results, crosses, failures, cost, store, capped)
-    out.write_text(md, encoding="utf-8")
+    out.write_text(md + render_not_new(old), encoding="utf-8")
     out.with_suffix(".json").write_text(json.dumps(raw, indent=1, ensure_ascii=False))
     unread_urls = {it["url"] for it in unread}
     if not args.start:  # tests never mark items digested
@@ -442,6 +485,7 @@ def main() -> int:
         for it in items:
             if it["url"] not in unread_urls:   # an item that was never read must not disappear from the next run
                 store[it["url"]]["digested_at"] = now
+        mark_not_new(store, old, now)
         STORE.write_text(json.dumps(store, indent=1, ensure_ascii=False, sort_keys=True))
     print(f"wrote {out.relative_to(ROOT)}; cost ${cost:.2f}; problems: {len(failures)}")
     return 0
