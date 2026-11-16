@@ -1,41 +1,959 @@
 {
- "results": {},
- "crosses": [],
- "failures": [
-  "Not read (cost cap exceeded): [Chief Human Capital Officers Council Meeting](https://www.federalregister.gov/documents/2026/11/12/2026-23046/chief-human-capital-officers-council-meeting)",
-  "Not read (cost cap exceeded): [Extension of Suspension of Applications for Federal Long Term Care Insurance Program (FLTCIP) Coverage](https://www.federalregister.gov/documents/2026/11/13/2026-23149/extension-of-suspension-of-applications-for-federal-long-term-care-insurance-program-fltcip-coverage)",
-  "Not read (cost cap exceeded): [Final Regulations on Personnel Management in Agencies and Strategic Human Capital Management](https://www.opm.gov/chcoc/latest-memos/final-regulations-on-personnel-management-in-agencies-and-strategic-human-capital-management.pdf)",
-  "Not read (cost cap exceeded): [Guidance on Annual Employee Survey Data Submission Requirements and Deadlines Purpose](https://www.opm.gov/chcoc/latest-memos/guidance-on-annual-employee-survey-data-submission-requirements-and-deadlines.pdf)",
-  "Not read (cost cap exceeded): [Issuance of Final Rule on Managing Senior Professional Performance](https://www.opm.gov/chcoc/latest-memos/issuance-of-final-rule-on-managing-senior-professional-performance.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2004](https://www.opm.gov/telework/documents-for-telework/2004-report-to-congress.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2005](https://www.opm.gov/telework/documents-for-telework/2005-report-to-congress.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2006](https://www.opm.gov/telework/documents-for-telework/2006-report-to-congress.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2007](https://www.opm.gov/telework/documents-for-telework/2007-report-to-congress.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2008](https://www.opm.gov/telework/documents-for-telework/2008-report-to-congress.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2009](https://www.opm.gov/telework/documents-for-telework/2009-report-to-congress.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2010](https://www.opm.gov/telework/documents-for-telework/2010-report-to-congress.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2012](https://www.opm.gov/telework/documents-for-telework/2012-report-to-congress.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2013](https://www.opm.gov/telework/documents-for-telework/2013-report-to-congress.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2014](https://www.opm.gov/telework/documents-for-telework/2014-report-to-congress.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2016](https://www.opm.gov/telework/documents-for-telework/2016-report-to-congress.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2017](https://www.opm.gov/telework/documents-for-telework/2017-report-to-congress.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2018](https://www.opm.gov/telework/documents-for-telework/2018-report-to-congress.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2019](https://www.opm.gov/telework/documents-for-telework/2019-report-to-congress.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2020](https://www.opm.gov/telework/documents-for-telework/2020-report-to-congress.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2021](https://www.opm.gov/telework/documents-for-telework/2021-report-to-congress.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2022](https://www.opm.gov/telework/documents-for-telework/2022-report-to-congress.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2023](https://www.opm.gov/telework/documents-for-telework/2023-report-to-congress.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2024](https://www.opm.gov/telework/history-legislation-reports/status-of-telework-in-the-federal-government-2024.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2025](https://www.opm.gov/telework/history-legislation-reports/status-of-telework-in-the-federal-government-2025.pdf)",
-  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2026](https://www.opm.gov/telework/history-legislation-reports/status-of-telework-in-the-federal-government-2026-pdf-file.pdf)",
-  "26 item(s) were not read and stay new; the next run will try them again."
+ "results": {
+  "https://www.opm.gov/chcoc/latest-memos/issuance-of-final-rule-on-managing-senior-professional-performance.pdf": {
+   "findings": {
+    "plain_summary": "OPM's memo announces a final rule, effective November 18, 2026, that moves senior-level (SL) and scientific or professional (ST) employees into a new 5 CFR part 430 subpart E modeled on the SES appraisal process. It requires quarterly progress reviews, lets any senior professional request higher-level review, lets OPM set mandatory rating distributions starting with the FY 2026 cycle, and moves centralized review to the agency Performance Review Board.",
+    "items": [
+     {
+      "headline": "OPM can impose mandatory forced distribution of SL/ST ratings, starting with the FY 2026 cycle",
+      "what_changes": "The prior prohibition on forced or standardized distribution of senior professional ratings is removed. OPM may set distribution caps for some or all rating levels, which agencies must apply. The requirement applies to the FY 2026 appraisal closeout, only days after the Sept. 21, 2026 guidance and before the rule's Nov. 18 effective date. Agencies may request a waiver only in 'extraordinary circumstances'. Schedule C and G appointees are excluded.",
+      "summary_status": "in",
+      "speaker": "OPM",
+      "quote": "Beginning with the closeout of the fiscal year (FY) 2026 senior professional appraisal cycle, agencies will be required to adhere to the OPM-established standardized distribution requirements set forth in annual guidance.",
+      "page": 2,
+      "section": "IV. Standardized Distribution of Senior Professional Rating Levels"
+     },
+     {
+      "headline": "Mandatory higher-level review of Level 1 (Unacceptable) ratings is replaced by an optional, employee-requested review that cannot change the rating",
+      "what_changes": "Previously, any Level 1 rating required review and approval by a higher-level management official. Now review happens only if the senior professional requests it. The reviewer cannot change the rating and can only recommend a different one to the PRB. OPM calls this more robust, but a mandatory safeguard for Level 1 ratings is removed.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "The higher-level reviewing official may not change the initial summary rating but may recommend a different rating to the PRB.",
+      "page": 2,
+      "section": "III. Higher-Level Review"
+     },
+     {
+      "headline": "Agency PRBs (or equivalents) take over centralized review of SL/ST ratings, awards, and pay, and must enforce the distribution caps",
+      "what_changes": "The separate panel designated by the agency head is replaced by the agency PRB. Agencies subject to the SES with ten or more senior professionals must use their PRB. Agencies not subject to the SES with ten or more must create an equivalent body. Agencies with fewer than ten are not required to conduct centralized review. The PRB also calibrates ratings and ensures recommendations fit the OPM caps.",
+      "summary_status": "in",
+      "speaker": "OPM",
+      "quote": "Agencies that are not subject to the Senior Executive Service and have ten or more senior professionals must establish a body equivalent to the PRB for this purpose. Agencies with fewer than ten senior professionals are not required to conduct centralized review.",
+      "page": 3,
+      "section": "V. The Role of the Performance Review Board (PRB)"
+     },
+     {
+      "headline": "Progress reviews increase from at least once per appraisal period to at least quarterly",
+      "what_changes": "Rating officials must now hold progress reviews at least four times a year, telling senior professionals how they are performing against their plans and advising on improvement.",
+      "summary_status": "in",
+      "speaker": "OPM",
+      "quote": "The final rule increases the required frequency of progress reviews from at least once per appraisal period to at least quarterly.",
+      "page": 2,
+      "section": "II. Quarterly Progress Reviews"
+     },
+     {
+      "headline": "Separate senior professional appraisal programs and OPM Form 1631 are eliminated; new Governmentwide system to apply from FY 2027",
+      "what_changes": "Agencies need only a performance appraisal system, not a system plus a program. They no longer submit OPM Form 1631 for approval of their systems. OPM will issue an updated system and plan under separate cover, and agencies must implement the updated Governmentwide Senior Professional Performance Appraisal System and Plan for FY 2027 and beyond.",
+      "summary_status": "in",
+      "speaker": "OPM",
+      "quote": "Agencies should implement the updated Governmentwide Senior Professional Performance Appraisal System and Plan for FY 2027 and beyond, in accordance with OPM guidance.",
+      "page": 3,
+      "section": "VI. Next Steps"
+     },
+     {
+      "headline": "Schedule C and Schedule G senior professionals are excluded from the standardized distribution and from agencies' rating-limit calculations",
+      "what_changes": "Senior professionals appointed under Schedules C or G in the excepted service are not counted when agencies calculate their rating limits.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "In accordance with 5 CFR 430.505(d), OPM excludes senior professionals appointed under Schedules C or G in the excepted service from standardized distribution requirements.",
+      "page": 3,
+      "section": "IV. Standardized Distribution of Senior Professional Rating Levels"
+     }
+    ],
+    "could_not_determine": [
+     "How many senior professionals (SL/ST) are affected governmentwide or at any agency.",
+     "The actual rating-distribution caps or percentages OPM set; they are in the separate Sept. 21, 2026 annual guidance, not this memo.",
+     "Any cost or burden estimate for agencies.",
+     "Whether public comments were received on the rule, how many, and how OPM responded, since the memo does not discuss them.",
+     "Whether senior professionals can appeal or challenge their rating or a waiver denial.",
+     "Specific dates for the updated Governmentwide appraisal system and plan beyond 'FY 2027 and beyond', or for waiver request deadlines."
+    ]
+   },
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 4529,
+    "output_tokens": 1929
+   },
+   "cost_usd": 0.0142,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  },
+  "https://www.opm.gov/chcoc/latest-memos/guidance-on-annual-employee-survey-data-submission-requirements-and-deadlines.pdf": {
+   "findings": {
+    "plain_summary": "This OPM memo tells agencies how to meet the amended 5 CFR part 250: each agency runs its own annual employee survey with 10 required items and sends respondent-level data plus methodology documentation to OPM and OMB through OPM Collect within 90 days of finishing, and no later than March 31 of the following year. It sets a November 30, 2026 deadline to name a survey point of contact, bars component-level submissions and supplemental-item responses, and includes a crosswalk showing 10 of the 16 prior items retired and 4 new items added.",
+    "items": [
+     {
+      "headline": "Agencies must submit respondent-level records, not just aggregate results",
+      "what_changes": "Each agency must submit one row per respondent, with all variables in the OPM template. Items 1–9 use a 1–5 agreement scale with X (skipped) and Z (not presented) codes. Item 10, the select-all poor-performer item, is split into five 1/0/X/Z columns. The summary refers only to submitting 'results'.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "Individual respondent-level records, one row per respondent, containing all required variables specified in the OPM Agency Data Submission Template.",
+      "page": 3,
+      "section": "Agency Submission Requirement"
+     },
+     {
+      "headline": "Only a single agency-wide submission is accepted; no components, no supplemental items",
+      "what_changes": "Subagencies and components cannot submit on their own. Agencies must coordinate internally to compile one combined submission. OPM will not accept responses to agency-specific supplemental items.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Submissions must be made at the overall agency level; submissions from subagencies or components will not be accepted.",
+      "page": 3,
+      "section": "Agency Submission Requirement"
+     },
+     {
+      "headline": "Required items cut from 16 to 10: ten retired, four new items on accountability and poor performers",
+      "what_changes": "Of the 16 prior items, four are retained, one is reworded, one is replaced, and ten are retired. The retired items include the satisfaction questions and 'I recommend my organization as a good place to work'. The four new items cover supervisor accountability for results, feeling empowered, steps taken against poor performers, and a select-all item on what happens to poor performers.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "Of the 16 prior items, four are retained without change, one is rephrased, one is replaced, and ten are retired. Four new items have no prior counterparts.",
+      "page": 5,
+      "section": "Attachment 2 - Annual Employee Survey Item Crosswalk"
+     },
+     {
+      "headline": "Submission deadlines: administration by December 31, data by March 31 (March 30 in leap years)",
+      "what_changes": "Agencies may start the survey in January and must finish by December 31. Data and methodology are due within 90 days of completion and no later than March 31 of the next year. For 2026 surveys the last submission day is March 31, 2027. When the following year is a leap year, the deadline is March 30, for example March 30, 2028.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "When the following calendar year is a leap year, the 90-day deadline falls on March 30 (e.g., surveys completed",
+      "page": 2,
+      "section": "Survey Administration and Data Submission Timeline"
+     },
+     {
+      "headline": "Agency point of contact due to OPM by November 30, 2026",
+      "what_changes": "Each agency must designate a single employee survey point of contact who can compile data across all components. Agencies must send the name and contact information to EVS@opm.gov by November 30, 2026. They must also confirm active Microsoft Entra ID credentials for OPM Collect.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Please submit your point of contact’s name and contact information to OPM’s Workforce Policy and Innovation Data and Reporting team by November 30, 2026, at EVS@opm.gov.",
+      "page": 3,
+      "section": "Agency Point of Contact"
+     },
+     {
+      "headline": "Surveys fielded on or after November 30, 2026 must use the 10 items; earlier surveys only strongly encouraged",
+      "what_changes": "The rule applies from the 2026 cycle. Before November 30, agencies are strongly encouraged, but not required, to use only the 10 items. Surveys fielded on or after November 30 must use them. Extra questions should be raised with the agency's OIRA desk officer. OMB approved the 10 items as a common form under OMB Control No. 3206-0284.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Surveys fielded on or after November 30 must use them.",
+      "page": 2,
+      "section": "Background and Authorities"
+     },
+     {
+      "headline": "Methodology documentation must cover weighting and survey design",
+      "what_changes": "Alongside the data, agencies must submit documentation of the weighting methodology (decision and rationale, base weights, poststratification adjustments, trimming, and known limitations). They must also document the survey methodology (sample or census, distribution method, response rates, and nonresponse bias study results if applicable).",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "Documentation addressing the agency’s weighting methodology (decision and rationale, base weights, poststratification adjustments, trimming, and known limitations)",
+      "page": 3,
+      "section": "Agency Submission Requirement"
+     },
+     {
+      "headline": "Non-executive branch agencies are not required to submit",
+      "what_changes": "The submission requirement through OPM Collect applies to executive branch agencies. Non-executive branch agencies are expressly excused from submitting.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Non-executive branch agencies are not required to submit.",
+      "page": 3,
+      "section": "Submission Instructions"
+     }
+    ],
+    "could_not_determine": [
+     "What happens to agencies that miss the point-of-contact, administration, or data submission deadlines; the memo names no consequences or enforcement.",
+     "Whether OPM or OMB will publish or share agency-level results, and when.",
+     "The contents of Attachment 1 (the Survey Data File Agency Submission Template); only the attachment title appears.",
+     "How many agencies or employees are affected, and what administering the survey will cost agencies.",
+     "Whether the reference to 'Items 1–9 (items (i)-(x) in Attachment 2)' is a typo; Attachment 2 lists items (i) through (x), and item 10 is described separately.",
+     "How the rule treats surveys administered by agencies before November 30, 2026 that used the old 16 questions; the memo only 'strongly encourages' use of the 10 items."
+    ]
+   },
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 5720,
+    "output_tokens": 4715
+   },
+   "cost_usd": 0.0293,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  },
+  "https://www.federalregister.gov/documents/2026/11/12/2026-23046/chief-human-capital-officers-council-meeting": {
+   "findings": {
+    "plain_summary": "OPM announces that the Chief Human Capital Officers (CHCO) Council will hold its annual public meeting on December 8, 2026 at 9:30 a.m. EDT on Microsoft Teams, as required by Public Law 107-296. Attendees must contact OPM at least 5 business days ahead, and accommodation requests are due by December 1, 2026.",
+    "items": [
+     {
+      "headline": "Annual public CHCO Council meeting set for Dec. 8, 2026, virtual on Teams",
+      "what_changes": "Announces the date, time and format of the Council's annual public meeting, held virtually on Microsoft Teams. This is a routine statutory meeting notice and changes no policy.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "The Chief Human Capital Officers (CHCO) Council plans to meet on Tuesday, December 8, 2026. The meeting will start at 9:30 a.m. EDT and will be held on Microsoft Teams.",
+      "page": 72928,
+      "section": "DATES"
+     },
+     {
+      "headline": "Attendees must contact OPM 5 business days ahead; accommodation requests due Dec. 1",
+      "what_changes": "Members of the public who want to attend must notify OPM at least 5 business days before the meeting. Anyone needing an accommodation must contact OPM by December 1, 2026.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Persons desiring to attend this public meeting of the Chief Human Capital Officers Council should contact OPM at least 5 business days in advance of the meeting date at the email address shown below.",
+      "page": 72928,
+      "section": "SUPPLEMENTARY INFORMATION"
+     }
+    ],
+    "could_not_determine": [
+     "The meeting agenda or specific topics to be discussed",
+     "How to join the Microsoft Teams meeting (no link or registration instructions are given)",
+     "The email address for attendance requests (the text says it is 'shown below' but only a redacted address appears in the contact line)",
+     "Expected number of attendees or Council members"
+    ]
+   },
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 2027,
+    "output_tokens": 665
+   },
+   "cost_usd": 0.0054,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  },
+  "https://www.federalregister.gov/documents/2026/11/13/2026-23149/extension-of-suspension-of-applications-for-federal-long-term-care-insurance-program-fltcip-coverage": {
+   "findings": {
+    "plain_summary": "OPM is extending the suspension of new FLTCIP applications for another 24 months starting December 19, 2026, citing a contracted long term care insurance market and unstable premiums. Current enrollees keep their coverage and claims processing unchanged but cannot apply to increase coverage.",
+    "items": [
+     {
+      "headline": "Enrollees cannot increase coverage during extension",
+      "what_changes": "No new applications will be accepted and existing enrollees are barred from applying to increase their coverage for the extension period. The summary mentions only the suspension of applications, not the bar on coverage increases for current enrollees.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "As with the current suspension period, no applications for FLTCIP coverage will be accepted during the extension period, and current enrollees may not apply to increase their coverage.",
+      "page": 73280,
+      "section": "SUPPLEMENTARY INFORMATION"
+     },
+     {
+      "headline": "Extension runs 24 months from December 19, 2026",
+      "what_changes": "The suspension continues for 24 months from December 19, 2026, the third consecutive 24-month suspension period. The summary does not state the start date or length of the extension.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "The extension will begin on December 19, 2026. The suspension period will remain in effect for 24 months from this date.",
+      "page": 73280,
+      "section": "DATES"
+     },
+     {
+      "headline": "Current enrollees and claimants unaffected",
+      "what_changes": "Enrollment status, benefit eligibility, coverage and claims reimbursement for current enrollees do not change because of the suspension.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "The enrollment status or benefit eligibility of current enrollees will not change due to the suspension. For those in a claim status, there is no change to coverage and the claims reimbursement process.",
+      "page": 73280,
+      "section": "SUPPLEMENTARY INFORMATION"
+     },
+     {
+      "headline": "Rationale: market contraction and premium instability",
+      "what_changes": "OPM justifies the extension by saying the traditional and group long term care insurance market is essentially non-existent. It says this undermines its ability to set premium rates that reflect benefit costs as required by statute.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "such that the market for traditional long term care insurance, and especially group long term care insurance, is essentially non-existent.",
+      "page": 73281,
+      "section": "SUPPLEMENTARY INFORMATION"
+     },
+     {
+      "headline": "Procedural basis under 5 CFR 875.110(d)",
+      "what_changes": "OPM states the notice meets the regulatory requirement of publication at least 30 days before the suspension period ends, allowing another suspension of up to 24 months. This is the second extension after the original 2022 suspension.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "This extension, which will take effect on December 19, 2026, complies with the requirements of Sec.  875.110(d), which requires OPM to issue a Federal Register notice at least 30 days before the end of the suspension period in order to effectuate another suspension not to exceed 24 additional months.",
+      "page": 73280,
+      "section": "SUPPLEMENTARY INFORMATION"
+     }
+    ],
+    "could_not_determine": [
+     "How many current FLTCIP enrollees are affected by the bar on coverage increases",
+     "Whether OPM plans to reopen enrollment or restructure the program after the extension ends",
+     "Any premium rate changes for current enrollees during the extension",
+     "How many potential applicants are shut out of the program",
+     "Whether the suspension could be ended earlier than 24 months"
+    ]
+   },
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 2773,
+    "output_tokens": 1181
+   },
+   "cost_usd": 0.0087,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  },
+  "https://www.opm.gov/chcoc/latest-memos/implementing-the-revised-reduction-in-force-regulations-updated-workforce-reshaping-handbook.pdf": {
+   "findings": {
+    "plain_summary": "OPM is releasing an updated Workforce Reshaping Handbook that implements the revised RIF regulations (91 FR 49178), which apply to RIF notices issued on or after September 2, 2026. Beyond the four points the memo highlights, the handbook states that RIF appeals now go to OPM instead of MSPB, collapses assignment rights into a single lower-standing standard, and treats union grievance provisions executed after that date as unenforceable.",
+    "items": [
+     {
+      "headline": "RIF appeals for post-Sept. 2 notices go to OPM, not MSPB",
+      "what_changes": "Employees separated, demoted, or furloughed under RIF notices issued on or after September 2, 2026 appeal to OPM (30-day window, electronic filing). Notices issued earlier stay with the Merit Systems Protection Board. The memo's summary does not mention the change in appeal forum.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Note: RIF notices issued September 2, 2026, or later may be appealed to OPM.",
+      "page": 111,
+      "section": "Chapter VI: RIF Appeals"
+     },
+     {
+      "headline": "Union grievance procedures for RIFs unenforceable in agreements executed on or after Sept. 2, 2026",
+      "what_changes": "Negotiated grievance routes for RIFs survive only for agreements operative before September 2, 2026 (and RIFs noticed before that date). Later agreements that provide such a process are to be treated as unenforceable because they conflict with the OPM appeal procedures.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Agreements with provisions that purport to provide for such a process executed on or after September 2, 2026 conflict with the RIF appellate procedures provided for in 5 CFR 351 subpart I and should be considered unenforceable.",
+      "page": 238,
+      "section": "Appendix P: Post RIF Actions"
+     },
+     {
+      "headline": "Bump-and-retreat eliminated; one assignment-right standard (3 grades, 5 for 30%+ disabled veterans)",
+      "what_changes": "A released competitive service employee may be assigned only to a position held by a lower-standing employee in the same tenure group, within 3 grades below (5 for preference eligibles with a 30%+ service-connected disability), if qualified. Categorical subgroup displacement chains are gone.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "There are no longer separate bump rights (displacement of employees in lower subgroups) or retreat rights (displacement of employees in the same subgroup at a lower grade).",
+      "page": 185,
+      "section": "Appendix J: Determining Rights to Other Positions"
+     },
+     {
+      "headline": "Employees with a current Level 1 (Unacceptable) rating have no assignment rights",
+      "what_changes": "Assignment rights require a current annual rating of at least Level 2 (Minimally Satisfactory). A Level 1 employee still competes on the retention register unless a final removal decision was issued as of the notice date, but cannot be assigned to another position.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "An employee whose current annual performance rating of record is Level 1 (Unacceptable) has no assignment rights.",
+      "page": 156,
+      "section": "Appendix D: Verify Each Employee's Current Annual Performance Rating of Record"
+     },
+     {
+      "headline": "Excepted service employees get assignment rights only if the agency adopted a written policy before the RIF",
+      "what_changes": "Excepted service employees have no mandatory assignment rights under the regulations. An agency can extend them only through a written policy adopted before the RIF and applied uniformly in the competitive area, limited to positions under the same appointing authority. OPM encourages such a policy for Schedule Policy/Career employees.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "An agency that has not adopted such a policy may not extend assignment rights to excepted service employees in that RIF.",
+      "page": 102,
+      "section": "Chapter IV, Section K: Administrative Assignment Options"
+     },
+     {
+      "headline": "Abolishing a whole competitive area within 180 days skips ranking and assignment rights",
+      "what_changes": "If all positions in a competitive area (including those of non-competing employees) will be abolished within 180 days, the agency may release employees without regard to retention standing, with no retention register and no assignment rights. Only the military-restoration and annual-leave-to-retirement exceptions remain mandatory, and a simplified notice is used.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "When an agency will abolish all positions in a competitive area within 180 days, it may release a competing employee without regard to retention standing.",
+      "page": 79,
+      "section": "Chapter IV, Section A: Exceptions to the Regular Order of Release (Abolishment Exception, 5 CFR 351.605)"
+     },
+     {
+      "headline": "Tenure Group III eliminated; indefinite/term employees now compete in Subgroup II, and only listed categories are excluded from competition",
+      "what_changes": "Prior rules put indefinite, term, status quo, and provisional employees in tenure group III. For notices on or after Sept. 2, 2026, those employees past probation are competing employees in subgroup II. Excluded from competition are only probationary or trial-period employees, temporary or time-limited appointees of 1 year or less, and Schedule C/G employees.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "For a RIF noticed on or after September 2, 2026, only the categories in the table above are excluded from competition; a competitive service employee serving under an indefinite, term, or other non-temporary appointment of more than 1 year who is not serving an initial probationary period is a competing employee in competitive service tenure subgroup II (5 CFR 351.502(a)(3)).",
+      "page": 42,
+      "section": "Chapter III, Section C: Employees Excluded from RIF Competition"
+     },
+     {
+      "headline": "Job-analysis-based qualification assessment required for assignment, with a 5-year same-work exemption",
+      "what_changes": "To have an assignment right, a released employee must be qualified, generally through a job-analysis-based assessment that cannot rely solely or principally on automated self-assessment. No assessment is needed if the employee did the same or substantially the same work at Fully Successful or higher within the past 5 years. The determination must be done before the notice is issued.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "The agency generally must determine qualifications through a job-analysis-based assessment unless the employee performed the same or substantially the same work at a Fully Successful or higher level within the past 5 years.",
+      "page": 35,
+      "section": "Chapter II, Section D: Determining Rights to Other Positions"
+     },
+     {
+      "headline": "Retention standing is fixed on the notice date, not the RIF effective date",
+      "what_changes": "Retention standing is locked when the employee receives the specific notice, and an amended notice with only a later effective date does not require recalculation. The agency must still correct errors. Pre-Sept. 2 RIFs measured standing as of the effective date. The summary does not mention this shift.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "An employee’s retention standing is fixed as of the date the employee receives the specific RIF notice, based on all positions in the competitive area as of that date.",
+      "page": 198,
+      "section": "Appendix K: Rerun the RIF Only Where Required"
+     },
+     {
+      "headline": "Agencies excluded from chapter 71 have no bargaining or union-notice obligation for a RIF",
+      "what_changes": "Agencies and subdivisions excluded from chapter 71 under E.O. 14251 or 14343 have no union-notice or bargaining duty for a RIF. Where chapter 71 still applies, agencies must still give notice and bargain over procedures and arrangements, though retention order itself is not bargainable.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Agencies and subdivisions excluded from chapter 71 under Executive Order 14251 or Executive Order 14343 have no bargaining or union-notice obligation for a RIF.",
+      "page": 18,
+      "section": "Chapter I, Section B: Labor-Management Relations"
+     }
+    ],
+    "could_not_determine": [
+     "How many employees or agencies are affected by RIFs now noticed under the revised rules, or how many RIFs are pending or planned.",
+     "Any cost estimate or the price of OPM's reimbursable services (the handbook only says to contact HR Solutions for pricing).",
+     "OPM's capacity, staffing, or timelines for deciding RIF appeals now that they come to OPM rather than MSPB.",
+     "The name or URL of the electronic filing system for OPM RIF appeals (the handbook refers only to OPM's website).",
+     "Which agencies or subdivisions are currently excluded from chapter 71, since the handbook cites Executive Orders 14251 and 14343 without listing them.",
+     "Whether MSPB or the courts have reviewed the revised regulations, beyond the handbook's note to watch for early decisions."
+    ]
+   },
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 195701,
+    "output_tokens": 9501
+   },
+   "cost_usd": 0.2432,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  },
+  "https://www.opm.gov/chcoc/latest-memos/final-regulations-on-personnel-management-in-agencies-and-strategic-human-capital-management.pdf": {
+   "findings": {
+    "plain_summary": "OPM's final rule amending 5 CFR part 250, effective November 30, 2026, replaces Human Capital Operating Plans, Human Capital Reviews and HRStat with Annual Staffing Plans, joint OPM/OMB Annual Staffing Reviews and Quarterly Staffing Plan Performance Reviews. It also codifies Strategic Hiring Committees, requires agency heads to certify CHCO visibility and control in writing, and ends OPM's administration of FEVS in favor of agency-run surveys with 10 prescribed questions.",
+    "items": [
+     {
+      "headline": "Agency heads must certify CHCO access and authority in writing at each ASR",
+      "what_changes": "At each Annual Staffing Review the agency head certifies in writing to OPM that the CHCO has the required visibility, oversight and control of human capital functions. Any gap must be documented with a remediation timeline. The first certification is due at the first ASR after the rule takes effect, and OPM will announce that date. Agencies without a statutory CHCO are exempt from the certification.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "At each ASR, the agency head certifies in writing to OPM that the CHCO has the required visibility, oversight, and control.",
+      "page": 11,
+      "section": "F. Chief Human Capital Officer Role and Certification (FAQ 23; 5 CFR 250.206(b))"
+     },
+     {
+      "headline": "FEVS discontinued; agencies run their own 10-question survey and post results publicly",
+      "what_changes": "OPM stops administering the Federal Employee Viewpoint Survey. Each executive agency administers its own Annual Employee Survey with 10 prescribed questions, down from 16 (four unchanged, one reworded, five new). Agencies submit results to OPM and OMB within 90 days of completing administration and post them publicly. Agencies choose timing, platform and methodology, but the December 31 data-collection deadline is unchanged.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "No. FEVS is discontinued. Starting with the 2026 cycle, each agency administers its own annual employee survey using the 10 prescribed questions.",
+      "page": 12,
+      "section": "G. Annual Employee Survey (FAQ 29)"
+     },
+     {
+      "headline": "Strategic Hiring Committees codified with minimum membership and governance-only authority",
+      "what_changes": "Every covered agency must keep a Strategic Hiring Committee that includes at least the Deputy Secretary (or equivalent), the agency chief of staff and the CHCO. The committee reviews and approves the ASP and oversees hiring for consistency with it. It has no examining, rating or certification authority. It also now participates in the quarterly reviews that replace HRStat, which previously involved only the CHCO and the PIO.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "The committee oversees agency hiring to ensure it is consistent with the agency's mission needs and its ASP and has governance authority only; it has no examining, rating, or certification authority.",
+      "page": 2,
+      "section": "Strategic Hiring Committees"
+     },
+     {
+      "headline": "ASR becomes a joint OPM–OMB evaluation, replacing OPM-only HCR",
+      "what_changes": "OPM and OMB jointly conduct the Annual Staffing Review of ASP implementation, whereas OPM alone conducted the Human Capital Review. OPM states that oversight is consolidated rather than eliminated. Quarterly Staffing Plan Performance Reviews (at least four per fiscal year) feed quarterly updates to OPM and OMB.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "The ASR is the annual evaluation of the agency’s implementation of the ASP. OPM and OMB conduct it jointly; OPM alone conducted the Human Capital Review.",
+      "page": 9,
+      "section": "D. Annual Staffing Reviews and Quarterly Reviews (FAQ 15)"
+     },
+     {
+      "headline": "Planning requirements extended to agencies not previously covered; four agencies excluded",
+      "what_changes": "The SHC, ASP, ASR and quarterly review requirements apply to all agencies covered by 5 U.S.C. 306(f), meaning all Executive agencies except CIA, GAO, USPS and the Postal Regulatory Commission. The rule extends part 250's planning requirements to agencies not previously subject to subpart B so the regulation matches E.O. 14356. Survey requirements apply to all executive agencies.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "The SHC, ASP, ASR, and Quarterly Staffing Plan Performance Review requirements apply to all agencies except the Central Intelligence Agency, the Government Accountability Office, the United States Postal Service, and the Postal Regulatory Commission.",
+      "page": 2,
+      "section": "Applicability and Timing"
+     },
+     {
+      "headline": "FY 2027 hiring targets set through ASP guidance, not the regulation",
+      "what_changes": "OPM's July 30, 2026 ASP guidance sets governmentwide FY 2027 targets. At least 60 percent of new external competitive selections must come from shared certificates, at least 33 percent of new external hires must be early-career, and 100 percent of external hires must be assessed with a validated technical assessment or an OPM-approved alternative. Agencies must also submit a quarterly hiring forecast by mission area or component. These obligations are already in effect under the E.O. and guidance.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "For FY 2027, OPM’s Guidance on Annual Staffing Plans (July 30, 2026) sets these governmentwide targets, consistent with the Merit Hiring Plan:",
+      "page": 7,
+      "section": "B. Annual Staffing Plans (FAQ 8)"
+     },
+     {
+      "headline": "Survey mechanics: OIRA approval, control number, no minimum response rate, and survey timing",
+      "what_changes": "Each agency must apply for OIRA approval through ROCIS.gov to use OPM's common-form information collection (OMB Control No. 3206-0284) and display the control number on surveys. Additional questions must be cleared with the agency's OIRA desk officer. Agencies may survey everyone or a representative sample, with no minimum response rate, but must address bias. Surveys fielded on or after November 30, 2026 must use the 10 questions, and earlier surveys are strongly encouraged to use them.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Each agency must apply for Office of Information and Regulatory Affairs (OIRA) approval to use the common form via ROCIS.gov.",
+      "page": 12,
+      "section": "G. Annual Employee Survey (FAQ 32)"
+     },
+     {
+      "headline": "Public posting of survey results has a national-security exception",
+      "what_changes": "Agencies must post survey results publicly and set the disclosure content themselves. The FAQ adds that posting is not required where it would jeopardize or negatively affect national security.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Submit results to OPM and OMB within 90 days and post results publicly, unless posting would jeopardize or negatively impact national security.",
+      "page": 14,
+      "section": "H. Applicability, Effective Date, and Transition (FAQ 37)"
+     },
+     {
+      "headline": "CHCO control is limited: no approval role for every personnel action; component reporting lines are guidance only",
+      "what_changes": "The CHCO oversight requirement does not make the CHCO the approving official for personnel actions, and agencies keep discretion over internal structure. OPM recommends that component CHCOs report to the headquarters CHCO, but that is guidance and the certification is the binding requirement.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "Control: an appropriate level of authority and oversight. It does not make the CHCO the approving official for every personnel action.",
+      "page": 10,
+      "section": "F. Chief Human Capital Officer Role and Certification (FAQ 22)"
+     },
+     {
+      "headline": "ASP guidance directs agencies to consider restructuring, layer elimination and contractor reductions",
+      "what_changes": "The ASP should explain how the agency will meet staffing needs efficiently. Agencies are told to consider restructuring, eliminating unnecessary layers and duplicative functions, consolidating administrative functions, and reducing low-value contractor positions. The FAQ also tells agencies to account for national security, immigration enforcement, public safety and non-career positions in the ASP, though the E.O. does not apply to them.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Restructuring the organization and eliminating unnecessary layers and duplicative functions.",
+      "page": 6,
+      "section": "B. Annual Staffing Plans (FAQ 7)"
+     }
+    ],
+    "could_not_determine": [
+     "The regulatory text itself is not included, so the exact wording of §250.206(b) and other sections cannot be checked against the memo and FAQs.",
+     "No count of affected employees, offices or agencies, and no cost or burden estimate.",
+     "No discussion of public comments, comment counts, or OPM's responses to them.",
+     "The date of the first Annual Staffing Review (and so the first agency-head certification) is not given; OPM will provide it later.",
+     "No consequences or enforcement mechanism for an agency that certifies a gap, misses the certification, or fails to submit survey data beyond OPM following up.",
+     "The text of the 10 prescribed survey questions and the data collection mechanism for submitting results are not provided; OPM will issue separate guidance."
+    ]
+   },
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 13386,
+    "output_tokens": 5412
+   },
+   "cost_usd": 0.0404,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  },
+  "https://www.opm.gov/telework/history-legislation-reports/status-of-telework-in-the-federal-government-2026-pdf-file.pdf": {
+   "findings": {
+    "plain_summary": "This is OPM's annual report to Congress on FY 2025 telework. It says 12% of employees in reporting agencies (273,497) teleworked in a single two-week window in September 2025, down 73% from FY 2024's full-year figure, after the January 20, 2025 return-to-in-person-work memorandum. Most agencies attribute the drop to that memorandum, and 17 of the 21 agencies that missed their goals are not trying to raise telework use.",
+    "items": [
+     {
+      "headline": "The 73% drop compares a two-week snapshot to a full prior year",
+      "what_changes": "FY 2025 data cover only September 7-20, 2025, while FY 2024 and earlier years cover the whole fiscal year. OPM says the figures are not directly comparable, but the 12% versus 40% and 73% decrease are still presented as the headline result. OPM calls the single pay period a one-time adjustment and says it will keep monitoring participation through FY 2026.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Consequently, FY 2025 figures are not directly comparable to prior-year data.",
+      "page": 6,
+      "section": "Participation"
+     },
+     {
+      "headline": "Eligibility 'increase' is a denominator effect from a smaller workforce",
+      "what_changes": "The eligible count fell 6% (1,349,440 to 1,265,493), but the eligible share rose from 53% to 55% because total employees in reporting agencies fell from 2,513,200 to 2,311,920 (about 201,000 fewer). The report does not explain why the workforce shrank.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "The percentage increase in telework eligible employees in FY 2025 relative to FY 2024 is due to the decrease in the total number of employees in FY 2025 (2,311,920) from FY 2024 (2,513,200).",
+      "page": 4,
+      "section": "Fiscal Year 2025 Quantitative Results"
+     },
+     {
+      "headline": "Telework remains available for continuity, emergencies and accommodation",
+      "what_changes": "The Director says telework is not eliminated and remains an exception tied to mission need. Listed uses are continuity of operations, severe weather and emergencies, and reasonable accommodation. Agency responses on outcome goals (54 agencies cited emergency preparedness) support this framing.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "It remains a legitimate tool when a clear mission need exists: continuity of operations, severe weather and other emergencies, reasonable accommodation, and other limited and compelling circumstances.",
+      "page": 2,
+      "section": "Message from the Director"
+     },
+     {
+      "headline": "Most agencies that missed telework goals are not trying to raise participation",
+      "what_changes": "Of 49 agencies with numeric goals, 28 met them and 21 did not. Of those 21, 16 cited return to in-person work as a primary factor and 17 said they are making no additional effort to increase telework. Instead, 9 agencies are evaluating policies and agreements and 8 are auditing telework records.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Of the 21 agencies that did not meet their FY 2025 participation goals, 17 reported that they were not undertaking additional efforts to increase telework participation, consistent with in-person work as the standard for Federal employment.",
+      "page": 9,
+      "section": "Agency Telework Participation Goals"
+     },
+     {
+      "headline": "Agencies counted remote workers inconsistently, limiting data reliability",
+      "what_changes": "36% of reporting agencies included remote workers in telework totals and 47% did not; the rest did not answer. Some agencies also classified remote workers or situational teleworkers as routine teleworkers. This affects both the participation and frequency figures.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Of the reporting agencies, 36% reported that remote workers were included in their telework totals, while 47 % reported that they were not.",
+      "page": 6,
+      "section": "Participation (footnote 3)"
+     },
+     {
+      "headline": "68 agencies reported participation drops over 10 points, mostly due to return-to-office policy",
+      "what_changes": "Under the statutory reporting threshold, 68 agencies explained decreases of more than 10 percentage points. Most cited return to in-person work policies, changes in employee counts or changes in approved agreements. Some also cited excluding remote work data or changes in data collection methods.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "A total of 68 agencies reported a significant decrease in telework participation that exceeded the 10 percentage point reporting threshold.",
+      "page": 6,
+      "section": "Reasons for Changes in Participation"
+     },
+     {
+      "headline": "Remaining telework is mostly situational; routine telework is a minority",
+      "what_changes": "Among teleworkers, 58% teleworked situationally, 28% routinely three or more days, 6% one to two days, and 6% once a month or less. Agencies counted telework days differently: 73% counted any part of a day, 14% only full days, and 7% used both.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "58% teleworked on a situational basis.",
+      "page": 7,
+      "section": "Frequency of Participation"
+     },
+     {
+      "headline": "Chapter 65 sets no participation level; agencies still must run telework programs",
+      "what_changes": "OPM notes the statute does not require any governmentwide participation rate, so lower participation is not a statutory shortfall. Agencies must still maintain policies, eligibility notices, written agreements and a Telework Managing Officer, and reported continued compliance.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Chapter 65 of title 5 requires agencies to establish telework policies, determine and notify employees of eligibility, execute written telework agreements, and designate a Telework Managing Officer; it does not prescribe a Governmentwide telework participation level.",
+      "page": 8,
+      "section": "Agency Telework Participation Goals (footnote 4)"
+     },
+     {
+      "headline": "Patent and Trademark Office is a major outlier at 96% teleworking",
+      "what_changes": "PTO reported 13,284 of 13,832 employees teleworking, far above the governmentwide 12%. Large departments reported far lower shares: Department of War 8%, VA 13%, DHS 4%, Agriculture 4%. OPM does not explain the PTO figure.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Patent and Trademark Office 13,832 13,626 13,284 97% 96%",
+      "page": 13,
+      "section": "Appendix 1. Agency Telework Participation Data for FY 2025"
+     },
+     {
+      "headline": "Agency data gaps and anomalies in the appendix",
+      "what_changes": "The Tennessee Valley Authority could not track participation, the Office of Science and Technology reported no data, and ODNI withheld its employee count. Some agencies report more teleworkers than eligible employees, such as the U.S. Commission on Civil Rights at 500%, which OPM attributes to changes in employee counts or eligibility during the period.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "In instances where the percentage of eligible employees teleworking exceeds 100 percent, the number of employees who participated in telework during the reporting period exceeded the number identified as eligible to telework at the time of the data call.",
+      "page": 10,
+      "section": "Appendix 1. Agency Telework Participation Data for FY 2025"
+     }
+    ],
+    "could_not_determine": [
+     "How many telework or remote work agreements were rescinded or terminated, although the Director says agency leaders rescinded agreements that no longer served a mission purpose.",
+     "How many remote workers are in the workforce, and how they are counted, since agencies handled them inconsistently.",
+     "A like-for-like FY 2024 versus FY 2025 comparison, since FY 2025 covers only September 7-20, 2025.",
+     "How many employees were separated or reassigned, or why total employment fell by about 201,000.",
+     "Participation by occupation, grade or location, or the number of reasonable accommodation telework arrangements.",
+     "Any cost, real estate or service-level data supporting the Director's claims about empty buildings and costs to taxpayers.",
+     "Why the report is dated November 2026 for a fiscal year that ended September 2025, and whether it met any statutory deadline.",
+     "Why the agency counts differ: 97 responded, but the table shows 95 or 96 agencies, and 49 plus 46 goal responses equals 95."
+    ]
+   },
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 16172,
+    "output_tokens": 5081
+   },
+   "cost_usd": 0.0416,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  }
+ },
+ "crosses": [
+  [
+   "https://www.opm.gov/chcoc/latest-memos/final-regulations-on-personnel-management-in-agencies-and-strategic-human-capital-management.pdf",
+   "https://www.federalregister.gov/documents/2026/10/29/2026-22093/personnel-management-in-agencies-strategic-human-capital-management",
+   {
+    "findings": {
+     "describes_this_rule": true,
+     "discrepancies": [
+      {
+       "topic": "Certification for agencies without a statutory CHCO",
+       "companion_says": "The FAQ says the agency-head CHCO certification does not apply to subpart B agencies that lack a statutory CHCO, and that a designated senior official serves on the Strategic Hiring Committee in the CHCO's place.",
+       "companion_quote": "annual certification requirement in § 250.206(b) does not apply to these agencies.",
+       "companion_page": 11,
+       "rule_says": "Section 250.206(b) requires each agency to submit the agency-head certification at each Annual Staffing Review and contains no exemption for agencies without a statutory CHCO. Section 250.204(f) lists the CHCO as a required committee member.",
+       "rule_quote": "As part of each Annual Staffing Review, each agency must submit a written statement to OPM signed by the agency head certifying that",
+       "rule_page": 68025
+      },
+      {
+       "topic": "Start date for the 10-question survey requirement",
+       "companion_says": "The FAQ says agencies use the 10 prescribed questions beginning with the 2026 cycle, which implies the requirement applies to 2026 surveys regardless of when they are fielded.",
+       "companion_quote": "Beginning with the 2026 cycle, agencies use 10 prescribed questions, down from 16.",
+       "companion_page": 5,
+       "rule_says": "The rule says agencies are bound by the survey regulations in effect when a survey is administered, and that it operates only from its November 30, 2026 effective date.",
+       "rule_quote": "operates prospectively from its effective date.",
+       "rule_page": 68021
+      }
+     ],
+     "left_out": [
+      "Removes the word \"diverse\" from the Human Capital Framework systems and standards in § 250.203(b) and (c), which is part of removing nonstatutory diversity references.",
+      "Revises § 250.102 in subpart A on OPM's delegated authorities and delegation agreements, including agency reimbursement of OPM for assistance.",
+      "Finalizes two changes without notice and comment under the 5 U.S.C. 553(b)(B) good-cause exception: adding the chief of staff to the Strategic Hiring Committee, and extending subpart B coverage to agencies covered by 5 U.S.C. 306(f).",
+      "Estimates costs: about 100 hours per agency in year one (about $15,630 per agency, $1.25 million Governmentwide), and about 120 hours per agency per year ongoing (about $1.5 million), for more than 80 agencies.",
+      "Declines to add political-to-career conversion safeguards or detail and reassignment procedures to part 250, and declines to add an 11th survey question or mandatory Strategic Hiring Committee procedures.",
+      "Does not require agencies to publish any particular survey content: each agency determines the content of its public disclosure, and OPM promises a 16-to-10 question crosswalk and later guidance."
+     ]
+    },
+    "model": "claude-sonnet-5-5",
+    "stop_reason": "end_turn",
+    "usage": {
+     "input_tokens": 44687,
+     "output_tokens": 4947
+    },
+    "cost_usd": 0.0694,
+    "verification": [
+     [
+      "ok",
+      "ok"
+     ],
+     [
+      "ok",
+      "ok"
+     ]
+    ]
+   }
+  ],
+  [
+   "https://www.opm.gov/chcoc/latest-memos/issuance-of-final-rule-on-managing-senior-professional-performance.pdf",
+   "https://www.federalregister.gov/documents/2026/10/19/2026-21316/managing-senior-professional-performance",
+   {
+    "findings": {
+     "describes_this_rule": true,
+     "discrepancies": [
+      {
+       "topic": "Waiver of standardized distribution caps",
+       "companion_says": "An agency may request a waiver of the distribution caps in extraordinary circumstances, using a template in OPM's annual guidance.",
+       "companion_quote": "In such cases, the agency may submit a request for waiver of the distribution caps using the template included in the annual guidance memorandum.",
+       "companion_page": 2,
+       "rule_says": "The preamble says the waiver mechanism is a Presidential waiver, granted by certifying that the agency's senior professionals' performance was outstanding. It does not describe an agency-requested waiver.",
+       "rule_quote": "provides that the President may waive the standardized distribution requirement by certifying that the performance of the agency's senior professionals was outstanding during the relevant time period.",
+       "rule_page": 65908
+      }
+     ],
+     "left_out": [
+      "OPM intends the standardized distribution to cap only the highest levels (Levels 4 and 5) and to impose no limits at Level 3 or below; limits are to be applied at an aggregate level, not within a supervisor's own team.",
+      "Senior professional appraisals and ratings are not appealable beyond what applicable law provides (430.509(e)); the rule also ends the informal grievance process under subpart B.",
+      "The PRB or equivalent body must have a majority of career appointees when appraising a career senior professional, as 5 CFR 430.511 requires via 534.505(f)(1).",
+      "The rule requires five summary levels (Level 1-5), a minimum 90-day appraisal period, and 4-year retention of performance records.",
+      "OPM must review and approve agency senior professional appraisal systems and can direct corrective action that the agency must follow (430.514); an agency's system certification is suspended when OPM mandates such action.",
+      "Conforming amendments in parts 351 (RIF ratings of record), 451, 534, 537, 630, 894, and OMB's part 1330, plus an estimated $814,000 one-time cost across about 60 agencies and about 1,420 SL/ST employees."
+     ]
+    },
+    "model": "claude-sonnet-5-5",
+    "stop_reason": "end_turn",
+    "usage": {
+     "input_tokens": 53637,
+     "output_tokens": 2395
+    },
+    "cost_usd": 0.0656,
+    "verification": [
+     [
+      "ok",
+      "ok"
+     ]
+    ]
+   }
+  ]
  ],
- "cost_usd": 0.0,
+ "failures": [],
+ "cost_usd": 0.5178,
  "synthesis": {
-  "stories": [],
-  "routine": [],
+  "stories": [
+   {
+    "headline": "RIF appeals move to OPM; bump-and-retreat rights eliminated",
+    "takeaway": "For RIF notices issued on or after September 2, 2026, separated, demoted or furloughed employees appeal to OPM within 30 days instead of to MSPB. Assignment rights shrink to a single standard: a position held by a lower-standing employee in the same tenure group, within 3 grades (5 for 30%+ disabled veterans). Union grievance routes in agreements executed on or after that date are treated as unenforceable.",
+    "doc_ids": [
+     "D4"
+    ],
+    "key_findings": [
+     "D4.F0",
+     "D4.F2",
+     "D4.F1"
+    ]
+   },
+   {
+    "headline": "OPM ends FEVS; agencies face new staffing reviews and CHCO certification",
+    "takeaway": "OPM stops administering FEVS; each executive agency runs its own 10-question survey, submits results to OPM and OMB within 90 days, and posts them publicly. Agency heads must certify in writing at each Annual Staffing Review that the CHCO has required oversight and control. The FAQ exempts agencies without a statutory CHCO from that certification, but the rule text contains no such exemption.",
+    "doc_ids": [
+     "D2",
+     "D3"
+    ],
+    "key_findings": [
+     "D2.F1",
+     "D2.F0",
+     "X0.C0"
+    ]
+   },
+   {
+    "headline": "OPM can impose forced rating distributions on SL/ST senior professionals",
+    "takeaway": "The ban on forced distribution of SL/ST ratings is removed. OPM may set caps that agencies must apply, starting with the FY 2026 cycle. The memo describes agency waiver requests in extraordinary circumstances, while the rule preamble describes only a Presidential waiver. Mandatory higher-level review of Level 1 ratings becomes an optional, employee-requested review that cannot change the rating.",
+    "doc_ids": [
+     "D5"
+    ],
+    "key_findings": [
+     "D5.F0",
+     "X1.C0",
+     "D5.F1"
+    ]
+   },
+   {
+    "headline": "Federal long-term care insurance applications stay frozen two more years",
+    "takeaway": "The FLTCIP suspension of new applications runs another 24 months from December 19, 2026, the third consecutive 24-month period. Existing enrollees cannot apply to increase their coverage during the extension.",
+    "doc_ids": [
+     "D1"
+    ],
+    "key_findings": [
+     "D1.F1",
+     "D1.F0"
+    ]
+   },
+   {
+    "headline": "Telework report shows sharp drop after return-to-office memo",
+    "takeaway": "OPM reports 12% telework participation, a 73% decrease, but FY 2025 data cover only a two-week window (September 7-20, 2025) while earlier years cover full fiscal years, and OPM says the figures are not directly comparable. Of the 21 agencies that missed their telework goals, 17 said they are making no additional effort to increase telework.",
+    "doc_ids": [
+     "D6"
+    ],
+    "key_findings": [
+     "D6.F0",
+     "D6.F3"
+    ]
+   }
+  ],
+  "routine": [
+   "D0"
+  ],
   "problems": [],
-  "cost_usd": 0.0,
-  "doc_urls": {}
+  "cost_usd": 0.0663,
+  "doc_urls": {
+   "D0": "https://www.federalregister.gov/documents/2026/11/12/2026-23046/chief-human-capital-officers-council-meeting",
+   "D1": "https://www.federalregister.gov/documents/2026/11/13/2026-23149/extension-of-suspension-of-applications-for-federal-long-term-care-insurance-program-fltcip-coverage",
+   "D2": "https://www.opm.gov/chcoc/latest-memos/final-regulations-on-personnel-management-in-agencies-and-strategic-human-capital-management.pdf",
+   "D3": "https://www.opm.gov/chcoc/latest-memos/guidance-on-annual-employee-survey-data-submission-requirements-and-deadlines.pdf",
+   "D4": "https://www.opm.gov/chcoc/latest-memos/implementing-the-revised-reduction-in-force-regulations-updated-workforce-reshaping-handbook.pdf",
+   "D5": "https://www.opm.gov/chcoc/latest-memos/issuance-of-final-rule-on-managing-senior-professional-performance.pdf",
+   "D6": "https://www.opm.gov/telework/history-legislation-reports/status-of-telework-in-the-federal-government-2026-pdf-file.pdf"
+  }
  }
 }
