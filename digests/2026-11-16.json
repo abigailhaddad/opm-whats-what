@@ -1,0 +1,41 @@
+{
+ "results": {},
+ "crosses": [],
+ "failures": [
+  "Not read (cost cap exceeded): [Chief Human Capital Officers Council Meeting](https://www.federalregister.gov/documents/2026/11/12/2026-23046/chief-human-capital-officers-council-meeting)",
+  "Not read (cost cap exceeded): [Extension of Suspension of Applications for Federal Long Term Care Insurance Program (FLTCIP) Coverage](https://www.federalregister.gov/documents/2026/11/13/2026-23149/extension-of-suspension-of-applications-for-federal-long-term-care-insurance-program-fltcip-coverage)",
+  "Not read (cost cap exceeded): [Final Regulations on Personnel Management in Agencies and Strategic Human Capital Management](https://www.opm.gov/chcoc/latest-memos/final-regulations-on-personnel-management-in-agencies-and-strategic-human-capital-management.pdf)",
+  "Not read (cost cap exceeded): [Guidance on Annual Employee Survey Data Submission Requirements and Deadlines Purpose](https://www.opm.gov/chcoc/latest-memos/guidance-on-annual-employee-survey-data-submission-requirements-and-deadlines.pdf)",
+  "Not read (cost cap exceeded): [Issuance of Final Rule on Managing Senior Professional Performance](https://www.opm.gov/chcoc/latest-memos/issuance-of-final-rule-on-managing-senior-professional-performance.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2004](https://www.opm.gov/telework/documents-for-telework/2004-report-to-congress.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2005](https://www.opm.gov/telework/documents-for-telework/2005-report-to-congress.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2006](https://www.opm.gov/telework/documents-for-telework/2006-report-to-congress.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2007](https://www.opm.gov/telework/documents-for-telework/2007-report-to-congress.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2008](https://www.opm.gov/telework/documents-for-telework/2008-report-to-congress.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2009](https://www.opm.gov/telework/documents-for-telework/2009-report-to-congress.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2010](https://www.opm.gov/telework/documents-for-telework/2010-report-to-congress.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2012](https://www.opm.gov/telework/documents-for-telework/2012-report-to-congress.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2013](https://www.opm.gov/telework/documents-for-telework/2013-report-to-congress.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2014](https://www.opm.gov/telework/documents-for-telework/2014-report-to-congress.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2016](https://www.opm.gov/telework/documents-for-telework/2016-report-to-congress.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2017](https://www.opm.gov/telework/documents-for-telework/2017-report-to-congress.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2018](https://www.opm.gov/telework/documents-for-telework/2018-report-to-congress.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2019](https://www.opm.gov/telework/documents-for-telework/2019-report-to-congress.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2020](https://www.opm.gov/telework/documents-for-telework/2020-report-to-congress.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2021](https://www.opm.gov/telework/documents-for-telework/2021-report-to-congress.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2022](https://www.opm.gov/telework/documents-for-telework/2022-report-to-congress.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2023](https://www.opm.gov/telework/documents-for-telework/2023-report-to-congress.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2024](https://www.opm.gov/telework/history-legislation-reports/status-of-telework-in-the-federal-government-2024.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2025](https://www.opm.gov/telework/history-legislation-reports/status-of-telework-in-the-federal-government-2025.pdf)",
+  "Not read (cost cap exceeded): [Status of Telework in the Federal Government, 2026](https://www.opm.gov/telework/history-legislation-reports/status-of-telework-in-the-federal-government-2026-pdf-file.pdf)",
+  "26 item(s) were not read and stay new; the next run will try them again."
+ ],
+ "cost_usd": 0.0,
+ "synthesis": {
+  "stories": [],
+  "routine": [],
+  "problems": [],
+  "cost_usd": 0.0,
+  "doc_urls": {}
+ }
+}
