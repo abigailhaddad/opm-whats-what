@@ -65,8 +65,22 @@ def source_pages(item: dict) -> tuple[dict[int, str], str]:
 
 
 def loose(s: str) -> tuple[str, list[int]]:
-    """Letters and digits only, lowercased, plus each kept character's index in s."""
-    keep = [(c.lower(), i) for i, c in enumerate(s) if c.isalnum()]
+    """Letters and digits only, lowercased, plus each kept character's index in s.
+
+    The section sign counts as the word it stands for: the Federal Register's text file
+    writes "Sec." / "Secs." where its PDF prints "§" / "§§" (2026-11-16 FLTCIP notice)."""
+    keep = []
+    i = 0
+    while i < len(s):
+        if s.startswith("§§", i):
+            keep += [(c, i) for c in "secs"]
+            i += 2
+            continue
+        if s[i] == "§":
+            keep += [(c, i) for c in "sec"]
+        elif s[i].isalnum():
+            keep.append((s[i].lower(), i))
+        i += 1
     return "".join(c for c, _ in keep), [i for _, i in keep]
 
 
