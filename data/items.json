@@ -512,7 +512,6 @@
   ],
   "comments_close": null,
   "date": "2026-11-20",
-  "digested_at": "2026-11-23T22:28:29+00:00",
   "doc_number": "2026-23729",
   "docket_ids": [
    "Docket ID: OPM-2026-0367"
@@ -548,7 +547,6 @@
   ],
   "comments_close": null,
   "date": "2026-11-20",
-  "digested_at": "2026-11-23T22:28:29+00:00",
   "doc_number": "2026-23730",
   "docket_ids": [
    "Docket ID: OPM-2026-0467"
@@ -584,7 +582,6 @@
   ],
   "comments_close": null,
   "date": "2026-11-20",
-  "digested_at": "2026-11-23T22:28:29+00:00",
   "doc_number": "2026-23731",
   "docket_ids": [
    "Docket ID: OPM-2026-0364"
@@ -650,7 +647,6 @@
   ],
   "comments_close": null,
   "date": "2026-11-20",
-  "digested_at": "2026-11-23T22:28:29+00:00",
   "doc_number": "2026-23732",
   "docket_ids": [
    "Docket ID: OPM-2026-0562"
@@ -3375,7 +3371,6 @@
  "https://www.opm.gov/chcoc/latest-memos/issuance-of-competency-based-classification-standards-for-administrative-occupational-series.pdf": {
   "baseline": false,
   "date": "2026-11-16",
-  "digested_at": "2026-11-23T22:28:29+00:00",
   "first_seen": "2026-11-23T22:25:39+00:00",
   "kind": "CHCO memo",
   "last_seen": "2026-11-23T22:25:39+00:00",
@@ -3427,7 +3422,6 @@
  "https://www.opm.gov/chcoc/latest-memos/issuance-of-the-si-assisted-position-review-toolkit.pdf": {
   "baseline": false,
   "date": "2026-11-16",
-  "digested_at": "2026-11-23T22:28:29+00:00",
   "first_seen": "2026-11-23T22:25:39+00:00",
   "kind": "CHCO memo",
   "last_seen": "2026-11-23T22:25:39+00:00",
@@ -3488,7 +3482,6 @@
  "https://www.opm.gov/chcoc/latest-memos/modernizing-federal-classification-and-qualification-standards-around-skills.pdf": {
   "baseline": false,
   "date": "2026-11-16",
-  "digested_at": "2026-11-23T22:28:29+00:00",
   "first_seen": "2026-11-23T22:25:39+00:00",
   "kind": "CHCO memo",
   "last_seen": "2026-11-23T22:25:39+00:00",

@@ -86,6 +86,21 @@ def test_a_quote_that_crosses_a_page_marker_renders_as_one_markdown_block():
     assert "⚠️ quote not found" in md
 
 
+def test_closing_soon_comment_periods_render_as_a_list_not_one_paragraph():
+    near = (datetime.date.today() + datetime.timedelta(days=5)).isoformat()
+    far = (datetime.date.today() + datetime.timedelta(days=10)).isoformat()
+    store = {
+        "https://fr/a": {"source": "fr", "title": "Rule A", "url": "https://fr/a", "comments_close": near},
+        "https://fr/b": {"source": "fr", "title": "Rule B", "url": "https://fr/b", "comments_close": far},
+    }
+    syn = {"stories": [], "routine": [], "problems": [], "docs": {}, "fmap": {}}
+    md = weekly.render_stories(TODAY, syn, {}, [], [], ["placeholder failure, so this isn't NOTHING NEW"],
+                                0.0, store, None)
+    assert "## Comment periods closing soon" in md
+    assert "- [Rule A](https://fr/a) (" + near + ")" in md
+    assert "- [Rule B](https://fr/b) (" + far + ")" in md
+
+
 def test_a_press_release_is_paired_with_a_rule_published_a_day_after_it():
     rule = {"source": "fr", "kind": "Rule", "title": "Elimination of Time-in-Grade Requirements", "date": "2026-10-21",
             "url": "https://fr/rule"}

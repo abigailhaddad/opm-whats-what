@@ -45,8 +45,8 @@ INSTRUCTIONS = """Below is everything OPM published this week that was read in f
 
 Organize this into stories for a busy federal-workforce policy analyst:
 - A story is one policy change or topic. Put a rule together with its press release, its CHCO memo, and closely related notices. Every document belongs to exactly one story, or to routine_doc_ids if it is routine paperwork with nothing an analyst needs.
-- headline: at most 12 words, plain English, saying what is happening (not a document title).
-- takeaway: 1-2 sentences on what actually changes and for whom. Use only facts contained in the findings you select for this story; do not add anything else.
+- headline: at most 12 words, plain English, saying what is happening (not a document title). Name who did what (e.g. "two commenters", "a union", "OPM") rather than a vague actor-less phrase like "despite withdrawal demands" — a reader should not have to open the story to learn whether the opposition came from Congress, an agency, or a couple of anonymous public commenters.
+- takeaway: 1-2 sentences, written like a reporter's lead, on what actually changes and for whom. Name actors specifically and keep scale accurate (don't let a narrow or lightly-opposed change read as sweeping or broadly contested). Use only facts contained in the findings you select for this story; do not add anything else.
 - key_findings: up to 3 finding IDs, most important to the analyst first, judged by consequence: who is affected and how much. Whether a document's own summary mentions a finding is not a reason to pick or skip it. Include a cross-check conflict if there is one (its ID starts with X).
 - Size each story to its importance: a major rule gets up to 3 key findings; a minor item gets 1. Paperwork notices for forms or applications that don't change anyone's rights, benefits or obligations belong in routine_doc_ids, not in a story. Burden-hour estimates are rarely key findings.
 - Order stories by importance to the analyst, most important first.

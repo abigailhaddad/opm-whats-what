@@ -13,13 +13,13 @@ Which files become pages:
   * only digests/<YYYY-MM-DD>.md. Anything else (test-*.md, proof/, data/,
     samples/, .json) is not published; the script prints what it skipped.
   * a digest whose first line is "NOTHING NEW" is skipped, the same rule the
-    weekly workflow uses for not opening an issue.
+    weekly workflow uses for not publishing a week with nothing new.
 
 The markdown is rendered with markdown-it-py (CommonMark plus tables, with
 newlines as line breaks, so <details> blocks, tables and line breaks render
-the way they do in the GitHub issue; bare emails/URLs are not auto-linked), then
+the way they used to in the GitHub issue; bare emails/URLs are not auto-linked), then
 sanitized with nh3, because digests quote titles and text from outside sources
-and GitHub sanitizes issue bodies but a plain static page would not.
+and nothing else sanitizes them before they reach a plain static page.
 
 A digest's date is its first commit time in git (when it was published), or
 noon UTC on the filename date if git has no record of it (e.g. not yet

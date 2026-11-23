@@ -3,7 +3,8 @@ name: Weekly OPM what's what
 # Mondays 11:00 UTC (6-7am Eastern): collect everything new since last week,
 # read each document with Claude Sonnet 5.5 (Message Batches, half price, capped
 # at $3 per run), group the findings into stories with Claude Opus 5.5, verify
-# every quote, commit the digest, and open an issue so it arrives by email.
+# every quote, and commit the digest. The site workflow (triggered by this one
+# finishing) publishes it to the site and RSS feed.
 
 on:
   schedule:
@@ -14,16 +15,15 @@ on:
         description: "Max estimated cost in USD for this run"
         default: "3"
       check_only:
-        description: "Only check that the API key works (no collecting, reading, issue or cost)"
+        description: "Only check that the API key works (no collecting, reading, or cost)"
         type: boolean
         default: false
       digest_date:
-        description: "Digest date YYYY-MM-DD (default: today, UTC). To redo a week's digest after midnight UTC; if that date's issue exists, it is not posted again"
+        description: "Digest date YYYY-MM-DD (default: today, UTC). To redo a week's digest after midnight UTC"
         default: ""
 
 permissions:
   contents: write
-  issues: write
 
 concurrency:
   group: weekly
@@ -105,38 +105,9 @@ jobs:
           git add data/items.json digests/
           git diff --cached --quiet || { git commit -m "Weekly digest $DIGEST_DATE"; git pull --rebase -q origin main; git push; }
 
-      - name: Open the digest as an issue (emails you)
-        if: ${{ steps.gate.outputs.skip != 'true' && !inputs.check_only }}
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          f="digests/$DIGEST_DATE.md"
-          [ -f "$f" ] || { echo "no digest written"; exit 1; }
-          if grep -q '^NOTHING NEW' "$f"; then echo "Nothing new this week; no issue opened."; exit 0; fi
-          # a rerun the same day leaves the real digest in place; don't post it a second time
-          existing=$(gh issue list --state all --search "in:title $DIGEST_DATE" --json title --jq '[.[] | select(.title | startswith("OPM what"))] | length')
-          if [ "$existing" -gt 0 ]; then echo "An issue for $DIGEST_DATE already exists."; exit 0; fi
-          url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/blob/main/$f"
-          # issue bodies max out at 65,536 characters; long weeks link to the full file
-          python - "$f" "$url" > body.md <<'EOF'
-          import sys
-          text, url = open(sys.argv[1], encoding="utf-8").read(), sys.argv[2]
-          limit = 60000
-          if len(text) <= limit:
-              print(text)
-          else:
-              head = text[:limit]
-              cut = head.rfind("\n## ")
-              head = head[:cut] if cut > 0 else head          # cut between sections, not mid-sentence
-              close = "</details>\n" * max(0, head.count("<details") - head.count("</details>"))
-              audit = [l for l in text.splitlines() if l.startswith("Independent audit")]   # the audit line must survive
-              print(head + "\n" + close + f"\n…truncated. Full digest: {url}\n\n" + "\n".join(audit))
-          EOF
-          gh issue create --title "OPM what's what — $DIGEST_DATE" --body-file body.md --assignee abigailhaddad
-
       - name: Fail the run if the audit could not confirm every quote
         if: ${{ steps.audit.outcome == 'failure' }}
-        run: echo "Audit did not confirm every quote; see digests/proof/. The digest and issue were still published." && exit 1
+        run: echo "Audit did not confirm every quote; see digests/proof/. The digest was still committed and published to the site/RSS feed." && exit 1
 
       # GitHub disables scheduled workflows in a public repo after 60 days with no commits.
       # If the newest commit is 45+ days old, add an empty one on main so the schedule survives.

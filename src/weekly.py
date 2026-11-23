@@ -17,7 +17,7 @@ Steps
   7. Write digests/<date>.md; mark items digested. <date> is today (UTC on the
      runner) or $DIGEST_DATE, which the workflow sets once per run.
 
-The GitHub issue (email) is created by the workflow from the digest file.
+The site workflow publishes the digest file (and its RSS entry) once this commits it.
 Usage: python src/weekly.py [--start 2026-10-19 --end 2026-10-25] [--cap 3] [--dry-run]
 """
 from __future__ import annotations
@@ -53,9 +53,7 @@ DIGESTS = ROOT / "digests"
 READ_MODEL, READ_EFFORT = "claude-sonnet-5-5", "high"
 SYNTH_MODEL, SYNTH_EFFORT = "claude-opus-5-5", "medium"
 EST_OUTPUT_PER_REQUEST = 12000
-STATUS_RANK = {"opposite": 0, "absent": 1, "vague": 2, "in": 3}
-STATUS_LABEL = {"opposite": "summary says the opposite", "absent": "not in the summary",
-                "vague": "summary is vague", "in": "in the summary"}
+STATUS_RANK = {"opposite": 0, "absent": 1, "vague": 2, "in": 3}   # internal ranking only; never shown to the reader
 STOP = set("the a an and of for to in on with by under from its is are opm rule final proposed office "
            "personnel management federal".split())
 
@@ -191,7 +189,7 @@ def render(today: str, reads: list[dict], one_lines: list[dict], results: dict, 
         for itm, v in items:
             warn = "" if v["status"] == "ok" else f" ⚠️ quote {v['status'].replace('_', ' ')}"
             who = "" if itm["speaker"] == "OPM" else f" (quoted passage: {itm['speaker'].replace('_', ' ')})"
-            L.append(f"- **{itm['headline']}** — _{STATUS_LABEL[itm['summary_status']]}_{who}. {itm['what_changes']} "
+            L.append(f"- **{itm['headline']}**{who}. {itm['what_changes']} "
                      f"> “{_flat_quote(itm['quote'])}” (p. {itm['page']}){warn}".replace(" > ", "  \n  > "))
         if f["could_not_determine"]:
             L.append("- _The document doesn't say:_ " + "; ".join(f["could_not_determine"]))
@@ -248,9 +246,7 @@ def _finding_md(f: dict, v: dict, with_quote: bool) -> str:
     f = {**f, "what_changes": _flat(f["what_changes"]), "headline": _flat(f["headline"])}
     warn = "" if v["status"] == "ok" else f" ⚠️ quote {v['status'].replace('_', ' ')}"
     who = "" if f["speaker"] == "OPM" else f" (quoted passage: {f['speaker'].replace('_', ' ')})"
-    # the summary-coverage label only appears in the collapsed full list, not in key findings
-    label = f" _({STATUS_LABEL[f['summary_status']]})_" if with_quote else ""
-    s = f"- **{f['headline']}**{label}{who}. {f['what_changes']}"
+    s = f"- **{f['headline']}**{who}. {f['what_changes']}"
     if with_quote:
         s += f"  \n  > “{_flat_quote(f['quote'])}” (p. {f['page']}){warn}"
     else:
@@ -274,8 +270,8 @@ def render_stories(today, syn, results, crosses, one_lines, failures, cost, stor
                    and today <= v["comments_close"] <= (date.fromisoformat(today) + timedelta(days=45)).isoformat()],
                   key=lambda v: v["comments_close"])
     if soon:
-        L += ["", "**Comment periods closing soon:** " + "; ".join(
-            f"[{v['title']}]({v['url']}) ({v['comments_close']})" for v in soon)]
+        L += ["", "## Comment periods closing soon", ""]
+        L += [f"- [{v['title']}]({v['url']}) ({v['comments_close']})" for v in soon]
     cross_by_doc = {}
     for c, rule, x in crosses:
         cross_by_doc.setdefault(c["url"], []).append((c, rule, x))

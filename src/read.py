@@ -100,8 +100,12 @@ Read the entire document below, including any discussion of comments, cost analy
 
 Prefer concrete specifics: who is affected and how, rights or protections added or removed, numbers (people affected, costs, comment counts), deadlines and effective dates, delegations of authority, provisions that appear only in the regulatory text, places where the summary or preamble describes a change more softly than the text, and what OPM declined to change.
 
-For each finding:
-- summary_status: "opposite" if the summary says or implies the reverse of what the text does; "absent" if the summary doesn't mention it; "vague" if the summary names the topic but not what actually changes; "in" if the summary states it.
+For each finding, write headline and what_changes the way a reporter would, not an internal analyst memo:
+- Name the actor doing the thing ("OPM," "two commenters," "the Board of Actuaries"), not a passive or actor-less phrase like "despite withdrawal demands." A reader should never have to open the document to learn whether an objection came from Congress, a union, an agency, or two anonymous public commenters.
+- State scale and weight accurately. If 2 of 4 comments made a request, say "2 of 4 commenters," not "commenters" or "widespread opposition." If a change is narrow or procedural, don't phrase it as sweeping.
+- headline: a plain declarative sentence, not a label.
+- what_changes: 1-3 sentences of plain fact, no internal shorthand (no "summary is vague"-style notes; if the summary misstates or omits something, say so in ordinary prose as part of the fact, e.g. "OPM's own FAQ gives a different deadline than the memo itself").
+- summary_status: "opposite" if the summary says or implies the reverse of what the text does; "absent" if the summary doesn't mention it; "vague" if the summary names the topic but not what actually changes; "in" if the summary states it. (This is for internal ranking only — never surface the label itself to a reader.)
 - speaker: who is speaking in the quoted passage: "OPM" (OPM's own statement or regulatory text), "commenter" (a public commenter's argument or example, even if OPM responds to it), "current_rule" (text describing the rule being replaced), "other_agency", or "other". If OPM concedes a commenter's example, quote OPM's concession, not the commenter.
 - quote: an EXACT verbatim quote of 1-3 sentences that supports the finding, copied character for character. Do not combine text from two places, and do not cross a [[Page N]] marker.
 - page: the number in the last [[Page N]] marker before the quote.
