@@ -86,6 +86,16 @@ def test_a_quote_that_crosses_a_page_marker_renders_as_one_markdown_block():
     assert "⚠️ quote not found" in md
 
 
+def test_a_headline_that_is_a_full_sentence_does_not_get_a_double_period():
+    # read.py now asks for headline as a full declarative sentence, so the model's own
+    # trailing period must not stack with the period this template adds after **.
+    f = {"headline": "OPM says the rule changes nothing.", "what_changes": "W", "summary_status": "absent",
+         "speaker": "OPM", "quote": "q", "page": 1, "section": "x"}
+    v = {"status": "ok", "detail": "d"}
+    assert "**.**" not in weekly._finding_md(f, v, with_quote=True)
+    assert weekly._finding_md(f, v, with_quote=True).startswith("- **OPM says the rule changes nothing**.")
+
+
 def test_closing_soon_comment_periods_render_as_a_list_not_one_paragraph():
     near = (datetime.date.today() + datetime.timedelta(days=5)).isoformat()
     far = (datetime.date.today() + datetime.timedelta(days=10)).isoformat()

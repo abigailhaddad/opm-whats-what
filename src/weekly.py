@@ -189,7 +189,8 @@ def render(today: str, reads: list[dict], one_lines: list[dict], results: dict, 
         for itm, v in items:
             warn = "" if v["status"] == "ok" else f" ⚠️ quote {v['status'].replace('_', ' ')}"
             who = "" if itm["speaker"] == "OPM" else f" (quoted passage: {itm['speaker'].replace('_', ' ')})"
-            L.append(f"- **{itm['headline']}**{who}. {itm['what_changes']} "
+            headline = _flat(itm["headline"]).rstrip(".")
+            L.append(f"- **{headline}**{who}. {itm['what_changes']} "
                      f"> “{_flat_quote(itm['quote'])}” (p. {itm['page']}){warn}".replace(" > ", "  \n  > "))
         if f["could_not_determine"]:
             L.append("- _The document doesn't say:_ " + "; ".join(f["could_not_determine"]))
@@ -243,7 +244,9 @@ def _flat_quote(s: str) -> str:
 
 
 def _finding_md(f: dict, v: dict, with_quote: bool) -> str:
-    f = {**f, "what_changes": _flat(f["what_changes"]), "headline": _flat(f["headline"])}
+    # headline is a full sentence now; strip its own period so it doesn't double up
+    # against the period this template adds after the closing **.
+    f = {**f, "what_changes": _flat(f["what_changes"]), "headline": _flat(f["headline"]).rstrip(".")}
     warn = "" if v["status"] == "ok" else f" ⚠️ quote {v['status'].replace('_', ' ')}"
     who = "" if f["speaker"] == "OPM" else f" (quoted passage: {f['speaker'].replace('_', ' ')})"
     s = f"- **{f['headline']}**{who}. {f['what_changes']}"
