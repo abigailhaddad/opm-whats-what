@@ -72,6 +72,20 @@ def test_verify_handles_an_empty_quote_and_a_quote_cited_on_its_second_page():
     assert verify.check(doc, [{"quote": q, "page": 3}])[0]["status"] == "wrong_page"
 
 
+def test_a_quote_that_crosses_a_page_marker_renders_as_one_markdown_block():
+    # A model sometimes copies through a [[Page N]] marker despite being told not to
+    # (verify.py then flags it as not_found). Rendered as-is, the quote's embedded blank
+    # line used to end the markdown blockquote early and spill the rest of the quote, plus
+    # the ⚠️ warning, out as a loose paragraph after the bullet.
+    f = {"headline": "H", "what_changes": "W", "summary_status": "absent", "speaker": "OPM",
+         "quote": "The tooling\n[[Page 3]]\n3 \n \nsupports triage.", "page": 3, "section": "x"}
+    v = {"status": "not_found", "detail": "d"}
+    md = weekly._finding_md(f, v, with_quote=True)
+    assert "\n\n" not in md
+    assert "[[Page" not in md
+    assert "⚠️ quote not found" in md
+
+
 def test_a_press_release_is_paired_with_a_rule_published_a_day_after_it():
     rule = {"source": "fr", "kind": "Rule", "title": "Elimination of Time-in-Grade Requirements", "date": "2026-10-21",
             "url": "https://fr/rule"}

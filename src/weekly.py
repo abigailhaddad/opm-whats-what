@@ -162,8 +162,8 @@ def render(today: str, reads: list[dict], one_lines: list[dict], results: dict, 
                      f"[{r['title']}]({r['url']}) ({r.get('date')})")
             for d, v in zip(f["discrepancies"], x["verification"]):
                 warn = "" if tuple(v) == ("ok", "ok") else " ⚠️ quote not verified"
-                L.append(f"- **Conflict — {d['topic']}.** {c.get('kind', 'Companion')}: “{d['companion_quote']}” "
-                         f"(p. {d['companion_page']}) · Rule: “{d['rule_quote']}” (p. {d['rule_page']}){warn}")
+                L.append(f"- **Conflict — {d['topic']}.** {c.get('kind', 'Companion')}: “{_flat_quote(d['companion_quote'])}” "
+                         f"(p. {d['companion_page']}) · Rule: “{_flat_quote(d['rule_quote'])}” (p. {d['rule_page']}){warn}")
             if f["left_out"]:
                 k = c.get("kind") or "companion"
                 k = k if k.startswith("CHCO") else k.lower()
@@ -192,7 +192,7 @@ def render(today: str, reads: list[dict], one_lines: list[dict], results: dict, 
             warn = "" if v["status"] == "ok" else f" ⚠️ quote {v['status'].replace('_', ' ')}"
             who = "" if itm["speaker"] == "OPM" else f" (quoted passage: {itm['speaker'].replace('_', ' ')})"
             L.append(f"- **{itm['headline']}** — _{STATUS_LABEL[itm['summary_status']]}_{who}. {itm['what_changes']} "
-                     f"> “{itm['quote']}” (p. {itm['page']}){warn}".replace(" > ", "  \n  > "))
+                     f"> “{_flat_quote(itm['quote'])}” (p. {itm['page']}){warn}".replace(" > ", "  \n  > "))
         if f["could_not_determine"]:
             L.append("- _The document doesn't say:_ " + "; ".join(f["could_not_determine"]))
         L.append("")
@@ -235,6 +235,15 @@ def _flat(s: str) -> str:
     return s.replace(":;", ":").strip()
 
 
+def _flat_quote(s: str) -> str:
+    """Quotes keep their literal newlines (and sometimes a stray [[Page N]] marker the
+    model copied across a page break) for exact verification against the source. Collapse
+    both before display, or a blank line inside the quote ends the markdown blockquote early
+    and spills the rest of the quote out as a loose paragraph after the bullet."""
+    s = re.sub(r"\[\[Page \d+\]\]", "", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
 def _finding_md(f: dict, v: dict, with_quote: bool) -> str:
     f = {**f, "what_changes": _flat(f["what_changes"]), "headline": _flat(f["headline"])}
     warn = "" if v["status"] == "ok" else f" ⚠️ quote {v['status'].replace('_', ' ')}"
@@ -243,7 +252,7 @@ def _finding_md(f: dict, v: dict, with_quote: bool) -> str:
     label = f" _({STATUS_LABEL[f['summary_status']]})_" if with_quote else ""
     s = f"- **{f['headline']}**{label}{who}. {f['what_changes']}"
     if with_quote:
-        s += f"  \n  > “{f['quote']}” (p. {f['page']}){warn}"
+        s += f"  \n  > “{_flat_quote(f['quote'])}” (p. {f['page']}){warn}"
     else:
         s += f" (p. {f['page']}{warn})"   # key findings are always verified; warn is empty
     return s
@@ -281,8 +290,8 @@ def render_stories(today, syn, results, crosses, one_lines, failures, cost, stor
             it, f, v = fmap[fid]
             if fid.startswith("X"):
                 d = f["conflict"]
-                L.append(f"- **{f['headline']}.** {it.get('kind')}: “{d['companion_quote']}” (p. {d['companion_page']}) · "
-                         f"Rule: “{d['rule_quote']}” (p. {d['rule_page']})")
+                L.append(f"- **{f['headline']}.** {it.get('kind')}: “{_flat_quote(d['companion_quote'])}” (p. {d['companion_page']}) · "
+                         f"Rule: “{_flat_quote(d['rule_quote'])}” (p. {d['rule_page']})")
             else:
                 L.append(_finding_md(f, v, with_quote=False))
         # Everything else for this story, collapsed
