@@ -142,13 +142,6 @@ def render(today: str, reads: list[dict], one_lines: list[dict], results: dict, 
             brief.insert(0, f"- **{c.get('kind')} conflicts with the rule on {d['topic'].lower()}** — [{c['title']}]({c['url']})")
     if brief:
         L += ["", "## This week in brief", ""] + brief[:12]
-    # Open comment periods
-    soon = sorted([v for v in store.values() if v["source"] == "fr" and v.get("comments_close")
-                   and today <= v["comments_close"] <= (date.fromisoformat(today) + timedelta(days=45)).isoformat()],
-                  key=lambda v: v["comments_close"])
-    if soon:
-        L += ["", "## Comment periods closing soon", ""]
-        L += [f"- **{v['comments_close']}** — [{v['title']}]({v['url']})" for v in soon]
     # Cross-checks first: they are the most likely to be news
     flagged = [(c, r, x) for c, r, x in crosses if x["findings"]["describes_this_rule"]
                and (x["findings"]["discrepancies"] or x["findings"]["left_out"])]
@@ -199,6 +192,13 @@ def render(today: str, reads: list[dict], one_lines: list[dict], results: dict, 
         L += ["## Also new (not read)", ""]
         L += [f"- [{it['title']}]({it['url']}) — {it.get('kind') or it['source']}, "
               f"{it.get('date') or 'first seen ' + it['first_seen'][:10]} ({triage(it)[1]})" for it in one_lines]
+        L.append("")
+    soon = sorted([v for v in store.values() if v["source"] == "fr" and v.get("comments_close")
+                   and today <= v["comments_close"] <= (date.fromisoformat(today) + timedelta(days=45)).isoformat()],
+                  key=lambda v: v["comments_close"])
+    if soon:
+        L += ["## Comment periods closing soon", ""]
+        L += [f"- **{v['comments_close']}** — [{v['title']}]({v['url']})" for v in soon]
         L.append("")
     L += ["---", f"{MODELS_LINE} Cost this run: ${cost:.2f}."]
     if failures:
@@ -269,12 +269,6 @@ def render_stories(today, syn, results, crosses, one_lines, failures, cost, stor
         L.append("⚠️ means a quote didn't match the document.")
     if capped:
         L += ["", f"**Not read this week:** {capped}"]
-    soon = sorted([v for v in store.values() if v["source"] == "fr" and v.get("comments_close")
-                   and today <= v["comments_close"] <= (date.fromisoformat(today) + timedelta(days=45)).isoformat()],
-                  key=lambda v: v["comments_close"])
-    if soon:
-        L += ["", "## Comment periods closing soon", ""]
-        L += [f"- [{v['title']}]({v['url']}) ({v['comments_close']})" for v in soon]
     cross_by_doc = {}
     for c, rule, x in crosses:
         cross_by_doc.setdefault(c["url"], []).append((c, rule, x))
@@ -321,6 +315,12 @@ def render_stories(today, syn, results, crosses, one_lines, failures, cost, stor
               f"{results[it['url']]['findings']['plain_summary']}" for it in routine]
         L += [f"- [{it['title']}]({it['url']}) — {it.get('kind') or it['source']}, "
               f"{it.get('date') or 'first seen ' + it['first_seen'][:10]} ({triage(it)[1]}; not read)" for it in one_lines]
+    soon = sorted([v for v in store.values() if v["source"] == "fr" and v.get("comments_close")
+                   and today <= v["comments_close"] <= (date.fromisoformat(today) + timedelta(days=45)).isoformat()],
+                  key=lambda v: v["comments_close"])
+    if soon:
+        L += ["", "## Comment periods closing soon", ""]
+        L += [f"- [{v['title']}]({v['url']}) ({v['comments_close']})" for v in soon]
     L += ["", "---", f"{MODELS_LINE} Cost this run: ${cost:.2f}."]
     probs = failures + syn.get("problems", [])
     if probs:
