@@ -1,0 +1,849 @@
+{
+ "results": {
+  "https://www.federalregister.gov/documents/2026/11/20/2026-23730/flsa-claims-and-compliance": {
+   "findings": {
+    "plain_summary": "OPM confirmed that its direct final rule requiring FLSA claims to be filed through the eFile system took effect September 29, 2026, after concluding that none of the eight comments was a significant adverse comment. In doing so, OPM rejected requests to withdraw the rule, keep paper and email filing, or add automatic tolling, and said it will handle eFile access problems case by case.",
+    "items": [
+     {
+      "headline": "OPM refused to add automatic tolling or a response deadline for eFile exemption requests, leaving relief to case-by-case discretion.",
+      "what_changes": "OPM declined Comment 03's proposed text that would toll deadlines while an exemption request is pending, and rejected Comment 04's twelve requested additions and Comment 07's fixed outage-tolling and response-deadline proposals. Instead, OPM said it will treat timely good-faith contact, agency-side eFile outages, and literacy or disability barriers as factors in its discretionary reconsideration (§551.707(b)) or 45-day waiver (§551.708(a)) decisions. The summary does not mention any of this.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "OPM therefore declines to adopt Comment 03's proposed regulatory text automatically tolling a deadline during the pendency of an exemption request, or deeming a non-electronic submission filed as of its original date once an exemption later issues",
+      "page": 75167,
+      "section": "Filing-Method Changes and the FLSA Limitations Period"
+     },
+     {
+      "headline": "OPM rejected calls from four commenters to withdraw the rule and keep permanent paper and email filing.",
+      "what_changes": "Comment 04 asked for permanent postal-mail and email filing, Comments 05 and 06 asked for standard notice-and-comment rulemaking, and Comment 07 proposed voluntary eFile for desk-based staff with permanent mail and email intake for field, wage-grade, and unrepresented claimants. OPM said the existing exemption process and agency-assisted filing already address those concerns, so dual-track filing is unnecessary.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Because these accommodations already exist in the rule, OPM does not agree that permanent, parallel paper and email intake methods for entire categories of claimants are necessary.",
+      "page": 75168,
+      "section": "Requests To Withdraw the Rule and Retain Dual-Track Filing"
+     },
+     {
+      "headline": "OPM said exemption requests can be made by phone or email without using its website, and will be treated the same as website requests.",
+      "what_changes": "Commenters noted the codified text directs exemption requests 'as instructed on OPM's website' and names no non-electronic method. OPM responded in this notice that a claimant may request an exemption under §551.710(b)(7) using the telephone number or email in the DFR's contact caption or any successor document, and that timely telephone or written requests will be treated equally. This is a clarification in the preamble, not a change to the regulatory text.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "a party or representative may request an exemption under Sec.  551.710(b)(7) by contacting OPM using the telephone number or email address listed in the FOR FURTHER INFORMATION CONTACT caption of the DFR or of any successor document",
+      "page": 75168,
+      "section": "The Discretionary Exemption From Electronic Filing"
+     },
+     {
+      "headline": "OPM defended issuing the rule without prior notice and comment, calling mandatory eFiling a procedural rule.",
+      "what_changes": "Comments 05, 06, and 07 argued the rule affects substantive rights and could not use the procedural exception in 5 U.S.C. 553(b)(A). OPM said the rule only prescribes how claims are submitted, not who may file, the standard applied, evidence required, or the length of time limits, and said the alternative good-cause finding is unnecessary to sustain it.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "it prescribes the manner in which an FLSA claim is submitted without altering who may file a claim, the substantive standard OPM applies in deciding it, the evidence required to support it, or the duration of any codified time limit.",
+      "page": 75167,
+      "section": "Use of the Direct Final Rule Procedure"
+     },
+     {
+      "headline": "OPM acknowledged that the DFR's preamble wrongly said it would take effect 45 days after the comment period, but confirmed September 29, 2026.",
+      "what_changes": "The DFR's DATES caption and transition provision said September 29, 2026, while a later preamble sentence said 45 days after comments closed. OPM called the 45-day reference a drafting error and said it was not a significant adverse comment. The summary says only that the rule took effect 'as scheduled'.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "The reference to ``45 days'' was a drafting error.",
+      "page": 75168,
+      "section": "Effective Date"
+     },
+     {
+      "headline": "OPM said claimants covered by a negotiated grievance procedure are not affected by the eFile requirement.",
+      "what_changes": "OPM confirmed that anyone covered at any time in the claim period by a collective bargaining agreement that did not exclude FLSA matters must use the negotiated grievance procedure, and §§551.704-551.710 (including the eFile provisions) do not apply to them.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "The filing-method changes addressed in this notice accordingly have no bearing on claimants who are subject to a negotiated grievance procedure that does not exclude FLSA matters.",
+      "page": 75168,
+      "section": "Claimants Subject to a Negotiated Grievance Procedure"
+     },
+     {
+      "headline": "OPM said the eFile limitations-period risk raised by commenters is a pre-existing feature, and that the rule leaves time limits unchanged.",
+      "what_changes": "Comments 03, 05, and 06 argued claimants awaiting an exemption could lose back pay because §551.702(c) ties recovery to the receipt date, and Comment 03 noted that filing an administrative claim does not toll the court limitations period. OPM answered that §551.703(c) has said this since 2007, that the DFR did not amend it, and that the challenge is outside the rule's scope.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Section 551.703(c) has provided, since the current subpart G was adopted in 2007, that filing a claim with an agency or OPM does not satisfy the statute of limitations governing an FLSA claim filed in court, and nothing in the DFR amends Sec.  551.703(c).",
+      "page": 75167,
+      "section": "Filing-Method Changes and the FLSA Limitations Period"
+     },
+     {
+      "headline": "OPM reported OMB approved the eFile information collection and gave a revised burden of 1,286 respondents and 13,039 hours.",
+      "what_changes": "In response to four commenters, OPM said OMB approved the collection under Control Number 3206-0282, and the July 24, 2026 30-day notice estimated 1,286 respondents and 13,039 annual burden hours covering all appeal types in eFile. OPM also said it did not refuse or delay any eFile claim or exemption denial based on the control-number status.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "The 30-day notice (91 FR 46802 (July 24, 2026)) reflects a revised estimate of 1,286 respondents and 13,039 annual burden hours, which reflects the full scope of appeals available through the eFile system.",
+      "page": 75168,
+      "section": "Paperwork Reduction Act Status of the eFile Information Collection"
+     },
+     {
+      "headline": "OPM said eFile registration counts as consent to electronic service and claimants must monitor their case activity.",
+      "what_changes": "Answering Comment 03, OPM said monitoring eFile postings is like reviewing paper mail, but it will weigh a documented technical failure under existing discretion in §§551.707(b) and 551.708(a) as good cause or excusable delay.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "The responsibility to monitor case activity under Sec.  551.710(b)(5) is no different in kind from the obligation of a party who receives paper correspondence to review their mail.",
+      "page": 75168,
+      "section": "Electronic Service and Administrative Deadlines"
+     },
+     {
+      "headline": "OPM rejected Comment 07's argument that regulations.gov display problems and bargaining duties undermined the rule.",
+      "what_changes": "OPM said docket records show comments received July 31 and August 19, so the public had a meaningful opportunity to comment, and said Section 508, Privacy Act, FISMA, and bargaining obligations are separate from the rule's validity. OPM also said the duty to bargain does not extend to government-wide regulations under 5 U.S.C. 7117(a)(1).",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "OPM does not find a basis in this record to withdraw the rule or reopen the comment period on this ground.",
+      "page": 75169,
+      "section": "Alleged Regulations.gov Comment-Submission Difficulty"
+     }
+    ],
+    "could_not_determine": [
+     "How many FLSA claimants or representatives are affected by the mandatory eFile requirement.",
+     "How many exemption requests OPM has received, granted, or denied, or how long OPM takes to respond.",
+     "Whether the 'significant adverse comment' determination can be challenged, or what OPM would do if a court found the procedural-rule exception inapplicable.",
+     "The text of the DFR's regulatory provisions themselves, which this notice only summarizes."
+    ]
+   },
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 12384,
+    "output_tokens": 3166
+   },
+   "cost_usd": 0.0282,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "wrong_page",
+     "detail": "cited 75168, found on 75169"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  },
+  "https://www.federalregister.gov/documents/2026/11/20/2026-23732/updates-and-amendments-to-the-civil-service-rules": {
+   "findings": {
+    "plain_summary": "OPM confirmed that its direct final rule removing or updating obsolete Civil Service Rules provisions took effect October 13, 2026, after finding that none of the four comments received was a significant adverse comment. OPM rejected two commenters' claims that the rule entrenches Schedule Policy/Career and cuts Federal Register publication, and it adopted one commenter's suggestion to confirm that no positions depend on the removed Rule II provisions.",
+    "items": [
+     {
+      "headline": "OPM rejected two commenters' calls to withdraw the rule and reissue it as a proposed rule, finding neither comment significant and adverse.",
+      "what_changes": "Two of the four commenters (Comments 04 and 05) asked OPM to withdraw the direct final rule and republish it for notice and comment. OPM ruled that their objections misread the rule and targeted other actions, so the rule stayed in effect as scheduled.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "Because comments 04 and 05 misdescribe the rule's provisions and direct their objections to actions this rule does not take, they do not explain why the rule is inappropriate or why it would be ineffective or unacceptable without change.",
+      "page": 75163,
+      "section": "II.C. Comments 04 and 05"
+     },
+     {
+      "headline": "OPM said the rule cites E.O. 14410 in the authority citations for 5 CFR parts 2, 3, 5, 6, 9, and 10 but does not amend the Schedule Policy/Career provisions.",
+      "what_changes": "Two commenters argued the citations embed and legitimize Schedule Policy/Career without notice and comment. OPM answered that an authority citation has no operative effect, that this rule does not amend 5 CFR 6.2 or part 213, and that the part 213 rules were issued separately through notice-and-comment rulemaking in February 2026.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "This rule does not amend Sec.  6.2 or part 213.",
+      "page": 75162,
+      "section": "II.C.1. Authority citations"
+     },
+     {
+      "headline": "OPM denied that the rule removes any Federal Register publication requirement, saying the old text required only annual reports and Federal Personnel Manual issuances.",
+      "what_changes": "Two commenters said amendments to 5 CFR 3.2, 5.1, and 6.1 shift publication from the Federal Register to OPM's website. OPM responded that the prior text pointed to annual reports and Federal Personnel Manual letters, which no longer exist, and that revised 5.1(c) and 6.1(a) add the Federal Register as an authorized publication venue.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "The rule therefore removes no Federal Register publication requirement. To the contrary, revised Sec.  5.1(c) and revised Sec.  6.1(a) add the Federal Register as an authorized publication where the prior text did not mention it,",
+      "page": 75162,
+      "section": "II.C.2. Publication provisions"
+     },
+     {
+      "headline": "OPM confirmed the rule changes no substantive right, including competitive status, veterans' preference, or appeal rights.",
+      "what_changes": "Responding to Comment 02, OPM stated that no amendment, removal, redesignation, or terminology change alters competitive status, veterans' preference, appointment or reinstatement eligibility, or adverse action, grievance, or appeal rights.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "First, OPM confirms that the direct final rule makes no change to any substantive right, obligation, or protection.",
+      "page": 75161,
+      "section": "II.A. Comment 02"
+     },
+     {
+      "headline": "OPM adopted one commenter's suggestion and confirmed that no positions or appointments depend on the removed Rule II provisions at 5 CFR 2.1(c), 2.2(a)(4), and 2.3.",
+      "what_changes": "In response to Comment 03, OPM added this confirmation to the record, citing the Postal Reorganization Act of 1970 and the 1978 repeal of the apportionment requirement formerly at 5 U.S.C. 3306. This was the only commenter suggestion OPM expressly adopted.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "OPM adopts the suggestion.",
+      "page": 75162,
+      "section": "II.B. Comment 03"
+     },
+     {
+      "headline": "OPM declined to add a public variation repository or posting timelines for 5 CFR 5.1 variations, calling them website administration outside the rule's scope.",
+      "what_changes": "Comment 02 asked for consistent evaluation controls and a permanent, searchable OPM web repository for variations. OPM said the reorganized 5.1 keeps the four elements the Director must record whenever a variation is granted, and that website design, retention, and posting timelines are outside this rule.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "The commenter's further recommendations concerning the design, retention practices, and posting timelines of OPM's website concern the administration of the website rather than the text of Civil Service Rule V and are outside the scope of this rule.",
+      "page": 75161,
+      "section": "II.A. Comment 02"
+     },
+     {
+      "headline": "OPM confirmed that the 5 CFR 3.1(b) disability-terminology revisions are terminology-only and keep the two-year service requirement.",
+      "what_changes": "OPM said revised 3.1(b) keeps the same three classes of employees, the two-year satisfactory-service requirement in an excepted position, and the agency-recommendation predicate. It said the revision does not narrow eligibility for competitive status.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "It does not narrow eligibility, alter any substantive standard, or reduce any opportunity to acquire competitive status.",
+      "page": 75161,
+      "section": "II.A. Comment 02"
+     },
+     {
+      "headline": "OPM said removing the 5 CFR 6.8(a) through (c) grandfathering provisions is prospective and does not affect past personnel actions.",
+      "what_changes": "OPM said the basis for the removal is in the August 2026 preamble, which ties each paragraph to its source Executive order. Actions taken while the paragraphs were in effect remain governed by the law then in effect.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Prospective removal of these paragraphs does not affect the interpretation of personnel actions taken while they were in effect; those actions remain governed by the law in effect when they were taken, and the text of prior editions of the Code of Federal Regulations remains publicly available.",
+      "page": 75162,
+      "section": "II.A. Comment 02"
+     }
+    ],
+    "could_not_determine": [
+     "How many positions, employees, or agencies are affected by the removed or updated provisions (OPM says none currently depend on them, but gives no counts).",
+     "The full text of the amended regulations; this notice does not reprint the regulatory text and refers readers to 91 FR 52475.",
+     "Whether Comments 04 and 05 will be challenged in court or whether any further OPM action is planned."
+    ]
+   },
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 7481,
+    "output_tokens": 2319
+   },
+   "cost_usd": 0.0191,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  },
+  "https://www.opm.gov/chcoc/latest-memos/modernizing-federal-classification-and-qualification-standards-around-skills.pdf": {
+   "findings": {
+    "plain_summary": "OPM Director Scott Kupor told agencies that standards for more than 600 occupational series will be rewritten around skills and released in 22 cycles of about 30 series each, starting in FY 2027. Agencies must apply each cycle's standards to new and reclassified positions within 120 days and finish reviewing existing positions within 365 days, with reports back to OPM.",
+    "items": [
+     {
+      "headline": "OPM sets fixed 120-day and 365-day deadlines for agencies after every one of 22 release cycles",
+      "what_changes": "For each cycle, agencies must apply the new standards to new and reclassified positions within 120 days, when the standards supersede the old ones, and finish reviewing all existing positions in the covered series within 365 days. OPM says agency prioritization decides the review order but does not extend the completion date.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Complete the review of existing positions in the covered series no later than 365 days after the cycle's issuance. Agency prioritization of mission-critical work, the largest incumbent populations, and the highest hiring volume governs the order in which positions are reviewed within that window; it does not extend the completion date.",
+      "page": 3,
+      "section": "Implementation Expectations and Timelines"
+     },
+     {
+      "headline": "OPM will rewrite classification and qualification standards for 600+ series in 22 cycles of about 30 series each",
+      "what_changes": "Standards will be issued on a continuing cycle, each release including the classification standard, qualification requirements, and crosswalks from old series definitions and titles. OPM can adjust the roughly 30-series cycle size based on evidence review and agency feedback.",
+      "summary_status": "in",
+      "speaker": "OPM",
+      "quote": "22 issuance cycles, covering more than 600 occupational series.",
+      "page": 2,
+      "section": "The Release Cadence"
+     },
+     {
+      "headline": "New standards take over from old ones on day 120, superseding prior classification and qualification requirements",
+      "what_changes": "On the 120th day after a cycle's issuance, each new standard replaces the prior position classification standard and qualification requirements for its series. The summary does not mention this effective-date mechanism.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Apply the updated standards to new and reclassified positions in the covered series no later than 120 days after the cycle's issuance. On that date each standard supersedes the prior position classification standard and qualification requirements for its series.",
+      "page": 3,
+      "section": "Implementation Expectations and Timelines"
+     },
+     {
+      "headline": "OPM says reclassification is required only where a position no longer matches the new standard, and employee protections are unchanged",
+      "what_changes": "Many positions will need only documented confirmation that their current classification is correct. Any classification action follows existing agency notice, appeal, and pay-setting procedures, and nothing applies retroactively to completed personnel actions.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Reclassification is required only where the review shows that a position's current series, title, or grade no longer reflects the work performed under the revised standard. Many positions will require no action beyond documented confirmation that the current classification remains correct.",
+      "page": 3,
+      "section": "Implementation Expectations and Timelines"
+     },
+     {
+      "headline": "OPM will use AI ('Super Intelligence') to draft standards and offers agencies its USA Class tool, with validation by qualified personnel required",
+      "what_changes": "OPM says AI speeds mapping, comparison, clustering, and drafting of standards, while psychologists, statisticians, and classification experts validate every output. Agencies can use USA Class for AI-assisted drafting of major duties and factor levels, but must have qualified personnel validate the output, and using the system means accepting its Rules of Behavior.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "USA Class, OPM's secure generative SI classification application, is available to agencies to support SI-assisted drafting of major duties and factor levels and collaborative manager–classifier review; all SI-generated content must be validated by qualified personnel, and use of the system constitutes acceptance of its Rules of Behavior.",
+      "page": 4,
+      "section": "What OPM Will Deliver"
+     },
+     {
+      "headline": "OPM tells agencies to name points of contact, build position inventories, and consolidate comments into one agency voice now",
+      "what_changes": "Agencies must designate classification and staffing contacts to fedclass@opm.gov, build the ability to identify positions in each series across components and bureaus, and set up a single point for consolidating comments. Agencies are also told to count existing skills-based work such as competency models and rewritten vacancy announcements toward implementation.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Stand up the position-inventory capability the reviews will require, including the ability to identify positions in each series across components and bureaus.",
+      "page": 4,
+      "section": "What Your Agency Should Do Now"
+     },
+     {
+      "headline": "OPM will issue modular interim updates outside the cycle schedule when labor-market signals show material change",
+      "what_changes": "Previously issued standards can be revised between cycles based on OPM's monitoring of emerging technologies, tools, and credentials, so agencies may face changes outside the 22-cycle timetable. The memo does not say how much notice agencies get or whether the 120/365-day clocks apply to these updates.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Modular interim updates to previously issued standards where labor-market signals indicate a material change, issued outside the cycle schedule as needed.",
+      "page": 3,
+      "section": "The Release Cadence"
+     },
+     {
+      "headline": "Agencies must report completion and material findings to OPM at the close of each cycle's review period",
+      "what_changes": "Each agency owes OPM a report at the end of every cycle's 365-day review window. Agencies that cannot meet the timeline are told to contact fedclass@opm.gov, and OPM says it will work with them on sequencing but does not offer extensions.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Report completion and any material findings to OPM at the close of each cycle's review period.",
+      "page": 3,
+      "section": "Implementation Expectations and Timelines"
+     }
+    ],
+    "could_not_determine": [
+     "How many positions or employees are in the more than 600 series and would be reviewed or reclassified.",
+     "The exact dates of each of the 22 cycles or the order in which series will be released.",
+     "Which specific series are in the first cycle.",
+     "The cost to agencies or OPM of the reviews, and whether any funding is provided.",
+     "What the 'material findings' report to OPM must contain or its format.",
+     "What consequences, if any, apply to agencies that miss the 120-day or 365-day deadlines.",
+     "When the 22 cycles are expected to finish, since the memo says they continue 'beyond' FY 2027."
+    ]
+   },
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 4816,
+    "output_tokens": 2217
+   },
+   "cost_usd": 0.0159,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  },
+  "https://www.opm.gov/chcoc/latest-memos/issuance-of-the-si-assisted-position-review-toolkit.pdf": {
+   "findings": {
+    "plain_summary": "OPM issued a standing toolkit that gives agencies a position-review methodology, three sets of prompts, and guardrails for using Super Intelligence (SI) tools to review position descriptions under the RCRQ initiative. Use of SI is optional, but agencies that use it must keep a human reviewer of record, keep prompts and outputs in the classification record, and keep personally identifiable information and non-public data out of unapproved tools.",
+    "items": [
+     {
+      "headline": "OPM requires agencies to name a human reviewer of record and keep SI prompts and outputs in the classification record.",
+      "what_changes": "For every determination informed by SI output, agencies must document the human reviewer and keep the prompts and outputs as part of the classification record. The memo's summary text does not mention this recordkeeping duty.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Document the human reviewer of record for every determination informed by an SI-assisted output and retain prompts and outputs as part of the classification record.",
+      "page": 3,
+      "section": "Use of the Toolkit by Your Agency — Observe the guardrails"
+     },
+     {
+      "headline": "OPM bars agencies from putting personally identifiable information or non-public data into SI tools not approved under agency governance policies.",
+      "what_changes": "Agencies may not submit personally identifiable information or non-public data to any SI tool that lacks approval under the agency's SI governance, privacy, and records policies. The restriction applies to the toolkit's prompts and to any other SI-assisted review done under the standards.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Do not submit personally identifiable information or non-\npublic data to any tool that has not been approved under the agency's SI \ngovernance, privacy, and records policies.",
+      "page": 3,
+      "section": "Use of the Toolkit by Your Agency — Observe the guardrails"
+     },
+     {
+      "headline": "OPM says SI tools may support triage and prioritization but may not set a position's series, title, or grade.",
+      "what_changes": "Classification specialists must lead the review, working with industrial-organizational psychologists, HR advisors, and subject-matter experts, and must validate any SI output before acting on it. SI output cannot determine the classification itself.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Classification specialists should lead, working with industrial-organizational \npsychologists, HR advisors, and program subject-matter experts. The tooling\n[[Page 3]]\n3 \n \nsupports triage and prioritization; it does not set series, title, or grade.",
+      "page": 2,
+      "section": "Use of the Toolkit by Your Agency — Apply agency expertise"
+     },
+     {
+      "headline": "OPM says agencies are not required to use SI and may choose any tool.",
+      "what_changes": "OPM recommends SI-enabled review for large volumes of position descriptions but calls the methodology and prompts options and says it does not prescribe tools. Each agency decides its own strategy.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "OPM is not prescriptive on the use of SI for this \nreview and is SI-agnostic as to the tools agencies select.",
+      "page": 1,
+      "section": "Introduction"
+     },
+     {
+      "headline": "OPM says it can expand the toolkit without reissuing any memorandum.",
+      "what_changes": "OPM will add to the toolkit based on agency experience, and such revisions will not require a new memo. Agencies will have to follow the toolkit as it is updated rather than as it stood on the issuance date.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "OPM will expand the toolkit based on \nagencies' experience applying the prompts it contains and the experiences they report, \nso that the toolkit continues to meet agency needs; such revisions do not require \nreissuance of any memorandum.",
+      "page": 1,
+      "section": "Introduction"
+     },
+     {
+      "headline": "OPM tells agencies to start from existing job analyses and credit prior skills-based work rather than duplicating it.",
+      "what_changes": "The memo says to treat each covered position's most recent job analysis as the starting point and map it to the updated standard. It also says competency models, validated assessments, rewritten vacancy announcements, and prior job analyses count toward implementation and should not be duplicated.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Treat the most recent job analysis for each \ncovered position as the starting point, confirm it reflects the work as currently \nperformed, and map its tasks and competencies to the updated standard.",
+      "page": 2,
+      "section": "Use of the Toolkit by Your Agency — Start from existing job analysis"
+     }
+    ],
+    "could_not_determine": [
+     "How many position descriptions, positions, or employees the toolkit and RCRQ review will cover",
+     "Deadlines for agencies to finish position inventory, review, or description updates (the memo defers to each cycle memorandum)",
+     "The actual text of the prompt sets, methodology, and guardrails, which are in the attachment and not reproduced in the memo",
+     "Any cost or resource estimate for agencies",
+     "How OPM will review or enforce compliance with the guardrails"
+    ]
+   },
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 4007,
+    "output_tokens": 1668
+   },
+   "cost_usd": 0.0123,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "not_found",
+     "detail": "closest passage similarity 0.93"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  },
+  "https://www.federalregister.gov/documents/2026/11/20/2026-23731/procedures-for-settling-claims": {
+   "findings": {
+    "plain_summary": "OPM confirmed that its direct final rule requiring claimants to file claims through the eFile system took effect September 29, 2026, after concluding that none of five comments was a significant adverse comment. In the process OPM added several non-codified assurances about exemptions, good cause, and missing agency-official contact information, while rejecting requests for tolling, response deadlines, and permanent paper or email filing.",
+    "items": [
+     {
+      "headline": "OPM says the rule is procedural and, even if filing methods can affect outcomes, no notice-and-comment was required.",
+      "what_changes": "OPM rejected comments 03, 05, and 06, which argued that the rule affects substantive rights and could not be issued as a procedural direct final rule. OPM relied on the procedural-rule exception, treated the good-cause alternative as unnecessary, and said the rule does not change who may file, the standard, the evidence required, or any codified time limit.",
+      "summary_status": "vague",
+      "speaker": "OPM",
+      "quote": "That is the character of this rule: it prescribes the manner in which a claim is submitted without altering who may file a claim, the substantive standard OPM applies in deciding it, the evidence required to support it, or the duration of any codified time limit.",
+      "page": 75164,
+      "section": "II. Public Comment Analysis - Use of the Direct Final Rule Procedure"
+     },
+     {
+      "headline": "OPM will accept eFile exemption requests by phone or email and will weigh outages and claimant barriers when judging good cause.",
+      "what_changes": "Responding to concerns that the exemption process required web access, OPM said a timely telephone or written request counts the same as one made through its website. OPM also said documented eFile outages and a claimant's literacy, disability, or other barriers bear on good cause for late filings or late exemption requests; this is stated in the preamble, not added to the regulatory text.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "OPM will treat a timely telephone or written exemption request the same as one submitted through OPM's website.",
+      "page": 75165,
+      "section": "II. Public Comment Analysis - The Discretionary Exemption From Electronic Filing"
+     },
+     {
+      "headline": "OPM declined to add tolling, a fixed response deadline, or a fixed outage period to the eFile exemption rule.",
+      "what_changes": "OPM did not adopt requests from comments 02, 03, 05, and 06 for a fixed outage tolling period, a fixed deadline for OPM to respond to exemption requests, tolling of the filing deadline upon a timely request, or relation-back of a later-excused paper filing to its original date. It said claim circumstances vary too widely and that tolling would change how Sec. 178.104 fixes the date of receipt.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "OPM has not adopted the requests to codify a fixed, non-discretionary tolling period for system outages (Comment 06) or a fixed response deadline for exemption requests (Comments 03 and 05).",
+      "page": 75165,
+      "section": "II. Public Comment Analysis - The Discretionary Exemption From Electronic Filing"
+     },
+     {
+      "headline": "OPM refused to keep permanent paper and email filing for survivors, veterans' beneficiaries, retirees, and pro se claimants.",
+      "what_changes": "Four of five commenters (03, 04, 05, 06) asked OPM to withdraw the rule; Comment 06 proposed making eFile voluntary for active civilian employees while keeping mail and email intake for other groups. OPM said the exemption process and agency-assisted filing option already provide accommodation, so permanent parallel intake is not necessary.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Because that accommodation already exists in the rule, OPM does not agree that permanent, parallel paper and email intake methods for entire categories of claimants are necessary.",
+      "page": 75165,
+      "section": "II. Public Comment Analysis - Requests To Withdraw the Rule and Retain Dual-Track Filing"
+     },
+     {
+      "headline": "OPM will not reject or delay a claim solely because the claimant cannot give contact details for the denying agency official.",
+      "what_changes": "Four commenters noted that denials may come from offices or automated shared-service systems with no named individual. OPM said Sec. 178.102(a) already says a claim 'should' include that information and that, consistent with existing practice, a claim will not be rejected or delayed solely for lacking details never given to the claimant.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Consistent with OPM's existing practice under this part, a claim will not be rejected or delayed solely because a claimant cannot supply contact details for an individual agency official that were never provided to the claimant.",
+      "page": 75165,
+      "section": "Contact Information for the Denying Agency Official"
+     },
+     {
+      "headline": "OPM admits the direct final rule's preamble contained a '45 days' drafting error and confirms September 29, 2026 as the effective date.",
+      "what_changes": "One commenter (02) noted the DFR's preamble said the rule would take effect 45 days after the comment period, conflicting with the DATES caption. OPM called the 45-day language a drafting error and said the error was not a significant adverse comment.",
+      "summary_status": "in",
+      "speaker": "OPM",
+      "quote": "The reference to ``45 days'' was a drafting error.",
+      "page": 75164,
+      "section": "II. Public Comment Analysis - Effective Date"
+     },
+     {
+      "headline": "OPM says eFile registration counts as consent to electronic service and that claimants must monitor their case, with case-by-case relief for system failures.",
+      "what_changes": "Answering Comment 02, OPM said eFile registration is consent to electronic service and that monitoring case activity is like reviewing paper mail. Where a technical failure rather than claimant inattention prevented receipt, OPM will weigh it case by case as good cause, and judicial review under Sec. 178.107(b) stays available.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "The responsibility to monitor case activity under Sec.  178.102(e)(1)(v) is no different in kind from the obligation of a party who receives paper correspondence to review their mail.",
+      "page": 75165,
+      "section": "II. Public Comment Analysis - Electronic Service and the Written Record"
+     },
+     {
+      "headline": "OPM reports OMB approved the eFile information collection and gives a revised burden of 1,286 respondents and 13,039 hours.",
+      "what_changes": "Four commenters asked about Paperwork Reduction Act status. OPM said OMB approved the collection under control number 3206-0282, and cited a 30-day notice with a revised estimate covering the full scope of appeals in eFile; it also said it never refused a claim or exemption request because of the control-number status.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "The 30-day notice (91 FR 46802 (July 24, 2026)) reflects a revised estimate of 1,286 respondents and 13,039 annual burden hours, which reflects the full scope of appeals available through the eFile system.",
+      "page": 75164,
+      "section": "II. Public Comment Analysis - Paperwork Reduction Act Status of the eFile Information Collection"
+     },
+     {
+      "headline": "OPM plans a future rulemaking to fix outdated office-name references it left in Sec. 178.207(b) and (c).",
+      "what_changes": "Comment 02 noted the DFR removed the old 'Office of Merit Systems Oversight and Effectiveness' reference from Sec. 178.102(e) but left it in Sec. 178.207(b) and (c). OPM said it limited changes to provisions affecting where or how claims are filed or reviewed and will update to 'Merit System Accountability and Compliance' later.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "OPM intends to conform the cross-references in Sec.  178.207(b) and (c) to the office's current name, Merit System Accountability and Compliance, in a future rulemaking.",
+      "page": 75165,
+      "section": "Cross-Reference to an Outdated Office Name"
+     }
+    ],
+    "could_not_determine": [
+     "How many claimants or claims per year are affected by the mandatory eFile requirement, beyond the 1,286 respondents in the PRA estimate for the whole eFile system.",
+     "Whether OPM will publish its exemption process, response times, or criteria in any binding form, since the assurances appear only in this preamble.",
+     "When OPM will conform the outdated office name in 5 CFR 178.207(b) and (c)."
+    ]
+   },
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 9347,
+    "output_tokens": 2790
+   },
+   "cost_usd": 0.0233,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  },
+  "https://www.opm.gov/chcoc/latest-memos/issuance-of-competency-based-classification-standards-for-administrative-occupational-series.pdf": {
+   "findings": {
+    "plain_summary": "OPM issued new competency-based classification standards for eight administrative series (0301, 0306, 0308, 0340, 0341, 0343, 0346, 2291), covering about 220,000 positions, effective March 22, 2027. Agencies must inventory and review every affected position by November 29, 2027, may use AI tools only with human sign-off, and keep existing notice, appeal and pay-setting protections for any resulting changes.",
+    "items": [
+     {
+      "headline": "OPM sets March 22, 2027 as the date the new standards replace the old ones and November 29, 2027 as the deadline to review every existing position.",
+      "what_changes": "The new standards supersede the prior classification standards for the eight series on March 22, 2027, and agencies must apply them to new and reclassified positions by then. Agencies must finish reviewing all existing positions in the covered series by November 29, 2027.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Apply them to new and reclassified positions in the covered series no later than March 22, 2027, and complete the review of existing positions in the covered series no later than November 29, 2027.",
+      "page": 2,
+      "section": "Memorandum body (effective date and deadlines)"
+     },
+     {
+      "headline": "The FAQ gives the new-position deadline as 120 days after issuance, which is March 16, 2027, six days earlier than the memo's March 22, 2027.",
+      "what_changes": "The memo body states a fixed date of March 22, 2027 for applying the standards to new and reclassified positions. FAQ 4 instead says 'no later than 120 days after the date of this issuance,' which counts to March 16, 2027 from the November 16, 2026 memo date. The memo does not say which controls.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Agencies should apply the standards to new and reclassified positions no later than 120 days after the date of this issuance and complete the implementation tasks within the windows set out in the Implementation for the Covered Series section.",
+      "page": 4,
+      "section": "Appendix A, FAQ 4"
+     },
+     {
+      "headline": "OPM says the new standards touch about 220,000 positions and tells agencies to inventory every filled and vacant position in the eight series, plus positions in adjacent series.",
+      "what_changes": "Agencies must list all encumbered and vacant positions in the covered series. They must also list positions in other series whose duties may fall within the revised occupational definitions, which widens the review beyond the eight series.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Inventory all encumbered and vacant positions currently classified in the covered series, along with positions in adjacent series whose duties may fall within the revised occupational definitions.",
+      "page": 2,
+      "section": "Implementation for the Covered Series, step 1"
+     },
+     {
+      "headline": "OPM says reclassification is required only where the review finds a position's series, title or grade no longer matches the work, and many positions will need only documented confirmation.",
+      "what_changes": "Every existing position must be reviewed, but a classification change is required only when the review shows a mismatch with the revised standard. For the rest, agencies need only document that the current classification is correct.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Reclassification is required only where the review shows that a position's current series, title, or grade no longer reflects the work performed under the revised standard.",
+      "page": 5,
+      "section": "Appendix A, FAQ 5"
+     },
+     {
+      "headline": "OPM says employees whose positions change keep existing notice, appeal and pay-setting protections, and the standards are not to be applied retroactively.",
+      "what_changes": "Any resulting series, title or grade change goes through agencies' existing procedures. OPM states that the issuance does not alter those entitlements and that completed personnel actions are not to be revisited under the new standards.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Nothing in this issuance changes an employee's entitlement to those protections, and nothing in the revised standards is intended to be applied retroactively to completed personnel actions.",
+      "page": 5,
+      "section": "Appendix A, FAQ 6"
+     },
+     {
+      "headline": "OPM allows agencies to use AI ('SI') tools to speed the position reviews but bars any classification, grading or qualification decision that rests on AI output a qualified human has not approved.",
+      "what_changes": "Agencies may use SI, text-analysis tools or OPM's USA Class to triage and prioritize the workload, but these tools do not classify. Classification Specialists lead the review, and the guardrails are in a toolkit published separately and not attached.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "No classification, titling, grading, or qualification determination should rest on an SI-generated result that a qualified human reviewer has not examined and approved.",
+      "page": 3,
+      "section": "Implementation for the Covered Series, step 3"
+     },
+     {
+      "headline": "OPM has not yet issued the companion group qualification standards, so agencies must start reviewing qualification and assessment practices while the old requirements still apply.",
+      "what_changes": "OPM expects to release the Competency Based Group Qualification Standards by November 30, 2026, and until then existing group qualification requirements remain in effect. Agencies are still asked to review vacancy announcements and assessments against the new competencies in the meantime.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "They are still in development, and OPM expects to release them by November 30, 2026. Until then, existing group qualification requirements for the covered series remain in effect.",
+      "page": 2,
+      "section": "Memorandum body (qualification standards)"
+     },
+     {
+      "headline": "OPM says degree requirements are not treated as automatic proxies for ability, citing the Merit Hiring Plan and Executive Orders 13932 and 14170.",
+      "what_changes": "Where a degree is required by law for an occupation, agencies will validate the required education along with the skills needed. Otherwise OPM points to validated technical or alternative assessments and competency-based standards as direct evidence of capability.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Consistent with the Merit Hiring Plan and Executive Orders 13932 and 14170, degree requirements are not treated as automatic proxies for ability.",
+      "page": 5,
+      "section": "Appendix A, FAQ 7"
+     },
+     {
+      "headline": "OPM says agencies' mission priorities can set the order of reviews but cannot extend the deadline, and agencies with constraints must contact OPM before the date passes.",
+      "what_changes": "Agencies can sequence reviews by mission-critical work within the 365-day window, but the completion date does not move. The memo offers no extension process, only a request to contact fedclass@opm.gov in advance.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Agency prioritization of mission-critical work governs how the review is sequenced within the 365-day window; it does not extend the completion date.",
+      "page": 2,
+      "section": "Memorandum body (deadlines)"
+     },
+     {
+      "headline": "OPM asks agencies to send one consolidated set of comments reflecting headquarters-level priorities, and says comments feed the next cycle rather than this one.",
+      "what_changes": "Agencies should submit a single combined set of comments from all components or bureaus through an OPM survey link. The comment period is ongoing, and comments will be considered for the next issuance cycle.",
+      "summary_status": "absent",
+      "speaker": "OPM",
+      "quote": "Consolidated comments should reflect headquarters-level priorities so that OPM can align the standards with your agency's mission-critical requirements.",
+      "page": 7,
+      "section": "Appendix A, FAQ 14"
+     }
+    ],
+    "could_not_determine": [
+     "How many of the roughly 220,000 positions are expected to change series, title or grade.",
+     "Any cost, staffing or funding estimate for agencies doing the inventory and review.",
+     "Which date controls: the memo's March 22, 2027 date or the FAQ's '120 days after the date of this issuance,' which falls on March 16, 2027.",
+     "What the 365-day review window is measured from, since November 29, 2027 is not 365 days after the November 16, 2026 memo date.",
+     "What 'them' refers to in the instruction to 'Apply them to new and reclassified positions': the old group qualification requirements or the new standards.",
+     "What the Competency Based Group Qualification Standards will require, and how agencies should handle the gap if they are released after November 30, 2026.",
+     "The content of the SI-assisted position review toolkit and its guardrails, which are published separately and not attached.",
+     "The content of the eight standards themselves, which are attachments not reproduced in the text.",
+     "What consequences or relief apply if an agency misses a deadline, beyond the instruction to contact fedclass@opm.gov beforehand.",
+     "The content of the Director's November 16, 2026 memorandum on the RCRQ initiative, which sets the release cadence and implementation expectations for every cycle."
+    ]
+   },
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 6769,
+    "output_tokens": 5212
+   },
+   "cost_usd": 0.0328,
+   "verification": [
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    },
+    {
+     "status": "ok"
+    }
+   ]
+  },
+  "https://www.federalregister.gov/documents/2026/11/20/2026-23729/federal-employees-retirement-system-present-value-conversion-factors-for-spouses-of-deceased": {
+   "findings": {
+    "plain_summary": "OPM confirmed that its direct final rule revising early-commencement reduction factors for FERS survivor annuities to spouses of deceased separated employees took effect August 24, 2026, after finding none of 7 comments was a significant adverse comment. OPM acknowledged the new factors reduce benefits for survivors who elect earlier payment, saying the Board of Actuaries' revised demographic assumptions and the statute's actuarial-equivalence requirement leave it no discretion.",
+    "items": [],
+    "could_not_determine": [
+     "How many surviving spouses or former spouses are affected by the revised factors.",
+     "The actual numeric values of the new factors or the size of the benefit reduction compared with the old factors.",
+     "The specific changes the Board of Actuaries made to its mortality-improvement and other demographic assumptions.",
+     "The estimated dollar effect on the Civil Service Retirement and Disability Fund."
+    ]
+   },
+   "model": "claude-sonnet-5-5",
+   "stop_reason": "end_turn",
+   "usage": {
+    "input_tokens": 6135,
+    "output_tokens": 303
+   },
+   "cost_usd": 0.0076,
+   "verification": []
+  }
+ },
+ "crosses": [],
+ "failures": [],
+ "cost_usd": 0.1392,
+ "synthesis": {
+  "stories": [
+   {
+    "headline": "OPM starts rewriting 600-plus job standards around skills, beginning with eight series",
+    "takeaway": "OPM will rewrite classification and qualification standards for more than 600 occupational series in 22 cycles of about 30 series each. The first cycle covers eight administrative series and about 220,000 positions, but the memo sets March 22, 2027 for applying the standards to new positions while its FAQ's 120-day rule points to March 16, 2027.",
+    "doc_ids": [
+     "D6",
+     "D4"
+    ],
+    "key_findings": [
+     "D6.F1",
+     "D4.F2",
+     "D4.F1"
+    ]
+   },
+   {
+    "headline": "OPM keeps the eFiling mandate for FLSA and other pay claims despite commenters' objections",
+    "takeaway": "OPM confirmed two direct final rules requiring claims to be filed through eFile. Four of five commenters on the claims-settlement rule asked OPM to withdraw it, and OPM refused to keep permanent paper and email filing for survivors, retirees and pro se claimants. OPM also declined automatic tolling while exemption requests are pending, but said exemption requests made by phone or email count the same as requests made through its website.",
+    "doc_ids": [
+     "D1",
+     "D2"
+    ],
+    "key_findings": [
+     "D2.F3",
+     "D1.F0",
+     "D1.F2"
+    ]
+   },
+   {
+    "headline": "OPM requires a human reviewer of record for AI-assisted position reviews",
+    "takeaway": "Agencies that use Super Intelligence tools to review position descriptions must name a human reviewer of record and keep prompts and outputs in the classification record. They may not put personally identifiable information or non-public data into unapproved tools. OPM can expand the toolkit without issuing a new memo.",
+    "doc_ids": [
+     "D5"
+    ],
+    "key_findings": [
+     "D5.F0",
+     "D5.F1",
+     "D5.F4"
+    ]
+   },
+   {
+    "headline": "OPM keeps its civil service rules cleanup despite two commenters' objections",
+    "takeaway": "OPM kept its direct final rule updating obsolete Civil Service Rules after finding that two commenters' calls for withdrawal were not significant adverse comments. OPM said citing E.O. 14410 in authority citations does not amend Schedule Policy/Career, and that the rule removes no Federal Register publication requirement.",
+    "doc_ids": [
+     "D3"
+    ],
+    "key_findings": [
+     "D3.F0",
+     "D3.F1",
+     "D3.F2"
+    ]
+   }
+  ],
+  "routine": [
+   "D0"
+  ],
+  "problems": [],
+  "cost_usd": 0.0776,
+  "doc_urls": {
+   "D0": "https://www.federalregister.gov/documents/2026/11/20/2026-23729/federal-employees-retirement-system-present-value-conversion-factors-for-spouses-of-deceased",
+   "D1": "https://www.federalregister.gov/documents/2026/11/20/2026-23730/flsa-claims-and-compliance",
+   "D2": "https://www.federalregister.gov/documents/2026/11/20/2026-23731/procedures-for-settling-claims",
+   "D3": "https://www.federalregister.gov/documents/2026/11/20/2026-23732/updates-and-amendments-to-the-civil-service-rules",
+   "D4": "https://www.opm.gov/chcoc/latest-memos/issuance-of-competency-based-classification-standards-for-administrative-occupational-series.pdf",
+   "D5": "https://www.opm.gov/chcoc/latest-memos/issuance-of-the-si-assisted-position-review-toolkit.pdf",
+   "D6": "https://www.opm.gov/chcoc/latest-memos/modernizing-federal-classification-and-qualification-standards-around-skills.pdf"
+  }
+ }
+}
