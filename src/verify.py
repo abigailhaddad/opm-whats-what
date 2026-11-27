@@ -49,15 +49,33 @@ class PagedText:
         return self.pages[i]
 
 
+_MARK = re.compile(r"\[\[Page \d+\]\]")
+
+
+def quote_variants(q: str) -> list[str]:
+    """The quote as given, then (only if the model copied a page-break marker into it, as it does when a quote
+    runs across a page: "…The tooling [[Page 3]] 3 supports triage…") with the marker removed, and with the
+    marker and the printed page number after it removed. Everything else must still match word for word."""
+    out = [q]
+    if _MARK.search(q):
+        out += [norm(_MARK.sub(" ", q)), norm(re.sub(r"\[\[Page \d+\]\]\s*\d{1,5}\b", " ", q))]
+    return list(dict.fromkeys(v for v in out if v))
+
+
 def check(raw_text: str, items: list[dict]) -> list[dict]:
-    """Return one result per item: status in {ok, wrong_page, not_found} and detail."""
+    """Return one result per item: status in {ok, wrong_page, not_found} and detail.
+
+    A verbatim quote found only on another page is corrected, not failed: the item's "page" is set to where
+    the quote is (the cited page was the model's mistake; the quote itself checks out), status ok, and the
+    detail records the correction. wrong_page is kept for callers that pass items without a page."""
     doc = PagedText(raw_text)
     out = []
     for it in items:
-        q = norm(it.get("quote") or "")
-        if not q:
+        q0 = norm(it.get("quote") or "")
+        if not q0:
             out.append({"status": "not_found", "detail": "empty quote"})
             continue
+        q = next((v for v in quote_variants(q0) if doc.full.find(v) >= 0), q0)
         pos = doc.full.find(q)
         if pos >= 0:
             first = None
@@ -69,7 +87,12 @@ def check(raw_text: str, items: list[dict]) -> list[dict]:
                     break
                 pos = doc.full.find(q, pos + 1)
             else:
-                out.append({"status": "wrong_page", "detail": f"cited {it.get('page')}, found on {first}"})
+                if first is not None and it.get("page") is not None:
+                    cited = it["page"]
+                    it["page"] = first   # cite where the quote actually is
+                    out.append({"status": "ok", "detail": f"page corrected: cited {cited}, found on {first}"})
+                else:
+                    out.append({"status": "wrong_page", "detail": f"cited {it.get('page')}, found on {first}"})
             continue
         best, step = 0.0, max(20, len(q) // 4)
         for s in range(0, max(1, len(doc.full) - len(q)), step):

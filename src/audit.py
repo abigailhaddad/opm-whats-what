@@ -25,6 +25,8 @@ import io
 import json
 import os
 import re
+
+from verify import quote_variants
 import sys
 import time
 from pathlib import Path
@@ -84,14 +86,26 @@ def loose(s: str) -> tuple[str, list[int]]:
     return "".join(c for c, _ in keep), [i for _, i in keep]
 
 
+def strip_page_number(t: str) -> str:
+    """A page's text without a bare page number line at its end or start (PDF footer or header)."""
+    t = re.sub(r"\n[\s\x0c]*\d{1,5}[\s\x0c]*$", "\n", t)
+    return re.sub(r"^[\s\x0c]*\d{1,5}[ \t]*\n", "", t)
+
+
 class Source:
     def __init__(self, item: dict):
         self.item = item
         self.pages, self.how = source_pages(item)
         self.loose = {p: loose(t) for p, t in self.pages.items()}
+        # For quotes that run across a page break: each page without a bare printed page number at its end
+        # (a PDF footer, "The tooling \n\n2 \n\x0c") or its start (a header), so the join reads straight on.
+        self.loose_join = {p: loose(strip_page_number(t))[0] for p, t in self.pages.items()}
 
     def find(self, quote: str, page: int | None):
         """-> (status, found_page, excerpt). status: ok | wrong_page | not_found | too_short"""
+        for v in quote_variants(quote)[1:]:          # a page-break marker copied into the quote (see verify.py)
+            if self.find(v, page)[0] in ("ok", "wrong_page"):
+                return self.find(v, page)
         q, _ = loose(quote)
         if len(q) < 30:
             return "too_short", None, ""
@@ -101,10 +115,12 @@ class Source:
             # a quote that runs across a page break: join each page to the next
             nums = sorted(self.loose)
             for a, b in zip(nums, nums[1:]):
-                joined = self.loose[a][0] + self.loose[b][0]
-                i = joined.find(q)
-                if i >= 0 and i < len(self.loose[a][0]):
-                    hits = [(a, i)]
+                for la, lb in ((self.loose[a][0], self.loose[b][0]), (self.loose_join[a], self.loose_join[b])):
+                    i = (la + lb).find(q)
+                    if i >= 0 and i < len(la):
+                        hits = [(a, min(i, len(self.loose[a][0]) - 1))]
+                        break
+                if hits:
                     break
         if not hits:
             return "not_found", None, ""

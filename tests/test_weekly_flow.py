@@ -69,7 +69,9 @@ def test_verify_handles_an_empty_quote_and_a_quote_cited_on_its_second_page():
     q = "The rule takes effect on January 1, 2027 for all employees."
     assert verify.check(doc, [{"quote": q, "page": 2}])[0]["status"] == "ok"        # it IS on page 2
     assert verify.check(doc, [{"quote": q, "page": 1}])[0]["status"] == "ok"
-    assert verify.check(doc, [{"quote": q, "page": 3}])[0]["status"] == "wrong_page"
+    it = {"quote": q, "page": 3}
+    r = verify.check(doc, [it])[0]                                                   # on neither: corrected to the first
+    assert r["status"] == "ok" and "corrected" in r["detail"] and it["page"] == 1
 
 
 def test_a_quote_that_crosses_a_page_marker_renders_as_one_markdown_block():
